@@ -42,7 +42,7 @@
     <link rel="index" title="ইনডেক্স" href="genindex.html" />
     <link rel="search" title="অনুসন্ধান" href="search.html" />
     <link rel="next" title="Release Notes" href="release_notes.html" />
-    <link rel="prev" title="Quantum computing in a nutshell" href="qc_intro.html" /> 
+    <link rel="prev" title="এক নজরে কোয়ান্টাম কম্পিউটিং" href="qc_intro.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -228,7 +228,7 @@
 </ul>
 <p><span class="caption-text">ফ্রন্টম্যাটার</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="qc_intro.html">Quantum computing in a nutshell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qc_intro.html">এক নজরে কোয়ান্টাম কম্পিউটিং</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Qiskit পরিচিতি</a></li>
 <li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing_to_qiskit.html">Contributing to Qiskit</a></li>
@@ -377,7 +377,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>
-Total count for 00 and 11 are: {&#39;00&#39;: 501, &#39;11&#39;: 499}
+Total count for 00 and 11 are: {&#39;00&#39;: 528, &#39;11&#39;: 472}
 </pre></div>
 </div>
 <div class="output text_html"><pre style="word-wrap: normal;white-space: pre;background: #fff0;line-height: 1.1;font-family: &quot;Courier New&quot;,Courier,monospace">     ┌───┐     ┌─┐   
@@ -509,7 +509,7 @@ from qiskit.providers.basicaer import QasmSimulatorPy
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>
-Total count for 00 and 11 are: {&#39;11&#39;: 469, &#39;00&#39;: 531}
+Total count for 00 and 11 are: {&#39;11&#39;: 478, &#39;00&#39;: 522}
 </pre></div>
 </div>
 </div>
@@ -518,9 +518,9 @@ Total count for 00 and 11 are: {&#39;11&#39;: 469, &#39;00&#39;: 531}
 <p><code class="docutils literal notranslate"><span class="pre">result`</span> <span class="pre">অবজেক্টটি</span> <span class="pre">পাওয়ার</span> <span class="pre">পর</span> <span class="pre">ফলাফলের</span> <span class="pre">কাউন্ট</span> <span class="pre">বা</span> <span class="pre">গণনা</span> <span class="pre">সংখ্যা</span> <span class="pre">``get_counts(circuit)</span></code> মেথডের সাহায্যে পাওয়া যাবে। এটি দিয়ে পরীক্ষাটির মোট ফলাফল পাওয়া যায়।</p>
 </section>
 <section id="step-6-visualize-the-results">
-<h3>Step 6 : Visualize the Results<a class="headerlink" href="#step-6-visualize-the-results" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h3>
-<p>Qiskit provides <a class="reference external" href="apidoc/visualization.html">many visualizations</a>,</p>
-<p>including the function <code class="docutils literal notranslate"><span class="pre">plot_histogram</span></code>, to view your results.</p>
+<h3>পদক্ষেপ ৬: ফলাফলটি দৃষ্টিগোচর করুন<a class="headerlink" href="#step-6-visualize-the-results" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h3>
+<p>Qiskit প্রদান করে <a href="#id1"><span class="problematic" id="id2">`many visualizations&lt;apidoc/visualization.html&gt;`__</span></a>,</p>
+<p><code class="docutils literal notranslate"><span class="pre">plot_histogram</span></code> ফাংশনটি এর মধ্যে একটি।</p>
 <div class="jupyter_cell jupyter_container docutils container">
 <div class="cell_input code_cell docutils container">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plot_histogram</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span>
@@ -532,18 +532,16 @@ Total count for 00 and 11 are: {&#39;11&#39;: 469, &#39;00&#39;: 531}
 <img alt="_images/intro_tutorial1_4_1.png" src="_images/intro_tutorial1_4_1.png" />
 </div>
 </div>
-<p>The observed probabilities <span class="math notranslate nohighlight">\(Pr(00)\)</span> and <span class="math notranslate nohighlight">\(Pr(11)\)</span> are computed by
-taking the respective counts and dividing by the total number of shots.</p>
+<p>পর্যবেক্ষণকৃত <span class="math notranslate nohighlight">\(Pr(00)\)</span> ও <span class="math notranslate nohighlight">\(Pr(11)\)</span> সম্ভাবনাসমূহ এদের সম্পর্কিত কাউন্ট সংখ্যাকে মোট শট শংখ্যা দিয়ে ভাগ করে গণনা করা হয়।</p>
 <div class="admonition note">
 <p class="admonition-title">নোট</p>
-<p>Try changing the <code class="docutils literal notranslate"><span class="pre">shots</span></code> keyword in the <code class="docutils literal notranslate"><span class="pre">run()</span></code> method to see how
-the estimated probabilities change.</p>
+<p>কীভাবে সম্ভাবনার ফলাফল পরিবর্তন হয় তা <code class="docutils literal notranslate"><span class="pre">run()</span></code> মেথডের মধ্যে <code class="docutils literal notranslate"><span class="pre">shots</span></code> কিওয়ার্ডটি পরিবর্তন করার চেষ্টা করে দেখুন ।</p>
 </div>
 </section>
 </section>
 <section id="next-steps">
-<h2>Next Steps<a class="headerlink" href="#next-steps" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p>Now that you have learnt the basics, consider these learning resources:</p>
+<h2>পরবর্তী ধাপগুলো<a class="headerlink" href="#next-steps" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>আপনি প্রাথমিক ধারণাটুকু পেয়েছেন, এরপর উৎসগুলো থেকে শেখার চেষ্টা করতে পারেনঃ</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="tutorials.html#tutorials"><span class="std std-ref">Qiskit tutorials</span></a></p></li>
 <li><p><a class="reference external" href="https://qiskit.org/textbook">Textbook: Learn Quantum Computing using Qiskit</a></p></li>
@@ -563,7 +561,7 @@ the estimated probabilities change.</p>
         <a href="release_notes.html" class="btn btn-neutral float-right" title="Release Notes" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
-        <a href="qc_intro.html" class="btn btn-neutral" title="Quantum computing in a nutshell" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+        <a href="qc_intro.html" class="btn btn-neutral" title="এক নজরে কোয়ান্টাম কম্পিউটিং" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
       
     </div>
   
@@ -577,7 +575,7 @@ the estimated probabilities change.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      2021/08/25 সর্বশেষ পরিবর্তন করা হয়েছে।
+      2021/08/27 সর্বশেষ পরিবর্তন করা হয়েছে।
 
     </p>
   </div>
@@ -603,10 +601,10 @@ the estimated probabilities change.</p>
 <li><a class="reference internal" href="#step-3-add-gates">তৃতীয় ধাপঃ যুক্তিবর্তনী (গেইট) যুক্ত করা</a></li>
 <li><a class="reference internal" href="#step-4-visualize-the-circuit">চতুর্থ ধাপঃ বর্তনী (সার্কিট) দৃশ্যায়ন</a></li>
 <li><a class="reference internal" href="#step-5-simulate-the-experiment">পদক্ষেপ ৫: পরীক্ষাটি অনুকরণ করুন</a></li>
-<li><a class="reference internal" href="#step-6-visualize-the-results">Step 6 : Visualize the Results</a></li>
+<li><a class="reference internal" href="#step-6-visualize-the-results">পদক্ষেপ ৬: ফলাফলটি দৃষ্টিগোচর করুন</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#next-steps">Next Steps</a></li>
+<li><a class="reference internal" href="#next-steps">পরবর্তী ধাপগুলো</a></li>
 </ul>
 </li>
 </ul>

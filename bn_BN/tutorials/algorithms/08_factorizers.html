@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Shor’s algorithms &mdash; Qiskit 0.29.0 documentation</title>
+  <title>Shor এর অ্যালোগরিদম &mdash; Qiskit 0.29.0 documentation</title>
   
 
   
@@ -226,7 +226,7 @@
 </ul>
 <p><span class="caption-text">ফ্রন্টম্যাটার</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../qc_intro.html">Quantum computing in a nutshell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../qc_intro.html">এক নজরে কোয়ান্টাম কম্পিউটিং</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro_tutorial1.html">Qiskit পরিচিতি</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../release_notes.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributing_to_qiskit.html">Contributing to Qiskit</a></li>
@@ -292,7 +292,7 @@
       </li>
 
         
-      <li>Shor’s algorithms</li>
+      <li>Shor এর অ্যালোগরিদম</li>
     
     
       <li class="pytorch-breadcrumbs-aside">
@@ -572,12 +572,12 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="admonition note">
 <p class="admonition-title">নোট</p>
-<p>This page was generated from <a class="reference external" href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/algorithms/08_factorizers.ipynb">tutorials/algorithms/08_factorizers.ipynb</a>.</p>
+<p>এই পৃষ্ঠাটি <a class="reference external" href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/algorithms/08_factorizers.ipynb">tutorials/algorithms/08_factorizers.ipynb</a> -থেকে নেয়া হয়েছে।</p>
 </div>
-<section id="Shor’s-algorithms">
-<h1>Shor’s algorithms<a class="headerlink" href="#Shor’s-algorithms" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h1>
-<p>Qiskit has an implementation of <a class="reference external" href="https://qiskit.org/textbook/ch-algorithms/shor.html">Shor’s algorithm</a>.</p>
-<p>The preceding reference has detailed explanations and build-out of circuits whereas this notebook has examples with the pre-built algorithms in Qiskit that you can use for experimentation and education purposes.</p>
+<section id="Shor-এর-অ্যালোগরিদম">
+<h1>Shor এর অ্যালোগরিদম<a class="headerlink" href="#Shor-এর-অ্যালোগরিদম" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h1>
+<p>Qiskit এ <a class="reference external" href="https://qiskit.org/textbook/ch-algorithms/shor.html">Shor’s অ্যালগরদিম এর প্রতিপাদন আছে</a>.</p>
+<p>এর আগের তথ্যসূত্রগুলিতে বিস্তারিত ব্যাখ্যা এবং বর্তনীর গঠনপ্রণালী আছে, যেখানে এই নোটবুকে Qiskit এর আগের তৈরী করা অ্যালগোরিথমগুলি আছে, যেগুলো আপনি পরীক্ষামূলক কাজে এবং শিক্ষাক্ষেত্রের প্র​য়োজনে ব্যবহার করতে পারেন।</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -591,9 +591,10 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<section id="Shor’s-Factoring-algorithm">
-<h2>Shor’s Factoring algorithm<a class="headerlink" href="#Shor’s-Factoring-algorithm" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p><a class="reference external" href="https://qiskit.org/documentation/stubs/qiskit.algorithms.Shor.html">Shor’s Factoring algorithm</a> is one of the most well-known quantum algorithms and finds the prime factors for input integer <span class="math notranslate nohighlight">\(N\)</span> in polynomial time. The algorithm implementation in Qiskit is simply provided a target integer to be factored and run, as follows:</p>
+<section id="Shor-এর-উৎপাদকীকরন-অ্যালগোরিথম">
+<h2>Shor এর উৎপাদকীকরন অ্যালগোরিথম<a class="headerlink" href="#Shor-এর-উৎপাদকীকরন-অ্যালগোরিথম" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>একটি সর্বাধিক পরিচিত কোয়ান্টাম অ্যালগরিদমগুলোর মধ্যে Shor এর ফ্যাক্টরিং অ্যাল্গরিদম &lt;<a class="reference external" href="https://qiskit.org/documentation/stubs/qiskit.algorithms.Shor.html">https://qiskit.org/documentation/stubs/qiskit.algorithms.Shor.html</a>&gt;`__ . হল একটি এবং এটি বহুপদী
+সময়ে (polynomial time) <span class="math notranslate nohighlight">\(N\)</span> এর মৌলিক উৎপাদকগুলি খুজে বের করে। Qiskit এ একটি টার্গেট ইন্টেজার নিয়ে উৎপাদকে বিশ্লেষণ করে যেভাবে অ্যালগরিদমটির প্রতিপাদন করা হয় তা নিম্নরূপ:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -616,7 +617,7 @@ div.rendered_html tbody tr:hover {
 The list of factors of 15 as computed by the Shor&#39;s algorithm is [3, 5].
 </pre></div></div>
 </div>
-<p>Note: this implementation of Shor’s algorithm uses <span class="math notranslate nohighlight">\(4n + 2\)</span> qubits, where <span class="math notranslate nohighlight">\(n\)</span> is the number of bits representing the integer in binary. So in practice, for now, this implementation is restricted to factorizing small integers. Given the above value of N we compute <span class="math notranslate nohighlight">\(4n +2\)</span> below and confirm the size from the actual circuit.</p>
+<p>বি:দ্র: Shor এর অ্যালগোরিদমের প্রতিপাদনে  <span class="math notranslate nohighlight">\(4n + 2\)</span> গুলো কিউবিট ব্যাবহার করা হয়, যেখানে <span class="math notranslate nohighlight">\(n\)</span> হল বাইনারিতে ইন্তেজারের বিটের সংখ্যা। তাই, চর্চার খাতিরে এখন এই প্রতিপাদনটি শুধু ছোট ইন্টেজারগুলোর উৎপাদক বের করতে সীমিত করা হল। N এর আলোচ্য মান বিবেচনা করে আমরা নিম্নে  <span class="math notranslate nohighlight">\(4n +2\)</span> এর সমাধান করি এবং আসল বর্তনীর আকার নিশ্চিত করি।</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -679,7 +680,7 @@ Actual number of qubits of circuit: 18
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      2021/08/25 সর্বশেষ পরিবর্তন করা হয়েছে।
+      2021/08/27 সর্বশেষ পরিবর্তন করা হয়েছে।
 
     </p>
   </div>
@@ -698,8 +699,8 @@ Actual number of qubits of circuit: 18
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">Shor’s algorithms</a><ul>
-<li><a class="reference internal" href="#Shor’s-Factoring-algorithm">Shor’s Factoring algorithm</a></li>
+<li><a class="reference internal" href="#">Shor এর অ্যালোগরিদম</a><ul>
+<li><a class="reference internal" href="#Shor-এর-উৎপাদকীকরন-অ্যালগোরিথম">Shor এর উৎপাদকীকরন অ্যালগোরিথম</a></li>
 </ul>
 </li>
 </ul>

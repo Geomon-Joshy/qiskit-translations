@@ -578,7 +578,7 @@ div.rendered_html tbody tr:hover {
 <h1>Simulateurs<a class="headerlink" href="#Simulateurs" title="Lien permanent vers ce titre">¶</a></h1>
 <section id="Introduction">
 <h2>Introduction<a class="headerlink" href="#Introduction" title="Lien permanent vers ce titre">¶</a></h2>
-<p>This notebook shows how to import the <em>Qiskit Aer</em> simulator backend and use it to run ideal (noise free) Qiskit Terra circuits.</p>
+<p>Ce bloc-notes montre comment importer le simulateur <em>Qiskit Aer</em> et l’utiliser pour exécuter les circuits Terra idéaux (sans bruit) Qiskit.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -595,9 +595,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="The-Aer-Provider">
-<h2>The Aer Provider<a class="headerlink" href="#The-Aer-Provider" title="Lien permanent vers ce titre">¶</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">Aer</span></code> provider contains a variety of high performance simulator backends for a variety of simulation methods. The available backends on the current system can be viewed using <code class="docutils literal notranslate"><span class="pre">Aer.backends</span></code></p>
+<section id="Fournisseur-Aer">
+<h2>Fournisseur Aer<a class="headerlink" href="#Fournisseur-Aer" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le fournisseur <code class="docutils literal notranslate"><span class="pre">Aer</span></code> contient une variété de plateformes de simulation à hautes performances fournissant différentes méthodes de simulation. Les plateformes disponibles sur le système utilisé peuvent être visualisées en utilisant <code class="docutils literal notranslate"><span class="pre">Aer.backends</span></code></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -628,8 +628,8 @@ div.rendered_html tbody tr:hover {
 </pre></div></div>
 </div>
 </section>
-<section id="The-Aer-Simulator">
-<h2>The Aer Simulator<a class="headerlink" href="#The-Aer-Simulator" title="Lien permanent vers ce titre">¶</a></h2>
+<section id="Le-simulateur-Aer">
+<h2>Le simulateur Aer<a class="headerlink" href="#Le-simulateur-Aer" title="Lien permanent vers ce titre">¶</a></h2>
 <p>L’environnement principal du simulateur Aer est le <code class="docutils literal notranslate"><span class="pre">AerSimulator</span></code>. Un nouvel environnement de simulateur peut être créé en utilisant <code class="docutils literal notranslate"><span class="pre">Aer.get_backend('aer_simulator')</span></code>.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
@@ -640,10 +640,10 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>The default behavior of the <code class="docutils literal notranslate"><span class="pre">AerSimulator</span></code> backend is to mimic the execution of an actual device. If a <code class="docutils literal notranslate"><span class="pre">QuantumCircuit</span></code> containing measurements is run it will return a count dictionary containing the final values of any classical registers in the circuit. The circuit may contain gates, measurements, resets, conditionals, and other custom simulator instructions that will be discussed in another notebook.</p>
+<p>Le comportement par défaut de l’environnement <code class="docutils literal notranslate"><span class="pre">AerSimulator</span></code> est d’imiter l’exécution d’un périphérique réel. Si un <code class="docutils literal notranslate"><span class="pre">QuantumCircuit</span></code> contenant des mesures est exécuté, il retournera un dictionnaire associant les valeurs finales des registres classiques dans le circuit au nombre de fois qu’elles ont été mesurées. Le circuit peut contenir des portes, des mesures, des réinitialisations, des conditions et d’autres instructions de simulateur personnalisées qui seront discutées dans un autre notebook.</p>
 <section id="Simulation-d'un-circuit-quantique">
 <h3>Simulation d’un circuit quantique<a class="headerlink" href="#Simulation-d'un-circuit-quantique" title="Lien permanent vers ce titre">¶</a></h3>
-<p>The basic operation runs a quantum circuit and returns a counts dictionary of measurement outcomes. Here we run a simple circuit that prepares a 2-qubit Bell-state <span class="math notranslate nohighlight">\(\left|\psi\right\rangle = \frac{1}{2}\left(\left|0,0\right\rangle + \left|1,1 \right\rangle\right)\)</span> and measures both qubits.</p>
+<p>L’opération de base exécute un circuit quantique et retourne un dictionnaire de comptage des résultats de mesure. Ici, nous exécutons un circuit simple qui prépare un état de Bell à 2 qubits <span class="math notranslate nohighlight">\(\left|\psi\right\rangle = \frac{1}{2}\left(\left|0,\right\rangle + \left|1,1 \right\rangle\right)\)</span> et mesure les deux qubits.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -675,8 +675,8 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Renvoi-des-résultats-de-la-mesure-pour-chaque-shot">
-<h3>Renvoi des résultats de la mesure pour chaque shot<a class="headerlink" href="#Renvoi-des-résultats-de-la-mesure-pour-chaque-shot" title="Lien permanent vers ce titre">¶</a></h3>
+<section id="Renvoi-des-résultats-de-la-mesure-pour-chaque-tir">
+<h3>Renvoi des résultats de la mesure pour chaque tir<a class="headerlink" href="#Renvoi-des-résultats-de-la-mesure-pour-chaque-tir" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Le <code class="docutils literal notranslate"><span class="pre">QasmSimulator</span></code> supporte également de retourner une liste de résultats de mesure pour chaque tir individuel. Ceci est activé en définissant le mot-clé argument <code class="docutils literal notranslate"><span class="pre">memory=True</span></code> dans le <code class="docutils literal notranslate"><span class="pre">run</span></code>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
@@ -700,11 +700,11 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 </section>
-<section id="Aer-Simulator-Options">
-<h2>Aer Simulator Options<a class="headerlink" href="#Aer-Simulator-Options" title="Lien permanent vers ce titre">¶</a></h2>
-<p>L’environnement <code class="docutils literal notranslate"><span class="pre">AerSimulator</span></code> supporte une variété d’options configurables qui peuvent être mises à jour en utilisant la méthode <code class="docutils literal notranslate"><span class="pre">set_options</span></code>. Voir la documentation de l’API <code class="docutils literal notranslate"><span class="pre">AerSimulator</span></code> pour plus de détails.</p>
-<section id="Simulation-Method">
-<h3>Simulation Method<a class="headerlink" href="#Simulation-Method" title="Lien permanent vers ce titre">¶</a></h3>
+<section id="Options-du-simulateur-Aer">
+<h2>Options du simulateur Aer<a class="headerlink" href="#Options-du-simulateur-Aer" title="Lien permanent vers ce titre">¶</a></h2>
+<p>L’environnement <code class="docutils literal notranslate"><span class="pre">AerSimulator</span></code> supporte une variété d’options qui peuvent être coonfigurées en utilisant la méthode <code class="docutils literal notranslate"><span class="pre">set_options</span></code>. Voir la documentation de l’API <code class="docutils literal notranslate"><span class="pre">AerSimulator</span></code> pour plus de détails.</p>
+<section id="Méthode-de-simulation">
+<h3>Méthode de simulation<a class="headerlink" href="#Méthode-de-simulation" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Le <code class="docutils literal notranslate"><span class="pre">AerSimulator</span></code> supporte une variété de méthodes de simulation, chacune d’entre elles supporte un ensemble d’instructions différent. La méthode peut être définie manuellement en utilisant <code class="docutils literal notranslate"><span class="pre">simulator.set_option(method=value)</span></code> ou un environnement de simulation avec une méthode préconfigurée peuvent être obtenus directement à partir du fournisseur de <code class="docutils literal notranslate"><span class="pre">Aer</span></code> en utilisant <code class="docutils literal notranslate"><span class="pre">Aer.get_backend</span></code>.</p>
 <p>Lors de la simulation de circuits idéaux, changer la méthode entre les méthodes de simulation exactes <code class="docutils literal notranslate"><span class="pre">stabilisateur</span></code>, <code class="docutils literal notranslate"><span class="pre">statevector</span></code>, <code class="docutils literal notranslate"><span class="pre">density_matrix</span></code> et <code class="docutils literal notranslate"><span class="pre">matrix_product_state</span></code> ne doivent pas changer le résultat de la simulation (autres que les variations habituelles des probabilités d’échantillonnage pour les résultats de mesure)</p>
 <div class="nbinput docutils container">
@@ -750,13 +750,13 @@ div.rendered_html tbody tr:hover {
 <img alt="../../_images/tutorials_simulators_1_aer_provider_14_0.png" src="../../_images/tutorials_simulators_1_aer_provider_14_0.png" />
 </div>
 </div>
-<section id="Automatic-Simulation-Method">
-<h4>Automatic Simulation Method<a class="headerlink" href="#Automatic-Simulation-Method" title="Lien permanent vers ce titre">¶</a></h4>
-<p>The default simulation method is <code class="docutils literal notranslate"><span class="pre">automatic</span></code> which will automatically select a one of the other simulation methods for each circuit based on the instructions in those circuits. A fixed simulation method can be specified by by adding the method name when getting the backend, or by setting the <code class="docutils literal notranslate"><span class="pre">method</span></code> option on the backend.</p>
+<section id="Méthode-de-simulation-automatique">
+<h4>Méthode de simulation automatique<a class="headerlink" href="#Méthode-de-simulation-automatique" title="Lien permanent vers ce titre">¶</a></h4>
+<p>La méthode de simulation par défaut est <code class="docutils literal notranslate"><span class="pre">automatic</span></code> qui sélectionnera automatiquement une des autres méthodes pour chaque circuit en fonction de leurs instructions. Une méthode de simulation fixe peut être spécifiée en ajoutant le nom de ladite méthode lors de la récupération de l’environnement, ou en définissant l’option <code class="docutils literal notranslate"><span class="pre">method</span></code> sur le backend.</p>
 </section>
 </section>
-<section id="GPU-Simulation">
-<h3>GPU Simulation<a class="headerlink" href="#GPU-Simulation" title="Lien permanent vers ce titre">¶</a></h3>
+<section id="Simulation-GPU">
+<h3>Simulation GPU<a class="headerlink" href="#Simulation-GPU" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Les simulateurs <code class="docutils literal notranslate"><span class="pre">statevector</span></code>, <code class="docutils literal notranslate"><span class="pre">density_matrix</span></code> et <code class="docutils literal notranslate"><span class="pre">unitary</span></code> supportent l’exécution sur un GPU NVidia. Pour ces méthodes, le périphérique de simulation peut également être configuré manuellement sur CPU ou GPU à l’aide de l’option```simulator.set_options(device=”GPU”)``. Si un périphérique GPU n’est pas disponible, définir cette option déclenchera une exception.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
@@ -1264,7 +1264,7 @@ by the Aer simulator and will result in an error if a circuit containing them is
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      Mis à jour le 2021/08/25.
+      Mis à jour le 2021/08/27.
 
     </p>
   </div>
@@ -1285,18 +1285,18 @@ by the Aer simulator and will result in an error if a circuit containing them is
               <ul>
 <li><a class="reference internal" href="#">Simulateurs</a><ul>
 <li><a class="reference internal" href="#Introduction">Introduction</a></li>
-<li><a class="reference internal" href="#The-Aer-Provider">The Aer Provider</a></li>
-<li><a class="reference internal" href="#The-Aer-Simulator">The Aer Simulator</a><ul>
+<li><a class="reference internal" href="#Fournisseur-Aer">Fournisseur Aer</a></li>
+<li><a class="reference internal" href="#Le-simulateur-Aer">Le simulateur Aer</a><ul>
 <li><a class="reference internal" href="#Simulation-d'un-circuit-quantique">Simulation d’un circuit quantique</a></li>
-<li><a class="reference internal" href="#Renvoi-des-résultats-de-la-mesure-pour-chaque-shot">Renvoi des résultats de la mesure pour chaque shot</a></li>
+<li><a class="reference internal" href="#Renvoi-des-résultats-de-la-mesure-pour-chaque-tir">Renvoi des résultats de la mesure pour chaque tir</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#Aer-Simulator-Options">Aer Simulator Options</a><ul>
-<li><a class="reference internal" href="#Simulation-Method">Simulation Method</a><ul>
-<li><a class="reference internal" href="#Automatic-Simulation-Method">Automatic Simulation Method</a></li>
+<li><a class="reference internal" href="#Options-du-simulateur-Aer">Options du simulateur Aer</a><ul>
+<li><a class="reference internal" href="#Méthode-de-simulation">Méthode de simulation</a><ul>
+<li><a class="reference internal" href="#Méthode-de-simulation-automatique">Méthode de simulation automatique</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#GPU-Simulation">GPU Simulation</a></li>
+<li><a class="reference internal" href="#Simulation-GPU">Simulation GPU</a></li>
 <li><a class="reference internal" href="#Simulation-Precision">Simulation Precision</a></li>
 </ul>
 </li>
