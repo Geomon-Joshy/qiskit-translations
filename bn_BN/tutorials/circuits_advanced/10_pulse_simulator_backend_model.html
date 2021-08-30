@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Qiskit Aer: Pulse simulation of a backend model &mdash; Qiskit 0.29.0 documentation</title>
+  <title>Qiskit এয়ারঃ তড়িৎস্পন্দন বা পালস সিমুলেশনের ব্যাকেন্ড মডেল &mdash; Qiskit 0.29.0 documentation</title>
   
 
   
@@ -292,7 +292,7 @@
       </li>
 
         
-      <li>Qiskit Aer: Pulse simulation of a backend model</li>
+      <li>Qiskit এয়ারঃ তড়িৎস্পন্দন বা পালস সিমুলেশনের ব্যাকেন্ড মডেল</li>
     
     
       <li class="pytorch-breadcrumbs-aside">
@@ -572,14 +572,14 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="admonition note">
 <p class="admonition-title">নোট</p>
-<p>This page was generated from <a class="reference external" href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/circuits_advanced/10_pulse_simulator_backend_model.ipynb">tutorials/circuits_advanced/10_pulse_simulator_backend_model.ipynb</a>.</p>
+<p>এই পৃষ্ঠাটি <a class="reference external" href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/circuits_advanced/10_pulse_simulator_backend_model.ipynb">tutorials/circuits_advanced/10_pulse_simulator_backend_model.ipynb</a> থেকে উৎপন্ন হয়েছে।</p>
 </div>
-<section id="Qiskit-Aer:-Pulse-simulation-of-a-backend-model">
-<h1>Qiskit Aer: Pulse simulation of a backend model<a class="headerlink" href="#Qiskit-Aer:-Pulse-simulation-of-a-backend-model" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h1>
-<p>This notebook shows how to use the Aer pulse simulator using a model generated from a backend. In particular, we run a Rabi experiment to find a <span class="math notranslate nohighlight">\(\pi\)</span>-pulse amplitude on a model of the Armonk one qubit backend, generated from the <code class="docutils literal notranslate"><span class="pre">FakeArmonk</span></code> mock backend.</p>
-<section id="1.-Imports">
-<h2>1. Imports<a class="headerlink" href="#1.-Imports" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p>Import general libraries:</p>
+<section id="Qiskit-এয়ারঃ-তড়িৎস্পন্দন-বা-পালস-সিমুলেশনের-ব্যাকেন্ড-মডেল">
+<h1>Qiskit এয়ারঃ তড়িৎস্পন্দন বা পালস সিমুলেশনের ব্যাকেন্ড মডেল<a class="headerlink" href="#Qiskit-এয়ারঃ-তড়িৎস্পন্দন-বা-পালস-সিমুলেশনের-ব্যাকেন্ড-মডেল" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h1>
+<p>এই নোটবুকে দেখানো হয়েছে কিভাবে ব্যাকএন্ড থেকে পাওয়া একটা নকশা ব্যবহার করে এয়ার তড়িৎস্পন্দন (পালস) সিমুলেটর কাজে লাগাতে হয়। আমরা <code class="docutils literal notranslate"><span class="pre">FakeArmonk</span></code> নকল ব্যাকএন্ড দিয়ে বানানো আরমঙ্ক একক কিউবিট ব্যাকএন্ডের উপর একটা রবি গবেষণা চালিয়ে <span class="math notranslate nohighlight">\(\pi\)</span> - তড়িৎস্পন্দন (পালস) বিস্তার নির্ণয় করবো।</p>
+<section id="১.-ইম্পোর্টসমূহ">
+<h2>১. ইম্পোর্টসমূহ<a class="headerlink" href="#১.-ইম্পোর্টসমূহ" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>সাধারন লাইব্রেরি গুলো ইম্পোর্ট করুনঃ</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -589,7 +589,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Import Rabi experiment generator and fitter from Ignis, and other functions for job submission:</p>
+<p>কাজ (জব) জমা দেওয়ার জন্য ইগ্নিস থেকে রবি গবেষণা, ফিটার ও অন্যান্য ফাংশন ইম্পোর্ট করা হল:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -603,7 +603,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Import <code class="docutils literal notranslate"><span class="pre">PulseSimulator</span></code> and <code class="docutils literal notranslate"><span class="pre">PulseSystemModel</span></code> for pulse simulation, as well as the mock Armonk backend:</p>
+<p>নকল আরমঙ্ক ব্যাকএন্ড এবং তড়িৎস্পন্দন (পালস) সিমুলেশনের জন্য <code class="docutils literal notranslate"><span class="pre">PulseSimulator</span></code> ও <code class="docutils literal notranslate"><span class="pre">PulseSystemModel</span></code> ইম্পোর্ট করা:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -621,11 +621,11 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="2.-Construct-model-from-backend">
-<h2>2. Construct model from backend<a class="headerlink" href="#2.-Construct-model-from-backend" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p>This section demonstrates the use of the <code class="docutils literal notranslate"><span class="pre">PulseSystemModel.from_backend</span></code> function for generating <code class="docutils literal notranslate"><span class="pre">PulseSystemModel</span></code> objects from a backend.</p>
-<p><strong>Note:</strong> Hamiltonian parameters reported in the backends change over time. To stabilize this tutorial relative to these changes, after instantiating <code class="docutils literal notranslate"><span class="pre">FakeArmonk</span></code>, we manually override the Hamiltonian reported in the backend configuration to static values.</p>
-<p>Instantiate mock backend:</p>
+<section id="২.-ব্যাকএন্ড-থেকে-মডেল-তৈরি-করুন">
+<h2>২. ব্যাকএন্ড থেকে মডেল তৈরি করুন<a class="headerlink" href="#২.-ব্যাকএন্ড-থেকে-মডেল-তৈরি-করুন" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>একটা ব্যাকএন্ড থেকে <code class="docutils literal notranslate"><span class="pre">PulseSystemModel</span></code> বানানোর জন্য <code class="docutils literal notranslate"><span class="pre">PulseSystemModel.from_backend</span></code> -এর ব্যবহার পদ্ধতি এই অংশে আলোচনা করা হয়েছে।</p>
+<p><strong>টীকা:</strong> ব্যাকএন্ডের প্রতিবেদনে পাওয়া হ্যামিল্টোনিয়ান প্যারামিটারগুলো সময়ের সাথে পরিবর্তিত হয়। এই পাঠসমূহ (টিউটোরিয়াল) এই পরিবর্তন নিরপেক্ষ বানানোর জন্য <code class="docutils literal notranslate"><span class="pre">FakeArmonk</span></code> বানানোর পর আমরা ব্যাকএন্ড যান্ত্রিক বিন্যাসের (কনফিগারেশন) প্রতিবেদনে পাওয়া হ্যামিল্টোনিয়ানের মান স্থির মানে পরিবর্তন করি।</p>
+<p>নকল ব্যাকএন্ড চালু করা:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -635,7 +635,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Manually override Hamiltonian parameters:</p>
+<p>হ্যামিল্টোনিয়ান প্যারামিটার হাতে করে বাতিল করা:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -651,7 +651,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Generate model from backend:</p>
+<p>ব্যাকএন্ড থেকে মডেল তৈরি করুনঃ</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
@@ -662,10 +662,10 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="3.-Run-Rabi-experiments-and-fit-\pi-pulse-amplitude">
-<h2>3. Run Rabi experiments and fit <span class="math notranslate nohighlight">\(\pi\)</span>-pulse amplitude<a class="headerlink" href="#3.-Run-Rabi-experiments-and-fit-\pi-pulse-amplitude" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p>Next, we run a Rabi experiments generated using Ignis on the simulator using the system model generated from the Armonk backend.</p>
-<p>First, construct Rabi experiment schedules:</p>
+<section id="৩.-রবি-গবেষণা-চালাও-এবং-\pi---তড়িৎস্পন্দন-(পালস)-বিস্তার-মানানসই-(ফিট)-করো।">
+<h2>৩. রবি গবেষণা চালাও এবং <span class="math notranslate nohighlight">\(\pi\)</span> - তড়িৎস্পন্দন (পালস) বিস্তার মানানসই (ফিট) করো।<a class="headerlink" href="#৩.-রবি-গবেষণা-চালাও-এবং-\pi---তড়িৎস্পন্দন-(পালস)-বিস্তার-মানানসই-(ফিট)-করো।" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>এরপর আমরা আরমংক ব্যাকএন্ড থেকে পাওয়া সিস্টেম নকশা ব্যবহার করে সিমুলেটরে একটা রবি গবেষণা চালাবো (এটা ইগ্নিস ব্যবহার করে বানানো)।</p>
+<p>সর্বপ্রথমে , রাবি এক্সপেরিমেন্ট শিডিউল তৈরি করুনঃ</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -696,7 +696,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Assemble the <code class="docutils literal notranslate"><span class="pre">qobj</span></code> for job submission. When assembling pulse schedules to be used with the pulse simulator, pass the <code class="docutils literal notranslate"><span class="pre">PulseSimulator</span></code> as the backend.</p>
+<p>কাজ (জব) জমা দেওয়ার জন্য <code class="docutils literal notranslate"><span class="pre">qobj</span></code> টা তৈরী করা হোক। তড়িৎস্পন্দন (পালস) সিমুলেটরের সাথে ব্যবহারের জন্য পালস সময়সূচী দেওয়ার সময় ব্যাকএন্ড রূপে <code class="docutils literal notranslate"><span class="pre">PulseSimulator</span></code> দিতে হবে।</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -721,7 +721,7 @@ div.rendered_html tbody tr:hover {
   warnings.warn(
 </pre></div></div>
 </div>
-<p>Run the simulation:</p>
+<p>সিমুলেশনটি চালানঃ</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
@@ -731,7 +731,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Generate the Rabi oscillation plot and find the <span class="math notranslate nohighlight">\(\pi\)</span>-pulse amplitude:</p>
+<p>রবি দোলনের লেখচিত্র বানিয়ে <span class="math notranslate nohighlight">\(\pi\)</span> - তড়িৎস্পন্দন (পালস) বিস্তার নির্ণয় করো:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
@@ -806,7 +806,7 @@ Pi Amp: 0.348467
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      2021/08/27 সর্বশেষ পরিবর্তন করা হয়েছে।
+      2021/08/30 সর্বশেষ পরিবর্তন করা হয়েছে।
 
     </p>
   </div>
@@ -825,10 +825,10 @@ Pi Amp: 0.348467
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">Qiskit Aer: Pulse simulation of a backend model</a><ul>
-<li><a class="reference internal" href="#1.-Imports">1. Imports</a></li>
-<li><a class="reference internal" href="#2.-Construct-model-from-backend">2. Construct model from backend</a></li>
-<li><a class="reference internal" href="#3.-Run-Rabi-experiments-and-fit-\pi-pulse-amplitude">3. Run Rabi experiments and fit <span class="math notranslate nohighlight">\(\pi\)</span>-pulse amplitude</a></li>
+<li><a class="reference internal" href="#">Qiskit এয়ারঃ তড়িৎস্পন্দন বা পালস সিমুলেশনের ব্যাকেন্ড মডেল</a><ul>
+<li><a class="reference internal" href="#১.-ইম্পোর্টসমূহ">১. ইম্পোর্টসমূহ</a></li>
+<li><a class="reference internal" href="#২.-ব্যাকএন্ড-থেকে-মডেল-তৈরি-করুন">২. ব্যাকএন্ড থেকে মডেল তৈরি করুন</a></li>
+<li><a class="reference internal" href="#৩.-রবি-গবেষণা-চালাও-এবং-\pi---তড়িৎস্পন্দন-(পালস)-বিস্তার-মানানসই-(ফিট)-করো।">৩. রবি গবেষণা চালাও এবং <span class="math notranslate nohighlight">\(\pi\)</span> - তড়িৎস্পন্দন (পালস) বিস্তার মানানসই (ফিট) করো।</a></li>
 </ul>
 </li>
 </ul>

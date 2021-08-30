@@ -654,7 +654,7 @@ div.rendered_html tbody tr:hover {
 <img alt="../../_images/tutorials_circuits_01_circuit_basics_7_0.svg" src="../../_images/tutorials_circuits_01_circuit_basics_7_0.svg" /></div>
 </div>
 <p>在此電路中，量子位元是照順序排列的，qubit 0 在頂端，而 qubit 1在底端。電路是由左至右讀取（表示在電路中較早應用的門會顯示在左側）。</p>
-<div class="alert alert-block alert-info"><p>在表示多量子位系統的狀態時，Qiskit 中使用的張量順序與大多數物理教科書中所使用的不同。假設有 <span class="math notranslate nohighlight">\(n\)</span> 個量子元位，其中第 <span class="math notranslate nohighlight">\(j\)</span> 個被標記為 <span class="math notranslate nohighlight">\(Q_{j}\)</span>。Qiskit 使用的順序是第 <span class="math notranslate nohighlight">\(n\)</span> 個 qubit 放在張量積的最左邊，所以基底向量被標記為 <span class="math notranslate nohighlight">\(Q_{n-1}\otimes \cdots \otimes Q_1\otimes Q_0\)</span>。</p>
+<div class="alert alert-block alert-info"><p>When representing the state of a multi-qubit system, the tensor order used in Qiskit is different than that used in most physics textbooks. Suppose there are <span class="math notranslate nohighlight">\(n\)</span> qubits, and qubit <span class="math notranslate nohighlight">\(j\)</span> is labeled as <span class="math notranslate nohighlight">\(Q_{j}\)</span>. Qiskit uses an ordering in which the <span class="math notranslate nohighlight">\(n^{\mathrm{th}}\)</span> qubit is on the left side of the tensor product, so that the basis vectors are labeled as <span class="math notranslate nohighlight">\(Q_{n-1}\otimes \cdots \otimes Q_1\otimes Q_0\)</span>.</p>
 <p>例如說，如果 qubit 0 處於狀態 0，qubit 1 處於狀態 0，而 qubit 2 在狀態 1 中，Qiskit 將表示此狀態為  <span class="math notranslate nohighlight">\(|100\rangle\)</span>，而許多物理教科書將代表它為 <span class="math notranslate nohighlight">\(|001\rangle\)</span>。</p>
 <p>此標記差異會影響多量子位元操作的矩陣表示的。例如，Qiskit 代表 controlled-X（<span class="math notranslate nohighlight">\(C_{X}\)</span>）操作中，qubit 0 是控制位元，qubit 1 是目標位元。</p>
 <div class="math notranslate nohighlight">
@@ -807,7 +807,7 @@ array([[ 0.70710678+0.j,  0.70710678+0.j,  0.        +0.j,
 </section>
 <section id="OpenQASM-後端">
 <h2>OpenQASM 後端<a class="headerlink" href="#OpenQASM-後端" title="本標題的永久連結">¶</a></h2>
-<p>上述的模擬器很有用，因為它們提供了理想電路輸出的狀態與以矩陣表示的電路。 然而實際上，qubit 的量子態會因為測量而終止（通常落在 <cite>|0rangle 或 |1rangle</cite>）。 在沒有測量的情況下，我們無法獲得 qubit 的量子態。 測量會使量子系統塌縮為古典位元。</p>
+<p>The simulators above are useful because they provide information about the state output by the ideal circuit and the matrix representation of the circuit. However, a real experiment terminates by <em>measuring</em> each qubit (usually in the computational <span class="math notranslate nohighlight">\(|0\rangle, |1\rangle\)</span> basis). Without measurement, we cannot gain information about the state. Measurements cause the quantum system to collapse into classical bits.</p>
 <p>例如，假設我們在三量子位元 GHZ 狀態的每一個位元上進行獨立測量</p>
 <div class="math notranslate nohighlight">
 \[|\psi\rangle = (|000\rangle +|111\rangle)/\sqrt{2},\]</div>
@@ -958,7 +958,7 @@ array([[ 0.70710678+0.j,  0.70710678+0.j,  0.        +0.j,
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      最後更新於 2021/08/27。
+      最後更新於 2021/08/30。
 
     </p>
   </div>
