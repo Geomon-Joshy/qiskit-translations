@@ -579,8 +579,8 @@ div.rendered_html tbody tr:hover {
 <p>このノートブックでは、Qiskit Aerのパルス・シミュレーターを使用する方法を解説します。これは、パルス``Schedule``オブジェクトとして与えられた、ハミルトニアン・レベルでの実験をシミュレートするものです。このシミュレーターはドリフト・ハミルトニアンの枠組みの中で、与えられたハミルトニアン・モデルとパルス``Schedule``に対するシュレディンガー方程式の解を求めます。</p>
 <p>特に、このチュートリアルでは以下を行います:</p>
 <ul class="simple">
-<li><p>Construct a model of a two qubit superconducting system.</p></li>
-<li><p>Calibrate <span class="math notranslate nohighlight">\(\pi\)</span> pulses on each qubit in the simulated system.</p></li>
+<li><p>2量子ビット超電動システムのモデルの構築</p></li>
+<li><p>シミュレーション・システムによる各量子ビットの <span class="math notranslate nohighlight">\(\pi\)</span> パルスによる較正</p></li>
 <li><p>Observe cross-resonance oscillations when driving qubit 1 with target qubit 0.</p></li>
 </ul>
 <p>「はじめに」では、このノートブックの概念と流れを概説します。</p>
@@ -650,7 +650,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Import qiskit libraries for working with <code class="docutils literal notranslate"><span class="pre">pulse</span></code> and calibration:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pulse</span></code> を用い、較正を行うための、qiskitライブラリをインポートします:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -664,7 +664,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Imports for qiskit pulse simulator:</p>
+<p>Qiskitパルス・シミュレーターのインポート:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -679,9 +679,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="3.-Duffing-oscillator-system-model">
-<h2>3. Duffing oscillator system model<a class="headerlink" href="#3.-Duffing-oscillator-system-model" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>An object representing a model for a collection of Duffing oscillators can be constructed using the <code class="docutils literal notranslate"><span class="pre">duffing_system_model</span></code> function. Here we construct a <span class="math notranslate nohighlight">\(2\)</span> Duffing oscillator model with cutoff dimension <span class="math notranslate nohighlight">\(3\)</span>.</p>
+<section id="3.-ダフィング振動子系モデル">
+<h2>3. ダフィング振動子系モデル<a class="headerlink" href="#3.-ダフィング振動子系モデル" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>ダフィング振動子の集合のモデルを表すオブジェクトは、 <code class="docutils literal notranslate"><span class="pre">duffing_system_model</span></code> 関数を用いて作成することができます。ここでは、カットオフ次元 <span class="math notranslate nohighlight">\(3\)</span> における、 <span class="math notranslate nohighlight">\(2\)</span> ダフィング振動子モデルを作成しています。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -714,14 +714,14 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>The function <code class="docutils literal notranslate"><span class="pre">duffing_system_model</span></code> returns a <code class="docutils literal notranslate"><span class="pre">PulseSystemModel</span></code> object, which is a general object for storing model information required for simulation with the <code class="docutils literal notranslate"><span class="pre">PulseSimulator</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">duffing_system_model</span></code> 関数は、 <code class="docutils literal notranslate"><span class="pre">PulseSystemModel``オブジェクトを戻り値とします。これは、</span> <span class="pre">``PulseSimulator</span></code> によるシミュレーションに必要なモデルの情報を格納するための汎用オブジェクトです。</p>
 </section>
-<section id="4-Calibrating-\pi-pulses-on-each-qubit-using-Ignis">
-<h2>4 Calibrating <span class="math notranslate nohighlight">\(\pi\)</span> pulses on each qubit using Ignis<a class="headerlink" href="#4-Calibrating-\pi-pulses-on-each-qubit-using-Ignis" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>As described in the introduction, we now calibrate <span class="math notranslate nohighlight">\(\pi\)</span> pulses on each qubit in <code class="docutils literal notranslate"><span class="pre">two_qubit_model</span></code>. The experiments in this calibration procedure are known as <em>Rabi experiments</em>, and the data we will observe are known as <em>Rabi oscillations</em>.</p>
-<section id="4.1-Constructing-the-schedules">
-<h3>4.1 Constructing the schedules<a class="headerlink" href="#4.1-Constructing-the-schedules" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>We construct the schedules using the <code class="docutils literal notranslate"><span class="pre">rabi_schedules</span></code> function in Ignis. To do this, we need to supply an <code class="docutils literal notranslate"><span class="pre">InstructionScheduleMap</span></code> containing a measurement schedule.</p>
+<section id="4.-Ignisを用いた各量子ビット上の-\pi-パルス較正">
+<h2>4. Ignisを用いた各量子ビット上の <span class="math notranslate nohighlight">\(\pi\)</span> パルス較正<a class="headerlink" href="#4.-Ignisを用いた各量子ビット上の-\pi-パルス較正" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>「はじめに」で説明したように、各量子ビットの <span class="math notranslate nohighlight">\(\pi\)</span> パルスを <code class="docutils literal notranslate"><span class="pre">two_qubit_model</span></code> で較正します。この較正法は <em>ラビ実験</em> として、観測データは <em>ラビ振動</em> としてそれぞれ知られています。</p>
+<section id="4.1-スケジュールの作成">
+<h3>4.1 スケジュールの作成<a class="headerlink" href="#4.1-スケジュールの作成" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>スケジュールをIgnisの <code class="docutils literal notranslate"><span class="pre">rabi_schedules</span></code> 関数で作成します。そのために、測定スケジュールを含む <code class="docutils literal notranslate"><span class="pre">InstructionScheduleMap</span></code> を与える必要があります。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -978,10 +978,10 @@ Pi Amp: 0.313279
 </pre></div>
 </div>
 </div>
-<p>Next we create two functions for observing the data:</p>
+<p>次に、データを観測する2つの関数を作成します。</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">plot_cr_pop_data</span></code> - for plotting the oscillations between the ground state and the first excited state</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">plot_bloch_sphere</span></code> - for viewing the trajectory of the target qubit on the bloch sphere</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">plot_cr_pop_data</span></code> - 基底状態と第1励起状態の間の振動をプロットします</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">plot_bloch_sphere</span></code> - ブロッホ球上のターゲット量子ビットの軌跡を表示します</p></li>
 </ul>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
@@ -1108,7 +1108,7 @@ Pi Amp: 0.313279
 </pre></div>
 </div>
 </div>
-<p>Run the simulation:</p>
+<p>シミュレーションを実行します:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
@@ -1127,8 +1127,8 @@ Pi Amp: 0.313279
 <img alt="../../_images/tutorials_circuits_advanced_09_pulse_simulator_duffing_model_36_0.png" src="../../_images/tutorials_circuits_advanced_09_pulse_simulator_duffing_model_36_0.png" />
 </div>
 </div>
-<p>Observe that qubit 1 remains in the ground state, while excitations are driven in qubit 0.</p>
-<p>We may also observe the trajectory of qubit 0 on the Bloch sphere:</p>
+<p>量子ビット0は励起されている一方で、量子ビット1は基底状態に留まっていることが観測されます。</p>
+<p>また、量子ビット0のブロッホ球上の軌跡を観測することもできます:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
@@ -1147,9 +1147,9 @@ Pi Amp: 0.313279
 </div>
 </div>
 </section>
-<section id="Qubit-1-in-the-first-excited-state">
-<h4>Qubit 1 in the first excited state<a class="headerlink" href="#Qubit-1-in-the-first-excited-state" title="このヘッドラインへのパーマリンク">¶</a></h4>
-<p>Next, we again perform a CR drive qubit 1 with qubit 0 as the target, but now we start each experiment by flipping qubit 1 into the first excited state.</p>
+<section id="量子ビット1が第一励起状態にある場合">
+<h4>量子ビット1が第一励起状態にある場合<a class="headerlink" href="#量子ビット1が第一励起状態にある場合" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>次に、量子ビット0をターゲットとして、量子ビット1の交差共振ドライブを再び実行しますが、今回は量子ビット1を第一励起状態に反転させた上で各実験を始めます。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
@@ -1192,8 +1192,8 @@ Pi Amp: 0.313279
 <img alt="../../_images/tutorials_circuits_advanced_09_pulse_simulator_duffing_model_41_0.png" src="../../_images/tutorials_circuits_advanced_09_pulse_simulator_duffing_model_41_0.png" />
 </div>
 </div>
-<p>Observe that now qubit 1 is in the excited state, while oscillations are again being driven on qubit 0, now at a different rate as before.</p>
-<p>Again, observe the trajectory of qubit 0 on the Bloch sphere:</p>
+<p>今回は、量子ビット0が前回とは異なる速度で再び振動する一方で、量子ビット1は励起状態にあることが観測されます。</p>
+<p>この場合でも、量子ビット0のブロッホ球上の軌跡を観測することができます。</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
@@ -1211,7 +1211,7 @@ Pi Amp: 0.313279
 <img alt="../../_images/tutorials_circuits_advanced_09_pulse_simulator_duffing_model_43_0.png" src="../../_images/tutorials_circuits_advanced_09_pulse_simulator_duffing_model_43_0.png" />
 </div>
 </div>
-<p>Here we see that qubit 0 takes a <em>different</em> trajectory on the Bloch sphere when qubit 1 is in the excited state. This is what enables controlled operations between two qubits.</p>
+<p>ここで、量子ビット1が励起状態にあるときには、量子ビット0がブロッホ球上で <em>異なる</em> 軌跡をとることがわかります。これにより2量子ビット間での制御操作が可能となります。</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
@@ -1293,9 +1293,9 @@ Pi Amp: 0.313279
 </ul>
 </li>
 <li><a class="reference internal" href="#2.-インポート">2. インポート</a></li>
-<li><a class="reference internal" href="#3.-Duffing-oscillator-system-model">3. Duffing oscillator system model</a></li>
-<li><a class="reference internal" href="#4-Calibrating-\pi-pulses-on-each-qubit-using-Ignis">4 Calibrating <span class="math notranslate nohighlight">\(\pi\)</span> pulses on each qubit using Ignis</a><ul>
-<li><a class="reference internal" href="#4.1-Constructing-the-schedules">4.1 Constructing the schedules</a></li>
+<li><a class="reference internal" href="#3.-ダフィング振動子系モデル">3. ダフィング振動子系モデル</a></li>
+<li><a class="reference internal" href="#4.-Ignisを用いた各量子ビット上の-\pi-パルス較正">4. Ignisを用いた各量子ビット上の <span class="math notranslate nohighlight">\(\pi\)</span> パルス較正</a><ul>
+<li><a class="reference internal" href="#4.1-スケジュールの作成">4.1 スケジュールの作成</a></li>
 <li><a class="reference internal" href="#4.2-ラビ実験のシミュレーション">4.2 ラビ実験のシミュレーション</a></li>
 <li><a class="reference internal" href="#4.3-データのフィットとプロット">4.3 データのフィットとプロット</a></li>
 </ul>
@@ -1305,7 +1305,7 @@ Pi Amp: 0.313279
 <li><a class="reference internal" href="#5.2-実験リストを作成して、出力を分析する関数">5.2 実験リストを作成して、出力を分析する関数</a></li>
 <li><a class="reference internal" href="#5.3-量子ビット0上の交差共鳴振動を観測するための量子ビット1のドライブ">5.3 量子ビット0上の交差共鳴振動を観測するための量子ビット1のドライブ</a><ul>
 <li><a class="reference internal" href="#量子ビット1が基底状態にある場合">量子ビット1が基底状態にある場合</a></li>
-<li><a class="reference internal" href="#Qubit-1-in-the-first-excited-state">Qubit 1 in the first excited state</a></li>
+<li><a class="reference internal" href="#量子ビット1が第一励起状態にある場合">量子ビット1が第一励起状態にある場合</a></li>
 </ul>
 </li>
 </ul>

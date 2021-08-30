@@ -755,7 +755,7 @@ ParameterView([Parameter(θ)])
 </div>
 <section id="パラメータを値にバインド">
 <h3>パラメータを値にバインド<a class="headerlink" href="#パラメータを値にバインド" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>All circuit parameters must be bound before sending the circuit to a backend. This can be done as follows: - The <code class="docutils literal notranslate"><span class="pre">bind_parameters</span></code> method accepts a dictionary mapping <code class="docutils literal notranslate"><span class="pre">Parameter</span></code>s to values, and returns a new circuit with each parameter replaced by its corresponding value. Partial binding is supported, in which case the returned circuit will be parameterized by any <code class="docutils literal notranslate"><span class="pre">Parameter</span></code>s that were not mapped to a value.</p>
+<p>全ての回路パラメータは回路をバックエンドに送る前にバインド(値の設定) される必要があります。これには以下の方法があります:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>

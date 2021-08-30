@@ -704,7 +704,7 @@ supplied it will take priority though and be used - note though it must match in
 optimizer_evals is 9 with initial point versus 65 without it.
 </pre></div></div>
 </div>
-<p>Here we see that result was arrived at much more quickly with <code class="docutils literal notranslate"><span class="pre">optimizer_evals</span></code> when it started from a random value when the initial point was not supplied (default of None).</p>
+<p><code class="docutils literal notranslate"><span class="pre">optimizer_evals</span></code> を見ると、初期値が与えられず (デフォルトでNone) ランダムな値から開始した場合より、結果がより早く得られているのがわかります。</p>
 <p>Where this becomes useful for examples where we the solution to one problem can be used to for a guess for the solution to a very close similar problem. Chemistry is very good example where we change the inter-atomic distance(s) of molecule to plot a dissociation profile. When the distance changes are small we expect the solution to still be nearby the prior one. One technique is to simply use the optimal point from one solution as the starting point for the next step. Now more complex
 techniques are possible that do some extrapolation to compute an initial position based on prior solution(s) rather than directly use the prior solution.</p>
 </section>
@@ -756,7 +756,7 @@ techniques are possible that do some extrapolation to compute an initial positio
     &#39;optimizer_time&#39;: 0.17621898651123047}
 </pre></div></div>
 </div>
-<p>In case you have doubts here is the aer_simulator again but include_custom has been left to default to False. The optimization ended abruptly, presumably due to the shot noise confusing the SLSQP optimizer.</p>
+<p>念のため、ここで再度 aer_simulator を実行しますが、include_custom をデフォルトの False のままにしておきます。おそらくSLSQPオプティマイザーのショットノイズが原因で、最適化が突然終了してしまいます。</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
