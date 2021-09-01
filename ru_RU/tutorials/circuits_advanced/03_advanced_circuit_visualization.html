@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Visualizing a Quantum Circuit &mdash; документация Qiskit 0.29.0</title>
+  <title>Визуализация квантовой цепи &mdash; документация Qiskit 0.29.0</title>
   
 
   
@@ -292,7 +292,7 @@
       </li>
 
         
-      <li>Visualizing a Quantum Circuit</li>
+      <li>Визуализация квантовой цепи</li>
     
     
       <li class="pytorch-breadcrumbs-aside">
@@ -572,10 +572,10 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
-<p>This page was generated from <a class="reference external" href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/circuits_advanced/03_advanced_circuit_visualization.ipynb">tutorials/circuits_advanced/03_advanced_circuit_visualization.ipynb</a>.</p>
+<p>Страница создана на основе <a class="reference external" href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/circuits_advanced/03_advanced_circuit_visualization.ipynb">tutorials/circuits_advanced/03_advanced_circuit_visualization.ipynb</a>.</p>
 </div>
-<section id="Visualizing-a-Quantum-Circuit">
-<h1>Visualizing a Quantum Circuit<a class="headerlink" href="#Visualizing-a-Quantum-Circuit" title="Ссылка на этот заголовок">¶</a></h1>
+<section id="Визуализация-квантовой-цепи">
+<h1>Визуализация квантовой цепи<a class="headerlink" href="#Визуализация-квантовой-цепи" title="Ссылка на этот заголовок">¶</a></h1>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -585,9 +585,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<section id="Drawing-a-Quantum-Circuit">
-<h2>Drawing a Quantum Circuit<a class="headerlink" href="#Drawing-a-Quantum-Circuit" title="Ссылка на этот заголовок">¶</a></h2>
-<p>When building a quantum circuit, it often helps to draw the circuit. This is supported natively by a <code class="docutils literal notranslate"><span class="pre">QuantumCircuit</span></code> object. You can either call <code class="docutils literal notranslate"><span class="pre">print()</span></code> on the circuit, or call the <code class="docutils literal notranslate"><span class="pre">draw()</span></code> method on the object. This will render a <a class="reference external" href="https://en.wikipedia.org/wiki/ASCII_art">ASCII art version</a> of the circuit diagram.</p>
+<section id="Изображение-квантовой-цепи">
+<h2>Изображение квантовой цепи<a class="headerlink" href="#Изображение-квантовой-цепи" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Просмотр создаваемой квантовой цепи часто оказывается полезным при ее проектировании. Такая возможность по умолчанию предусмотрена для объектов``QuantumCircuit``. Вы можете использовать как <code class="docutils literal notranslate"><span class="pre">print()</span></code> с цепью в качестве аргумента, так и метод объекта <code class="docutils literal notranslate"><span class="pre">draw()</span></code>. Результатом будет схема в виде <a class="reference external" href="https://ru.wikipedia.org/wiki/ASCII-графика">ASCII-графики</a>.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -661,8 +661,8 @@ c_2: ═══════╩═════════════
                           </pre></div>
 </div>
 </section>
-<section id="Alternative-Renderers-for-Circuits">
-<h2>Alternative Renderers for Circuits<a class="headerlink" href="#Alternative-Renderers-for-Circuits" title="Ссылка на этот заголовок">¶</a></h2>
+<section id="Альтернативные-визуализаторы-цепей">
+<h2>Альтернативные визуализаторы цепей<a class="headerlink" href="#Альтернативные-визуализаторы-цепей" title="Ссылка на этот заголовок">¶</a></h2>
 <p>A text output is useful for quickly seeing the output while developing a circuit, but it doesn’t provide the most flexibility in its output. There are two alternative output renderers for the quantum circuit. One uses <a class="reference external" href="https://matplotlib.org/">matplotlib</a>, and the other uses <a class="reference external" href="https://www.latex-project.org/">LaTeX</a>, which leverages the <a class="reference external" href="https://github.com/CQuIC/qcircuit">qcircuit package</a>. These can be specified by using <code class="docutils literal notranslate"><span class="pre">mpl</span></code> and <code class="docutils literal notranslate"><span class="pre">latex</span></code> values for the <code class="docutils literal notranslate"><span class="pre">output</span></code> kwarg on the draw()
 method.</p>
 <div class="nbinput docutils container">
@@ -684,8 +684,8 @@ method.</p>
 </div>
 </div>
 </section>
-<section id="Controlling-output-from-circuit.draw()">
-<h2>Controlling output from circuit.draw()<a class="headerlink" href="#Controlling-output-from-circuit.draw()" title="Ссылка на этот заголовок">¶</a></h2>
+<section id="Управлением-выводом-circuit.draw()">
+<h2>Управлением выводом circuit.draw()<a class="headerlink" href="#Управлением-выводом-circuit.draw()" title="Ссылка на этот заголовок">¶</a></h2>
 <p>By default, the draw method returns the rendered image as an object and does not output anything. The exact class returned depends on the output specified: <code class="docutils literal notranslate"><span class="pre">'text'</span></code>(the default) returns a <code class="docutils literal notranslate"><span class="pre">TextDrawer</span></code> object, <code class="docutils literal notranslate"><span class="pre">'mpl'</span></code> returns a <code class="docutils literal notranslate"><span class="pre">matplotlib.Figure</span></code> object, and <code class="docutils literal notranslate"><span class="pre">latex</span></code> returns a <code class="docutils literal notranslate"><span class="pre">PIL.Image</span></code> object. Having the return types enables modifying or directly interacting with the rendered output from the drawers. Jupyter notebooks understand these return types and render them for us in this
 tutorial, but when running outside of Jupyter, you do not have this feature automatically. However, the <code class="docutils literal notranslate"><span class="pre">draw()</span></code> method has optional arguments to display or save the output. When specified, the <code class="docutils literal notranslate"><span class="pre">filename</span></code> kwarg takes a path to which it saves the rendered output. Alternatively, if you’re using the <code class="docutils literal notranslate"><span class="pre">mpl</span></code> or <code class="docutils literal notranslate"><span class="pre">latex</span></code> outputs, you can leverage the <code class="docutils literal notranslate"><span class="pre">interactive</span></code> kwarg to open the image in a new window (this will not always work from within a notebook but will be demonstrated anyway).</p>
 </section>
@@ -1038,10 +1038,10 @@ c1_4: ════════════════════════�
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">Visualizing a Quantum Circuit</a><ul>
-<li><a class="reference internal" href="#Drawing-a-Quantum-Circuit">Drawing a Quantum Circuit</a></li>
-<li><a class="reference internal" href="#Alternative-Renderers-for-Circuits">Alternative Renderers for Circuits</a></li>
-<li><a class="reference internal" href="#Controlling-output-from-circuit.draw()">Controlling output from circuit.draw()</a></li>
+<li><a class="reference internal" href="#">Визуализация квантовой цепи</a><ul>
+<li><a class="reference internal" href="#Изображение-квантовой-цепи">Изображение квантовой цепи</a></li>
+<li><a class="reference internal" href="#Альтернативные-визуализаторы-цепей">Альтернативные визуализаторы цепей</a></li>
+<li><a class="reference internal" href="#Управлением-выводом-circuit.draw()">Управлением выводом circuit.draw()</a></li>
 <li><a class="reference internal" href="#Customizing-the-output">Customizing the output</a><ul>
 <li><a class="reference internal" href="#Disable-Plot-Barriers-and-Reversing-Bit-Order">Disable Plot Barriers and Reversing Bit Order</a></li>
 <li><a class="reference internal" href="#Backend-specific-customizations">Backend-specific customizations</a></li>
