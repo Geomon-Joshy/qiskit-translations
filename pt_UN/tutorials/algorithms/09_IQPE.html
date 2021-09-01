@@ -226,7 +226,7 @@
 </ul>
 <p><span class="caption-text">Índice</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../qc_intro.html">Quantum computing in a nutshell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../qc_intro.html">Computação quântica em poucas palavras</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro_tutorial1.html">Introdução ao Qiskit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../release_notes.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributing_to_qiskit.html">Contribuindo para o Qiskit</a></li>
@@ -576,7 +576,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <section id="Algoritmo-De-Estimação-De-Fase-Quântica-Iterativa">
 <h1>Algoritmo De Estimação De Fase Quântica Iterativa<a class="headerlink" href="#Algoritmo-De-Estimação-De-Fase-Quântica-Iterativa" title="Link permanente para este título">¶</a></h1>
-<p>The goal of this tutorial is to understand how the Iterative Phase Estimation (IPE) algorithm works, why would we use the IPE algorithm instead of the QPE (Quantum Phase Estimation) algorithm and how to build it with Qiskit using the same circuit exploiting reset gate and the <code class="docutils literal notranslate"><span class="pre">c_if</span></code> method that allows to apply gates conditioned by the values stored in a classical register, resulting from previous measurements.</p>
+<p>O objetivo desse tutorial é explicar como o algoritmo do Processo Iterativo de Fases (IPE) funciona, porque usaríamos o algoritmo IPE ao invés do QPE (Estimativa de Fase Quântica) e como compilá-lo com o Qiskit usando a porta lógica de reset do circuito exploratório e o método «c_if» que permite aplicar portas lógicas resultantes dos valores armazenados em um registrador clássico, obtidos de medições anteriores.</p>
 <p><strong>Referências:</strong></p>
 <ul class="simple">
 <li><p>Sessão 2 do Laboratório 4: Algoritmo de Estimativa De Fase Iterativa (IPE) Algoritmo &lt;<a class="reference external" href="https://qiskit.org/textbook/ch-labs/Lab04_IterativePhaseEstimation.html#2-iterative-phase-estimation-ipe-algorithm">https://qiskit.org/textbook/ch-labs/Lab04_IterativePhaseEstimation.html#2-iterative-phase-estimation-ipe-algorithm</a>&gt;` __</p></li>
@@ -653,7 +653,7 @@ div.rendered_html tbody tr:hover {
 <p>Queremos aplicar a porta :math:»X», apenas se ambos os resultados da medição de :math:` q_1 ` e de :math:` q_2 ` forem :math:` 1 <cite>. Podemos fazer isso usando o método c_if, condicionando a aplicação de :math:</cite> X ` dependendo do valor passado como argumento para c_if.</p>
 <p>Teremos que codificar o valor para passar para o método c_if tal que ele verificará os valores 011 e 111 (em representação binária), uma vez que não importa o que está na posição mais à direita.</p>
 <p>Os 2 valores inteiros em representação decimal:</p>
-<p><img alt="ebc7ebf2331541b5b7b27a1d11c05c8d" class="no-scaled-link" src="tutorials/algorithms/../../images/binary.png" style="width: 50%;" /></p>
+<p><img alt="2b9899db5c9e4e28a990fd270f4186ef" class="no-scaled-link" src="tutorials/algorithms/../../images/binary.png" style="width: 50%;" /></p>
 <p>Nós podemos verificar as soluções usando o método bin() em python (o prefixo ` ` 0b ` ` indica o formato binário).</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
@@ -768,7 +768,7 @@ div.rendered_html tbody tr:hover {
 </section>
 <section id="Application-of-the-Controlled-U-gates">
 <h4>Application of the Controlled-<span class="math notranslate nohighlight">\(U\)</span> gates<a class="headerlink" href="#Application-of-the-Controlled-U-gates" title="Link permanente para este título">¶</a></h4>
-<p>Then we have to apply <span class="math notranslate nohighlight">\(2^t\)</span> times the Controlled-<span class="math notranslate nohighlight">\(U\)</span> operators (see also in the docs <a class="reference external" href="https://qiskit.org/documentation/tutorials/circuits/3_summary_of_quantum_operations.html#Two-qubit-gates">Two qubit gates</a>), that, in this example, is the Controlled-<span class="math notranslate nohighlight">\(S\)</span> gate (<span class="math notranslate nohighlight">\(CS\)</span> for short).</p>
+<p>Então, temos que aplicar <span class="math notranslate nohighlight">\(2^t\)</span> vezes os operadores controlados -<span class="math notranslate nohighlight">\(U\)</span> (veja também nas documentações <a class="reference external" href="https://qiskit.org/documentation/tutorials/circuits/3_summary_of_quantum_operations.html#Two-qubit-gates">Duas portas qubit</a>), que, neste exemplo, é a porta controlada-<span class="math notranslate nohighlight">\(S\)</span> abreviado).</p>
 <p>To implement <span class="math notranslate nohighlight">\(CS\)</span> in the circuit, since <span class="math notranslate nohighlight">\(S\)</span> is a phase gate, we can use the controlled phase gate <span class="math notranslate nohighlight">\(\text{CP}(\theta)\)</span>, with <span class="math notranslate nohighlight">\(\theta=\pi/2\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
@@ -1195,7 +1195,7 @@ div.rendered_html tbody tr:hover {
 <img alt="../../_images/tutorials_algorithms_09_IQPE_53_0.png" src="../../_images/tutorials_algorithms_09_IQPE_53_0.png" />
 </div>
 </div>
-<p>Now, we execute the circuit with the simulator without noise.</p>
+<p>Agora, executamos o circuito com o simulador sem ruído.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
 </pre></div>
