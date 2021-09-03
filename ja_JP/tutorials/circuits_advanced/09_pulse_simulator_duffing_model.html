@@ -581,7 +581,7 @@ div.rendered_html tbody tr:hover {
 <ul class="simple">
 <li><p>2量子ビット超電動システムのモデルの構築</p></li>
 <li><p>シミュレーション・システムによる各量子ビットの <span class="math notranslate nohighlight">\(\pi\)</span> パルスによる較正</p></li>
-<li><p>Observe cross-resonance oscillations when driving qubit 1 with target qubit 0.</p></li>
+<li><p>ターゲット量子ビット0で量子ビット1を駆動する際の相互共鳴振動の観測</p></li>
 </ul>
 <p>「はじめに」では、このノートブックの概念と流れを概説します。</p>
 <section id="1.-はじめに">
@@ -597,38 +597,38 @@ div.rendered_html tbody tr:hover {
 \[\begin{equation}
     2\pi\nu a^\dagger a + \pi \alpha a^\dagger a(a^\dagger a - 1) + 2 \pi r (a + a^\dagger) \times D(t),
 \end{equation}\]</div>
-<p>where <span class="math notranslate nohighlight">\(D(t)\)</span> is the signal on the drive channel for the qubit, and <span class="math notranslate nohighlight">\(a^\dagger\)</span> and <span class="math notranslate nohighlight">\(a\)</span> are, respectively, the creation and annihilation operators for the qubit. Note that the drive strength <span class="math notranslate nohighlight">\(r\)</span> sets the scaling of the control term, with <span class="math notranslate nohighlight">\(D(t)\)</span> assumed to be a complex and unitless number satisfying <span class="math notranslate nohighlight">\(|D(t)| \leq 1\)</span>.</p>
+<p>ここで <span class="math notranslate nohighlight">\(D(t)\)</span> は量子ビットのドライブ・チャンネル上での信号であり、 <span class="math notranslate nohighlight">\(a^\dagger\)</span> と <span class="math notranslate nohighlight">\(a\)</span> はそれぞれ量子ビットの生成・消滅演算子です。また、ドライブ強度 <span class="math notranslate nohighlight">\(r\)</span> は制御項のスケールを決めており、 <span class="math notranslate nohighlight">\(D(t)\)</span> は <span class="math notranslate nohighlight">\(|D(t)| \leq 1\)</span> を満たす無次元の複素数であることに留意してください。</p>
 <ul class="simple">
-<li><p>A coupling between a pair of oscillators <span class="math notranslate nohighlight">\((l,k)\)</span> is specified by the coupling strength <span class="math notranslate nohighlight">\(J\)</span>, resulting in an exchange coupling term:</p></li>
+<li><p>振動子対 <span class="math notranslate nohighlight">\((l,k)\)</span> 間の結合は結合定数 <span class="math notranslate nohighlight">\(J\)</span> によって指定され、交換結合項は以下のようになります。</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[\begin{equation}
     2 \pi J (a_l a_k^\dagger + a_l^\dagger a_k),
 \end{equation}\]</div>
-<p>where the subscript denotes which qubit the operators act on.</p>
+<p>ここで、添字は演算子が作用する量子ビットを表します。</p>
 <ul class="simple">
-<li><p>Additionally, for numerical simulation, it is necessary to specify a cutoff dimension; the Duffing oscillator model is <em>infinite dimensional</em>, and computer simulation requires restriction of the operators to a finite dimensional subspace.</p></li>
+<li><p>さらに、数値シミュレーションにおいては、カットオフ次元を指定する必要があります。これは、ダフィング振動子モデルが <em>無限次元</em> であるのに対し、コンピューター・シミュレーションでは演算子を有限次元部分空間に制限する必要があるからです。</p></li>
 </ul>
-<p><strong>コード:</strong> 補助関数 <a href="#id1"><span class="problematic" id="id2">``</span></a>duffing_system_model``を用いて、結合された2量子ビットの上記の形式におけるモデルを定義します。</p>
+<p><strong>コード:</strong> 補助関数 <code class="docutils literal notranslate"><span class="pre">duffing_system_model</span></code> を用いて、結合された2量子ビットの上記の形式におけるモデルを定義します。</p>
 </section>
 <section id="セクション4:-Ignisによる:math:pi-パルス較正">
 <h3>セクション4: Ignisによる:math:<cite>pi</cite>-パルス較正<a class="headerlink" href="#セクション4:-Ignisによる:math:pi-パルス較正" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>モデルを定義した後、 <span class="math notranslate nohighlight">\(pi\)</span> -パルスを量子ビットごとに較正します。 <span class="math notranslate nohighlight">\(\pi\)</span> -パルスは量子ビットのドライブ・チャネル上のパルスであり、量子ビットを「反転」させるものとして定義されます。これは例えば、基底状態を第一励起状態に反転させ、第一励起状態を基底状態に反転させます。</p>
-<p>We will experimentally find a <span class="math notranslate nohighlight">\(\pi\)</span>-pulse for each qubit using the following procedure:</p>
+<p>以下の手順で、各量子ビットの <span class="math notranslate nohighlight">\(\pi\)</span> パルスを実験的に見つけます。</p>
 <ul class="simple">
-<li><p>A fixed pulse shape is set - in this case it will be a Gaussian pulse.</p></li>
-<li><p>A sequence of experiments is run, each consisting of a Gaussian pulse on the qubit, followed by a measurement, with each experiment in the sequence having a subsequently larger amplitude for the Gaussian pulse.</p></li>
-<li><p>The measurement data is fit, and the pulse amplitude that completely flips the qubit is found (i.e. the <span class="math notranslate nohighlight">\(\pi\)</span>-pulse amplitude).</p></li>
+<li><p>固定パルス形を設定します - 今回はガウスパルスです。</p></li>
+<li><p>量子ビットにガウスパルスを照射した後、測定を行う一連の実験を実施します。一連の実験では、ガウスパルスの振幅を徐々に大きくしていきます。</p></li>
+<li><p>測定データをフィッティングし、量子ビットを完全に反転させるパルス振幅 (すなわち <span class="math notranslate nohighlight">\(\pi\)</span> パルス振幅) を見つけます。</p></li>
 </ul>
-<p><strong>コード:</strong> Ignisを用いて、上記の実験に対応する``Schedule``オブジェクトを作成し、データをフィッティングして、 <span class="math notranslate nohighlight">\(\pi\)</span> -パルスの振幅を決定します。</p>
+<p><strong>コード:</strong> Ignisを用いて、上記の実験に対応する <code class="docutils literal notranslate"><span class="pre">Schedule</span></code> オブジェクトを作成し、データをフィッティングして、 <span class="math notranslate nohighlight">\(\pi\)</span> -パルスの振幅を決定します。</p>
 </section>
 <section id="セクション5:-相互共鳴振動">
 <h3>セクション5: 相互共鳴振動<a class="headerlink" href="#セクション5:-相互共鳴振動" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><span class="math notranslate nohighlight">\(\pi\)</span> -パルスの較正後、ターゲット量子ビット :math: <cite>0</cite> が量子ビット <span class="math notranslate nohighlight">\(1\)</span> に与える相互共鳴ドライブの影響をシミュレートします。これは、量子ビット <span class="math notranslate nohighlight">\(0\)</span> の位相空間上の軌跡や振動が量子ビット <span class="math notranslate nohighlight">\(1\)</span> の状態に <em>依存する</em> という事実の観測を目標として、量子ビット :math: <cite>0</cite> の周波数により量子ビット <span class="math notranslate nohighlight">\(1\)</span> をドライブすることを意味します。この現象は、2量子ビット <em>制御</em> ゲートを作成する上での基礎となります。注記: このセクションでは、セクション4の <span class="math notranslate nohighlight">\(\pi\)</span> -パルス較正が完了している必要があります。</p>
-<p>To observe cross-resonance driving, we will use experiments very similar to the <span class="math notranslate nohighlight">\(\pi\)</span>-pulse calibration case:</p>
+<p>相互共鳴駆動を観測するには、 <span class="math notranslate nohighlight">\(\pi\)</span> パルス較正のケースと非常によく似た実験を行います。</p>
 <ul class="simple">
-<li><p>Initially, qubit <span class="math notranslate nohighlight">\(1\)</span> is either left in the ground state, or is driven to its first excited state using the <span class="math notranslate nohighlight">\(\pi\)</span>-pulse found in Section 4.</p></li>
-<li><p>A sequence of experiments is run, each consisting of a Gaussian pulse on qubit <span class="math notranslate nohighlight">\(1\)</span> driven at the frequency of qubit <span class="math notranslate nohighlight">\(0\)</span>, followed by a measurement of both qubits, with each experiment of the sequence having a subsequently larger amplitude for the Gaussian pulse.</p></li>
+<li><p>最初、量子ビット <span class="math notranslate nohighlight">\(1\)</span> は基底状態のまま、もしくはセクション4で発見した <span class="math notranslate nohighlight">\(\pi\)</span> パルスを使用して第1励起状態になっています。</p></li>
+<li><p>量子ビット <span class="math notranslate nohighlight">\(0\)</span> の周波数で量子ビット <span class="math notranslate nohighlight">\(1\)</span> にガウスパルスを照射した後、両量子ビットの測定を行う一連の実験を実施します。一連の実験では、ガウスパルスの振幅を徐々に大きくしていきます。</p></li>
 </ul>
 <p><a href="#id1"><span class="problematic" id="id2">**</span></a>コード: ** ターゲット量子ビットのブロッホ球上の軌跡の可視化を含め、実験を定義しデータを可視化するための関数が作成されています。</p>
 </section>
@@ -1266,7 +1266,7 @@ Pi Amp: 0.313279
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      最終更新: 2021/09/02
+      最終更新: 2021/09/03
 
     </p>
   </div>
