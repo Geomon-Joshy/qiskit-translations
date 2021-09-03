@@ -871,8 +871,8 @@ div.rendered_html tbody tr:hover {
 </tbody>
 </table>
 <p>Note that these instructions are only supported by the Aer simulator and will result in an error if a circuit containing them is run on a non-simulator backend such as an IBM Quantum device.</p>
-<section id="Saving-the-final-statevector">
-<h4>Saving the final statevector<a class="headerlink" href="#Saving-the-final-statevector" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<section id="最終状態ベクトルの保存">
+<h4>最終状態ベクトルの保存<a class="headerlink" href="#最終状態ベクトルの保存" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>To save the final statevector of the simulation we can append the circuit with the <code class="docutils literal notranslate"><span class="pre">save_statevector</span></code> instruction. Note that this instruction should be applied <em>before</em> any measurements if we do not want to save the collapsed post-measurement state</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
@@ -943,8 +943,8 @@ Circuit unitary:
 </pre></div></div>
 </div>
 </section>
-<section id="Saving-multiple-states">
-<h4>Saving multiple states<a class="headerlink" href="#Saving-multiple-states" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<section id="複数の状態の保存">
+<h4>複数の状態の保存<a class="headerlink" href="#複数の状態の保存" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>We can also apply save instructions at multiple locations in a circuit. Note that when doing this we must provide a unique label for each instruction to retrieve them from the results</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
@@ -1026,8 +1026,8 @@ Circuit unitary:
 </table>
 <p><strong>Notes:</strong> * These instructions must be applied to all qubits in a circuit, otherwise an exception will be raised. * The input state must also be a valid state (statevector, density matrix, unitary etc) otherwise an exception will be raised. * These instructions can be applied at any location in a circuit and will override the current state with the specified one. Any classical register values (e.g. from preceding measurements) will be unaffected * Set state instructions are only supported
 by the Aer simulator and will result in an error if a circuit containing them is run on a non-simulator backend such as an IBM Quantum device.</p>
-<section id="Setting-a-custom-statevector">
-<h4>Setting a custom statevector<a class="headerlink" href="#Setting-a-custom-statevector" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<section id="カスタム状態ベクトルの設定">
+<h4>カスタム状態ベクトルの設定<a class="headerlink" href="#カスタム状態ベクトルの設定" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The <code class="docutils literal notranslate"><span class="pre">set_statevector</span></code> instruction can be used to set a custom <code class="docutils literal notranslate"><span class="pre">Statevector</span></code> state. The input statevector must be valid (<span class="math notranslate nohighlight">\(|\langle\psi|\psi\rangle|=1\)</span>)</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
@@ -1064,8 +1064,8 @@ by the Aer simulator and will result in an error if a circuit containing them is
 </pre></div></div>
 </div>
 </section>
-<section id="Using-the-initialize-instruction">
-<h4>Using the initialize instruction<a class="headerlink" href="#Using-the-initialize-instruction" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<section id="初期化命令の使用">
+<h4>初期化命令の使用<a class="headerlink" href="#初期化命令の使用" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>It is also possible to initialize the simulator to a custom statevector using the <code class="docutils literal notranslate"><span class="pre">initialize</span></code> instruction. Unlike the <code class="docutils literal notranslate"><span class="pre">set_statevector</span></code> instruction this instruction is also supported on real device backends by unrolling to reset and standard gate instructions.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
@@ -1302,14 +1302,14 @@ by the Aer simulator and will result in an error if a circuit containing them is
 </li>
 <li><a class="reference internal" href="#Custom-Simulator-Instructions">Custom Simulator Instructions</a><ul>
 <li><a class="reference internal" href="#Saving-the-simulator-state">Saving the simulator state</a><ul>
-<li><a class="reference internal" href="#Saving-the-final-statevector">Saving the final statevector</a></li>
+<li><a class="reference internal" href="#最終状態ベクトルの保存">最終状態ベクトルの保存</a></li>
 <li><a class="reference internal" href="#Saving-the-circuit-unitary">Saving the circuit unitary</a></li>
-<li><a class="reference internal" href="#Saving-multiple-states">Saving multiple states</a></li>
+<li><a class="reference internal" href="#複数の状態の保存">複数の状態の保存</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#Setting-the-simulator-to-a-custom-state">Setting the simulator to a custom state</a><ul>
-<li><a class="reference internal" href="#Setting-a-custom-statevector">Setting a custom statevector</a></li>
-<li><a class="reference internal" href="#Using-the-initialize-instruction">Using the initialize instruction</a></li>
+<li><a class="reference internal" href="#カスタム状態ベクトルの設定">カスタム状態ベクトルの設定</a></li>
+<li><a class="reference internal" href="#初期化命令の使用">初期化命令の使用</a></li>
 <li><a class="reference internal" href="#Setting-a-custom-density-matrix">Setting a custom density matrix</a></li>
 <li><a class="reference internal" href="#Setting-a-custom-stabilizer-state">Setting a custom stabilizer state</a></li>
 <li><a class="reference internal" href="#Setting-a-custom-unitary">Setting a custom unitary</a></li>
