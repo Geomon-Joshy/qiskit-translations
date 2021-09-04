@@ -596,7 +596,7 @@ optimizer parameters etc. Note that, depending on the specific optimizer this ma
 </pre></div>
 </div>
 </div>
-<p>First we create a qubit operator for VQE. Here we will use the same operator as used in the algorithms introduction, which was originally computed by Qiskit Nature for an H2 molecule.</p>
+<p>首先，我們會建立 VQE 的量子位元算子。在這裡，我們將使用演算法簡介中使用的相同算子，這原本是 Qiskit Nature 為了計算 H2 分子的算子。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -715,9 +715,9 @@ Reference value: -1.85728
 <img alt="../../_images/tutorials_algorithms_02_vqe_convergence_10_0.png" src="../../_images/tutorials_algorithms_02_vqe_convergence_10_0.png" />
 </div>
 </div>
-<section id="Using-Gradient-framework">
-<h2>Using Gradient framework<a class="headerlink" href="#Using-Gradient-framework" title="本標題的永久連結">¶</a></h2>
-<p>Qiskit now has a Gradient framework as part of the Opflow capability. With the gradient computed for the optimizer we now see just the optimization steps themselves.</p>
+<section id="使用-Gradient-架構">
+<h2>使用 Gradient 架構<a class="headerlink" href="#使用-Gradient-架構" title="本標題的永久連結">¶</a></h2>
+<p>Qiskit 現在有一個 Gradient 架構，作為 Opflow 功能的一部分。由於優化器的梯度已經計算好，我們現在只會看到最佳化步驟本身。</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -774,8 +774,8 @@ Value using Gradient: -1.85728
 </div>
 </div>
 </section>
-<section id="Monitoring-via-the-logging">
-<h2>Monitoring via the logging<a class="headerlink" href="#Monitoring-via-the-logging" title="本標題的永久連結">¶</a></h2>
+<section id="透過登錄表來監測">
+<h2>透過登錄表來監測<a class="headerlink" href="#透過登錄表來監測" title="本標題的永久連結">¶</a></h2>
 <p>Much of the code is instrumented with <a class="reference external" href="https://docs.python.org/3/library/logging.html">Python logging</a> statements. The logging is configurable to adjust level of logging etc. Here we set the logging level to <code class="docutils literal notranslate"><span class="pre">INFO</span></code></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
@@ -842,7 +842,7 @@ Value using Gradient: -1.85728
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      最後更新於 2021/09/03。
+      最後更新於 2021/09/04。
 
     </p>
   </div>
@@ -862,8 +862,8 @@ Value using Gradient: -1.85728
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
 <li><a class="reference internal" href="#">觀察 VQE 收斂</a><ul>
-<li><a class="reference internal" href="#Using-Gradient-framework">Using Gradient framework</a></li>
-<li><a class="reference internal" href="#Monitoring-via-the-logging">Monitoring via the logging</a></li>
+<li><a class="reference internal" href="#使用-Gradient-架構">使用 Gradient 架構</a></li>
+<li><a class="reference internal" href="#透過登錄表來監測">透過登錄表來監測</a></li>
 </ul>
 </li>
 </ul>

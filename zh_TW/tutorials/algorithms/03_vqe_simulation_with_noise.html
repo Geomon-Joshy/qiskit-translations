@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>VQE on Aer simulator with noise &mdash; Qiskit 0.29.0 說明文件</title>
+  <title>在雜訊的 Aer 模擬器做 VQE &mdash; Qiskit 0.29.0 說明文件</title>
   
 
   
@@ -292,7 +292,7 @@
       </li>
 
         
-      <li>VQE on Aer simulator with noise</li>
+      <li>在雜訊的 Aer 模擬器做 VQE</li>
     
     
       <li class="pytorch-breadcrumbs-aside">
@@ -572,10 +572,10 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="admonition note">
 <p class="admonition-title">備註</p>
-<p>This page was generated from <a class="reference external" href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/algorithms/03_vqe_simulation_with_noise.ipynb">tutorials/algorithms/03_vqe_simulation_with_noise.ipynb</a>.</p>
+<p>這個頁面是從`tutorials/algorithms/03_vqe_simulation_with_noise.ipynb`__ 所產生的。</p>
 </div>
-<section id="VQE-on-Aer-simulator-with-noise">
-<h1>VQE on Aer simulator with noise<a class="headerlink" href="#VQE-on-Aer-simulator-with-noise" title="本標題的永久連結">¶</a></h1>
+<section id="在雜訊的-Aer-模擬器做-VQE">
+<h1>在雜訊的 Aer 模擬器做 VQE<a class="headerlink" href="#在雜訊的-Aer-模擬器做-VQE" title="本標題的永久連結">¶</a></h1>
 <p>This notebook demonstrates using the <a class="reference external" href="https://qiskit.org/documentation/the_elements.html#aer">Qiskit Aer</a> <code class="docutils literal notranslate"><span class="pre">aer_simulator</span></code> to run a simulation with noise, based on a given noise model. This can be useful to investigate behavior under different noise conditions. Aer not only allows you to define your own custom noise model, but also allows a noise model to be easily created based on the properties of a real quantum device. The latter is what this notebook will demonstrate since the goal is to
 show VQE with noise and not the more complex task of how to build custom noise models.</p>
 <p><a class="reference external" href="https://qiskit.org/documentation/apidoc/ignis.html">Qiskit Ignis</a> provides a solution to mitigate the measurement error when running on a noisy simulation or a real quantum device. This solution is leveraged by the <code class="docutils literal notranslate"><span class="pre">QuantumInstance</span></code> module which allows any algorithm using it to automatically have measurement noise mitigation applied.</p>
@@ -938,7 +938,7 @@ VQE on Aer qasm simulator (with noise and measurement error mitigation): -1.8343
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      最後更新於 2021/09/03。
+      最後更新於 2021/09/04。
 
     </p>
   </div>
@@ -957,7 +957,7 @@ VQE on Aer qasm simulator (with noise and measurement error mitigation): -1.8343
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">VQE on Aer simulator with noise</a><ul>
+<li><a class="reference internal" href="#">在雜訊的 Aer 模擬器做 VQE</a><ul>
 <li><a class="reference internal" href="#Performance-without-noise">Performance <em>without</em> noise</a></li>
 <li><a class="reference internal" href="#Performance-with-noise">Performance <em>with</em> noise</a></li>
 <li><a class="reference internal" href="#Performance-with-noise-and-measurement-error-mitigation">Performance <em>with</em> noise and measurement error mitigation</a></li>
