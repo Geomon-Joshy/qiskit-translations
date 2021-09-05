@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Quantum Volume &mdash; Qiskit 0.29.0 documentation</title>
+  <title>কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম) &mdash; Qiskit 0.29.0 documentation</title>
   
 
   
@@ -292,7 +292,7 @@
       </li>
 
         
-      <li>Quantum Volume</li>
+      <li>কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম)</li>
     
     
       <li class="pytorch-breadcrumbs-aside">
@@ -572,14 +572,14 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="admonition note">
 <p class="admonition-title">নোট</p>
-<p>This page was generated from <a class="reference external" href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/noise/5_quantum_volume.ipynb">tutorials/noise/5_quantum_volume.ipynb</a>.</p>
+<p>এই পৃষ্ঠাটি <a class="reference external" href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/noise/5_quantum_volume.ipynb">tutorials/noise/5_quantum_volume.ipynb</a> -থেকে বানানো হয়েছে।</p>
 </div>
-<section id="Quantum-Volume">
-<h1>Quantum Volume<a class="headerlink" href="#Quantum-Volume" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h1>
-<section id="Introduction">
-<h2>Introduction<a class="headerlink" href="#Introduction" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p><strong>Quantum Volume (QV)</strong> is a method to verify device performance and a metric to quantify the computational power of a quantum device. The method is based on the paper “Validating quantum computers using randomized model circuits” (<a class="reference external" href="https://arxiv.org/abs/1811.12926">https://arxiv.org/abs/1811.12926</a>).</p>
-<p>This notebook gives an example for how to use the <code class="docutils literal notranslate"><span class="pre">ignis.verification.quantum_volume</span></code> module. This particular example shows how to run up to depth 6 quantum volume circuits and will run them using the noisy Aer simulator.</p>
+<section id="কোয়ান্টাম-আয়তন-(কোয়ান্টাম-ভলিউম)">
+<h1>কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম)<a class="headerlink" href="#কোয়ান্টাম-আয়তন-(কোয়ান্টাম-ভলিউম)" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h1>
+<section id="ভূমিকা">
+<h2>ভূমিকা<a class="headerlink" href="#ভূমিকা" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম) হল যন্ত্রের দক্ষতা যাচাই করার একটি পদ্ধতি এবং একটি কোয়ান্টাম যন্ত্রের গণনাক্ষমতা পরিমাপ করার একটি পদ্ধতি (মেট্রিক)। এই পদ্ধতিটি “Validating quantum computers using randomized model circuits” (<a class="reference external" href="https://arxiv.org/abs/1811.12926">https://arxiv.org/abs/1811.12926</a>) পেপারটির ওপর নির্ভর করে নির্মিত।</p>
+<p>এই নোটবুক কেমন করে <code class="docutils literal notranslate"><span class="pre">ignis.verification.quantum_volume</span></code> মডিউলটি ব্যবহার করা যায় সেই উদাহরণ দেয়। এই উদাহরণটি দেখায় কীভাবে ডেপ্থ ৬ কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম)বর্তনী (সার্কিট)কে চালানো যায় এবং তাদের নয়েজি এয়ারসিমুলেটর ব্যবহার করে চালানো যায়।</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -601,9 +601,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Select-the-Parameters-of-the-QV-Run">
-<h2>Select the Parameters of the QV Run<a class="headerlink" href="#Select-the-Parameters-of-the-QV-Run" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p>In this example we have 6 qubits Q0,Q1,Q3,Q5,Q7,Q10. We are going to look at subsets up to the full set.</p>
+<section id="QV-Run-এর-জন্য-পরামিতিগুলি-নির্বাচন-করুন।">
+<h2>QV Run এর জন্য পরামিতিগুলি নির্বাচন করুন।<a class="headerlink" href="#QV-Run-এর-জন্য-পরামিতিগুলি-নির্বাচন-করুন।" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>এই উদাহরণে আমাদের আছে ৬ টি কিউবিট যথা Q0,Q1,Q3,Q5,Q7,Q10। আমরা সম্পূর্ণ সেট পর্যন্ত সমস্ত সাবসেটগুলি লক্ষ্য করতে চলেছি।</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -616,9 +616,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Generate-QV-sequences">
-<h2>Generate QV sequences<a class="headerlink" href="#Generate-QV-sequences" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p>We generate the quantum volume sequences. We start with a small example (so it doesn’t take too long to run).</p>
+<section id="QV-অনুক্রম-উৎপাদন-করুন।">
+<h2>QV অনুক্রম উৎপাদন করুন।<a class="headerlink" href="#QV-অনুক্রম-উৎপাদন-করুন।" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>আমরা কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম) অনুক্রম উৎপাদন করবো। আমরা একটি ছোট উদাহরণ থেকে শুরু করবো(যাতে এটি রান করাতে বেশি সময় না লাগে)।</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -638,7 +638,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>As an example, we print the circuit corresponding to the first QV sequence. Note that the ideal circuits are run on the first n qubits (where n is the number of qubits in the subset).</p>
+<p>একটি উদাহরণ স্বরূপ, আমরা প্রথম QV অনুক্রম অনুযায়ী বর্তনী (সার্কিট) প্রিন্ট করলাম। লক্ষ্য করুন যে আদর্শ বর্তনীগুলো প্রথম n কিউবিট এর ওপর চলে(রান করে)(যেখানে n হল ওই সাবসেট এ কিউবিটের সংখ্যা)।</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -721,9 +721,9 @@ qr_2: |0&gt;──┤ U3(1.3211,3.3206,1.9445) ├───■──┤ U3(0.766
 </pre></div></div>
 </div>
 </section>
-<section id="Simulate-the-ideal-circuits">
-<h2>Simulate the ideal circuits<a class="headerlink" href="#Simulate-the-ideal-circuits" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p>The quantum volume method requires that we know the ideal output for each circuit, so use the statevector simulator in Aer to get the ideal result.</p>
+<section id="আদর্শ-বর্তনীগুলোর(সার্কিট)-মহড়া(সিমুলেট)-করো।">
+<h2>আদর্শ বর্তনীগুলোর(সার্কিট) মহড়া(সিমুলেট) করো।<a class="headerlink" href="#আদর্শ-বর্তনীগুলোর(সার্কিট)-মহড়া(সিমুলেট)-করো।" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম) পদ্ধতির জন্য আমাদের প্রতিটি বর্তনীর আদর্শ আউটপুট জ্ঞাত হওয়া প্রয়োজন, তাই আদর্শ ফল পেতে এয়ার এ অবস্থা ভেক্টর বা দিকরাশি সিমুলেটর বা মহড়া ব্যবহার করুন।</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
@@ -796,7 +796,7 @@ Simulating trial 48
 Simulating trial 49
 </pre></div></div>
 </div>
-<p>Next, load the ideal results into a quantum volume fitter:</p>
+<p>এরপর, একটি কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম) ফিটারে আদর্শ ফলগুলি লোড করুন।</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -808,9 +808,9 @@ Simulating trial 49
 </div>
 </div>
 </section>
-<section id="Define-the-noise-model">
-<h2>Define the noise model<a class="headerlink" href="#Define-the-noise-model" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p>We define a noise model for the simulator. To simulate decay, we add depolarizing error probabilities to the CNOT and U gates.</p>
+<section id="নয়েজ-মডেলটি-সংজ্ঞায়িত-করুন">
+<h2>নয়েজ মডেলটি সংজ্ঞায়িত করুন<a class="headerlink" href="#নয়েজ-মডেলটি-সংজ্ঞায়িত-করুন" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>সিমুলেটর এর জন্যে আমরা একটি নয়েজ মডেল বানাই। এখানে আমরা CNOT এবং U যুক্তিবর্তনীগুলিতে (গেটগুলিতে) অসমবর্তিত ত্রুটির সম্ভাবনাও যুক্ত করি যাতে ক্ষয় অনুকরণ করা যেতে পারে।</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -827,9 +827,9 @@ Simulating trial 49
 </div>
 </div>
 </section>
-<section id="Execute-on-Aer-simulator">
-<h2>Execute on Aer simulator<a class="headerlink" href="#Execute-on-Aer-simulator" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p>We can execute the QV sequences either using a Qiskit Aer Simulator (with some noise model) or using an IBMQ provider, and obtain a list of results, <code class="docutils literal notranslate"><span class="pre">result_list</span></code>.</p>
+<section id="এয়ারসিমুলেটরে-সম্পাদন-করুন।">
+<h2>এয়ারসিমুলেটরে সম্পাদন করুন।<a class="headerlink" href="#এয়ারসিমুলেটরে-সম্পাদন-করুন।" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>Qiskit এর Aer সিমুলেটর(কিছু নয়েজ মডেলের সাহায্যে) বা IBMQ প্রোভাইডারের সাহায্যে আমরা QV অনুক্রমগুলি চালাতে পারি এবং তা থেকে ফলাফল তালিকা <code class="docutils literal notranslate"><span class="pre">result_list</span></code> পেতে পারি।</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
@@ -902,7 +902,7 @@ Running trial 48
 Running trial 49
 </pre></div></div>
 </div>
-<p>Load the experimental data into the fitter. The data will keep accumulating if this is re-run (unless the fitter is re-instantiated).</p>
+<p>পরীক্ষালব্ধ তথ্য ফিটারটিতে লোড করুন। যদি এটি পুনর্সম্পাদিত হয় তবে তথ্যটি জমা হতে থাকবে(যদিনা ফিটারটি পুনঃ মূহুর্তায়িত করা হয়)।</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
@@ -939,8 +939,8 @@ Running trial 49
 </div>
 </section>
 <section id="id2">
-<h2>Quantum Volume<a class="headerlink" href="#id2" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
-<p>List statistics for each depth. For each depth list if the depth was successful or not and with what confidence interval. For a depth to be successful the confidence interval must be &gt; 97.5%.</p>
+<h2>কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম)<a class="headerlink" href="#id2" title="এই শিরোনামের পার্মালিঙ্ক">¶</a></h2>
+<p>প্রতিটি ডেপ্থ এর জন্য পরিসংখ্যান তালিকাবদ্ধ করুন। প্রতিটি ডেপথ তালিকার জন্য ডেপ্থটি সফল কি না এবং কতটা কনফিডেন্স পার্থক্যে। একটি ডেপথকে সফল হতে কনফিডেন্স পার্থক্য অবশ্যই &gt; ৯৭.৫% হতে হবে।</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
@@ -1043,14 +1043,14 @@ Width/depth 6 less than 2/3 (unsuccessful).
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">Quantum Volume</a><ul>
-<li><a class="reference internal" href="#Introduction">Introduction</a></li>
-<li><a class="reference internal" href="#Select-the-Parameters-of-the-QV-Run">Select the Parameters of the QV Run</a></li>
-<li><a class="reference internal" href="#Generate-QV-sequences">Generate QV sequences</a></li>
-<li><a class="reference internal" href="#Simulate-the-ideal-circuits">Simulate the ideal circuits</a></li>
-<li><a class="reference internal" href="#Define-the-noise-model">Define the noise model</a></li>
-<li><a class="reference internal" href="#Execute-on-Aer-simulator">Execute on Aer simulator</a></li>
-<li><a class="reference internal" href="#id2">Quantum Volume</a></li>
+<li><a class="reference internal" href="#">কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম)</a><ul>
+<li><a class="reference internal" href="#ভূমিকা">ভূমিকা</a></li>
+<li><a class="reference internal" href="#QV-Run-এর-জন্য-পরামিতিগুলি-নির্বাচন-করুন।">QV Run এর জন্য পরামিতিগুলি নির্বাচন করুন।</a></li>
+<li><a class="reference internal" href="#QV-অনুক্রম-উৎপাদন-করুন।">QV অনুক্রম উৎপাদন করুন।</a></li>
+<li><a class="reference internal" href="#আদর্শ-বর্তনীগুলোর(সার্কিট)-মহড়া(সিমুলেট)-করো।">আদর্শ বর্তনীগুলোর(সার্কিট) মহড়া(সিমুলেট) করো।</a></li>
+<li><a class="reference internal" href="#নয়েজ-মডেলটি-সংজ্ঞায়িত-করুন">নয়েজ মডেলটি সংজ্ঞায়িত করুন</a></li>
+<li><a class="reference internal" href="#এয়ারসিমুলেটরে-সম্পাদন-করুন।">এয়ারসিমুলেটরে সম্পাদন করুন।</a></li>
+<li><a class="reference internal" href="#id2">কোয়ান্টাম আয়তন (কোয়ান্টাম ভলিউম)</a></li>
 </ul>
 </li>
 </ul>
