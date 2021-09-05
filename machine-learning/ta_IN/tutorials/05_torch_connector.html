@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Torch Connector and Hybrid QNNs &mdash; Qiskit Machine Learning 0.2.1 documentation</title>
+  <title>டார்ச் இணைப்பான் மற்றும் கலப்பின QNN கள் &mdash; Qiskit Machine Learning 0.2.1 documentation</title>
   
 
   
@@ -228,7 +228,7 @@
         
           <li><a href="index.html">இயந்திர வழி கற்றல் பயிற்சிகள்</a> &gt;</li>
         
-      <li>Torch Connector and Hybrid QNNs</li>
+      <li>டார்ச் இணைப்பான் மற்றும் கலப்பின QNN கள்</li>
     
     
       <li class="pytorch-breadcrumbs-aside">
@@ -508,21 +508,21 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This page was generated from <a class="reference external" href="https://github.com/Qiskit/qiskit-machine-learning/blob/stable/0.2/docs/tutorials/05_torch_connector.ipynb">docs/tutorials/05_torch_connector.ipynb</a>.</p>
+<p>இந்தப் பக்கம் <a class="reference external" href="https://github.com/Qiskit/qiskit-machine-learning/blob/stable/0.2/docs/tutorials/05_torch_connector.ipynb">docs/tutorials/05_torch_connector.ipynb</a> இலிருந்து உருவாக்கப்பட்டது.</p>
 </div>
-<div class="section" id="Torch-Connector-and-Hybrid-QNNs">
-<h1>Torch Connector and Hybrid QNNs<a class="headerlink" href="#Torch-Connector-and-Hybrid-QNNs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="டார்ச்-இணைப்பான்-மற்றும்-கலப்பின-QNN-கள்">
+<h1>டார்ச் இணைப்பான் மற்றும் கலப்பின QNN கள்<a class="headerlink" href="#டார்ச்-இணைப்பான்-மற்றும்-கலப்பின-QNN-கள்" title="Permalink to this headline">¶</a></h1>
 <p>This tutorial introduces Qiskit’s <code class="docutils literal notranslate"><span class="pre">TorchConnector</span></code> class, and demonstrates how the <code class="docutils literal notranslate"><span class="pre">TorchConnector</span></code> allows for a natural integration of any <code class="docutils literal notranslate"><span class="pre">NeuralNetwork</span></code> from Qiskit Machine Learning into a PyTorch workflow. <code class="docutils literal notranslate"><span class="pre">TorchConnector</span></code> takes a Qiskit <code class="docutils literal notranslate"><span class="pre">NeuralNetwork</span></code> and makes it available as a PyTorch <code class="docutils literal notranslate"><span class="pre">Module</span></code>. The resulting module can be seamlessly incorporated into PyTorch classical architectures and trained jointly without additional considerations, enabling the development and testing of
 novel <strong>hybrid quantum-classical</strong> machine learning architectures.</p>
-<div class="section" id="Content:">
-<h2>Content:<a class="headerlink" href="#Content:" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="#Part-1:-Simple-Classification-&amp;-Regression">Part 1: Simple Classification &amp; Regression</a></p>
+<div class="section" id="உள்ளடக்கம்:">
+<h2>உள்ளடக்கம்:<a class="headerlink" href="#உள்ளடக்கம்:" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Part-1:-Simple-Classification-&amp;-Regression">பகுதி 1: எளிய வகைப்பாடு &amp; பின்னடைவு</a></p>
 <p>The first part of this tutorial shows how quantum neural networks can be trained using PyTorch’s automatic differentiation engine (<code class="docutils literal notranslate"><span class="pre">torch.autograd</span></code>, <a class="reference external" href="https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html">link</a>) for simple classification and regression tasks.</p>
 <ol class="arabic simple">
-<li><p><a class="reference external" href="#1.-Classification">Classification</a></p>
+<li><p><a class="reference external" href="#1.-Classification">வகைப்பாடு</a></p>
 <ol class="arabic simple">
 <li><p>Classification with PyTorch and <code class="docutils literal notranslate"><span class="pre">OpflowQNN</span></code></p></li>
-<li><p>Classification with PyTorch and <code class="docutils literal notranslate"><span class="pre">CircuitQNN</span></code></p></li>
+<li><p>PyTorch மற்றும் <code class="docutils literal notranslate"><span class="pre">CircuitQNN</span></code> உடன் வகைப்பாடு</p></li>
 </ol>
 </li>
 <li><p><a class="reference external" href="#2.-Regression">Regression</a></p>
@@ -1515,8 +1515,8 @@ Performance on test data:
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">Torch Connector and Hybrid QNNs</a><ul>
-<li><a class="reference internal" href="#Content:">Content:</a></li>
+<li><a class="reference internal" href="#">டார்ச் இணைப்பான் மற்றும் கலப்பின QNN கள்</a><ul>
+<li><a class="reference internal" href="#உள்ளடக்கம்:">உள்ளடக்கம்:</a></li>
 <li><a class="reference internal" href="#Part-1:-Simple-Classification-&amp;-Regression">Part 1: Simple Classification &amp; Regression</a><ul>
 <li><a class="reference internal" href="#1.-Classification">1. Classification</a><ul>
 <li><a class="reference internal" href="#A.-Classification-with-PyTorch-and-OpflowQNN">A. Classification with PyTorch and <code class="docutils literal notranslate"><span class="pre">OpflowQNN</span></code></a><ul>
