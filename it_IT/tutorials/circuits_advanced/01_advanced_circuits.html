@@ -755,7 +755,7 @@ ParameterView([Parameter(θ)])
 </div>
 <section id="Associare-i-parametri-ai-valori">
 <h3>Associare i parametri ai valori<a class="headerlink" href="#Associare-i-parametri-ai-valori" title="Link a questa intestazione">¶</a></h3>
-<p>All circuit parameters must be bound before sending the circuit to a backend. This can be done as follows: - The <code class="docutils literal notranslate"><span class="pre">bind_parameters</span></code> method accepts a dictionary mapping <code class="docutils literal notranslate"><span class="pre">Parameter</span></code>s to values, and returns a new circuit with each parameter replaced by its corresponding value. Partial binding is supported, in which case the returned circuit will be parameterized by any <code class="docutils literal notranslate"><span class="pre">Parameter</span></code>s that were not mapped to a value.</p>
+<p>Tutti i parametri del circuito devono essere collegati prima di inviare il circuito a un backend. Questo può essere fatto nelle seguenti modalità: - Il metodo <code class="docutils literal notranslate"><span class="pre">bind_parameters</span></code> accetta un dizionario di mappatura dei <code class="docutils literal notranslate"><span class="pre">Parameter</span></code>s ai valori e restituisce un nuovo circuito in cui ogni parametro viene sostituito dal suo valore corrispondente. È supportato un binding parziale, nel qual caso il circuito restituito sarà parametrizzato da qualsiasi <code class="docutils literal notranslate"><span class="pre">Parameter</span></code>s che non è stato mappato ad un valore.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>

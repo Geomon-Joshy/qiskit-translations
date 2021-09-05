@@ -627,7 +627,7 @@ Operator([[0.+0.j, 0.+0.j, 0.+0.j, 1.+0.j],
 <h3>Proprietà dell’Operatore<a class="headerlink" href="#Proprietà-dell'Operatore" title="Link a questa intestazione">¶</a></h3>
 <p>L’oggetto operatore memorizza la matrice sottostante, e la dimensione in ingresso e in uscita dei sottosistemi.</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code>: To access the underlying Numpy array, we may use the <code class="docutils literal notranslate"><span class="pre">Operator.data</span></code> property.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code>: Per accedere al sottostante array Numpy, possiamo utilizzare la proprietà <code class="docutils literal notranslate"><span class="pre">Operator.data</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">dims</span></code>: Per restituire la dimensione totale di input e output dell’operatore possiamo utilizzare la proprietà <code class="docutils literal notranslate"><span class="pre">Operator.dim</span></code>. * Nota: l’output è restituito come una tupla <code class="docutils literal notranslate"><span class="pre">(input_dim,</span> <span class="pre">output_dim)</span></code>, che corrisponde all’ordine inverso di colonne e righe della matrice sottostante.*</p></li>
 </ul>
 <div class="nbinput docutils container">
@@ -978,7 +978,7 @@ c: 2/══════════════╩══╩═
 </section>
 <section id="Combinazione-di-Operatori">
 <h2>Combinazione di Operatori<a class="headerlink" href="#Combinazione-di-Operatori" title="Link a questa intestazione">¶</a></h2>
-<p>Operators may be combined using several methods.</p>
+<p>Gli operatori possono essere combinati utilizzando diversi metodi.</p>
 <section id="Prodotto-Tensoriale">
 <h3>Prodotto Tensoriale<a class="headerlink" href="#Prodotto-Tensoriale" title="Link a questa intestazione">¶</a></h3>
 <p>Due operatori <span class="math notranslate nohighlight">\(A\)</span> e <span class="math notranslate nohighlight">\(B\)</span> possono essere combinati in un operatore risultato di un prodotto tensoriale <span class="math notranslate nohighlight">\(A\otimes B\)</span> utilizzando la funzione <code class="docutils literal notranslate"><span class="pre">Operator.tensor</span></code>. Nota che se sia A che B sono operatori a singolo qubit, allora <code class="docutils literal notranslate"><span class="pre">A.</span> <span class="pre">tensor(B)</span></code> = <span class="math notranslate nohighlight">\(A\otimes B\)</span> avrà i sottosistemi indicizzati come matrice B sul sottosistema 0, e matrice <span class="math notranslate nohighlight">\(A\)</span> sul sottosistema 1.</p>
