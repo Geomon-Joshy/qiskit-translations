@@ -578,8 +578,8 @@ div.rendered_html tbody tr:hover {
 <h1>量子容積<a class="headerlink" href="#量子容積" title="本標題的永久連結">¶</a></h1>
 <section id="簡介">
 <h2>簡介<a class="headerlink" href="#簡介" title="本標題的永久連結">¶</a></h2>
-<p><strong>Quantum Volume (QV)</strong> is a method to verify device performance and a metric to quantify the computational power of a quantum device. The method is based on the paper “Validating quantum computers using randomized model circuits” (<a class="reference external" href="https://arxiv.org/abs/1811.12926">https://arxiv.org/abs/1811.12926</a>).</p>
-<p>This notebook gives an example for how to use the <code class="docutils literal notranslate"><span class="pre">ignis.verification.quantum_volume</span></code> module. This particular example shows how to run up to depth 6 quantum volume circuits and will run them using the noisy Aer simulator.</p>
+<p><strong>Quantum Volume (QV)</strong> 是一種驗證設備性能的方法，也是量化量子元件計算能力的指標。 該方法是基於此文章 “Validating quantum computers using randomized model circuits”（<a class="reference external" href="https://arxiv.org/abs/1811.12926">https://arxiv.org/abs/1811.12926</a>）。</p>
+<p>此筆記本提供了如何使用 <code class="docutils literal notranslate"><span class="pre">ignis.verification.quantum_volume</span></code> 模組的範例。 此特定範例演示如何執行至量子體積深度 6 的電路，並使用具有雜訊的 Aer 模擬器來執行它們。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -603,7 +603,7 @@ div.rendered_html tbody tr:hover {
 </section>
 <section id="選取-QV-執行的參數">
 <h2>選取 QV 執行的參數<a class="headerlink" href="#選取-QV-執行的參數" title="本標題的永久連結">¶</a></h2>
-<p>In this example we have 6 qubits Q0,Q1,Q3,Q5,Q7,Q10. We are going to look at subsets up to the full set.</p>
+<p>在此範例中，我們有 6 個 量子位元 Q0,Q1,Q3,Q5,Q7,Q10。 我們將會查看其子集乃至完整集合。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -810,7 +810,7 @@ Simulating trial 49
 </section>
 <section id="定義雜訊模型">
 <h2>定義雜訊模型<a class="headerlink" href="#定義雜訊模型" title="本標題的永久連結">¶</a></h2>
-<p>We define a noise model for the simulator. To simulate decay, we add depolarizing error probabilities to the CNOT and U gates.</p>
+<p>我們為模擬器定義了一個雜訊模型。 為了模擬衰變，我們在 CNOT 和 U 閘上增加了去極化誤差機率。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -940,7 +940,7 @@ Running trial 49
 </section>
 <section id="id2">
 <h2>量子容積<a class="headerlink" href="#id2" title="本標題的永久連結">¶</a></h2>
-<p>List statistics for each depth. For each depth list if the depth was successful or not and with what confidence interval. For a depth to be successful the confidence interval must be &gt; 97.5%.</p>
+<p>列出每個深度的統計數據。 對於每個深度，寫下該深度是否成功以及信賴區間是多少。 若要判定某個深度成功，其信賴區間必須大於 97.5%。</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
@@ -1024,7 +1024,7 @@ Width/depth 6 less than 2/3 (unsuccessful).
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      最後更新於 2021/09/06。
+      最後更新於 2021/09/07。
 
     </p>
   </div>

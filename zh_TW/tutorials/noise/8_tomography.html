@@ -715,7 +715,7 @@ q1_5: ─────┤ X ├
 Time taken: 0.3742101192474365
 </pre></div></div>
 </div>
-<p>The fitter will output a density matrix ordered according to how we passed in the registers to <code class="docutils literal notranslate"><span class="pre">state_tomography_circuits</span></code>.</p>
+<p>擬合器會輸出一個密度矩陣，此密度矩陣會根據我們把暫存器傳遞至``state_tomography_circuits`` 的方式被排序。</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -1076,7 +1076,7 @@ q11_2: ──────────┤ X ├┤ H ├
                  └───┘└───┘
 </pre></div></div>
 </div>
-<p>Here we are going to generate and run the state tomography circuits. Only pass the registers we want to perform state tomography on. The code will generate a new classical register for only those measurements.</p>
+<p>在這裡，我們將生成並運行狀態斷層掃描電路。 我們只傳遞我們想進行狀態斷層掃描的暫存器。 此代碼只會為那些測量產生新的古典暫存器。</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
@@ -1103,7 +1103,7 @@ c10: 2/════════════════════════�
                                     0  1
 </pre></div></div>
 </div>
-<p>Now make a copy of this circuit (we will need it for the fitter) and make a new circuit with an ancilla measurement attached (this is what will be run):</p>
+<p>現在製作這個電路的副本（我們會需要把此電路給擬合器使用），並製作有輔助測量的新電路（這就是將會被執行的電路）：</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
@@ -1129,7 +1129,7 @@ c10: 2/════════════════════════�
 </pre></div>
 </div>
 </div>
-<p>Before sending the results to the state tomography fitter we must strip the register for the Q2 measurement and only keep the results when that register is 1.</p>
+<p>在將結果傳送到狀態斷層掃描擬合器之前，我們必須將 Q2 測量的暫存器清理，並且只在該暫存器為 1 時保留結果。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
@@ -1196,7 +1196,7 @@ array([[ 0.502+0.j   ,  0.   +0.001j,  0.004+0.001j, -0.498-0.006j],
 <section id="1-量子位元閘集斷層掃描範例">
 <h2>1 量子位元閘集斷層掃描範例<a class="headerlink" href="#1-量子位元閘集斷層掃描範例" title="本標題的永久連結">¶</a></h2>
 <p>The main difference between gate set tomography and process tomography is that in gate set tomography, the input consists of a gate set basis: A set of gates that are both used in the initialization/measurement phase of the tomography, and are being reconstructed.</p>
-<p>Qiskit supplies a default gateset basis; in order to use this gateset basis in order to reconstruct another gate, this gate should be added to the basis. We use the following method to simplify the process:</p>
+<p>Qiskit 提供預設的閘集基底；為了使用此閘集基底以重建另一個閘，該閘應該被加入此基底。 我們使用以下方法來簡化程序：</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
@@ -1303,7 +1303,7 @@ Average gate fidelity: F = 1.00084
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      最後更新於 2021/09/06。
+      最後更新於 2021/09/07。
 
     </p>
   </div>

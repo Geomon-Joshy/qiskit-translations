@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Noise Transformation &mdash; Qiskit 0.29.0 說明文件</title>
+  <title>雜訊轉換 &mdash; Qiskit 0.29.0 說明文件</title>
   
 
   
@@ -292,7 +292,7 @@
       </li>
 
         
-      <li>Noise Transformation</li>
+      <li>雜訊轉換</li>
     
     
       <li class="pytorch-breadcrumbs-aside">
@@ -574,8 +574,8 @@ div.rendered_html tbody tr:hover {
 <p class="admonition-title">備註</p>
 <p>此頁面是從 <a class="reference external" href="https://github.com/Qiskit/qiskit-tutorials/blob/master/tutorials/simulators/5_noise_transformation.ipynb">tutorials/simulators/5_noise_transformation.ipynb</a> 產生的.</p>
 </div>
-<section id="Noise-Transformation">
-<h1>Noise Transformation<a class="headerlink" href="#Noise-Transformation" title="本標題的永久連結">¶</a></h1>
+<section id="雜訊轉換">
+<h1>雜訊轉換<a class="headerlink" href="#雜訊轉換" title="本標題的永久連結">¶</a></h1>
 <section id="簡介">
 <h2>簡介<a class="headerlink" href="#簡介" title="本標題的永久連結">¶</a></h2>
 <p>This notebook shows how to use the Qiskit Aer utility functions <code class="docutils literal notranslate"><span class="pre">approximate_quantum_error</span></code> and <code class="docutils literal notranslate"><span class="pre">approximate_noise_model</span></code> to transform quantum noise channels into a different, more suitable, noise channel.</p>
@@ -591,8 +591,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>The name “approximate” suggests that these functions generate the closest (in the Hilbert-Schmidt metric) error possible to the given one.</p>
-<p>We demonstrate the approximation using several standard error channels defined in Qiskit.</p>
+<p>「近似」 表示，這些函式會產生最接近（在the Hilbert-Schmidt公制度量中）於真實情況的誤差。</p>
+<p>我們示範使用 Qiskit 中定義的數個標準誤差通道的近似值。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -629,7 +629,7 @@ div.rendered_html tbody tr:hover {
 0 &amp; \sqrt{\gamma}\\
 0 &amp; 0
 \end{array}\right)\end{split}\]</div>
-<p><strong>Reset</strong> error is described by probabilities <span class="math notranslate nohighlight">\(0\le p, q\le 1\)</span> such that <span class="math notranslate nohighlight">\(p+q\le 1\)</span> and given by the Kraus operators:</p>
+<p><strong>Reset</strong> 誤差的說明是由機率 <span class="math notranslate nohighlight">\(0\le p， q\le 1\)</span> ，例如： <span class="math notranslate nohighlight">\(p+q\le 1\)</span> ，並由 Kraus 算子提供：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\left(\begin{array}{cc}
 \sqrt{p} &amp; 0\\
@@ -693,13 +693,13 @@ P(1) = 0.17625178063039387
 P(2) = 0
 </pre></div></div>
 </div>
-<p>We got the results predicted analytically.</p>
+<p>我們得到了解析解的預期結果。</p>
 </section>
 <section id="不同的輸入類型">
 <h2>不同的輸入類型<a class="headerlink" href="#不同的輸入類型" title="本標題的永久連結">¶</a></h2>
-<p>The approximation function is given two inputs: The error channel to approximate, and a set of error channels that can be used in constructing the approximation.</p>
+<p>近似函數有兩個輸入： 該要被近似的誤差通道，以及一組可以用來建構近似的誤差通道。</p>
 <p>The <strong>error channel</strong> to approximate can be given as any input that can be converted to the <code class="docutils literal notranslate"><span class="pre">QuantumError</span></code> object.</p>
-<p>As an example, we explicitly construct the Kraus matrices of amplitude damping and pass to the same approximation function as before:</p>
+<p>舉個例子，我們明確建構了振幅衰減的 Kraus 矩陣，並與之前的相同近似函式傳送：</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -725,8 +725,8 @@ QuantumError on 1 qubits. Noise circuits:
 </div>
 <p>The <strong>error operators</strong> that are used to construct the approximating channel can be either given as a list, a dictionary or a string indicating hard-coded channels.</p>
 <p>Any channel can be either a list of Kraus operators, or ‘QuantumError’ objects.</p>
-<p>The identity channel does not need to be passed directly; it is always implicitly used.</p>
-<p>As an example, we approximate amplitude damping using an explicit Kraus representation for reset noises:</p>
+<p>身分通道不需要直接被傳遞；雖然沒有明確指出，但是預設上身分通道都有被使用。</p>
+<p>舉個例子，為了重設的雜訊，我們通過使用明確的 Kraus 表示法來近似振幅阻尼。</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
@@ -808,7 +808,7 @@ QuantumError on 1 qubits. Noise circuits:
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      最後更新於 2021/09/06。
+      最後更新於 2021/09/07。
 
     </p>
   </div>
@@ -827,7 +827,7 @@ QuantumError on 1 qubits. Noise circuits:
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">Noise Transformation</a><ul>
+<li><a class="reference internal" href="#">雜訊轉換</a><ul>
 <li><a class="reference internal" href="#簡介">簡介</a></li>
 <li><a class="reference internal" href="#概述">概述</a></li>
 <li><a class="reference internal" href="#Example:-Approximating-amplitude-damping-noise-with-reset-noise.">Example: Approximating amplitude damping noise with reset noise.</a></li>

@@ -576,8 +576,8 @@ div.rendered_html tbody tr:hover {
 </div>
 <section id="認證標準流程">
 <h1>認證標準流程<a class="headerlink" href="#認證標準流程" title="本標題的永久連結">¶</a></h1>
-<p>Accreditation Protocol (AP) is a protocol devised to characterize the reliability of noisy quantum devices.</p>
-<p>Given a noisy quantum device implementing a “target” quantum circuit, AP certifies an upper-bound on the variation distance between the probability distribution of the outputs returned by the device and the ideal probability distribution. This method is based on Ferracin et al, “Accrediting outputs of noisy intermediate-scale quantum devices”, <a class="reference external" href="https://arxiv.org/abs/1811.09709">https://arxiv.org/abs/1811.09709</a>.</p>
+<p>認證標準流程 (AP) 是一個用來量測雜訊量子元件可靠性的標準流程。</p>
+<p>給定一個執行一個 「目標」 量子電路的雜訊量子元件，AP 認證該元件返回的輸出機率分佈與理想機率分佈之間的變化距離的一個上限。 該方法是基於 Ferracin et al, “Accrediting outputs of noisy intermediate-scale quantum devices”, <a class="reference external" href="https://arxiv.org/abs/1811.09709">https://arxiv.org/abs/1811.09709</a>.</p>
 <p>此筆記本提供了如何使用 ignis.characterization.accreditation 模組。 此特定範例顯示如何對深度為 5 的 4 - 量子位元量子電路的輸出進行認證 。 所有電路都是使用雜訊 Aer 模擬器執行的。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
@@ -602,8 +602,11 @@ div.rendered_html tbody tr:hover {
 </div>
 <section id="認證標準流程的輸入">
 <h2>認證標準流程的輸入<a class="headerlink" href="#認證標準流程的輸入" title="本標題的永久連結">¶</a></h2>
-<p>AP can accredit the outputs of a <strong>target circuit</strong> that 1) Takes as input <span class="math notranslate nohighlight">\(n\)</span> qubits in the state <span class="math notranslate nohighlight">\(|{0}&gt;\)</span> 2) Ends with single-qubit measurements in the Pauli-<span class="math notranslate nohighlight">\(Z\)</span> basis 3) Is made of <span class="math notranslate nohighlight">\(m\)</span> “bands”, each band containing a round of single-qubit gates and a round of controlled-<span class="math notranslate nohighlight">\(Z\)</span> gates. The accreditation is made by employing <strong>trap circuits</strong>, circuits that can be efficiently simulated on a classical computer and that whose outputs are used to witness the correct
-functionality of the device.</p>
+<p>AP 對滿足以下條件的**目標量子電路 (target circuit)** 的輸出進行認證：
+1) 輸入是在 <span class="math notranslate nohighlight">\(|{0}&gt;\)</span>量子態的 <span class="math notranslate nohighlight">\(n\)</span> 個量子位元。
+2) 最後一步是以 Pauli-<span class="math notranslate nohighlight">\(Z\)</span> 為基底的單一量子位元測量。
+3) 它是由 <span class="math notranslate nohighlight">\(m\)</span> “帶(bands)” 組成，每一個“帶”包含了一回合的單一量子位元閘和一回合的 controlled-<span class="math notranslate nohighlight">\(Z\)</span> 閘。
+該認證運用了 <strong>陷阱電路 (trap circuits)</strong>。陷阱電路可有效率地被古典電腦模擬，且其輸出可被用於驗證元件功能的正確性。</p>
 <p>現在讓我們繪製一個目標量子電路吧！ 我們從一個簡單的電路開始，生成並測量 4-量子位元 GHZ 態。</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
@@ -673,7 +676,7 @@ functionality of the device.</p>
 <img alt="../../_images/tutorials_noise_7_accreditation_8_0.png" src="../../_images/tutorials_noise_7_accreditation_8_0.png" />
 </div>
 </div>
-<p>This is how a trap looks like:</p>
+<p>這是一個陷阱電路的樣子：</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -691,7 +694,7 @@ functionality of the device.</p>
 <img alt="../../_images/tutorials_noise_7_accreditation_10_0.png" src="../../_images/tutorials_noise_7_accreditation_10_0.png" />
 </div>
 </div>
-<p>One can use the optional twoqubitgate argument to switch use cx instead of cz gates and can arbitrarily change the coupling map, in order to compile to the desired device topology (which in this case might lead to more layers than expected).</p>
+<p>我們可以利用二量子位元閘的引數來從 cz 閘切換至 cx 閘，且可以任意變更連結對映，以編譯到所需的元件拓蹼(topology)（在此情況下，可能會導致比預期更多層）。</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -825,7 +828,7 @@ List of accepted outputs:
 <p>其中 <span class="math notranslate nohighlight">\(\theta\in[0,1]\)</span> 是一個正數且</p>
 <div class="math notranslate nohighlight">
 \[\varepsilon= \frac{1.7}{v+1}\]</div>
-<p>is the maximum probability of accepting an incorrect state for the target. The function <span class="math notranslate nohighlight">\(bound\_variation\_distance\)</span> also calculates the confidence in the bound as</p>
+<p>是接受目標不正確狀態的機率上限。 函數 :math:<a href="#id1"><span class="problematic" id="id2">`</span></a>bound_variation_distance`也會計算連結中的信心程度</p>
 <div class="math notranslate nohighlight">
 \[1-2\textrm{exp}\big(-2\theta d^2\big)\]</div>
 <div class="nbinput docutils container">
@@ -852,8 +855,8 @@ With confidence 1.0 AP certifies that VD is upper-bounded by 0.16267942583732053
 </pre></div></div>
 </div>
 </section>
-<section id="Defining-the-noise-model">
-<h2>Defining the noise model<a class="headerlink" href="#Defining-the-noise-model" title="本標題的永久連結">¶</a></h2>
+<section id="定義該雜訊模型">
+<h2>定義該雜訊模型<a class="headerlink" href="#定義該雜訊模型" title="本標題的永久連結">¶</a></h2>
 <p>我們為模擬器定義一個雜訊模型。 我們將去極化錯誤機率新增至 controlled-<span class="math notranslate nohighlight">\(Z\)</span> 和單一量子位元閘。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
@@ -1033,7 +1036,7 @@ With confidence 1.0 AP with 9 traps certifies that VD is upper-bounded by 0.3399
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      最後更新於 2021/09/06。
+      最後更新於 2021/09/07。
 
     </p>
   </div>
@@ -1056,7 +1059,7 @@ With confidence 1.0 AP with 9 traps certifies that VD is upper-bounded by 0.3399
 <li><a class="reference internal" href="#認證標準流程的輸入">認證標準流程的輸入</a></li>
 <li><a class="reference internal" href="#產生認證電路">產生認證電路</a></li>
 <li><a class="reference internal" href="#模擬此理想電路">模擬此理想電路</a></li>
-<li><a class="reference internal" href="#Defining-the-noise-model">Defining the noise model</a></li>
+<li><a class="reference internal" href="#定義該雜訊模型">定義該雜訊模型</a></li>
 </ul>
 </li>
 </ul>
