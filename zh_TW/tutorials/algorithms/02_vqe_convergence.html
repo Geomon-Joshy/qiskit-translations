@@ -576,8 +576,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <section id="觀察-VQE-收斂">
 <h1>觀察 VQE 收斂<a class="headerlink" href="#觀察-VQE-收斂" title="本標題的永久連結">¶</a></h1>
-<p>Variational algorithms in Qiskit, like <a class="reference external" href="https://qiskit.org/documentation/stubs/qiskit.algorithms.VQE.html">VQE</a> and <a class="reference external" href="https://qiskit.org/documentation/stubs/qiskit.algorithms.QAOA.html">QAOA</a>, provide the option for a user to give a callback method that can be used to monitor optimization progress as the algorithm runs and converges to the minimum. The callback is invoked for each functional evaluation by the optimizer and provides the current optimizer value, evaluation count, current
-optimizer parameters etc. Note that, depending on the specific optimizer this may not be each iteration (step) of the optimizer, so for example if the optimizer is calling the cost function to compute a finite difference based gradient this will be visible via the callback.</p>
+<p>Qiskit 中的變分演算法(如 <a class="reference external" href="https://qiskit.org/documentation/stubs/qiskit.algorithms.VQE.html">VQE</a> 和 <a class="reference external" href="https://qiskit.org/documentation/stubs/qiskit.algorithms.QAOA.html">QAOA</a>)提供了一個選項給使用者，可用來監視最佳化進度的回呼方法，隨著演算法運算並收斂到其最小值。優化器會呼叫每一個功能評估的回呼，並提供現行優化器的數值、評估計數、現行優化器參數等。請注意，視特定優化器而定，這可能不是優化器的每一個反覆運算(步驟)，例如，如果優化器呼叫成本函數來計算有限差異型的梯度，則會透過回呼來顯示此值。</p>
 <p>此筆記本示範使用 Qiskit 的 VQE 演算法，以選定的一組優化器來針對基態收斂的情形作圖。</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
