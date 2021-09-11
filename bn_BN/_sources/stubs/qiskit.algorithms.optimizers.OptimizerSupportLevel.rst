@@ -1,4 +1,4 @@
-﻿OptimizerSupportLevel
+OptimizerSupportLevel
 =====================
 
 .. currentmodule:: qiskit.algorithms.optimizers

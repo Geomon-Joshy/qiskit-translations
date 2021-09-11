@@ -1,4 +1,4 @@
-﻿Trotter
+Trotter
 =======
 
 .. currentmodule:: qiskit.opflow.evolutions

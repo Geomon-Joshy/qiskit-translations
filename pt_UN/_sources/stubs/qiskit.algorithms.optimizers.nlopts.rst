@@ -1,4 +1,4 @@
-﻿qiskit.algorithms.optimizers.nlopts
+qiskit.algorithms.optimizers.nlopts
 ===================================
 
 .. automodule:: qiskit.algorithms.optimizers.nlopts

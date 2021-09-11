@@ -1,4 +1,4 @@
-﻿SPSA
+SPSA
 ====
 
 .. currentmodule:: qiskit.algorithms.optimizers

@@ -1,4 +1,4 @@
-﻿QFI
+QFI
 ===
 
 .. currentmodule:: qiskit.opflow.gradients

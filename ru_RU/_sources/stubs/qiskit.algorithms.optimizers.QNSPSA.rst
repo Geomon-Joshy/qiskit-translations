@@ -1,4 +1,4 @@
-﻿QNSPSA
+QNSPSA
 ======
 
 .. currentmodule:: qiskit.algorithms.optimizers

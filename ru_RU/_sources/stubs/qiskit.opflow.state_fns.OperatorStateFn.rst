@@ -1,4 +1,4 @@
-﻿OperatorStateFn
+OperatorStateFn
 ===============
 
 .. currentmodule:: qiskit.opflow.state_fns

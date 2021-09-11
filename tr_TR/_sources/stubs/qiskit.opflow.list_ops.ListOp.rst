@@ -1,4 +1,4 @@
-﻿ListOp
+ListOp
 ======
 
 .. currentmodule:: qiskit.opflow.list_ops

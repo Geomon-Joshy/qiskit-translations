@@ -1,4 +1,4 @@
-﻿CVaRMeasurement
+CVaRMeasurement
 ===============
 
 .. currentmodule:: qiskit.opflow.state_fns

@@ -1,4 +1,4 @@
-﻿CircuitSampler
+CircuitSampler
 ==============
 
 .. currentmodule:: qiskit.opflow.converters

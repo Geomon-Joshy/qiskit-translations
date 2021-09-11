@@ -1,4 +1,4 @@
-﻿TrotterizationFactory
+TrotterizationFactory
 =====================
 
 .. currentmodule:: qiskit.opflow.evolutions

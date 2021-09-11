@@ -1,4 +1,4 @@
-﻿SNOBFIT
+SNOBFIT
 =======
 
 .. currentmodule:: qiskit.algorithms.optimizers

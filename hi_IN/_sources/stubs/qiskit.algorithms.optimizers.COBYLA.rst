@@ -1,4 +1,4 @@
-﻿COBYLA
+COBYLA
 ======
 
 .. currentmodule:: qiskit.algorithms.optimizers

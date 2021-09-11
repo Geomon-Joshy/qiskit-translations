@@ -1,4 +1,4 @@
-﻿PauliOp
+PauliOp
 =======
 
 .. currentmodule:: qiskit.opflow.primitive_ops

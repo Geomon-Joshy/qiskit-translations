@@ -1,4 +1,4 @@
-﻿AbelianGrouper
+AbelianGrouper
 ==============
 
 .. currentmodule:: qiskit.opflow.converters

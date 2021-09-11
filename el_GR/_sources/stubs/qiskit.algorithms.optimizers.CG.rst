@@ -1,4 +1,4 @@
-﻿CG
+CG
 ==
 
 .. currentmodule:: qiskit.algorithms.optimizers

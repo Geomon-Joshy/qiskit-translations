@@ -1,4 +1,4 @@
-﻿GradientDescent
+GradientDescent
 ===============
 
 .. currentmodule:: qiskit.algorithms.optimizers

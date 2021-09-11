@@ -1,4 +1,4 @@
-﻿TaperedPauliSumOp
+TaperedPauliSumOp
 =================
 
 .. currentmodule:: qiskit.opflow.primitive_ops

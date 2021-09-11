@@ -1,4 +1,4 @@
-﻿ESCH
+ESCH
 ====
 
 .. currentmodule:: qiskit.algorithms.optimizers

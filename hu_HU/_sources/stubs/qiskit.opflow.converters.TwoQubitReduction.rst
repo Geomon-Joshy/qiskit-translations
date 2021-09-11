@@ -1,4 +1,4 @@
-﻿TwoQubitReduction
+TwoQubitReduction
 =================
 
 .. currentmodule:: qiskit.opflow.converters

@@ -1,4 +1,4 @@
-﻿GradientBase
+GradientBase
 ============
 
 .. currentmodule:: qiskit.opflow.gradients

@@ -1,4 +1,4 @@
-﻿IMFIL
+IMFIL
 =====
 
 .. currentmodule:: qiskit.algorithms.optimizers

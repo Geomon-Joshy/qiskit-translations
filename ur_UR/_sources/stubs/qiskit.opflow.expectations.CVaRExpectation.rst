@@ -1,4 +1,4 @@
-﻿CVaRExpectation
+CVaRExpectation
 ===============
 
 .. currentmodule:: qiskit.opflow.expectations

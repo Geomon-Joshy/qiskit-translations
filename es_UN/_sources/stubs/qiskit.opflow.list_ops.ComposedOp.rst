@@ -1,4 +1,4 @@
-﻿ComposedOp
+ComposedOp
 ==========
 
 .. currentmodule:: qiskit.opflow.list_ops

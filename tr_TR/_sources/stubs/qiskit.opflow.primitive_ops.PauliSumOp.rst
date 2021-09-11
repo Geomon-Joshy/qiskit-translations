@@ -1,4 +1,4 @@
-﻿PauliSumOp
+PauliSumOp
 ==========
 
 .. currentmodule:: qiskit.opflow.primitive_ops

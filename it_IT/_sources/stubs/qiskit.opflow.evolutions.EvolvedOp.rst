@@ -1,4 +1,4 @@
-﻿EvolvedOp
+EvolvedOp
 =========
 
 .. currentmodule:: qiskit.opflow.evolutions

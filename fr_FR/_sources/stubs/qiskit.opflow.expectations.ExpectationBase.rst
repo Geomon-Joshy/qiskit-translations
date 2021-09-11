@@ -1,4 +1,4 @@
-﻿ExpectationBase
+ExpectationBase
 ===============
 
 .. currentmodule:: qiskit.opflow.expectations

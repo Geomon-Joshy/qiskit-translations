@@ -1,4 +1,4 @@
-﻿NFT
+NFT
 ===
 
 .. currentmodule:: qiskit.algorithms.optimizers

@@ -1,4 +1,4 @@
-﻿NaturalGradient
+NaturalGradient
 ===============
 
 .. currentmodule:: qiskit.opflow.gradients

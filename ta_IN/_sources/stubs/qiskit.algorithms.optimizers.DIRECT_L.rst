@@ -1,4 +1,4 @@
-﻿DIRECT\_L
+DIRECT\_L
 =========
 
 .. currentmodule:: qiskit.algorithms.optimizers

@@ -1,4 +1,4 @@
-﻿MatrixOp
+MatrixOp
 ========
 
 .. currentmodule:: qiskit.opflow.primitive_ops

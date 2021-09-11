@@ -1,4 +1,4 @@
-﻿TensoredOp
+TensoredOp
 ==========
 
 .. currentmodule:: qiskit.opflow.list_ops

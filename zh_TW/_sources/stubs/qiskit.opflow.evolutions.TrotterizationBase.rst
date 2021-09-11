@@ -1,4 +1,4 @@
-﻿TrotterizationBase
+TrotterizationBase
 ==================
 
 .. currentmodule:: qiskit.opflow.evolutions

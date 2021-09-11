@@ -1,4 +1,4 @@
-﻿Z2Symmetries
+Z2Symmetries
 ============
 
 .. currentmodule:: qiskit.opflow.primitive_ops

@@ -1,4 +1,4 @@
-﻿L\_BFGS\_B
+L\_BFGS\_B
 ==========
 
 .. currentmodule:: qiskit.algorithms.optimizers

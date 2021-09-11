@@ -1,4 +1,4 @@
-﻿POWELL
+POWELL
 ======
 
 .. currentmodule:: qiskit.algorithms.optimizers

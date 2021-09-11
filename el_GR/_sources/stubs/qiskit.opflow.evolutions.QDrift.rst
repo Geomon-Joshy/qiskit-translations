@@ -1,4 +1,4 @@
-﻿QDrift
+QDrift
 ======
 
 .. currentmodule:: qiskit.opflow.evolutions

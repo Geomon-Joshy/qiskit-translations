@@ -1,4 +1,4 @@
-﻿CRS
+CRS
 ===
 
 .. currentmodule:: qiskit.algorithms.optimizers

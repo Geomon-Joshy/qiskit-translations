@@ -1,4 +1,4 @@
-﻿MatrixExpectation
+MatrixExpectation
 =================
 
 .. currentmodule:: qiskit.opflow.expectations

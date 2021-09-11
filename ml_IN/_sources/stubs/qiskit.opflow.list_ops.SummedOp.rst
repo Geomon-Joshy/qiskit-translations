@@ -1,4 +1,4 @@
-﻿SummedOp
+SummedOp
 ========
 
 .. currentmodule:: qiskit.opflow.list_ops

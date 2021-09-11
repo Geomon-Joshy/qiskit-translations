@@ -1,4 +1,4 @@
-﻿DictStateFn
+DictStateFn
 ===========
 
 .. currentmodule:: qiskit.opflow.state_fns

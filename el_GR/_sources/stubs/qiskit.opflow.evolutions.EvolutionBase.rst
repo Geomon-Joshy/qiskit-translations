@@ -1,4 +1,4 @@
-﻿EvolutionBase
+EvolutionBase
 =============
 
 .. currentmodule:: qiskit.opflow.evolutions

@@ -614,8 +614,10 @@ classical_reference = numpy_based.compute_minimum_eigenvalue(operator)
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-/Users/manoel/projects/Quantum/qiskit-aqua/qiskit/aqua/components/optimizers/optimizer.py:50: DeprecationWarning: The package qiskit.aqua.components.optimizers is deprecated. It was moved/refactored to qiskit.algorithms.optimizers (pip install qiskit-terra). For more information see &lt;https://github.com/Qiskit/qiskit-aqua/blob/main/README.md#migration-guide&gt;
-  &#39;qiskit.algorithms.optimizers&#39;, &#39;qiskit-terra&#39;)
+/Users/manoel/projects/Quantum/qiskit-aqua/qiskit/aqua/__init__.py:86: DeprecationWarning: The package qiskit.aqua is deprecated. It was moved/refactored to qiskit-terra For more information see &lt;https://github.com/Qiskit/qiskit-aqua/blob/main/README.md#migration-guide&gt;
+  warn_package(&#39;aqua&#39;, &#39;qiskit-terra&#39;)
+/Users/manoel/projects/Quantum/qiskit-aqua/qiskit/aqua/components/optimizers/optimizer.py:49: DeprecationWarning: The package qiskit.aqua.components.optimizers is deprecated. It was moved/refactored to qiskit.algorithms.optimizers (pip install qiskit-terra). For more information see &lt;https://github.com/Qiskit/qiskit-aqua/blob/main/README.md#migration-guide&gt;
+  warn_package(&#39;aqua.components.optimizers&#39;,
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
@@ -885,7 +887,7 @@ Top measurement: 01
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Top measurement: 11
+Top measurement: 01
 </pre></div></div>
 </div>
 <p>O <code class="docutils literal notranslate"><span class="pre">qiskit.aqua.components.oracles.TruthTableOracle</span></code> ainda não foi convertido, mas o comportamento pode ser facilmente obtido com o módulo <code class="docutils literal notranslate"><span class="pre">qiskit.circuit.classicalfunction</span></code>, veja os tutoriais no algoritmo Grover.</p>
@@ -996,7 +998,7 @@ Target probability: 0.25
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 Grid-based estimate: 0.1464466
-Improved continuous estimate: 0.2499999956539467
+Improved continuous estimate: 0.2499999956526605
 </pre></div></div>
 </div>
 <p><strong>Agora:</strong></p>
@@ -1249,7 +1251,7 @@ Estimate: 0.2500081904035319
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-(-0.999999996802599+0j)
+(-0.9999999971946394+0j)
 </pre></div></div>
 </div>
 <p><strong>Agora:</strong></p>
@@ -1276,7 +1278,7 @@ Estimate: 0.2500081904035319
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
--0.9999999976790017
+(-0.9999995645308767+0j)
 </pre></div></div>
 </div>
 <p>Observe que o <code class="docutils literal notranslate"><span class="pre">qiskit.aqua.components.variational_forms</span></code> está completamente obsoleto em favor de objetos de circuito. A maioria das formas variacionais já foi portada para a biblioteca de circuitos em versões anteriores e agora também <code class="docutils literal notranslate"><span class="pre">UCCSD</span></code> faz parte da biblioteca de circuitos da Qiskit Nature:</p>
@@ -1312,7 +1314,7 @@ Estimate: 0.2500081904035319
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="kn">from</span> <span class="nn">qiskit_nature.mappers.second_quantization</span> <span class="kn">import</span> <span class="n">JordanWignerMapper</span>
-<span class="kn">from</span> <span class="nn">qiskit_nature.operators.second_quantization.qubit_converter</span> <span class="kn">import</span> <span class="n">QubitConverter</span>
+<span class="kn">from</span> <span class="nn">qiskit_nature.converters.second_quantization.qubit_converter</span> <span class="kn">import</span> <span class="n">QubitConverter</span>
 <span class="kn">from</span> <span class="nn">qiskit_nature.circuit.library</span> <span class="kn">import</span> <span class="n">UCCSD</span>
 
 <span class="n">qubit_converter</span> <span class="o">=</span> <span class="n">QubitConverter</span><span class="p">(</span><span class="n">JordanWignerMapper</span><span class="p">())</span>
@@ -1357,7 +1359,7 @@ Estimate: 0.2500081904035319
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-(-0.999999982019625+0j)
+(-0.9999999808672868+0j)
 </pre></div></div>
 </div>
 <p><strong>Agora:</strong></p>
@@ -1383,7 +1385,7 @@ Estimate: 0.2500081904035319
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
--0.9999999768364134
+(-0.9999999752264653+0j)
 </pre></div></div>
 </div>
 <p><strong>Mais exemplos:</strong></p>
@@ -1692,7 +1694,7 @@ Factors: [3]
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[ 0.66575607-5.39389682e-15j -0.38561455+4.35672537e-15j]
+[ 0.66575607+4.96430258e-13j -0.38561455-2.84524449e-13j]
 </pre></div></div>
 </div>
 <p><strong>Agora:</strong></p>
@@ -1739,7 +1741,7 @@ Factors: [3]
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[1.125, 0.375]
+[1.125, 0.37499999999999994]
 </pre></div></div>
 </div>
 <p><strong>Agora:</strong></p>
@@ -1991,7 +1993,7 @@ Factors: [3]
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-(-0.6536436208636107+5.551115123125783e-17j)
+(-0.6536436208636113+0j)
 </pre></div></div>
 </div>
 <p><strong>Novo:</strong></p>
@@ -2031,7 +2033,7 @@ Factors: [3]
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-(-0.653643620863615+0j)
+(-0.6536436208636165+0j)
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">

@@ -1,4 +1,4 @@
-﻿SLSQP
+SLSQP
 =====
 
 .. currentmodule:: qiskit.algorithms.optimizers

@@ -1,4 +1,4 @@
-﻿EvolutionFactory
+EvolutionFactory
 ================
 
 .. currentmodule:: qiskit.opflow.evolutions

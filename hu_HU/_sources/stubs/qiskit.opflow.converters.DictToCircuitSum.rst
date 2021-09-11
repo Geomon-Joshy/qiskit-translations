@@ -1,4 +1,4 @@
-﻿DictToCircuitSum
+DictToCircuitSum
 ================
 
 .. currentmodule:: qiskit.opflow.converters

@@ -1,4 +1,4 @@
-﻿CircuitQFI
+CircuitQFI
 ==========
 
 .. currentmodule:: qiskit.opflow.gradients

@@ -1,4 +1,4 @@
-﻿ConverterBase
+ConverterBase
 =============
 
 .. currentmodule:: qiskit.opflow.converters

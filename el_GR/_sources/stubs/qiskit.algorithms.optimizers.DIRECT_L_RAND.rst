@@ -1,4 +1,4 @@
-﻿DIRECT\_L\_RAND
+DIRECT\_L\_RAND
 ===============
 
 .. currentmodule:: qiskit.algorithms.optimizers

@@ -1,4 +1,4 @@
-﻿Hessian
+Hessian
 =======
 
 .. currentmodule:: qiskit.opflow.gradients

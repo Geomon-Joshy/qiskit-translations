@@ -1,4 +1,4 @@
-﻿AerPauliExpectation
+AerPauliExpectation
 ===================
 
 .. currentmodule:: qiskit.opflow.expectations

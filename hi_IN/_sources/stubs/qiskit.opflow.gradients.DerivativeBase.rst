@@ -1,4 +1,4 @@
-﻿DerivativeBase
+DerivativeBase
 ==============
 
 .. currentmodule:: qiskit.opflow.gradients

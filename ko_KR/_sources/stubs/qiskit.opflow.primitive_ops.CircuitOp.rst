@@ -1,4 +1,4 @@
-﻿CircuitOp
+CircuitOp
 =========
 
 .. currentmodule:: qiskit.opflow.primitive_ops

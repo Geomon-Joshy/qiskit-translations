@@ -1,4 +1,4 @@
-﻿GSLS
+GSLS
 ====
 
 .. currentmodule:: qiskit.algorithms.optimizers

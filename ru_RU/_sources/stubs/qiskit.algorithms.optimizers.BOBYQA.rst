@@ -1,4 +1,4 @@
-﻿BOBYQA
+BOBYQA
 ======
 
 .. currentmodule:: qiskit.algorithms.optimizers

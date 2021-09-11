@@ -1,4 +1,4 @@
-﻿AQGD
+AQGD
 ====
 
 .. currentmodule:: qiskit.algorithms.optimizers

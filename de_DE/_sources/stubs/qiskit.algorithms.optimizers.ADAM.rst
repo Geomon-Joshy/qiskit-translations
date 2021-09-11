@@ -1,4 +1,4 @@
-﻿ADAM
+ADAM
 ====
 
 .. currentmodule:: qiskit.algorithms.optimizers

@@ -1,4 +1,4 @@
-﻿PauliExpectation
+PauliExpectation
 ================
 
 .. currentmodule:: qiskit.opflow.expectations

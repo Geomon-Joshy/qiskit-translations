@@ -1,4 +1,4 @@
-﻿SciPyOptimizer
+SciPyOptimizer
 ==============
 
 .. currentmodule:: qiskit.algorithms.optimizers

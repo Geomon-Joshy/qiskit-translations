@@ -1,4 +1,4 @@
-﻿ISRES
+ISRES
 =====
 
 .. currentmodule:: qiskit.algorithms.optimizers

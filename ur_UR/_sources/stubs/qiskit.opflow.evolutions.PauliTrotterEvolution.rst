@@ -1,4 +1,4 @@
-﻿PauliTrotterEvolution
+PauliTrotterEvolution
 =====================
 
 .. currentmodule:: qiskit.opflow.evolutions

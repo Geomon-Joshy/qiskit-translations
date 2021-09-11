@@ -1,4 +1,4 @@
-﻿PauliBasisChange
+PauliBasisChange
 ================
 
 .. currentmodule:: qiskit.opflow.converters

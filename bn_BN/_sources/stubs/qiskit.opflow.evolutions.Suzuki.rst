@@ -1,4 +1,4 @@
-﻿Suzuki
+Suzuki
 ======
 
 .. currentmodule:: qiskit.opflow.evolutions

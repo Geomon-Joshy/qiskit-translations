@@ -1,4 +1,4 @@
-﻿MatrixEvolution
+MatrixEvolution
 ===============
 
 .. currentmodule:: qiskit.opflow.evolutions

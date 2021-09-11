@@ -1,4 +1,4 @@
-﻿ExpectationFactory
+ExpectationFactory
 ==================
 
 .. currentmodule:: qiskit.opflow.expectations

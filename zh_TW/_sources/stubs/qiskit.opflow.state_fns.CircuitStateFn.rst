@@ -1,4 +1,4 @@
-﻿CircuitStateFn
+CircuitStateFn
 ==============
 
 .. currentmodule:: qiskit.opflow.state_fns

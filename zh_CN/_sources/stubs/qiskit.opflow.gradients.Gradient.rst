@@ -1,4 +1,4 @@
-﻿Gradient
+Gradient
 ========
 
 .. currentmodule:: qiskit.opflow.gradients

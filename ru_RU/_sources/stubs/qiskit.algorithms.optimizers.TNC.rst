@@ -1,4 +1,4 @@
-﻿TNC
+TNC
 ===
 
 .. currentmodule:: qiskit.algorithms.optimizers

@@ -1,4 +1,4 @@
-﻿PrimitiveOp
+PrimitiveOp
 ===========
 
 .. currentmodule:: qiskit.opflow.primitive_ops
