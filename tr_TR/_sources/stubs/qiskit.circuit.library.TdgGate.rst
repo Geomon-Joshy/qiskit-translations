@@ -7,28 +7,13 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~TdgGate.add_decomposition
-      ~TdgGate.assemble
-      ~TdgGate.broadcast_arguments
-      ~TdgGate.c_if
-      ~TdgGate.control
-      ~TdgGate.copy
       ~TdgGate.inverse
-      ~TdgGate.is_parameterized
-      ~TdgGate.mirror
-      ~TdgGate.power
-      ~TdgGate.qasm
-      ~TdgGate.repeat
-      ~TdgGate.reverse_ops
-      ~TdgGate.soft_compare
-      ~TdgGate.to_matrix
-      ~TdgGate.validate_parameter
 
 
 

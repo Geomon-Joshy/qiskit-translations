@@ -7,7 +7,7 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
@@ -24,7 +24,6 @@
       ~OperatorBase.mul
       ~OperatorBase.neg
       ~OperatorBase.permute
-      ~OperatorBase.power
       ~OperatorBase.primitive_strings
       ~OperatorBase.reduce
       ~OperatorBase.tensor

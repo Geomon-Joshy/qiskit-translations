@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.ignis.verification.entanglement.analysis &mdash; Dokumentasi Qiskit 0.29.0</title>
+  <title>qiskit.ignis.verification.entanglement.analysis &mdash; Dokumentasi Qiskit 0.29.1</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/css/theme-override.css" type="text/css" />
@@ -397,10 +396,10 @@
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Various plots of the ground state in MQC and PO experiments</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-<div class="viewcode-block" id="Plotter.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.ignis.verification.Plotter.html#qiskit.ignis.verification.Plotter.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="n">label</span></div>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="n">label</span>
 
-<div class="viewcode-block" id="Plotter.title_maker"><a class="viewcode-back" href="../../../../../stubs/qiskit.ignis.verification.Plotter.html#qiskit.ignis.verification.Plotter.title_maker">[docs]</a>    <span class="k">def</span> <span class="nf">title_maker</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+<div class="viewcode-block" id="Plotter.title_maker"><a class="viewcode-back" href="../../../../../stubs/qiskit.ignis.verification.Plotter.title_maker.html#qiskit.ignis.verification.Plotter.title_maker">[docs]</a>    <span class="k">def</span> <span class="nf">title_maker</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Make title depending on type of exp.</span>
 
@@ -416,7 +415,7 @@
 
         <span class="k">return</span> <span class="n">title</span><span class="p">,</span> <span class="n">title_ext</span></div>
 
-<div class="viewcode-block" id="Plotter.sin_plotter"><a class="viewcode-back" href="../../../../../stubs/qiskit.ignis.verification.Plotter.html#qiskit.ignis.verification.Plotter.sin_plotter">[docs]</a>    <span class="k">def</span> <span class="nf">sin_plotter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+<div class="viewcode-block" id="Plotter.sin_plotter"><a class="viewcode-back" href="../../../../../stubs/qiskit.ignis.verification.Plotter.sin_plotter.html#qiskit.ignis.verification.Plotter.sin_plotter">[docs]</a>    <span class="k">def</span> <span class="nf">sin_plotter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
                     <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span>
                     <span class="n">y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span>
                     <span class="n">y_m</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="o">=</span> <span class="kc">None</span>
@@ -449,7 +448,7 @@
             <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\phi&#39;</span><span class="p">)</span>
             <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Normalized Contrast&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Plotter.get_fourier_info"><a class="viewcode-back" href="../../../../../stubs/qiskit.ignis.verification.Plotter.html#qiskit.ignis.verification.Plotter.get_fourier_info">[docs]</a>    <span class="k">def</span> <span class="nf">get_fourier_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+<div class="viewcode-block" id="Plotter.get_fourier_info"><a class="viewcode-back" href="../../../../../stubs/qiskit.ignis.verification.Plotter.get_fourier_info.html#qiskit.ignis.verification.Plotter.get_fourier_info">[docs]</a>    <span class="k">def</span> <span class="nf">get_fourier_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
                          <span class="n">qn</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
                          <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span>
                          <span class="n">y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span>

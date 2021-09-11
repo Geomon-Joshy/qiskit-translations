@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.circuit.library.arithmetic.quadratic_form &mdash; Τεκμηρίωση του Qiskit - 0.29.0</title>
+  <title>qiskit.circuit.library.arithmetic.quadratic_form &mdash; Τεκμηρίωση του Qiskit - 0.29.1</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/css/theme-override.css" type="text/css" />
@@ -380,7 +379,7 @@
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="QuadraticForm.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.QuadraticForm.html#qiskit.circuit.library.QuadraticForm.__init__">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">num_result_qubits</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
         <span class="n">quadratic</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span>
@@ -482,9 +481,9 @@
         <span class="n">circuit</span><span class="o">.</span><span class="n">compose</span><span class="p">(</span><span class="n">iqft</span><span class="p">,</span> <span class="n">qubits</span><span class="o">=</span><span class="n">qr_result</span><span class="p">[:],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">circuit</span><span class="o">.</span><span class="n">qregs</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Q(x)&quot;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">compose</span><span class="p">(</span><span class="n">circuit</span><span class="o">.</span><span class="n">to_gate</span><span class="p">(),</span> <span class="n">qubits</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">qubits</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">compose</span><span class="p">(</span><span class="n">circuit</span><span class="o">.</span><span class="n">to_gate</span><span class="p">(),</span> <span class="n">qubits</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">qubits</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<div class="viewcode-block" id="QuadraticForm.required_result_qubits"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.QuadraticForm.html#qiskit.circuit.library.QuadraticForm.required_result_qubits">[τεκμηρίωση]</a>    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="QuadraticForm.required_result_qubits"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.QuadraticForm.required_result_qubits.html#qiskit.circuit.library.QuadraticForm.required_result_qubits">[τεκμηρίωση]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">required_result_qubits</span><span class="p">(</span>
         <span class="n">quadratic</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]]],</span>
         <span class="n">linear</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]],</span>

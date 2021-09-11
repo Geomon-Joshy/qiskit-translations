@@ -531,7 +531,7 @@
 
 <span class="sd">        Returns:</span>
 <span class="sd">            List[str] or np.ndarray: Either the list of each outcome, formatted according to</span>
-<span class="sd">                registers in circuit or a complex numpy np.ndarray with shape:</span>
+<span class="sd">            registers in circuit or a complex numpy np.ndarray with shape:</span>
 
 <span class="sd">                ============  =============  =====</span>
 <span class="sd">                `meas_level`  `meas_return`  shape</span>
@@ -582,11 +582,11 @@
 <span class="sd">                experiment, as specified by ``data([experiment])``.</span>
 
 <span class="sd">        Returns:</span>
-<span class="sd">            dict[str:int] or list[dict[str:int]]: a dictionary or a list of</span>
-<span class="sd">                dictionaries. A dictionary has the counts for each qubit with</span>
-<span class="sd">                the keys containing a string in binary format and separated</span>
-<span class="sd">                according to the registers in circuit (e.g. ``0100 1110``).</span>
-<span class="sd">                The string is little-endian (cr[0] on the right hand side).</span>
+<span class="sd">            dict[str, int] or list[dict[str, int]]: a dictionary or a list of</span>
+<span class="sd">            dictionaries. A dictionary has the counts for each qubit with</span>
+<span class="sd">            the keys containing a string in binary format and separated</span>
+<span class="sd">            according to the registers in circuit (e.g. ``0100 1110``).</span>
+<span class="sd">            The string is little-endian (cr[0] on the right hand side).</span>
 
 <span class="sd">        Raises:</span>
 <span class="sd">            QiskitError: if there are no counts for the experiment.</span>

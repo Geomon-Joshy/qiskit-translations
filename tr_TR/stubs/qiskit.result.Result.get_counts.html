@@ -341,17 +341,14 @@
 experiment, as specified by <code class="docutils literal notranslate"><span class="pre">data([experiment])</span></code>.</p>
 </dd>
 <dt class="field-even">Dönüşler</dt>
-<dd class="field-even"><p><dl class="simple">
-<dt>int] or list[dict[str:int]]: a dictionary or a list of</dt><dd><p>dictionaries. A dictionary has the counts for each qubit with
+<dd class="field-even"><p>a dictionary or a list of
+dictionaries. A dictionary has the counts for each qubit with
 the keys containing a string in binary format and separated
 according to the registers in circuit (e.g. <code class="docutils literal notranslate"><span class="pre">0100</span> <span class="pre">1110</span></code>).
 The string is little-endian (cr[0] on the right hand side).</p>
 </dd>
-</dl>
-</p>
-</dd>
 <dt class="field-odd">Dönüş türü</dt>
-<dd class="field-odd"><p>dict[str</p>
+<dd class="field-odd"><p>dict[str, int] or list[dict[str, int]]</p>
 </dd>
 <dt class="field-even">Harekete geçirir</dt>
 <dd class="field-even"><p><strong>QiskitError</strong> – if there are no counts for the experiment.</p>

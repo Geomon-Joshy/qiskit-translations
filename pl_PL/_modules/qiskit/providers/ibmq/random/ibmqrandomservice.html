@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.providers.ibmq.random.ibmqrandomservice &mdash; Qiskit 0.29.0 - dokumentacja</title>
+  <title>qiskit.providers.ibmq.random.ibmqrandomservice &mdash; Qiskit 0.29.1 - dokumentacja</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/css/theme-override.css" type="text/css" />
@@ -363,7 +362,7 @@
 <span class="sd">        extractor = provider.random.cqc_extractor  # Short hand for above.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="IBMQRandomService.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.ibmq.random.IBMQRandomService.html#qiskit.providers.ibmq.random.IBMQRandomService.__init__">[dokumentacja]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">provider</span><span class="p">:</span> <span class="s1">&#39;accountprovider.AccountProvider&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">provider</span><span class="p">:</span> <span class="s1">&#39;accountprovider.AccountProvider&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;IBMQRandomService constructor.</span>
 
 <span class="sd">        Args:</span>
@@ -376,7 +375,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_random_client</span> <span class="o">=</span> <span class="kc">None</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_initialized</span> <span class="o">=</span> <span class="kc">True</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_services</span> <span class="o">=</span> <span class="p">{}</span>     <span class="c1"># type: Dict[str, BaseRandomService]</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_services</span> <span class="o">=</span> <span class="p">{}</span>     <span class="c1"># type: Dict[str, BaseRandomService]</span>
 
     <span class="k">def</span> <span class="nf">_discover_services</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;Discovers the remote random services for this provider, if not already known.&quot;&quot;&quot;</span>
@@ -402,12 +401,12 @@
                                <span class="s2">&quot;Please try again later. Error: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">err</span><span class="p">))</span>
                 <span class="k">pass</span>
 
-<div class="viewcode-block" id="IBMQRandomService.services"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.ibmq.random.IBMQRandomService.html#qiskit.providers.ibmq.random.IBMQRandomService.services">[dokumentacja]</a>    <span class="k">def</span> <span class="nf">services</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">BaseRandomService</span><span class="p">]:</span>
+<div class="viewcode-block" id="IBMQRandomService.services"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.ibmq.random.IBMQRandomService.services.html#qiskit.providers.ibmq.random.IBMQRandomService.services">[dokumentacja]</a>    <span class="k">def</span> <span class="nf">services</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">BaseRandomService</span><span class="p">]:</span>
         <span class="sd">&quot;&quot;&quot;Return all random number services available to this account.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_discover_services</span><span class="p">()</span>
         <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_services</span><span class="o">.</span><span class="n">values</span><span class="p">())</span></div>
 
-<div class="viewcode-block" id="IBMQRandomService.get_service"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.ibmq.random.IBMQRandomService.html#qiskit.providers.ibmq.random.IBMQRandomService.get_service">[dokumentacja]</a>    <span class="k">def</span> <span class="nf">get_service</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BaseRandomService</span><span class="p">:</span>
+<div class="viewcode-block" id="IBMQRandomService.get_service"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.ibmq.random.IBMQRandomService.get_service.html#qiskit.providers.ibmq.random.IBMQRandomService.get_service">[dokumentacja]</a>    <span class="k">def</span> <span class="nf">get_service</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BaseRandomService</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;Return the random number service with the given name.</span>
 
 <span class="sd">        Args:</span>

@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.dagcircuit.dagdepnode &mdash; Qiskit 0.29.0 문서</title>
+  <title>qiskit.dagcircuit.dagdepnode &mdash; Qiskit 0.29.1 문서</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/css/theme-override.css" type="text/css" />
@@ -366,7 +365,7 @@
         <span class="s2">&quot;cindices&quot;</span><span class="p">,</span>
     <span class="p">]</span>
 
-<div class="viewcode-block" id="DAGDepNode.__init__"><a class="viewcode-back" href="../../../stubs/qiskit.dagcircuit.DAGDepNode.html#qiskit.dagcircuit.DAGDepNode.__init__">[문서]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="nb">type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">op</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -408,7 +407,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">isblocked</span> <span class="o">=</span> <span class="n">isblocked</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">successorstovisit</span> <span class="o">=</span> <span class="n">successorstovisit</span> <span class="k">if</span> <span class="n">successorstovisit</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">[]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">qindices</span> <span class="o">=</span> <span class="n">qindices</span> <span class="k">if</span> <span class="n">qindices</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">[]</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">cindices</span> <span class="o">=</span> <span class="n">cindices</span> <span class="k">if</span> <span class="n">cindices</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">[]</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cindices</span> <span class="o">=</span> <span class="n">cindices</span> <span class="k">if</span> <span class="n">cindices</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">[]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">op</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -462,7 +461,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_qargs</span> <span class="o">=</span> <span class="n">new_qargs</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">sort_key</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">new_qargs</span><span class="p">)</span>
 
-<div class="viewcode-block" id="DAGDepNode.semantic_eq"><a class="viewcode-back" href="../../../stubs/qiskit.dagcircuit.DAGDepNode.html#qiskit.dagcircuit.DAGDepNode.semantic_eq">[문서]</a>    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="DAGDepNode.semantic_eq"><a class="viewcode-back" href="../../../stubs/qiskit.dagcircuit.DAGDepNode.semantic_eq.html#qiskit.dagcircuit.DAGDepNode.semantic_eq">[문서]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">semantic_eq</span><span class="p">(</span><span class="n">node1</span><span class="p">,</span> <span class="n">node2</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Check if DAG nodes are considered equivalent, e.g., as a node_match for nx.is_isomorphic.</span>
@@ -489,7 +488,7 @@
                             <span class="k">return</span> <span class="kc">True</span>
         <span class="k">return</span> <span class="kc">False</span></div>
 
-<div class="viewcode-block" id="DAGDepNode.copy"><a class="viewcode-back" href="../../../stubs/qiskit.dagcircuit.DAGDepNode.html#qiskit.dagcircuit.DAGDepNode.copy">[문서]</a>    <span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="DAGDepNode.copy"><a class="viewcode-back" href="../../../stubs/qiskit.dagcircuit.DAGDepNode.copy.html#qiskit.dagcircuit.DAGDepNode.copy">[문서]</a>    <span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Function to copy a DAGDepNode object.</span>
 <span class="sd">        Returns:</span>

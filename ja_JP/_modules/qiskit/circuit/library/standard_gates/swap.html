@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.circuit.library.standard_gates.swap &mdash; Qiskit 0.29.0 ドキュメント</title>
+  <title>qiskit.circuit.library.standard_gates.swap &mdash; Qiskit 0.29.1 ドキュメント</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/css/theme-override.css" type="text/css" />
@@ -372,9 +371,9 @@
 <span class="sd">        |a, b\rangle \rightarrow |b, a\rangle</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="SwapGate.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.SwapGate.html#qiskit.circuit.library.SwapGate.__init__">[ドキュメント]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Create new SWAP gate.&quot;&quot;&quot;</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s2">&quot;swap&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">[],</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span></div>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s2">&quot;swap&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">[],</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_define</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -396,7 +395,7 @@
 
         <span class="bp">self</span><span class="o">.</span><span class="n">definition</span> <span class="o">=</span> <span class="n">qc</span>
 
-<div class="viewcode-block" id="SwapGate.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.SwapGate.html#qiskit.circuit.library.SwapGate.control">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="SwapGate.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.SwapGate.control.html#qiskit.circuit.library.SwapGate.control">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return a (multi-)controlled-SWAP gate.</span>
 
 <span class="sd">        One control returns a CSWAP (Fredkin) gate.</span>
@@ -416,7 +415,7 @@
             <span class="k">return</span> <span class="n">gate</span>
         <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">control</span><span class="p">(</span><span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="n">num_ctrl_qubits</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="n">ctrl_state</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="SwapGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.SwapGate.html#qiskit.circuit.library.SwapGate.inverse">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="SwapGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.SwapGate.inverse.html#qiskit.circuit.library.SwapGate.inverse">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return inverse Swap gate (itself).&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">SwapGate</span><span class="p">()</span>  <span class="c1"># self-inverse</span></div>
 
@@ -523,7 +522,7 @@
         <span class="p">]</span>
     <span class="p">)</span>
 
-<div class="viewcode-block" id="CSwapGate.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CSwapGate.html#qiskit.circuit.library.CSwapGate.__init__">[ドキュメント]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Create new CSWAP gate.&quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
             <span class="s2">&quot;cswap&quot;</span><span class="p">,</span>
@@ -533,7 +532,7 @@
             <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span>
             <span class="n">ctrl_state</span><span class="o">=</span><span class="n">ctrl_state</span><span class="p">,</span>
             <span class="n">base_gate</span><span class="o">=</span><span class="n">SwapGate</span><span class="p">(),</span>
-        <span class="p">)</span></div>
+        <span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_define</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -559,7 +558,7 @@
 
         <span class="bp">self</span><span class="o">.</span><span class="n">definition</span> <span class="o">=</span> <span class="n">qc</span>
 
-<div class="viewcode-block" id="CSwapGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CSwapGate.html#qiskit.circuit.library.CSwapGate.inverse">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="CSwapGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CSwapGate.inverse.html#qiskit.circuit.library.CSwapGate.inverse">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return inverse CSwap gate (itself).&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">CSwapGate</span><span class="p">(</span><span class="n">ctrl_state</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ctrl_state</span><span class="p">)</span>  <span class="c1"># self-inverse</span></div>
 

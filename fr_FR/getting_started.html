@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Mise en route &mdash; Documentation Qiskit 0.29.0</title>
+  <title>Mise en route &mdash; Documentation Qiskit 0.29.1</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme-override.css" type="text/css" />
@@ -327,8 +326,8 @@
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="tabbed-set docutils">
-<input checked="checked" id="1a035b6d-176a-421c-8dc3-a0f6f96b73ec" name="acfcc211-06bc-4a86-a750-3ae738242de7" type="radio">
-</input><label class="tabbed-label" for="1a035b6d-176a-421c-8dc3-a0f6f96b73ec">
+<input checked="checked" id="6d1ec654-d1c0-4d83-b96a-7b4c922ddcf0" name="8c28557f-7268-4014-84e7-d24cc5ede9ec" type="radio">
+</input><label class="tabbed-label" for="6d1ec654-d1c0-4d83-b96a-7b4c922ddcf0">
 Démarrer localement</label><div class="tabbed-content docutils">
 <p>Qiskit supporte Python 3.6 ou une version supérieure. Cependant, Python et Qiskit sont des écosystèmes évolutifs, et parfois quand de nouvelles versions sont disponibles pour l’un ou l’autre, il peut y avoir des problèmes de compatibilité.</p>
 <p>Nous recommandons d’installer <a class="reference external" href="https://www.anaconda.com/download/">Anaconda</a>, une distribution multi-plateformes de Python pour le calcul scientifique. Jupyter, inclus dans Anaconda, est recommandé pour l’interaction avec Qiskit.</p>
@@ -363,8 +362,8 @@ Démarrer localement</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="061b8184-f3e9-4a5c-bcaa-280bc0ab9934" name="acfcc211-06bc-4a86-a750-3ae738242de7" type="radio">
-</input><label class="tabbed-label" for="061b8184-f3e9-4a5c-bcaa-280bc0ab9934">
+<input id="05c653af-1260-4538-abcb-7fd635c6d88b" name="8c28557f-7268-4014-84e7-d24cc5ede9ec" type="radio">
+</input><label class="tabbed-label" for="05c653af-1260-4538-abcb-7fd635c6d88b">
 Démarrer sur le cloud</label><div class="tabbed-content docutils">
 <blockquote>
 <div><p>Les fournisseurs de cloud suivants disposent de Qiskit préinstallé dans leur environnement :</p>
@@ -420,8 +419,8 @@ Démarrer sur le cloud</label><div class="tabbed-content docutils">
 </div>
 </div>
 </div></div>
-<input id="1d3e18bd-7f75-48f0-b1a2-a8380e4579c9" name="acfcc211-06bc-4a86-a750-3ae738242de7" type="radio">
-</input><label class="tabbed-label" for="1d3e18bd-7f75-48f0-b1a2-a8380e4579c9">
+<input id="95557dc9-5954-4b90-aa92-6828db404495" name="8c28557f-7268-4014-84e7-d24cc5ede9ec" type="radio">
+</input><label class="tabbed-label" for="95557dc9-5954-4b90-aa92-6828db404495">
 Installation à partir du code source</label><div class="tabbed-content docutils">
 <p>Installer des éléments depuis la source vous permet d’utiliser la version la plus à jour de Qiskit, plutôt que d’utiliser la version du dépôt de PyPI (Python Package Index). Ceci vous donnera la possibilité d’inspecter et d’étendre plus efficacement la dernière version du code Qiskit.</p>
 <p>Lorsqu’une installation depuis la source est réalisée, par défaut, la version <code class="docutils literal notranslate"><span class="pre">development``(correspondant</span> <span class="pre">à</span> <span class="pre">la</span> <span class="pre">branche</span> <span class="pre">``master</span></code> de git) sera utilisée, et non la version <code class="docutils literal notranslate"><span class="pre">stable</span></code> (qui contient le code des packages <code class="docutils literal notranslate"><span class="pre">pip</span></code> publiés). Puisque la version <a href="#id1"><span class="problematic" id="id2">``</span></a>development``d’un composant inclut les toutes nouvelles modifications, il est nécessaire alors d’utiliser cette même version pour les autres éléments.</p>
@@ -445,13 +444,13 @@ conda activate QiskitDevenv
 </div>
 <h2>Installing Terra from Source</h2><p>Cette installation nécessite un compilateur C++ supportant C++11.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="3a03c9eb-f74e-4581-ab8b-52e614619ce0" name="2fe2efbc-e621-4fc1-9e3b-cfa466b2c013" type="radio">
-</input><label class="tabbed-label" for="3a03c9eb-f74e-4581-ab8b-52e614619ce0">
+<input checked="checked" id="e06d5edb-8125-4341-ba25-27fd40d6d6e5" name="30b80eb1-5f2c-487f-925d-5ce535ef1a04" type="radio">
+</input><label class="tabbed-label" for="e06d5edb-8125-4341-ba25-27fd40d6d6e5">
 Compilateur pour Linux</label><div class="tabbed-content docutils">
 <p>Sur la plupart des plateformes Linux, le compilateur GCC nécessaire est déjà installé.</p>
 </div>
-<input id="0eab91cc-f38c-4ab8-87cc-239eabe2a2cc" name="2fe2efbc-e621-4fc1-9e3b-cfa466b2c013" type="radio">
-</input><label class="tabbed-label" for="0eab91cc-f38c-4ab8-87cc-239eabe2a2cc">
+<input id="e35e1d55-740c-4e84-8f67-4b47d8eaeb3b" name="30b80eb1-5f2c-487f-925d-5ce535ef1a04" type="radio">
+</input><label class="tabbed-label" for="e35e1d55-740c-4e84-8f67-4b47d8eaeb3b">
 Compilateur pour macOS</label><div class="tabbed-content docutils">
 <p>Si vous utilisez macOS, installez XCode et Clang. Depuis une fenêtre Terminal, vérifiez si XCode et Clang sont installés de cette façon.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>clang --version
@@ -462,8 +461,8 @@ Compilateur pour macOS</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="30ceed28-8eda-4a99-9fb8-8e06842bb2a4" name="2fe2efbc-e621-4fc1-9e3b-cfa466b2c013" type="radio">
-</input><label class="tabbed-label" for="30ceed28-8eda-4a99-9fb8-8e06842bb2a4">
+<input id="f20886bc-1201-424c-9d99-bab325ef2cd7" name="30b80eb1-5f2c-487f-925d-5ce535ef1a04" type="radio">
+</input><label class="tabbed-label" for="f20886bc-1201-424c-9d99-bab325ef2cd7">
 Compilateur pour Windows</label><div class="tabbed-content docutils">
 <p>Sur Windows, le plus simple est d’installer le compilateur Visual C++ depuis <a class="reference external" href="https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019">Build Tools for Visual Studio 2019</a>. Vous pouvez aussi choisir Visual Studio version 2015 ou 2017, en prenant soin de valider les options pour installer le compilateur C++.</p>
 </div>

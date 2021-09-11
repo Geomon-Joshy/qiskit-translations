@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.quantum_info.synthesis.two_qubit_decompose &mdash; Τεκμηρίωση του Qiskit - 0.29.0</title>
+  <title>qiskit.quantum_info.synthesis.two_qubit_decompose &mdash; Τεκμηρίωση του Qiskit - 0.29.1</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/css/theme-override.css" type="text/css" />
@@ -1007,7 +1006,7 @@
 <span class="sd">            if unknown.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="TwoQubitBasisDecomposer.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.html#qiskit.quantum_info.TwoQubitBasisDecomposer.__init__">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gate</span><span class="p">,</span> <span class="n">basis_fidelity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">euler_basis</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pulse_optimize</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gate</span><span class="p">,</span> <span class="n">basis_fidelity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">euler_basis</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pulse_optimize</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">gate</span> <span class="o">=</span> <span class="n">gate</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">basis_fidelity</span> <span class="o">=</span> <span class="n">basis_fidelity</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">pulse_optimize</span> <span class="o">=</span> <span class="n">pulse_optimize</span>
@@ -1134,9 +1133,9 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">decomp2_supercontrolled</span><span class="p">,</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">decomp3_supercontrolled</span><span class="p">,</span>
         <span class="p">]</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_rqc</span> <span class="o">=</span> <span class="kc">None</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rqc</span> <span class="o">=</span> <span class="kc">None</span>
 
-<div class="viewcode-block" id="TwoQubitBasisDecomposer.traces"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.html#qiskit.quantum_info.TwoQubitBasisDecomposer.traces">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">traces</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+<div class="viewcode-block" id="TwoQubitBasisDecomposer.traces"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.traces.html#qiskit.quantum_info.TwoQubitBasisDecomposer.traces">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">traces</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Give the expected traces :math:`|Tr(U \\cdot Utarget^dag)|` for different number of</span>
 <span class="sd">        basis gates.&quot;&quot;&quot;</span>
         <span class="c1"># Future gotcha: extending this to non-supercontrolled basis.</span>
@@ -1159,7 +1158,7 @@
             <span class="mi">4</span><span class="p">,</span>
         <span class="p">]</span></div>
 
-<div class="viewcode-block" id="TwoQubitBasisDecomposer.decomp0"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.html#qiskit.quantum_info.TwoQubitBasisDecomposer.decomp0">[τεκμηρίωση]</a>    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="TwoQubitBasisDecomposer.decomp0"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.decomp0.html#qiskit.quantum_info.TwoQubitBasisDecomposer.decomp0">[τεκμηρίωση]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">decomp0</span><span class="p">(</span><span class="n">target</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Decompose target ~Ud(x, y, z) with 0 uses of the basis gate.</span>
 <span class="sd">        Result Ur has trace:</span>
@@ -1170,7 +1169,7 @@
         <span class="n">U0r</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="n">K1r</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">target</span><span class="o">.</span><span class="n">K2r</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">U0r</span><span class="p">,</span> <span class="n">U0l</span></div>
 
-<div class="viewcode-block" id="TwoQubitBasisDecomposer.decomp1"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.html#qiskit.quantum_info.TwoQubitBasisDecomposer.decomp1">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">decomp1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+<div class="viewcode-block" id="TwoQubitBasisDecomposer.decomp1"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.decomp1.html#qiskit.quantum_info.TwoQubitBasisDecomposer.decomp1">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">decomp1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Decompose target ~Ud(x, y, z) with 1 uses of the basis gate ~Ud(a, b, c).</span>
 <span class="sd">        Result Ur has trace:</span>
 <span class="sd">        .. math::</span>
@@ -1186,7 +1185,7 @@
 
         <span class="k">return</span> <span class="n">U1r</span><span class="p">,</span> <span class="n">U1l</span><span class="p">,</span> <span class="n">U0r</span><span class="p">,</span> <span class="n">U0l</span></div>
 
-<div class="viewcode-block" id="TwoQubitBasisDecomposer.decomp2_supercontrolled"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.html#qiskit.quantum_info.TwoQubitBasisDecomposer.decomp2_supercontrolled">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">decomp2_supercontrolled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+<div class="viewcode-block" id="TwoQubitBasisDecomposer.decomp2_supercontrolled"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.decomp2_supercontrolled.html#qiskit.quantum_info.TwoQubitBasisDecomposer.decomp2_supercontrolled">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">decomp2_supercontrolled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Decompose target ~Ud(x, y, z) with 2 uses of the basis gate.</span>
 
 <span class="sd">        For supercontrolled basis ~Ud(pi/4, b, 0), all b, result Ur has trace</span>
@@ -1211,7 +1210,7 @@
 
         <span class="k">return</span> <span class="n">U2r</span><span class="p">,</span> <span class="n">U2l</span><span class="p">,</span> <span class="n">U1r</span><span class="p">,</span> <span class="n">U1l</span><span class="p">,</span> <span class="n">U0r</span><span class="p">,</span> <span class="n">U0l</span></div>
 
-<div class="viewcode-block" id="TwoQubitBasisDecomposer.decomp3_supercontrolled"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.html#qiskit.quantum_info.TwoQubitBasisDecomposer.decomp3_supercontrolled">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">decomp3_supercontrolled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+<div class="viewcode-block" id="TwoQubitBasisDecomposer.decomp3_supercontrolled"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.decomp3_supercontrolled.html#qiskit.quantum_info.TwoQubitBasisDecomposer.decomp3_supercontrolled">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">decomp3_supercontrolled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Decompose target with 3 uses of the basis.</span>
 <span class="sd">        This is an exact decomposition for supercontrolled basis ~Ud(pi/4, b, 0), all b,</span>
 <span class="sd">        and any target. No guarantees for non-supercontrolled basis.&quot;&quot;&quot;</span>
@@ -1529,7 +1528,7 @@
             <span class="n">qc</span><span class="o">.</span><span class="n">global_phase</span> <span class="o">+=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span>
         <span class="k">return</span> <span class="n">qc</span>
 
-<div class="viewcode-block" id="TwoQubitBasisDecomposer.num_basis_gates"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.html#qiskit.quantum_info.TwoQubitBasisDecomposer.num_basis_gates">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">num_basis_gates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">unitary</span><span class="p">):</span>
+<div class="viewcode-block" id="TwoQubitBasisDecomposer.num_basis_gates"><a class="viewcode-back" href="../../../../stubs/qiskit.quantum_info.TwoQubitBasisDecomposer.num_basis_gates.html#qiskit.quantum_info.TwoQubitBasisDecomposer.num_basis_gates">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">num_basis_gates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">unitary</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Computes the number of basis gates needed in</span>
 <span class="sd">        a decomposition of input unitary</span>
 <span class="sd">        &quot;&quot;&quot;</span>

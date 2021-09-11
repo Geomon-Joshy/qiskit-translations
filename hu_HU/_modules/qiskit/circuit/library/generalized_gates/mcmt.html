@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.circuit.library.generalized_gates.mcmt &mdash; Qiskit 0.29.0 dokumentáció</title>
+  <title>qiskit.circuit.library.generalized_gates.mcmt &mdash; Qiskit 0.29.1 dokumentáció</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/css/theme-override.css" type="text/css" />
@@ -366,7 +365,7 @@
 <span class="sd">    :class:`~qiskit.circuit.library.MCMTVChain`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="MCMT.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCMT.html#qiskit.circuit.library.MCMT.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">gate</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Gate</span><span class="p">,</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">QuantumCircuit</span><span class="p">,</span> <span class="n">Qubit</span><span class="p">,</span> <span class="n">Qubit</span><span class="p">],</span> <span class="n">Instruction</span><span class="p">]],</span>
         <span class="n">num_ctrl_qubits</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
@@ -406,7 +405,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="n">label</span>
 
         <span class="c1"># build the circuit</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_build</span><span class="p">()</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_build</span><span class="p">()</span>
 
     <span class="k">def</span> <span class="nf">_build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Define the MCMT gate without ancillas.&quot;&quot;&quot;</span>
@@ -466,7 +465,7 @@
 
         <span class="k">return</span> <span class="n">base_gate</span>
 
-<div class="viewcode-block" id="MCMT.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCMT.html#qiskit.circuit.library.MCMT.control">[docs]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="MCMT.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCMT.control.html#qiskit.circuit.library.MCMT.control">[docs]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return the controlled version of the MCMT circuit.&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">ctrl_state</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  <span class="c1"># TODO add ctrl state implementation by adding X gates</span>
             <span class="k">return</span> <span class="n">MCMT</span><span class="p">(</span>
@@ -474,7 +473,7 @@
             <span class="p">)</span>
         <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">control</span><span class="p">(</span><span class="n">num_ctrl_qubits</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="MCMT.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCMT.html#qiskit.circuit.library.MCMT.inverse">[docs]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="MCMT.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCMT.inverse.html#qiskit.circuit.library.MCMT.inverse">[docs]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return the inverse MCMT circuit, which is itself.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">MCMT</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gate</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_ctrl_qubits</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_target_qubits</span><span class="p">)</span></div></div>
 
@@ -577,7 +576,7 @@
                 <span class="bp">self</span><span class="o">.</span><span class="n">ccx</span><span class="p">(</span><span class="n">control_qubits</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">ancilla_qubits</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ancilla_qubits</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">ccx</span><span class="p">(</span><span class="n">control_qubits</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">control_qubits</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ancilla_qubits</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
-<div class="viewcode-block" id="MCMTVChain.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCMTVChain.html#qiskit.circuit.library.MCMTVChain.inverse">[docs]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="MCMTVChain.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCMTVChain.inverse.html#qiskit.circuit.library.MCMTVChain.inverse">[docs]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">MCMTVChain</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gate</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_ctrl_qubits</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_target_qubits</span><span class="p">)</span></div></div>
 </pre></div>
 

@@ -7,15 +7,13 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
       ~NaturalGradient.convert
-      ~NaturalGradient.gradient_wrapper
-      ~NaturalGradient.parameter_expression_grad
 
 
 

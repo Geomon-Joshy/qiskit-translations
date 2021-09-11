@@ -7,28 +7,14 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~YGate.add_decomposition
-      ~YGate.assemble
-      ~YGate.broadcast_arguments
-      ~YGate.c_if
       ~YGate.control
-      ~YGate.copy
       ~YGate.inverse
-      ~YGate.is_parameterized
-      ~YGate.mirror
-      ~YGate.power
-      ~YGate.qasm
-      ~YGate.repeat
-      ~YGate.reverse_ops
-      ~YGate.soft_compare
-      ~YGate.to_matrix
-      ~YGate.validate_parameter
 
 
 

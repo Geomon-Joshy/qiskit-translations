@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Qiskit に貢献する &mdash; Qiskit 0.29.0 ドキュメント</title>
+  <title>Qiskit に貢献する &mdash; Qiskit 0.29.1 ドキュメント</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme-override.css" type="text/css" />
@@ -699,13 +698,13 @@ conda activate QiskitDevenv
 <span id="install-qiskit-terra"></span><h3>Terra のソースからのインストール<a class="headerlink" href="#installing-terra-from-source" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>ソースからインストールするには、お使いのシステム上にC++11をサポートするC++コンパイラが必要です。</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="68e99789-0193-4246-94f2-0e85d5cd1c5a" name="aeaabdc3-7f65-463c-9698-a000be4f043c" type="radio">
-</input><label class="tabbed-label" for="68e99789-0193-4246-94f2-0e85d5cd1c5a">
+<input checked="checked" id="e930cd64-20c3-4cff-b5c0-955a23e1a963" name="3dccadac-5ff4-4b29-b368-f1bdfe1f576a" type="radio">
+</input><label class="tabbed-label" for="e930cd64-20c3-4cff-b5c0-955a23e1a963">
 Linuxのコンパイラー</label><div class="tabbed-content docutils">
 <p>ほとんどのLinuxプラットフォームには、必要なGCCコンパイラーがインストール済みです。</p>
 </div>
-<input id="847efacd-5795-465a-9653-8e7baa5b3baf" name="aeaabdc3-7f65-463c-9698-a000be4f043c" type="radio">
-</input><label class="tabbed-label" for="847efacd-5795-465a-9653-8e7baa5b3baf">
+<input id="d995bfe8-05fd-4b76-8d87-0bc4b09f5e94" name="3dccadac-5ff4-4b29-b368-f1bdfe1f576a" type="radio">
+</input><label class="tabbed-label" for="d995bfe8-05fd-4b76-8d87-0bc4b09f5e94">
 macOSのコンパイラー</label><div class="tabbed-content docutils">
 <p>macOSを使用している場合は、XCodeをインストールすることで、Clangのコンパイラーをインストールすることができます。ターミナル・ウィンドウを開き以下のコマンドを入力して、XCodeとClangがイントールされていることを確認します。</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>clang --version
@@ -716,8 +715,8 @@ macOSのコンパイラー</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="6f1c018e-0db9-4915-9829-02c6a43350f9" name="aeaabdc3-7f65-463c-9698-a000be4f043c" type="radio">
-</input><label class="tabbed-label" for="6f1c018e-0db9-4915-9829-02c6a43350f9">
+<input id="f9df7a9c-5781-4536-b2d9-36441e955e36" name="3dccadac-5ff4-4b29-b368-f1bdfe1f576a" type="radio">
+</input><label class="tabbed-label" for="f9df7a9c-5781-4536-b2d9-36441e955e36">
 Windowsのコンパイラー</label><div class="tabbed-content docutils">
 <p>Windowsでは、Visual C++ Compilerを <a class="reference external" href="https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017">Build Tools for Visual Studio 2017</a> からインストールする方法が最も簡単です。その他に Visual Studio 2015 あるいは 2017をインストールする方法もありますが、その際にはインストール・オプションの C++ コンパイラーを選択することを忘れない様にしてください。</p>
 </div>
@@ -785,8 +784,8 @@ Windowsのコンパイラー</label><div class="tabbed-content docutils">
 </ol>
 <p>この後、Aerをインストールする手順は、使用しているオペレーティング・システムによって異なります。AerはPythonインターフェースを持つコンパイルされたC++プログラムなので、AerバイナリをビルドするのにPythonへの依存性はありませんが、作成されたバイナリはオペレーティング・システムに依存するため普遍的にインストールすることはできません。</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="69c617e7-4e1c-4e7f-b505-c19b0f5d3913" name="5b8c170a-9564-4eda-9639-d2f56b46dcb2" type="radio">
-</input><label class="tabbed-label" for="69c617e7-4e1c-4e7f-b505-c19b0f5d3913">
+<input checked="checked" id="ab0f8c13-a816-440d-9490-d2b972c0e1a3" name="29915d59-8b00-4fc3-98ad-a8d245681b37" type="radio">
+</input><label class="tabbed-label" for="ab0f8c13-a816-440d-9490-d2b972c0e1a3">
 Linux</label><div class="tabbed-content docutils">
 <ol class="arabic" start="3">
 <li><p>ビルドの必要要件をインストールします。</p>
@@ -812,8 +811,8 @@ Linux</label><div class="tabbed-content docutils">
 </li>
 </ol>
 </div>
-<input id="08882a8f-efb4-4fc5-ae03-6770d71a9f23" name="5b8c170a-9564-4eda-9639-d2f56b46dcb2" type="radio">
-</input><label class="tabbed-label" for="08882a8f-efb4-4fc5-ae03-6770d71a9f23">
+<input id="51f72518-359a-4e1f-bcd6-25cd65d0d74a" name="29915d59-8b00-4fc3-98ad-a8d245681b37" type="radio">
+</input><label class="tabbed-label" for="51f72518-359a-4e1f-bcd6-25cd65d0d74a">
 macOS</label><div class="tabbed-content docutils">
 <ol class="arabic" start="3">
 <li><p>依存関係をインストールします。</p>
@@ -833,8 +832,8 @@ macOS</label><div class="tabbed-content docutils">
 </li>
 </ol>
 </div>
-<input id="84be9df5-795b-44e7-b05b-01c89eeaefd8" name="5b8c170a-9564-4eda-9639-d2f56b46dcb2" type="radio">
-</input><label class="tabbed-label" for="84be9df5-795b-44e7-b05b-01c89eeaefd8">
+<input id="3bb07038-9c60-4e53-a9dc-800919edcbda" name="29915d59-8b00-4fc3-98ad-a8d245681b37" type="radio">
+</input><label class="tabbed-label" for="3bb07038-9c60-4e53-a9dc-800919edcbda">
 Windows</label><div class="tabbed-content docutils">
 <p>Windowsでは、すべての依存関係をインストールするために <a class="reference external" href="https://www.anaconda.com/distribution/#windows">Anaconda3</a> または <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda3</a> を使用する必要があります 。</p>
 <ol class="arabic" start="3">

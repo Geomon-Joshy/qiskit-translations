@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.providers.aer.backends.pulse_simulator &mdash; Τεκμηρίωση του Qiskit - 0.29.0</title>
+  <title>qiskit.providers.aer.backends.pulse_simulator &mdash; Τεκμηρίωση του Qiskit - 0.29.1</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/css/theme-override.css" type="text/css" />
@@ -455,7 +454,7 @@
 <span class="sd">      are ``&#39;atol&#39;``, ``&#39;rtol&#39;``, ``&#39;nsteps&#39;``, ``&#39;max_step&#39;``, ``&#39;num_cpus&#39;``, ``&#39;norm_tol&#39;``,</span>
 <span class="sd">      and ``&#39;norm_steps&#39;``.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-<div class="viewcode-block" id="PulseSimulator.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.PulseSimulator.html#qiskit.providers.aer.PulseSimulator.__init__">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
                  <span class="n">configuration</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                  <span class="n">properties</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                  <span class="n">defaults</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -489,7 +488,7 @@
             <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">configuration</span><span class="p">,</span> <span class="s1">&#39;hamiltonian&#39;</span><span class="p">):</span>
                 <span class="n">system_model</span> <span class="o">=</span> <span class="n">PulseSystemModel</span><span class="o">.</span><span class="n">from_config</span><span class="p">(</span>
                     <span class="n">configuration</span><span class="p">,</span> <span class="n">subsystem_list</span><span class="p">)</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">_set_system_model</span><span class="p">(</span><span class="n">system_model</span><span class="p">)</span></div>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_set_system_model</span><span class="p">(</span><span class="n">system_model</span><span class="p">)</span>
 
     <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">_default_options</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
@@ -508,7 +507,7 @@
             <span class="n">initial_state</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
     <span class="c1"># pylint: disable=arguments-differ, missing-param-doc</span>
-<div class="viewcode-block" id="PulseSimulator.run"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.PulseSimulator.html#qiskit.providers.aer.PulseSimulator.run">[τεκμηρίωση]</a>    <span class="nd">@deprecate_arguments</span><span class="p">({</span><span class="s1">&#39;qobj&#39;</span><span class="p">:</span> <span class="s1">&#39;schedules&#39;</span><span class="p">})</span>
+<div class="viewcode-block" id="PulseSimulator.run"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.PulseSimulator.run.html#qiskit.providers.aer.PulseSimulator.run">[τεκμηρίωση]</a>    <span class="nd">@deprecate_arguments</span><span class="p">({</span><span class="s1">&#39;qobj&#39;</span><span class="p">:</span> <span class="s1">&#39;schedules&#39;</span><span class="p">})</span>
     <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
             <span class="n">schedules</span><span class="p">,</span>
             <span class="o">*</span><span class="n">args</span><span class="p">,</span>
@@ -566,7 +565,7 @@
     <span class="k">def</span> <span class="nf">_system_model</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_options</span><span class="p">,</span> <span class="s1">&#39;system_model&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="PulseSimulator.from_backend"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.PulseSimulator.html#qiskit.providers.aer.PulseSimulator.from_backend">[τεκμηρίωση]</a>    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="PulseSimulator.from_backend"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.PulseSimulator.from_backend.html#qiskit.providers.aer.PulseSimulator.from_backend">[τεκμηρίωση]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">from_backend</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">backend</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Initialize simulator from backend.&quot;&quot;&quot;</span>
         <span class="n">configuration</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">backend</span><span class="o">.</span><span class="n">configuration</span><span class="p">())</span>
@@ -597,7 +596,7 @@
         <span class="n">qobj</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">qubit_freq_est</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">defaults</span><span class="p">()</span><span class="o">.</span><span class="n">qubit_freq_est</span>
         <span class="k">return</span> <span class="n">pulse_controller</span><span class="p">(</span><span class="n">qobj</span><span class="p">)</span>
 
-<div class="viewcode-block" id="PulseSimulator.set_option"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.PulseSimulator.html#qiskit.providers.aer.PulseSimulator.set_option">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">set_option</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<div class="viewcode-block" id="PulseSimulator.set_option"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.PulseSimulator.set_option.html#qiskit.providers.aer.PulseSimulator.set_option">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">set_option</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Set pulse simulation options and update backend.&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;meas_levels&#39;</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_set_configuration_option</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_meas_levels</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>

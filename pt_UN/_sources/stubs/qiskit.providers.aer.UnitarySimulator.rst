@@ -1,19 +1,18 @@
-﻿qiskit.providers.aer.UnitarySimulator
-=====================================
+﻿UnitarySimulator
+================
 
 .. currentmodule:: qiskit.providers.aer
 
 .. autoclass:: UnitarySimulator
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~UnitarySimulator.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~UnitarySimulator.available_methods
       ~UnitarySimulator.clear_options
       ~UnitarySimulator.configuration
@@ -25,16 +24,10 @@
       ~UnitarySimulator.set_option
       ~UnitarySimulator.set_options
       ~UnitarySimulator.status
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~UnitarySimulator.options
-      ~UnitarySimulator.version
-   
-   
+   .. autoattribute:: options
+   .. autoattribute:: version

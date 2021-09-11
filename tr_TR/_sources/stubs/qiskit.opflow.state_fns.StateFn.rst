@@ -7,7 +7,7 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
@@ -16,13 +16,10 @@
       ~StateFn.add
       ~StateFn.adjoint
       ~StateFn.assign_parameters
-      ~StateFn.bind_parameters
       ~StateFn.compose
-      ~StateFn.copy
       ~StateFn.equals
       ~StateFn.eval
       ~StateFn.mul
-      ~StateFn.neg
       ~StateFn.permute
       ~StateFn.power
       ~StateFn.primitive_strings
@@ -34,7 +31,6 @@
       ~StateFn.to_density_matrix
       ~StateFn.to_matrix
       ~StateFn.to_matrix_op
-      ~StateFn.to_spmatrix
       ~StateFn.traverse
 
 

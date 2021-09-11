@@ -7,28 +7,13 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~RGate.add_decomposition
-      ~RGate.assemble
-      ~RGate.broadcast_arguments
-      ~RGate.c_if
-      ~RGate.control
-      ~RGate.copy
       ~RGate.inverse
-      ~RGate.is_parameterized
-      ~RGate.mirror
-      ~RGate.power
-      ~RGate.qasm
-      ~RGate.repeat
-      ~RGate.reverse_ops
-      ~RGate.soft_compare
-      ~RGate.to_matrix
-      ~RGate.validate_parameter
 
 
 

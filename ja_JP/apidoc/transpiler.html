@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Transpiler (qiskit.transpiler) &mdash; Qiskit 0.29.0 ドキュメント</title>
+  <title>Transpiler (qiskit.transpiler) &mdash; Qiskit 0.29.1 ドキュメント</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme-override.css" type="text/css" />
@@ -41,7 +40,7 @@
   <link rel="stylesheet" href="../_static/panels-variables.ade9f9d55df9d2893fc676ecd59723a1.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="qiskit.transpiler.PassManager" href="../stubs/qiskit.transpiler.PassManager.html" />
+    <link rel="next" title="PassManager" href="../stubs/qiskit.transpiler.PassManager.html" />
     <link rel="prev" title="Jupyter Tools (qiskit.tools.jupyter)" href="tools_jupyter.html" /> 
 
   
@@ -398,7 +397,6 @@ For example, suppose one wants to run a simple phase estimation circuit:</p>
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/transpiler_2_0.png" src="../_images/transpiler_2_0.png" />
-<img alt="../_images/transpiler_2_1.png" src="../_images/transpiler_2_1.png" />
 </div>
 </div>
 <p class="card-text">We have <span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(X\)</span>, and controlled-<span class="math notranslate nohighlight">\(P\)</span> gates, all of which are
@@ -415,7 +413,6 @@ the IBM Quantum devices:</p>
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/transpiler_3_0.png" src="../_images/transpiler_3_0.png" />
-<img alt="../_images/transpiler_3_1.png" src="../_images/transpiler_3_1.png" />
 </div>
 </div>
 <p class="card-text">A few things to highlight.  First, the circuit has gotten longer with respect to the
@@ -450,7 +447,6 @@ three CNOT gates:</p>
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/transpiler_5_0.png" src="../_images/transpiler_5_0.png" />
-<img alt="../_images/transpiler_5_1.png" src="../_images/transpiler_5_1.png" />
 </div>
 </div>
 <p class="card-text">As a product of three CNOT gates, SWAP gates are expensive operations to perform on a
@@ -472,7 +468,6 @@ this gate must be decomposed.  This decomposition is quite costly:</p>
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/transpiler_6_0.png" src="../_images/transpiler_6_0.png" />
-<img alt="../_images/transpiler_6_1.png" src="../_images/transpiler_6_1.png" />
 </div>
 </div>
 <p class="card-text">For every Toffoli gate in a quantum circuit, the IBM Quantum hardware may execute up to
@@ -534,7 +529,6 @@ in them, and we can view this layout selection graphically using
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/transpiler_7_0.png" src="../_images/transpiler_7_0.png" />
-<img alt="../_images/transpiler_7_1.png" src="../_images/transpiler_7_1.png" />
 </div>
 </div>
 <ul>
@@ -549,7 +543,6 @@ in them, and we can view this layout selection graphically using
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/transpiler_8_0.png" src="../_images/transpiler_8_0.png" />
-<img alt="../_images/transpiler_8_1.png" src="../_images/transpiler_8_1.png" />
 </div>
 </div>
 </div></blockquote>
@@ -565,7 +558,6 @@ in them, and we can view this layout selection graphically using
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/transpiler_9_0.png" src="../_images/transpiler_9_0.png" />
-<img alt="../_images/transpiler_9_1.png" src="../_images/transpiler_9_1.png" />
 </div>
 </div>
 </div></blockquote>
@@ -589,7 +581,6 @@ corresponding value is the label for the physical qubit to map onto:</p>
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/transpiler_10_0.png" src="../_images/transpiler_10_0.png" />
-<img alt="../_images/transpiler_10_1.png" src="../_images/transpiler_10_1.png" />
 </div>
 </div>
 <br></div>
@@ -635,7 +626,6 @@ output.</p>
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/transpiler_11_0.png" src="../_images/transpiler_11_0.png" />
-<img alt="../_images/transpiler_11_1.png" src="../_images/transpiler_11_1.png" />
 </div>
 </div>
 <div class="jupyter_cell jupyter_container docutils container">
@@ -704,7 +694,6 @@ So the numbers below will likely change each time you run the code.</p>
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/transpiler_13_0.png" src="../_images/transpiler_13_0.png" />
-<img alt="../_images/transpiler_13_1.png" src="../_images/transpiler_13_1.png" />
 </div>
 </div>
 <div class="jupyter_cell jupyter_container docutils container">
@@ -725,15 +714,15 @@ Gate counts: OrderedDict([(&#39;cx&#39;, 19), (&#39;u2&#39;, 1)])
 
 Optimization Level 1
 Depth: 14
-Gate counts: OrderedDict([(&#39;cx&#39;, 16), (&#39;u2&#39;, 1)])
+Gate counts: OrderedDict([(&#39;cx&#39;, 22), (&#39;u2&#39;, 1)])
 
 Optimization Level 2
-Depth: 14
-Gate counts: OrderedDict([(&#39;cx&#39;, 16), (&#39;u2&#39;, 1)])
+Depth: 11
+Gate counts: OrderedDict([(&#39;cx&#39;, 13), (&#39;u2&#39;, 1)])
 
 Optimization Level 3
-Depth: 11
-Gate counts: OrderedDict([(&#39;cx&#39;, 9), (&#39;u3&#39;, 6), (&#39;u2&#39;, 4), (&#39;u1&#39;, 1)])
+Depth: 14
+Gate counts: OrderedDict([(&#39;cx&#39;, 14), (&#39;u3&#39;, 3), (&#39;u2&#39;, 2), (&#39;u1&#39;, 1)])
 
 </pre></div>
 </div>
@@ -859,7 +848,7 @@ Gate counts: OrderedDict([(&#39;cx&#39;, 9), (&#39;u3&#39;, 6), (&#39;u2&#39;, 4
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../stubs/qiskit.transpiler.PassManager.html" class="btn btn-neutral float-right" title="qiskit.transpiler.PassManager" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
+        <a href="../stubs/qiskit.transpiler.PassManager.html" class="btn btn-neutral float-right" title="PassManager" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
         <a href="tools_jupyter.html" class="btn btn-neutral" title="Jupyter Tools (qiskit.tools.jupyter)" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>

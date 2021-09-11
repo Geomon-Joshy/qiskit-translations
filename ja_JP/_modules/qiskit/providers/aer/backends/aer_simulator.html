@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.providers.aer.backends.aer_simulator &mdash; Qiskit 0.29.0 ドキュメント</title>
+  <title>qiskit.providers.aer.backends.aer_simulator &mdash; Qiskit 0.29.1 ドキュメント</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/css/theme-override.css" type="text/css" />
@@ -771,7 +770,7 @@
 
     <span class="n">_AVAILABLE_DEVICES</span> <span class="o">=</span> <span class="kc">None</span>
 
-<div class="viewcode-block" id="AerSimulator.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.html#qiskit.providers.aer.AerSimulator.__init__">[ドキュメント]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
                  <span class="n">configuration</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                  <span class="n">properties</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                  <span class="n">provider</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -800,7 +799,7 @@
                          <span class="n">properties</span><span class="o">=</span><span class="n">properties</span><span class="p">,</span>
                          <span class="n">available_methods</span><span class="o">=</span><span class="n">AerSimulator</span><span class="o">.</span><span class="n">_AVAILABLE_METHODS</span><span class="p">,</span>
                          <span class="n">provider</span><span class="o">=</span><span class="n">provider</span><span class="p">,</span>
-                         <span class="n">backend_options</span><span class="o">=</span><span class="n">backend_options</span><span class="p">)</span></div>
+                         <span class="n">backend_options</span><span class="o">=</span><span class="n">backend_options</span><span class="p">)</span>
 
     <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">_default_options</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
@@ -858,7 +857,7 @@
         <span class="n">pad</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span> <span class="o">*</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
         <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="se">\n</span><span class="si">{}</span><span class="s1">noise_model=</span><span class="si">{}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">display</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">pad</span><span class="p">,</span> <span class="nb">repr</span><span class="p">(</span><span class="n">noise_model</span><span class="p">))</span>
 
-<div class="viewcode-block" id="AerSimulator.name"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.html#qiskit.providers.aer.AerSimulator.name">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="AerSimulator.name"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.name.html#qiskit.providers.aer.AerSimulator.name">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Format backend name string for simulator&quot;&quot;&quot;</span>
         <span class="n">name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_configuration</span><span class="o">.</span><span class="n">backend_name</span>
         <span class="n">method</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">,</span> <span class="s1">&#39;method&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
@@ -869,7 +868,7 @@
             <span class="n">name</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;_</span><span class="si">{</span><span class="n">device</span><span class="si">}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
         <span class="k">return</span> <span class="n">name</span></div>
 
-<div class="viewcode-block" id="AerSimulator.from_backend"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.html#qiskit.providers.aer.AerSimulator.from_backend">[ドキュメント]</a>    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="AerSimulator.from_backend"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.from_backend.html#qiskit.providers.aer.AerSimulator.from_backend">[ドキュメント]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">from_backend</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">backend</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Initialize simulator from backend.&quot;&quot;&quot;</span>
         <span class="c1"># pylint: disable=import-outside-toplevel</span>
@@ -896,11 +895,11 @@
                   <span class="o">**</span><span class="n">options</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">sim</span></div>
 
-<div class="viewcode-block" id="AerSimulator.available_devices"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.html#qiskit.providers.aer.AerSimulator.available_devices">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">available_devices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="AerSimulator.available_devices"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.available_devices.html#qiskit.providers.aer.AerSimulator.available_devices">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">available_devices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return the available simulation methods.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_AVAILABLE_DEVICES</span></div>
 
-<div class="viewcode-block" id="AerSimulator.configuration"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.html#qiskit.providers.aer.AerSimulator.configuration">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">configuration</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="AerSimulator.configuration"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.configuration.html#qiskit.providers.aer.AerSimulator.configuration">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">configuration</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return the simulator backend configuration.</span>
 
 <span class="sd">        Returns:</span>
@@ -929,7 +928,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">cpp_execute</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_controller</span><span class="p">,</span> <span class="n">qobj</span><span class="p">)</span>
 
-<div class="viewcode-block" id="AerSimulator.set_options"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.html#qiskit.providers.aer.AerSimulator.set_options">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">set_options</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">fields</span><span class="p">):</span>
+<div class="viewcode-block" id="AerSimulator.set_options"><a class="viewcode-back" href="../../../../../stubs/qiskit.providers.aer.AerSimulator.set_options.html#qiskit.providers.aer.AerSimulator.set_options">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">set_options</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">fields</span><span class="p">):</span>
         <span class="n">out_options</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="n">update_basis_gates</span> <span class="o">=</span> <span class="kc">False</span>
         <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">fields</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>

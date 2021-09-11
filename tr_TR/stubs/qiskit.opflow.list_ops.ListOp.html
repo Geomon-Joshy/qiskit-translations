@@ -41,7 +41,7 @@
     <link rel="index" title="Dizin" href="../genindex.html" />
     <link rel="search" title="Ara" href="../search.html" />
     <link rel="next" title="qiskit.opflow.list_ops.ListOp.add" href="qiskit.opflow.list_ops.ListOp.add.html" />
-    <link rel="prev" title="List Operators (qiskit.opflow.list_ops)" href="../apidoc/qiskit.opflow.list_ops.html" /> 
+    <link rel="prev" title="qiskit.opflow.list_ops" href="qiskit.opflow.list_ops.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -297,7 +297,7 @@
         
           <li><a href="../apidoc/opflow.html">Operators (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.opflow</span></code>)</a> &gt;</li>
         
-          <li><a href="../apidoc/qiskit.opflow.list_ops.html">List Operators (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.opflow.list_ops</span></code>)</a> &gt;</li>
+          <li><a href="qiskit.opflow.list_ops.html">qiskit.opflow.list_ops</a> &gt;</li>
         
       <li>ListOp</li>
     
@@ -372,7 +372,7 @@ be computed automatically.</p></li>
 </ul>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
+<p class="rubric">Methods Defined Here</p>
 <table class="longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -388,14 +388,8 @@ be computed automatically.</p></li>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.assign_parameters.html#qiskit.opflow.list_ops.ListOp.assign_parameters" title="qiskit.opflow.list_ops.ListOp.assign_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assign_parameters</span></code></a></p></td>
 <td><p>Binds scalar values to any Terra <code class="docutils literal notranslate"><span class="pre">Parameters</span></code> in the coefficients or primitives of the Operator, or substitutes one <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> for another.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.bind_parameters.html#qiskit.opflow.list_ops.ListOp.bind_parameters" title="qiskit.opflow.list_ops.ListOp.bind_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bind_parameters</span></code></a></p></td>
-<td><p>Same as assign_parameters, but maintained for consistency with QuantumCircuit in Terra (which has both assign_parameters and bind_parameters).</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.compose.html#qiskit.opflow.list_ops.ListOp.compose" title="qiskit.opflow.list_ops.ListOp.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.compose.html#qiskit.opflow.list_ops.ListOp.compose" title="qiskit.opflow.list_ops.ListOp.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a></p></td>
 <td><p>Return Operator Composition between self and other (linear algebra-style: A&#64;B(x) = A(B(x))), overloaded by <code class="docutils literal notranslate"><span class="pre">&#64;</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.copy.html#qiskit.opflow.list_ops.ListOp.copy" title="qiskit.opflow.list_ops.ListOp.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a></p></td>
-<td><p>Return a deep copy of the Operator.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.default_combo_fn.html#qiskit.opflow.list_ops.ListOp.default_combo_fn" title="qiskit.opflow.list_ops.ListOp.default_combo_fn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">default_combo_fn</span></code></a></p></td>
 <td><p>ListOp default combo function i.e. lambda x: x.</p></td>
@@ -415,43 +409,40 @@ be computed automatically.</p></li>
 <tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.mul.html#qiskit.opflow.list_ops.ListOp.mul" title="qiskit.opflow.list_ops.ListOp.mul"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mul</span></code></a></p></td>
 <td><p>Returns the scalar multiplication of the Operator, overloaded by <code class="docutils literal notranslate"><span class="pre">*</span></code>, including support for Terra’s <code class="docutils literal notranslate"><span class="pre">Parameters</span></code>, which can be bound to values later (via <code class="docutils literal notranslate"><span class="pre">bind_parameters</span></code>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.neg.html#qiskit.opflow.list_ops.ListOp.neg" title="qiskit.opflow.list_ops.ListOp.neg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">neg</span></code></a></p></td>
-<td><p>Return the Operator’s negation, effectively just multiplying by -1.0, overloaded by <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.permute.html#qiskit.opflow.list_ops.ListOp.permute" title="qiskit.opflow.list_ops.ListOp.permute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">permute</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.permute.html#qiskit.opflow.list_ops.ListOp.permute" title="qiskit.opflow.list_ops.ListOp.permute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">permute</span></code></a></p></td>
 <td><p>Permute the qubits of the operator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.power.html#qiskit.opflow.list_ops.ListOp.power" title="qiskit.opflow.list_ops.ListOp.power"><code class="xref py py-obj docutils literal notranslate"><span class="pre">power</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.power.html#qiskit.opflow.list_ops.ListOp.power" title="qiskit.opflow.list_ops.ListOp.power"><code class="xref py py-obj docutils literal notranslate"><span class="pre">power</span></code></a></p></td>
 <td><p>Return Operator composed with self multiple times, overloaded by <code class="docutils literal notranslate"><span class="pre">**</span></code>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.primitive_strings.html#qiskit.opflow.list_ops.ListOp.primitive_strings" title="qiskit.opflow.list_ops.ListOp.primitive_strings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">primitive_strings</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.primitive_strings.html#qiskit.opflow.list_ops.ListOp.primitive_strings" title="qiskit.opflow.list_ops.ListOp.primitive_strings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">primitive_strings</span></code></a></p></td>
 <td><p>Return a set of strings describing the primitives contained in the Operator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.reduce.html#qiskit.opflow.list_ops.ListOp.reduce" title="qiskit.opflow.list_ops.ListOp.reduce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reduce</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.reduce.html#qiskit.opflow.list_ops.ListOp.reduce" title="qiskit.opflow.list_ops.ListOp.reduce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reduce</span></code></a></p></td>
 <td><p>Try collapsing the Operator structure, usually after some type of conversion, e.g.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.tensor.html#qiskit.opflow.list_ops.ListOp.tensor" title="qiskit.opflow.list_ops.ListOp.tensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensor</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.tensor.html#qiskit.opflow.list_ops.ListOp.tensor" title="qiskit.opflow.list_ops.ListOp.tensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensor</span></code></a></p></td>
 <td><p>Return tensor product between self and other, overloaded by <code class="docutils literal notranslate"><span class="pre">^</span></code>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.tensorpower.html#qiskit.opflow.list_ops.ListOp.tensorpower" title="qiskit.opflow.list_ops.ListOp.tensorpower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorpower</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.tensorpower.html#qiskit.opflow.list_ops.ListOp.tensorpower" title="qiskit.opflow.list_ops.ListOp.tensorpower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorpower</span></code></a></p></td>
 <td><p>Return tensor product with self multiple times, overloaded by <code class="docutils literal notranslate"><span class="pre">^</span></code>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.to_circuit_op.html#qiskit.opflow.list_ops.ListOp.to_circuit_op" title="qiskit.opflow.list_ops.ListOp.to_circuit_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_circuit_op</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.to_circuit_op.html#qiskit.opflow.list_ops.ListOp.to_circuit_op" title="qiskit.opflow.list_ops.ListOp.to_circuit_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_circuit_op</span></code></a></p></td>
 <td><p>Returns an equivalent Operator composed of only QuantumCircuit-based primitives, such as <code class="docutils literal notranslate"><span class="pre">CircuitOp</span></code> and <code class="docutils literal notranslate"><span class="pre">CircuitStateFn</span></code>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.to_matrix.html#qiskit.opflow.list_ops.ListOp.to_matrix" title="qiskit.opflow.list_ops.ListOp.to_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.to_matrix.html#qiskit.opflow.list_ops.ListOp.to_matrix" title="qiskit.opflow.list_ops.ListOp.to_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix</span></code></a></p></td>
 <td><p>Return NumPy representation of the Operator.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.to_matrix_op.html#qiskit.opflow.list_ops.ListOp.to_matrix_op" title="qiskit.opflow.list_ops.ListOp.to_matrix_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix_op</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.to_matrix_op.html#qiskit.opflow.list_ops.ListOp.to_matrix_op" title="qiskit.opflow.list_ops.ListOp.to_matrix_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix_op</span></code></a></p></td>
 <td><p>Returns an equivalent Operator composed of only NumPy-based primitives, such as <code class="docutils literal notranslate"><span class="pre">MatrixOp</span></code> and <code class="docutils literal notranslate"><span class="pre">VectorStateFn</span></code>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.to_pauli_op.html#qiskit.opflow.list_ops.ListOp.to_pauli_op" title="qiskit.opflow.list_ops.ListOp.to_pauli_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_pauli_op</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.to_pauli_op.html#qiskit.opflow.list_ops.ListOp.to_pauli_op" title="qiskit.opflow.list_ops.ListOp.to_pauli_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_pauli_op</span></code></a></p></td>
 <td><p>Returns an equivalent Operator composed of only Pauli-based primitives, such as <code class="docutils literal notranslate"><span class="pre">PauliOp</span></code>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.to_spmatrix.html#qiskit.opflow.list_ops.ListOp.to_spmatrix" title="qiskit.opflow.list_ops.ListOp.to_spmatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_spmatrix</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.to_spmatrix.html#qiskit.opflow.list_ops.ListOp.to_spmatrix" title="qiskit.opflow.list_ops.ListOp.to_spmatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_spmatrix</span></code></a></p></td>
 <td><p>Returns SciPy sparse matrix representation of the Operator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.traverse.html#qiskit.opflow.list_ops.ListOp.traverse" title="qiskit.opflow.list_ops.ListOp.traverse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">traverse</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.list_ops.ListOp.traverse.html#qiskit.opflow.list_ops.ListOp.traverse" title="qiskit.opflow.list_ops.ListOp.traverse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">traverse</span></code></a></p></td>
 <td><p>Apply the convert_fn to each node in the oplist.</p></td>
 </tr>
 </tbody>
@@ -601,7 +592,7 @@ Operator.</p>
         <a href="qiskit.opflow.list_ops.ListOp.add.html" class="btn btn-neutral float-right" title="qiskit.opflow.list_ops.ListOp.add" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
-        <a href="../apidoc/qiskit.opflow.list_ops.html" class="btn btn-neutral" title="List Operators (qiskit.opflow.list_ops)" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+        <a href="qiskit.opflow.list_ops.html" class="btn btn-neutral" title="qiskit.opflow.list_ops" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
       
     </div>
   

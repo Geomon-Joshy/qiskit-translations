@@ -297,7 +297,7 @@
         
           <li><a href="../apidoc/opflow.html">Operators (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.opflow</span></code>)</a> &gt;</li>
         
-          <li><a href="../apidoc/qiskit.opflow.evolutions.html">Operator Evolutions (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.opflow.evolutions</span></code>)</a> &gt;</li>
+          <li><a href="qiskit.opflow.evolutions.html">qiskit.opflow.evolutions</a> &gt;</li>
         
       <li>EvolvedOp</li>
     
@@ -349,7 +349,7 @@ but would have ended up copying and pasting a lot of code from PrimitiveOp.</p>
 </ul>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
+<p class="rubric">Methods Defined Here</p>
 <table class="longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -365,14 +365,8 @@ but would have ended up copying and pasting a lot of code from PrimitiveOp.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.assign_parameters.html#qiskit.opflow.evolutions.EvolvedOp.assign_parameters" title="qiskit.opflow.evolutions.EvolvedOp.assign_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assign_parameters</span></code></a></p></td>
 <td><p>Binds scalar values to any Terra <code class="docutils literal notranslate"><span class="pre">Parameters</span></code> in the coefficients or primitives of the Operator, or substitutes one <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> for another.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.bind_parameters.html#qiskit.opflow.evolutions.EvolvedOp.bind_parameters" title="qiskit.opflow.evolutions.EvolvedOp.bind_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bind_parameters</span></code></a></p></td>
-<td><p>Same as assign_parameters, but maintained for consistency with QuantumCircuit in Terra (which has both assign_parameters and bind_parameters).</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.compose.html#qiskit.opflow.evolutions.EvolvedOp.compose" title="qiskit.opflow.evolutions.EvolvedOp.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.compose.html#qiskit.opflow.evolutions.EvolvedOp.compose" title="qiskit.opflow.evolutions.EvolvedOp.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a></p></td>
 <td><p>Return Operator Composition between self and other (linear algebra-style: A&#64;B(x) = A(B(x))), overloaded by <code class="docutils literal notranslate"><span class="pre">&#64;</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.copy.html#qiskit.opflow.evolutions.EvolvedOp.copy" title="qiskit.opflow.evolutions.EvolvedOp.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a></p></td>
-<td><p>Return a deep copy of the Operator.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.equals.html#qiskit.opflow.evolutions.EvolvedOp.equals" title="qiskit.opflow.evolutions.EvolvedOp.equals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">equals</span></code></a></p></td>
 <td><p>Evaluate Equality between Operators, overloaded by <code class="docutils literal notranslate"><span class="pre">==</span></code>.</p></td>
@@ -380,23 +374,11 @@ but would have ended up copying and pasting a lot of code from PrimitiveOp.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.eval.html#qiskit.opflow.evolutions.EvolvedOp.eval" title="qiskit.opflow.evolutions.EvolvedOp.eval"><code class="xref py py-obj docutils literal notranslate"><span class="pre">eval</span></code></a></p></td>
 <td><p>Evaluate the Operator’s underlying function, either on a binary string or another Operator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.exp_i.html#qiskit.opflow.evolutions.EvolvedOp.exp_i" title="qiskit.opflow.evolutions.EvolvedOp.exp_i"><code class="xref py py-obj docutils literal notranslate"><span class="pre">exp_i</span></code></a></p></td>
-<td><p>Return Operator exponentiation, equaling e^(-i * op)</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.log_i.html#qiskit.opflow.evolutions.EvolvedOp.log_i" title="qiskit.opflow.evolutions.EvolvedOp.log_i"><code class="xref py py-obj docutils literal notranslate"><span class="pre">log_i</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.log_i.html#qiskit.opflow.evolutions.EvolvedOp.log_i" title="qiskit.opflow.evolutions.EvolvedOp.log_i"><code class="xref py py-obj docutils literal notranslate"><span class="pre">log_i</span></code></a></p></td>
 <td><p>Return a <code class="docutils literal notranslate"><span class="pre">MatrixOp</span></code> equivalent to log(H)/-i for this operator H.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.mul.html#qiskit.opflow.evolutions.EvolvedOp.mul" title="qiskit.opflow.evolutions.EvolvedOp.mul"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mul</span></code></a></p></td>
-<td><p>Returns the scalar multiplication of the Operator, overloaded by <code class="docutils literal notranslate"><span class="pre">*</span></code>, including support for Terra’s <code class="docutils literal notranslate"><span class="pre">Parameters</span></code>, which can be bound to values later (via <code class="docutils literal notranslate"><span class="pre">bind_parameters</span></code>).</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.neg.html#qiskit.opflow.evolutions.EvolvedOp.neg" title="qiskit.opflow.evolutions.EvolvedOp.neg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">neg</span></code></a></p></td>
-<td><p>Return the Operator’s negation, effectively just multiplying by -1.0, overloaded by <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.permute.html#qiskit.opflow.evolutions.EvolvedOp.permute" title="qiskit.opflow.evolutions.EvolvedOp.permute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">permute</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.permute.html#qiskit.opflow.evolutions.EvolvedOp.permute" title="qiskit.opflow.evolutions.EvolvedOp.permute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">permute</span></code></a></p></td>
 <td><p>Permutes the qubits of the operator.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.power.html#qiskit.opflow.evolutions.EvolvedOp.power" title="qiskit.opflow.evolutions.EvolvedOp.power"><code class="xref py py-obj docutils literal notranslate"><span class="pre">power</span></code></a></p></td>
-<td><p>Return Operator composed with self multiple times, overloaded by <code class="docutils literal notranslate"><span class="pre">**</span></code>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.primitive_strings.html#qiskit.opflow.evolutions.EvolvedOp.primitive_strings" title="qiskit.opflow.evolutions.EvolvedOp.primitive_strings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">primitive_strings</span></code></a></p></td>
 <td><p>Return a set of strings describing the primitives contained in the Operator.</p></td>
@@ -407,29 +389,14 @@ but would have ended up copying and pasting a lot of code from PrimitiveOp.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.tensor.html#qiskit.opflow.evolutions.EvolvedOp.tensor" title="qiskit.opflow.evolutions.EvolvedOp.tensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensor</span></code></a></p></td>
 <td><p>Return tensor product between self and other, overloaded by <code class="docutils literal notranslate"><span class="pre">^</span></code>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.tensorpower.html#qiskit.opflow.evolutions.EvolvedOp.tensorpower" title="qiskit.opflow.evolutions.EvolvedOp.tensorpower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorpower</span></code></a></p></td>
-<td><p>Return tensor product with self multiple times, overloaded by <code class="docutils literal notranslate"><span class="pre">^</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.to_circuit.html#qiskit.opflow.evolutions.EvolvedOp.to_circuit" title="qiskit.opflow.evolutions.EvolvedOp.to_circuit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_circuit</span></code></a></p></td>
-<td><p>Returns a <code class="docutils literal notranslate"><span class="pre">QuantumCircuit</span></code> equivalent to this Operator.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.to_circuit_op.html#qiskit.opflow.evolutions.EvolvedOp.to_circuit_op" title="qiskit.opflow.evolutions.EvolvedOp.to_circuit_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_circuit_op</span></code></a></p></td>
-<td><p>Returns a <code class="docutils literal notranslate"><span class="pre">CircuitOp</span></code> equivalent to this Operator.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.to_instruction.html#qiskit.opflow.evolutions.EvolvedOp.to_instruction" title="qiskit.opflow.evolutions.EvolvedOp.to_instruction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_instruction</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.to_instruction.html#qiskit.opflow.evolutions.EvolvedOp.to_instruction" title="qiskit.opflow.evolutions.EvolvedOp.to_instruction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_instruction</span></code></a></p></td>
 <td><p>Returns an <code class="docutils literal notranslate"><span class="pre">Instruction</span></code> equivalent to this Operator.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.to_matrix.html#qiskit.opflow.evolutions.EvolvedOp.to_matrix" title="qiskit.opflow.evolutions.EvolvedOp.to_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.to_matrix.html#qiskit.opflow.evolutions.EvolvedOp.to_matrix" title="qiskit.opflow.evolutions.EvolvedOp.to_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix</span></code></a></p></td>
 <td><p>Return NumPy representation of the Operator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.to_matrix_op.html#qiskit.opflow.evolutions.EvolvedOp.to_matrix_op" title="qiskit.opflow.evolutions.EvolvedOp.to_matrix_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix_op</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.to_matrix_op.html#qiskit.opflow.evolutions.EvolvedOp.to_matrix_op" title="qiskit.opflow.evolutions.EvolvedOp.to_matrix_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix_op</span></code></a></p></td>
 <td><p>Returns a <code class="docutils literal notranslate"><span class="pre">MatrixOp</span></code> equivalent to this Operator.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.to_pauli_op.html#qiskit.opflow.evolutions.EvolvedOp.to_pauli_op" title="qiskit.opflow.evolutions.EvolvedOp.to_pauli_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_pauli_op</span></code></a></p></td>
-<td><p>Returns a sum of <code class="docutils literal notranslate"><span class="pre">PauliOp</span></code> s equivalent to this Operator.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.evolutions.EvolvedOp.to_spmatrix.html#qiskit.opflow.evolutions.EvolvedOp.to_spmatrix" title="qiskit.opflow.evolutions.EvolvedOp.to_spmatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_spmatrix</span></code></a></p></td>
-<td><p>Return SciPy sparse matrix representation of the Operator.</p></td>
 </tr>
 </tbody>
 </table>

@@ -7,38 +7,16 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~TensoredOp.add
-      ~TensoredOp.adjoint
-      ~TensoredOp.assign_parameters
-      ~TensoredOp.bind_parameters
-      ~TensoredOp.compose
-      ~TensoredOp.copy
-      ~TensoredOp.default_combo_fn
-      ~TensoredOp.equals
       ~TensoredOp.eval
-      ~TensoredOp.exp_i
-      ~TensoredOp.log_i
-      ~TensoredOp.mul
-      ~TensoredOp.neg
-      ~TensoredOp.permute
-      ~TensoredOp.power
-      ~TensoredOp.primitive_strings
       ~TensoredOp.reduce
       ~TensoredOp.tensor
-      ~TensoredOp.tensorpower
       ~TensoredOp.to_circuit
-      ~TensoredOp.to_circuit_op
-      ~TensoredOp.to_matrix
-      ~TensoredOp.to_matrix_op
-      ~TensoredOp.to_pauli_op
-      ~TensoredOp.to_spmatrix
-      ~TensoredOp.traverse
 
 
 

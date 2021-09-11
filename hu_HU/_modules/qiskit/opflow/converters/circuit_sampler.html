@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.opflow.converters.circuit_sampler &mdash; Qiskit 0.29.0 dokumentáció</title>
+  <title>qiskit.opflow.converters.circuit_sampler &mdash; Qiskit 0.29.1 dokumentáció</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/css/theme-override.css" type="text/css" />
@@ -373,7 +372,7 @@
 <span class="sd">    you are better off using a different CircuitSampler for each Operator to avoid cache thrashing.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="CircuitSampler.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.converters.CircuitSampler.html#qiskit.opflow.converters.CircuitSampler.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">backend</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Backend</span><span class="p">,</span> <span class="n">BaseBackend</span><span class="p">,</span> <span class="n">QuantumInstance</span><span class="p">],</span>
         <span class="n">statevector</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -420,7 +419,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_circuit_ops_cache</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">CircuitStateFn</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_transpiled_circ_cache</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Any</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_transpiled_circ_templates</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Any</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_transpile_before_bind</span> <span class="o">=</span> <span class="kc">True</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_transpile_before_bind</span> <span class="o">=</span> <span class="kc">True</span>
 
     <span class="k">def</span> <span class="nf">_check_quantum_instance_and_modes_consistent</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;Checks whether the statevector and param_qobj settings are compatible with the</span>
@@ -465,7 +464,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_check_quantum_instance_and_modes_consistent</span><span class="p">()</span>
 
     <span class="c1"># pylint: disable=arguments-differ</span>
-<div class="viewcode-block" id="CircuitSampler.convert"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.converters.CircuitSampler.html#qiskit.opflow.converters.CircuitSampler.convert">[docs]</a>    <span class="k">def</span> <span class="nf">convert</span><span class="p">(</span>
+<div class="viewcode-block" id="CircuitSampler.convert"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.converters.CircuitSampler.convert.html#qiskit.opflow.converters.CircuitSampler.convert">[docs]</a>    <span class="k">def</span> <span class="nf">convert</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">operator</span><span class="p">:</span> <span class="n">OperatorBase</span><span class="p">,</span>
         <span class="n">params</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="n">Parameter</span><span class="p">,</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]]]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -569,7 +568,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">replace_circuits_with_dicts</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_reduced_op_cache</span><span class="p">,</span> <span class="n">param_index</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="CircuitSampler.clear_cache"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.converters.CircuitSampler.html#qiskit.opflow.converters.CircuitSampler.clear_cache">[docs]</a>    <span class="k">def</span> <span class="nf">clear_cache</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="CircuitSampler.clear_cache"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.converters.CircuitSampler.clear_cache.html#qiskit.opflow.converters.CircuitSampler.clear_cache">[docs]</a>    <span class="k">def</span> <span class="nf">clear_cache</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;Clear the cache of sampled operator expressions.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_cached_ops</span> <span class="o">=</span> <span class="p">{}</span></div>
 
@@ -584,7 +583,7 @@
             <span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <span class="n">operator</span><span class="o">.</span><span class="n">oplist</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">_extract_circuitstatefns</span><span class="p">(</span><span class="n">op</span><span class="p">)</span>
 
-<div class="viewcode-block" id="CircuitSampler.sample_circuits"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.converters.CircuitSampler.html#qiskit.opflow.converters.CircuitSampler.sample_circuits">[docs]</a>    <span class="k">def</span> <span class="nf">sample_circuits</span><span class="p">(</span>
+<div class="viewcode-block" id="CircuitSampler.sample_circuits"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.converters.CircuitSampler.sample_circuits.html#qiskit.opflow.converters.CircuitSampler.sample_circuits">[docs]</a>    <span class="k">def</span> <span class="nf">sample_circuits</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">circuit_sfns</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">CircuitStateFn</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
         <span class="n">param_bindings</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="n">Parameter</span><span class="p">,</span> <span class="nb">float</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>

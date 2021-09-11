@@ -7,28 +7,14 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~HGate.add_decomposition
-      ~HGate.assemble
-      ~HGate.broadcast_arguments
-      ~HGate.c_if
       ~HGate.control
-      ~HGate.copy
       ~HGate.inverse
-      ~HGate.is_parameterized
-      ~HGate.mirror
-      ~HGate.power
-      ~HGate.qasm
-      ~HGate.repeat
-      ~HGate.reverse_ops
-      ~HGate.soft_compare
-      ~HGate.to_matrix
-      ~HGate.validate_parameter
 
 
 

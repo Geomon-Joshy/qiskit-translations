@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.algorithms.minimum_eigen_solvers.numpy_minimum_eigen_solver &mdash; Qiskit 0.29.0 Dokumentation</title>
+  <title>qiskit.algorithms.minimum_eigen_solvers.numpy_minimum_eigen_solver &mdash; Qiskit 0.29.1 Dokumentation</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/css/theme-override.css" type="text/css" />
@@ -350,7 +349,7 @@
 <span class="sd">    The Numpy Minimum Eigensolver algorithm.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="NumPyMinimumEigensolver.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.NumPyMinimumEigensolver.html#qiskit.algorithms.NumPyMinimumEigensolver.__init__">[Doku]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">filter_criterion</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span>
             <span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">],</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]]],</span> <span class="nb">bool</span>
@@ -366,7 +365,7 @@
 <span class="sd">                feasible element, the result can even be empty.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_ces</span> <span class="o">=</span> <span class="n">NumPyEigensolver</span><span class="p">(</span><span class="n">filter_criterion</span><span class="o">=</span><span class="n">filter_criterion</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_ret</span> <span class="o">=</span> <span class="n">MinimumEigensolverResult</span><span class="p">()</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ret</span> <span class="o">=</span> <span class="n">MinimumEigensolverResult</span><span class="p">()</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">filter_criterion</span><span class="p">(</span>
@@ -385,11 +384,11 @@
         <span class="sd">&quot;&quot;&quot;set the filter criterion&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_ces</span><span class="o">.</span><span class="n">filter_criterion</span> <span class="o">=</span> <span class="n">filter_criterion</span>
 
-<div class="viewcode-block" id="NumPyMinimumEigensolver.supports_aux_operators"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.NumPyMinimumEigensolver.html#qiskit.algorithms.NumPyMinimumEigensolver.supports_aux_operators">[Doku]</a>    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="NumPyMinimumEigensolver.supports_aux_operators"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.NumPyMinimumEigensolver.supports_aux_operators.html#qiskit.algorithms.NumPyMinimumEigensolver.supports_aux_operators">[Doku]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">supports_aux_operators</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">NumPyEigensolver</span><span class="o">.</span><span class="n">supports_aux_operators</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="NumPyMinimumEigensolver.compute_minimum_eigenvalue"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.NumPyMinimumEigensolver.html#qiskit.algorithms.NumPyMinimumEigensolver.compute_minimum_eigenvalue">[Doku]</a>    <span class="k">def</span> <span class="nf">compute_minimum_eigenvalue</span><span class="p">(</span>
+<div class="viewcode-block" id="NumPyMinimumEigensolver.compute_minimum_eigenvalue"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.NumPyMinimumEigensolver.compute_minimum_eigenvalue.html#qiskit.algorithms.NumPyMinimumEigensolver.compute_minimum_eigenvalue">[Doku]</a>    <span class="k">def</span> <span class="nf">compute_minimum_eigenvalue</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">operator</span><span class="p">:</span> <span class="n">OperatorBase</span><span class="p">,</span> <span class="n">aux_operators</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="n">OperatorBase</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MinimumEigensolverResult</span><span class="p">:</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">compute_minimum_eigenvalue</span><span class="p">(</span><span class="n">operator</span><span class="p">,</span> <span class="n">aux_operators</span><span class="p">)</span>

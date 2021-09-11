@@ -7,15 +7,13 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
       ~QFI.convert
-      ~QFI.gradient_wrapper
-      ~QFI.parameter_expression_grad
 
 
 

@@ -7,28 +7,13 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~CUGate.add_decomposition
-      ~CUGate.assemble
-      ~CUGate.broadcast_arguments
-      ~CUGate.c_if
-      ~CUGate.control
-      ~CUGate.copy
       ~CUGate.inverse
-      ~CUGate.is_parameterized
-      ~CUGate.mirror
-      ~CUGate.power
-      ~CUGate.qasm
-      ~CUGate.repeat
-      ~CUGate.reverse_ops
-      ~CUGate.soft_compare
-      ~CUGate.to_matrix
-      ~CUGate.validate_parameter
 
 
 

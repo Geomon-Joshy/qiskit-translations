@@ -336,6 +336,9 @@
 <p>This function serializes the payloads, which could be either circuits or schedules,
 to create <code class="docutils literal notranslate"><span class="pre">Qobj</span></code> “experiments”. It further annotates the experiment payload with
 header and configurations.</p>
+<p>NOTE: Backend.options is not used within assemble. The required values
+(previously given by backend.set_options) should be manually extracted
+from options and supplied directly when calling.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parametreler</dt>
 <dd class="field-odd"><ul class="simple">

@@ -7,28 +7,14 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~MCPhaseGate.add_decomposition
-      ~MCPhaseGate.assemble
-      ~MCPhaseGate.broadcast_arguments
-      ~MCPhaseGate.c_if
       ~MCPhaseGate.control
-      ~MCPhaseGate.copy
       ~MCPhaseGate.inverse
-      ~MCPhaseGate.is_parameterized
-      ~MCPhaseGate.mirror
-      ~MCPhaseGate.power
-      ~MCPhaseGate.qasm
-      ~MCPhaseGate.repeat
-      ~MCPhaseGate.reverse_ops
-      ~MCPhaseGate.soft_compare
-      ~MCPhaseGate.to_matrix
-      ~MCPhaseGate.validate_parameter
 
 
 

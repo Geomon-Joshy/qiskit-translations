@@ -7,28 +7,14 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~CPhaseGate.add_decomposition
-      ~CPhaseGate.assemble
-      ~CPhaseGate.broadcast_arguments
-      ~CPhaseGate.c_if
       ~CPhaseGate.control
-      ~CPhaseGate.copy
       ~CPhaseGate.inverse
-      ~CPhaseGate.is_parameterized
-      ~CPhaseGate.mirror
-      ~CPhaseGate.power
-      ~CPhaseGate.qasm
-      ~CPhaseGate.repeat
-      ~CPhaseGate.reverse_ops
-      ~CPhaseGate.soft_compare
-      ~CPhaseGate.to_matrix
-      ~CPhaseGate.validate_parameter
 
 
 

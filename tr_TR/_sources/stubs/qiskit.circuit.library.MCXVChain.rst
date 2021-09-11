@@ -7,29 +7,14 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~MCXVChain.add_decomposition
-      ~MCXVChain.assemble
-      ~MCXVChain.broadcast_arguments
-      ~MCXVChain.c_if
-      ~MCXVChain.control
-      ~MCXVChain.copy
       ~MCXVChain.get_num_ancilla_qubits
       ~MCXVChain.inverse
-      ~MCXVChain.is_parameterized
-      ~MCXVChain.mirror
-      ~MCXVChain.power
-      ~MCXVChain.qasm
-      ~MCXVChain.repeat
-      ~MCXVChain.reverse_ops
-      ~MCXVChain.soft_compare
-      ~MCXVChain.to_matrix
-      ~MCXVChain.validate_parameter
 
 
 

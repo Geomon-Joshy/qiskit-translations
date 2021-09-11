@@ -41,7 +41,7 @@
     <link rel="index" title="Dizin" href="../genindex.html" />
     <link rel="search" title="Ara" href="../search.html" />
     <link rel="next" title="qiskit.opflow.state_fns.OperatorStateFn.add" href="qiskit.opflow.state_fns.OperatorStateFn.add.html" />
-    <link rel="prev" title="qiskit.opflow.state_fns.SparseVectorStateFn.traverse" href="qiskit.opflow.state_fns.SparseVectorStateFn.traverse.html" /> 
+    <link rel="prev" title="qiskit.opflow.state_fns.SparseVectorStateFn.to_spmatrix" href="qiskit.opflow.state_fns.SparseVectorStateFn.to_spmatrix.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -297,7 +297,7 @@
         
           <li><a href="../apidoc/opflow.html">Operators (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.opflow</span></code>)</a> &gt;</li>
         
-          <li><a href="../apidoc/qiskit.opflow.state_fns.html">State Functions (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.opflow.state_fns</span></code>)</a> &gt;</li>
+          <li><a href="qiskit.opflow.state_fns.html">qiskit.opflow.state_fns</a> &gt;</li>
         
       <li>OperatorStateFn</li>
     
@@ -347,7 +347,7 @@ function.</p></li>
 </ul>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
+<p class="rubric">Methods Defined Here</p>
 <table class="longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -360,50 +360,20 @@ function.</p></li>
 <tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.adjoint.html#qiskit.opflow.state_fns.OperatorStateFn.adjoint" title="qiskit.opflow.state_fns.OperatorStateFn.adjoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adjoint</span></code></a></p></td>
 <td><p>Return a new Operator equal to the Operator’s adjoint (conjugate transpose), overloaded by <code class="docutils literal notranslate"><span class="pre">~</span></code>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.assign_parameters.html#qiskit.opflow.state_fns.OperatorStateFn.assign_parameters" title="qiskit.opflow.state_fns.OperatorStateFn.assign_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assign_parameters</span></code></a></p></td>
-<td><p>Binds scalar values to any Terra <code class="docutils literal notranslate"><span class="pre">Parameters</span></code> in the coefficients or primitives of the Operator, or substitutes one <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> for another.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.bind_parameters.html#qiskit.opflow.state_fns.OperatorStateFn.bind_parameters" title="qiskit.opflow.state_fns.OperatorStateFn.bind_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bind_parameters</span></code></a></p></td>
-<td><p>Same as assign_parameters, but maintained for consistency with QuantumCircuit in Terra (which has both assign_parameters and bind_parameters).</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.compose.html#qiskit.opflow.state_fns.OperatorStateFn.compose" title="qiskit.opflow.state_fns.OperatorStateFn.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a></p></td>
-<td><p>Composition (Linear algebra-style: A&#64;B(x) = A(B(x))) is not well defined for states in the binary function model, but is well defined for measurements.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.copy.html#qiskit.opflow.state_fns.OperatorStateFn.copy" title="qiskit.opflow.state_fns.OperatorStateFn.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a></p></td>
-<td><p>Return a deep copy of the Operator.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.equals.html#qiskit.opflow.state_fns.OperatorStateFn.equals" title="qiskit.opflow.state_fns.OperatorStateFn.equals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">equals</span></code></a></p></td>
-<td><p>Evaluate Equality between Operators, overloaded by <code class="docutils literal notranslate"><span class="pre">==</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.eval.html#qiskit.opflow.state_fns.OperatorStateFn.eval" title="qiskit.opflow.state_fns.OperatorStateFn.eval"><code class="xref py py-obj docutils literal notranslate"><span class="pre">eval</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.eval.html#qiskit.opflow.state_fns.OperatorStateFn.eval" title="qiskit.opflow.state_fns.OperatorStateFn.eval"><code class="xref py py-obj docutils literal notranslate"><span class="pre">eval</span></code></a></p></td>
 <td><p>Evaluate the Operator’s underlying function, either on a binary string or another Operator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.mul.html#qiskit.opflow.state_fns.OperatorStateFn.mul" title="qiskit.opflow.state_fns.OperatorStateFn.mul"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mul</span></code></a></p></td>
-<td><p>Returns the scalar multiplication of the Operator, overloaded by <code class="docutils literal notranslate"><span class="pre">*</span></code>, including support for Terra’s <code class="docutils literal notranslate"><span class="pre">Parameters</span></code>, which can be bound to values later (via <code class="docutils literal notranslate"><span class="pre">bind_parameters</span></code>).</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.neg.html#qiskit.opflow.state_fns.OperatorStateFn.neg" title="qiskit.opflow.state_fns.OperatorStateFn.neg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">neg</span></code></a></p></td>
-<td><p>Return the Operator’s negation, effectively just multiplying by -1.0, overloaded by <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.permute.html#qiskit.opflow.state_fns.OperatorStateFn.permute" title="qiskit.opflow.state_fns.OperatorStateFn.permute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">permute</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.permute.html#qiskit.opflow.state_fns.OperatorStateFn.permute" title="qiskit.opflow.state_fns.OperatorStateFn.permute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">permute</span></code></a></p></td>
 <td><p>Permute the qubits of the state function.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.power.html#qiskit.opflow.state_fns.OperatorStateFn.power" title="qiskit.opflow.state_fns.OperatorStateFn.power"><code class="xref py py-obj docutils literal notranslate"><span class="pre">power</span></code></a></p></td>
-<td><p>Compose with Self Multiple Times, undefined for StateFns.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.primitive_strings.html#qiskit.opflow.state_fns.OperatorStateFn.primitive_strings" title="qiskit.opflow.state_fns.OperatorStateFn.primitive_strings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">primitive_strings</span></code></a></p></td>
 <td><p>Return a set of strings describing the primitives contained in the Operator.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.reduce.html#qiskit.opflow.state_fns.OperatorStateFn.reduce" title="qiskit.opflow.state_fns.OperatorStateFn.reduce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reduce</span></code></a></p></td>
-<td><p>Try collapsing the Operator structure, usually after some type of conversion, e.g.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.sample.html#qiskit.opflow.state_fns.OperatorStateFn.sample" title="qiskit.opflow.state_fns.OperatorStateFn.sample"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sample</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.sample.html#qiskit.opflow.state_fns.OperatorStateFn.sample" title="qiskit.opflow.state_fns.OperatorStateFn.sample"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sample</span></code></a></p></td>
 <td><p>Sample the state function as a normalized probability distribution.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.tensor.html#qiskit.opflow.state_fns.OperatorStateFn.tensor" title="qiskit.opflow.state_fns.OperatorStateFn.tensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensor</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.tensor.html#qiskit.opflow.state_fns.OperatorStateFn.tensor" title="qiskit.opflow.state_fns.OperatorStateFn.tensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensor</span></code></a></p></td>
 <td><p>Return tensor product between self and other, overloaded by <code class="docutils literal notranslate"><span class="pre">^</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.tensorpower.html#qiskit.opflow.state_fns.OperatorStateFn.tensorpower" title="qiskit.opflow.state_fns.OperatorStateFn.tensorpower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorpower</span></code></a></p></td>
-<td><p>Return tensor product with self multiple times, overloaded by <code class="docutils literal notranslate"><span class="pre">^</span></code>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.to_circuit_op.html#qiskit.opflow.state_fns.OperatorStateFn.to_circuit_op" title="qiskit.opflow.state_fns.OperatorStateFn.to_circuit_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_circuit_op</span></code></a></p></td>
 <td><p>Return <code class="docutils literal notranslate"><span class="pre">StateFnCircuit</span></code> corresponding to this StateFn.</p></td>
@@ -416,12 +386,6 @@ function.</p></li>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.to_matrix_op.html#qiskit.opflow.state_fns.OperatorStateFn.to_matrix_op" title="qiskit.opflow.state_fns.OperatorStateFn.to_matrix_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix_op</span></code></a></p></td>
 <td><p>Return a MatrixOp for this operator.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.to_spmatrix.html#qiskit.opflow.state_fns.OperatorStateFn.to_spmatrix" title="qiskit.opflow.state_fns.OperatorStateFn.to_spmatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_spmatrix</span></code></a></p></td>
-<td><p>Return SciPy sparse matrix representation of the Operator.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.state_fns.OperatorStateFn.traverse.html#qiskit.opflow.state_fns.OperatorStateFn.traverse" title="qiskit.opflow.state_fns.OperatorStateFn.traverse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">traverse</span></code></a></p></td>
-<td><p>Apply the convert_fn to the internal primitive if the primitive is an Operator (as in the case of <code class="docutils literal notranslate"><span class="pre">OperatorStateFn</span></code>).</p></td>
 </tr>
 </tbody>
 </table>
@@ -511,7 +475,7 @@ function.</p></li>
         <a href="qiskit.opflow.state_fns.OperatorStateFn.add.html" class="btn btn-neutral float-right" title="qiskit.opflow.state_fns.OperatorStateFn.add" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
-        <a href="qiskit.opflow.state_fns.SparseVectorStateFn.traverse.html" class="btn btn-neutral" title="qiskit.opflow.state_fns.SparseVectorStateFn.traverse" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+        <a href="qiskit.opflow.state_fns.SparseVectorStateFn.to_spmatrix.html" class="btn btn-neutral" title="qiskit.opflow.state_fns.SparseVectorStateFn.to_spmatrix" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
       
     </div>
   

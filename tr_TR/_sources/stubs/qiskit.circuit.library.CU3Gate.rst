@@ -7,28 +7,13 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~CU3Gate.add_decomposition
-      ~CU3Gate.assemble
-      ~CU3Gate.broadcast_arguments
-      ~CU3Gate.c_if
-      ~CU3Gate.control
-      ~CU3Gate.copy
       ~CU3Gate.inverse
-      ~CU3Gate.is_parameterized
-      ~CU3Gate.mirror
-      ~CU3Gate.power
-      ~CU3Gate.qasm
-      ~CU3Gate.repeat
-      ~CU3Gate.reverse_ops
-      ~CU3Gate.soft_compare
-      ~CU3Gate.to_matrix
-      ~CU3Gate.validate_parameter
 
 
 

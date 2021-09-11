@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.algorithms.amplitude_amplifiers.grover &mdash; Qiskit 0.29.0 ドキュメント</title>
+  <title>qiskit.algorithms.amplitude_amplifiers.grover &mdash; Qiskit 0.29.1 ドキュメント</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/css/theme-override.css" type="text/css" />
@@ -422,7 +421,7 @@
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="Grover.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Grover.html#qiskit.algorithms.Grover.__init__">[ドキュメント]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">iterations</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">Iterator</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
         <span class="n">growth_rate</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -473,7 +472,7 @@
         <span class="k">if</span> <span class="n">quantum_instance</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">quantum_instance</span> <span class="o">=</span> <span class="n">quantum_instance</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">_sample_from_iterations</span> <span class="o">=</span> <span class="n">sample_from_iterations</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sample_from_iterations</span> <span class="o">=</span> <span class="n">sample_from_iterations</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">quantum_instance</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">QuantumInstance</span><span class="p">]:</span>
@@ -495,7 +494,7 @@
             <span class="n">quantum_instance</span> <span class="o">=</span> <span class="n">QuantumInstance</span><span class="p">(</span><span class="n">quantum_instance</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_quantum_instance</span> <span class="o">=</span> <span class="n">quantum_instance</span>
 
-<div class="viewcode-block" id="Grover.amplify"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Grover.html#qiskit.algorithms.Grover.amplify">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">amplify</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amplification_problem</span><span class="p">:</span> <span class="n">AmplificationProblem</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;GroverResult&quot;</span><span class="p">:</span>
+<div class="viewcode-block" id="Grover.amplify"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Grover.amplify.html#qiskit.algorithms.Grover.amplify">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">amplify</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amplification_problem</span><span class="p">:</span> <span class="n">AmplificationProblem</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;GroverResult&quot;</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;Run the Grover algorithm.</span>
 
 <span class="sd">        Args:</span>
@@ -581,7 +580,7 @@
 
         <span class="k">return</span> <span class="n">result</span></div>
 
-<div class="viewcode-block" id="Grover.optimal_num_iterations"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Grover.html#qiskit.algorithms.Grover.optimal_num_iterations">[ドキュメント]</a>    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="Grover.optimal_num_iterations"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Grover.optimal_num_iterations.html#qiskit.algorithms.Grover.optimal_num_iterations">[ドキュメント]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">optimal_num_iterations</span><span class="p">(</span><span class="n">num_solutions</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">num_qubits</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;Return the optimal number of iterations, if the number of solutions is known.</span>
 
@@ -595,7 +594,7 @@
         <span class="n">amplitude</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">num_solutions</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">**</span> <span class="n">num_qubits</span><span class="p">)</span>
         <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="n">amplitude</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">(</span><span class="n">amplitude</span><span class="p">)))</span></div>
 
-<div class="viewcode-block" id="Grover.construct_circuit"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Grover.html#qiskit.algorithms.Grover.construct_circuit">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">construct_circuit</span><span class="p">(</span>
+<div class="viewcode-block" id="Grover.construct_circuit"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Grover.construct_circuit.html#qiskit.algorithms.Grover.construct_circuit">[ドキュメント]</a>    <span class="k">def</span> <span class="nf">construct_circuit</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">problem</span><span class="p">:</span> <span class="n">AmplificationProblem</span><span class="p">,</span> <span class="n">power</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">measurement</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">QuantumCircuit</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;Construct the circuit for Grover&#39;s algorithm with ``power`` Grover operators.</span>
@@ -633,11 +632,11 @@
 <div class="viewcode-block" id="GroverResult"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.GroverResult.html#qiskit.algorithms.GroverResult">[ドキュメント]</a><span class="k">class</span> <span class="nc">GroverResult</span><span class="p">(</span><span class="n">AmplitudeAmplifierResult</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Grover Result.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="GroverResult.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.GroverResult.html#qiskit.algorithms.GroverResult.__init__">[ドキュメント]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_iterations</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_circuit_results</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_shots</span> <span class="o">=</span> <span class="kc">None</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_shots</span> <span class="o">=</span> <span class="kc">None</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">iterations</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>

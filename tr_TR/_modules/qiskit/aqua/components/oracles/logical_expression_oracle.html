@@ -321,7 +321,7 @@
   <h1>qiskit.aqua.components.oracles.logical_expression_oracle öğesinin kaynak kodu</h1><div class="highlight"><pre>
 <span></span><span class="c1"># This code is part of Qiskit.</span>
 <span class="c1">#</span>
-<span class="c1"># (C) Copyright IBM 2019, 2020.</span>
+<span class="c1"># (C) Copyright IBM 2019, 2021.</span>
 <span class="c1">#</span>
 <span class="c1"># This code is licensed under the Apache License, Version 2.0. You may</span>
 <span class="c1"># obtain a copy of this license in the LICENSE.txt file in the root directory</span>
@@ -544,7 +544,7 @@
         <span class="sd">&quot;&quot;&quot; evaluate classically &quot;&quot;&quot;</span>
         <span class="n">assignment</span> <span class="o">=</span> <span class="p">[(</span><span class="n">var</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">tf</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">tf</span><span class="p">,</span> <span class="n">var</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">measurement</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
                                                                        <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">measurement</span><span class="p">)))]</span>
-        <span class="n">assignment_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="n">assignment_dict</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">assignment</span><span class="p">:</span>
             <span class="n">assignment_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_lit_to_var</span><span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">v</span><span class="p">)]]</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">v</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_expr</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">assignment_dict</span><span class="p">),</span> <span class="n">assignment</span></div></div>

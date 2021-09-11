@@ -833,7 +833,7 @@
 <span class="sd">        Returns:</span>
 <span class="sd">            WeightedPauliOperator: the loaded operator.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">),</span> <span class="n">before_04</span><span class="o">=</span><span class="n">before_04</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="WeightedPauliOperator.to_file"><a class="viewcode-back" href="../../../../../stubs/qiskit.aqua.operators.legacy.WeightedPauliOperator.to_file.html#qiskit.aqua.operators.legacy.WeightedPauliOperator.to_file">[belgeler]</a>    <span class="k">def</span> <span class="nf">to_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
@@ -844,7 +844,7 @@
 <span class="sd">            file_name (str): path to the file</span>
 
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
             <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span> <span class="n">file</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="WeightedPauliOperator.from_dict"><a class="viewcode-back" href="../../../../../stubs/qiskit.aqua.operators.legacy.WeightedPauliOperator.from_dict.html#qiskit.aqua.operators.legacy.WeightedPauliOperator.from_dict">[belgeler]</a>    <span class="nd">@classmethod</span>

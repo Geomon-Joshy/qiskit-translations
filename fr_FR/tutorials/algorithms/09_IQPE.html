@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Algorithme itératif d’estimation de phase quantique &mdash; Documentation Qiskit 0.29.0</title>
+  <title>Algorithme itératif d’estimation de phase quantique &mdash; Documentation Qiskit 0.29.1</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme-override.css" type="text/css" />
@@ -653,7 +652,7 @@ div.rendered_html tbody tr:hover {
 <p>Nous voulons alors appliquer la porte <span class="math notranslate nohighlight">\(X' seulement si les deux résultats de la mesure de :math:\)</span> et <span class="math notranslate nohighlight">\(q_1\)</span> sont <span class="math notranslate nohighlight">\(1\)</span>. Nous pouvons le faire en utilisant la méthode <code class="docutils literal notranslate"><span class="pre">c_if</span></code>, conditionnant l’application de <span class="math notranslate nohighlight">\(X\)</span> selon la valeur transmise comme argument à <code class="docutils literal notranslate"><span class="pre">c_if</span></code>.</p>
 <p>Nous allons devoir encoder la valeur à passer à la méthode <code class="docutils literal notranslate"><span class="pre">c_if</span></code> pour qu’elle soit conditionnée par les valeurs 011 et 111 (en représentation binaire), puisque la valeur du bit le plus à gauche, à savoir celle de <span class="math notranslate nohighlight">\(q_2\)</span>, n’importe pas.</p>
 <p>On peut calculer les valeurs décimales de ces deux nombres binaires comme suit :</p>
-<p><img alt="0f1ae67757104c9d92caf53e04eabb6e" class="no-scaled-link" src="tutorials/algorithms/../../images/binary.png" style="width: 50%;" /></p>
+<p><img alt="346e6c3396e84c5899aa269d08fd6cc3" class="no-scaled-link" src="tutorials/algorithms/../../images/binary.png" style="width: 50%;" /></p>
 <p>Il est possible de vérifier ces calculs en utilisant la fonction <code class="docutils literal notranslate"><span class="pre">bin()</span></code> de Python (le préfixe <code class="docutils literal notranslate"><span class="pre">0b</span></code> indique que le résultat est une chaîne binaire).</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:

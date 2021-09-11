@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.algorithms.factorizers.shor &mdash; Dokumentasi Qiskit 0.29.0</title>
+  <title>qiskit.algorithms.factorizers.shor &mdash; Dokumentasi Qiskit 0.29.1</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/css/theme-override.css" type="text/css" />
@@ -373,7 +372,7 @@
 <span class="sd">    See also https://arxiv.org/abs/quant-ph/0205095</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="Shor.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Shor.html#qiskit.algorithms.Shor.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">quantum_instance</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">QuantumInstance</span><span class="p">,</span> <span class="n">BaseBackend</span><span class="p">,</span> <span class="n">Backend</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -383,7 +382,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_quantum_instance</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="k">if</span> <span class="n">quantum_instance</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">quantum_instance</span> <span class="o">=</span> <span class="n">quantum_instance</span></div>
+            <span class="bp">self</span><span class="o">.</span><span class="n">quantum_instance</span> <span class="o">=</span> <span class="n">quantum_instance</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">quantum_instance</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">QuantumInstance</span><span class="p">]:</span>
@@ -555,7 +554,7 @@
         <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">N</span> <span class="ow">or</span> <span class="n">math</span><span class="o">.</span><span class="n">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;The integer a needs to satisfy a &lt; N and gcd(a, N) = 1.&quot;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Shor.construct_circuit"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Shor.html#qiskit.algorithms.Shor.construct_circuit">[docs]</a>    <span class="k">def</span> <span class="nf">construct_circuit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">N</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">measurement</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">QuantumCircuit</span><span class="p">:</span>
+<div class="viewcode-block" id="Shor.construct_circuit"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Shor.construct_circuit.html#qiskit.algorithms.Shor.construct_circuit">[docs]</a>    <span class="k">def</span> <span class="nf">construct_circuit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">N</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">measurement</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">QuantumCircuit</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;Construct quantum part of the algorithm.</span>
 
 <span class="sd">        Args:</span>
@@ -605,7 +604,7 @@
 
         <span class="k">return</span> <span class="n">circuit</span></div>
 
-<div class="viewcode-block" id="Shor.modinv"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Shor.html#qiskit.algorithms.Shor.modinv">[docs]</a>    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="Shor.modinv"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Shor.modinv.html#qiskit.algorithms.Shor.modinv">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">modinv</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">m</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;Returns the modular multiplicative inverse of a with respect to the modulus m.&quot;&quot;&quot;</span>
 
@@ -723,7 +722,7 @@
         <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Numerator:</span><span class="si">%s</span><span class="s2"> </span><span class="se">\t\t</span><span class="s2"> Denominator: </span><span class="si">%s</span><span class="s2">.&quot;</span><span class="p">,</span> <span class="n">frac</span><span class="o">.</span><span class="n">numerator</span><span class="p">,</span> <span class="n">frac</span><span class="o">.</span><span class="n">denominator</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">frac</span><span class="o">.</span><span class="n">denominator</span>
 
-<div class="viewcode-block" id="Shor.factor"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Shor.html#qiskit.algorithms.Shor.factor">[docs]</a>    <span class="k">def</span> <span class="nf">factor</span><span class="p">(</span>
+<div class="viewcode-block" id="Shor.factor"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.Shor.factor.html#qiskit.algorithms.Shor.factor">[docs]</a>    <span class="k">def</span> <span class="nf">factor</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">N</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
         <span class="n">a</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
@@ -809,11 +808,11 @@
 <div class="viewcode-block" id="ShorResult"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.ShorResult.html#qiskit.algorithms.ShorResult">[docs]</a><span class="k">class</span> <span class="nc">ShorResult</span><span class="p">(</span><span class="n">AlgorithmResult</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Shor Result.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="ShorResult.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.ShorResult.html#qiskit.algorithms.ShorResult.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_factors</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_total_counts</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_successful_counts</span> <span class="o">=</span> <span class="mi">0</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_successful_counts</span> <span class="o">=</span> <span class="mi">0</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">factors</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>

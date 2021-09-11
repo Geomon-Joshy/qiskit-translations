@@ -7,7 +7,7 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
@@ -15,8 +15,6 @@
 
       ~Gradient.convert
       ~Gradient.get_gradient
-      ~Gradient.gradient_wrapper
-      ~Gradient.parameter_expression_grad
 
 
 

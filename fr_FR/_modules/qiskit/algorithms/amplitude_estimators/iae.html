@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.algorithms.amplitude_estimators.iae &mdash; Documentation Qiskit 0.29.0</title>
+  <title>qiskit.algorithms.amplitude_estimators.iae &mdash; Documentation Qiskit 0.29.1</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/css/theme-override.css" type="text/css" />
@@ -368,7 +367,7 @@
 <span class="sd">             `arXiv:quant-ph/0005055 &lt;http://arxiv.org/abs/quant-ph/0005055&gt;`_.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="IterativeAmplitudeEstimation.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.IterativeAmplitudeEstimation.html#qiskit.algorithms.IterativeAmplitudeEstimation.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">epsilon_target</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
         <span class="n">alpha</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
@@ -418,7 +417,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_epsilon</span> <span class="o">=</span> <span class="n">epsilon_target</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_alpha</span> <span class="o">=</span> <span class="n">alpha</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_min_ratio</span> <span class="o">=</span> <span class="n">min_ratio</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_confint_method</span> <span class="o">=</span> <span class="n">confint_method</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_confint_method</span> <span class="o">=</span> <span class="n">confint_method</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">quantum_instance</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">QuantumInstance</span><span class="p">]:</span>
@@ -516,7 +515,7 @@
         <span class="c1"># if we do not find a feasible k, return the old one</span>
         <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">k</span><span class="p">),</span> <span class="n">upper_half_circle</span>
 
-<div class="viewcode-block" id="IterativeAmplitudeEstimation.construct_circuit"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.IterativeAmplitudeEstimation.html#qiskit.algorithms.IterativeAmplitudeEstimation.construct_circuit">[docs]</a>    <span class="k">def</span> <span class="nf">construct_circuit</span><span class="p">(</span>
+<div class="viewcode-block" id="IterativeAmplitudeEstimation.construct_circuit"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.IterativeAmplitudeEstimation.construct_circuit.html#qiskit.algorithms.IterativeAmplitudeEstimation.construct_circuit">[docs]</a>    <span class="k">def</span> <span class="nf">construct_circuit</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">estimation_problem</span><span class="p">:</span> <span class="n">EstimationProblem</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">measurement</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">QuantumCircuit</span><span class="p">:</span>
         <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Construct the circuit :math:`\mathcal{Q}^k \mathcal{A} |0\rangle`.</span>
@@ -601,7 +600,7 @@
 
             <span class="k">return</span> <span class="n">prob</span>
 
-<div class="viewcode-block" id="IterativeAmplitudeEstimation.estimate"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.IterativeAmplitudeEstimation.html#qiskit.algorithms.IterativeAmplitudeEstimation.estimate">[docs]</a>    <span class="k">def</span> <span class="nf">estimate</span><span class="p">(</span>
+<div class="viewcode-block" id="IterativeAmplitudeEstimation.estimate"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.IterativeAmplitudeEstimation.estimate.html#qiskit.algorithms.IterativeAmplitudeEstimation.estimate">[docs]</a>    <span class="k">def</span> <span class="nf">estimate</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">estimation_problem</span><span class="p">:</span> <span class="n">EstimationProblem</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;IterativeAmplitudeEstimationResult&quot;</span><span class="p">:</span>
         <span class="c1"># initialize memory variables</span>
@@ -755,7 +754,7 @@
 <div class="viewcode-block" id="IterativeAmplitudeEstimationResult"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.IterativeAmplitudeEstimationResult.html#qiskit.algorithms.IterativeAmplitudeEstimationResult">[docs]</a><span class="k">class</span> <span class="nc">IterativeAmplitudeEstimationResult</span><span class="p">(</span><span class="n">AmplitudeEstimatorResult</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;The ``IterativeAmplitudeEstimation`` result object.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="IterativeAmplitudeEstimationResult.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.IterativeAmplitudeEstimationResult.html#qiskit.algorithms.IterativeAmplitudeEstimationResult.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_alpha</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_epsilon_target</span> <span class="o">=</span> <span class="kc">None</span>
@@ -765,7 +764,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_theta_intervals</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_powers</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_ratios</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_confidence_interval_processed</span> <span class="o">=</span> <span class="kc">None</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_confidence_interval_processed</span> <span class="o">=</span> <span class="kc">None</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">alpha</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>

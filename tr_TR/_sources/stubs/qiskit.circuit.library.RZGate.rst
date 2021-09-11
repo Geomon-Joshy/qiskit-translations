@@ -7,28 +7,14 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~RZGate.add_decomposition
-      ~RZGate.assemble
-      ~RZGate.broadcast_arguments
-      ~RZGate.c_if
       ~RZGate.control
-      ~RZGate.copy
       ~RZGate.inverse
-      ~RZGate.is_parameterized
-      ~RZGate.mirror
-      ~RZGate.power
-      ~RZGate.qasm
-      ~RZGate.repeat
-      ~RZGate.reverse_ops
-      ~RZGate.soft_compare
-      ~RZGate.to_matrix
-      ~RZGate.validate_parameter
 
 
 

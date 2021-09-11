@@ -7,25 +7,13 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~Measure.add_decomposition
-      ~Measure.assemble
       ~Measure.broadcast_arguments
-      ~Measure.c_if
-      ~Measure.copy
-      ~Measure.inverse
-      ~Measure.is_parameterized
-      ~Measure.mirror
-      ~Measure.qasm
-      ~Measure.repeat
-      ~Measure.reverse_ops
-      ~Measure.soft_compare
-      ~Measure.validate_parameter
 
 
 

@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.opflow.gradients.gradient &mdash; Qiskit 0.29.0 दिग्दर्शिका</title>
+  <title>qiskit.opflow.gradients.gradient &mdash; Qiskit 0.29.1 दिग्दर्शिका</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/css/theme-override.css" type="text/css" />
@@ -365,7 +364,7 @@
     <span class="sd">&quot;&quot;&quot;Convert an operator expression to the first-order gradient.&quot;&quot;&quot;</span>
 
     <span class="c1"># pylint: disable=signature-differs</span>
-<div class="viewcode-block" id="Gradient.convert"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.gradients.Gradient.html#qiskit.opflow.gradients.Gradient.convert">[docs]</a>    <span class="k">def</span> <span class="nf">convert</span><span class="p">(</span>
+<div class="viewcode-block" id="Gradient.convert"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.gradients.Gradient.convert.html#qiskit.opflow.gradients.Gradient.convert">[docs]</a>    <span class="k">def</span> <span class="nf">convert</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">operator</span><span class="p">:</span> <span class="n">OperatorBase</span><span class="p">,</span>
         <span class="n">params</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span>
@@ -408,7 +407,7 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_gradient</span><span class="p">(</span><span class="n">cleaned_op</span><span class="p">,</span> <span class="n">param</span><span class="p">)</span></div>
 
     <span class="c1"># pylint: disable=too-many-return-statements</span>
-<div class="viewcode-block" id="Gradient.get_gradient"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.gradients.Gradient.html#qiskit.opflow.gradients.Gradient.get_gradient">[docs]</a>    <span class="k">def</span> <span class="nf">get_gradient</span><span class="p">(</span>
+<div class="viewcode-block" id="Gradient.get_gradient"><a class="viewcode-back" href="../../../../stubs/qiskit.opflow.gradients.Gradient.get_gradient.html#qiskit.opflow.gradients.Gradient.get_gradient">[docs]</a>    <span class="k">def</span> <span class="nf">get_gradient</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">operator</span><span class="p">:</span> <span class="n">OperatorBase</span><span class="p">,</span>
         <span class="n">params</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ParameterExpression</span><span class="p">,</span> <span class="n">ParameterVector</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">ParameterExpression</span><span class="p">]],</span>

@@ -7,7 +7,7 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
@@ -16,17 +16,13 @@
       ~PrimitiveOp.add
       ~PrimitiveOp.adjoint
       ~PrimitiveOp.assign_parameters
-      ~PrimitiveOp.bind_parameters
       ~PrimitiveOp.compose
-      ~PrimitiveOp.copy
       ~PrimitiveOp.equals
       ~PrimitiveOp.eval
       ~PrimitiveOp.exp_i
       ~PrimitiveOp.log_i
       ~PrimitiveOp.mul
-      ~PrimitiveOp.neg
       ~PrimitiveOp.permute
-      ~PrimitiveOp.power
       ~PrimitiveOp.primitive_strings
       ~PrimitiveOp.reduce
       ~PrimitiveOp.tensor
@@ -37,7 +33,6 @@
       ~PrimitiveOp.to_matrix
       ~PrimitiveOp.to_matrix_op
       ~PrimitiveOp.to_pauli_op
-      ~PrimitiveOp.to_spmatrix
 
 
 

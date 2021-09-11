@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.pulse.transforms.pad &mdash; documentación de Qiskit - 0.29.0</title>
+  <title>qiskit.pulse.transforms.pad &mdash; documentación de Qiskit - 0.29.1</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme-override.css" type="text/css" />
@@ -339,7 +338,7 @@
 <dt class="field-odd">Parámetros</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>schedule</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Schedule</span></code>) – Schedule to pad.</p></li>
-<li><p><strong>channels</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>[<a class="reference internal" href="qiskit.pulse.channels.html#qiskit.pulse.channels.Channel" title="qiskit.pulse.channels.Channel"><code class="xref py py-class docutils literal notranslate"><span class="pre">Channel</span></code></a>]]) – Channels to pad. Defaults to all channels in
+<li><p><strong>channels</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Channel</span></code>]]) – Channels to pad. Defaults to all channels in
 <code class="docutils literal notranslate"><span class="pre">schedule</span></code> if not provided. If the supplied channel is not a member
 of <code class="docutils literal notranslate"><span class="pre">schedule</span></code> it will be added.</p></li>
 <li><p><strong>until</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – Time to pad until. Defaults to <code class="docutils literal notranslate"><span class="pre">schedule.duration</span></code> if not provided.</p></li>

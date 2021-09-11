@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Kuchangia katika Qiskit &mdash; Qiskit 0.29.0 documentation</title>
+  <title>Kuchangia katika Qiskit &mdash; Qiskit 0.29.1 documentation</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme-override.css" type="text/css" />
@@ -700,13 +699,13 @@ conda activate QiskitDevenv
 <span id="install-qiskit-terra"></span><h3>Kusakinisha Terra Kutoka Chanzo<a class="headerlink" href="#installing-terra-from-source" title="Permalink to this headline">¶</a></h3>
 <p>Kusakinisha kutoka chanzo kunahitaji uwe na compiler ya C++ inayounga mkono C++11 kwenye tarakilishi yako.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="da5637dd-21c6-4f6f-9ad5-f70ea084c8ef" name="721c3d04-3603-4542-9548-0faac2d7dc6b" type="radio">
-</input><label class="tabbed-label" for="da5637dd-21c6-4f6f-9ad5-f70ea084c8ef">
+<input checked="checked" id="781992fb-8e0f-4f71-a91e-1a93f99f1575" name="fe606f05-d33b-4adc-9a7a-01be6b5f6ff9" type="radio">
+</input><label class="tabbed-label" for="781992fb-8e0f-4f71-a91e-1a93f99f1575">
 Compiler kwa Linux</label><div class="tabbed-content docutils">
 <p>Kwenye majukwaa mengi ya Linux, compiler inayohitajika ya GCC tayari imewekwa.</p>
 </div>
-<input id="1ab59214-a3dd-443a-86b3-eb0461c40be7" name="721c3d04-3603-4542-9548-0faac2d7dc6b" type="radio">
-</input><label class="tabbed-label" for="1ab59214-a3dd-443a-86b3-eb0461c40be7">
+<input id="f9e0bc5c-c9ae-4277-93be-01b15f7ff349" name="fe606f05-d33b-4adc-9a7a-01be6b5f6ff9" type="radio">
+</input><label class="tabbed-label" for="f9e0bc5c-c9ae-4277-93be-01b15f7ff349">
 Compiler kwa macOS</label><div class="tabbed-content docutils">
 <p>Ikiwa unatumia macOS, unaweza kusakinisha compiler ya Clang kwa kusakinisha XCode. Angalia iwapo umesakinisha XCode na Clang kwa kufungua taminali na kutia yafuatayo.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>clang --version
@@ -717,8 +716,8 @@ Compiler kwa macOS</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="55981d36-e1e8-46ff-9ed9-87d3c071fc79" name="721c3d04-3603-4542-9548-0faac2d7dc6b" type="radio">
-</input><label class="tabbed-label" for="55981d36-e1e8-46ff-9ed9-87d3c071fc79">
+<input id="3aaef73b-affa-4af8-b8f8-be098e7ec6ba" name="fe606f05-d33b-4adc-9a7a-01be6b5f6ff9" type="radio">
+</input><label class="tabbed-label" for="3aaef73b-affa-4af8-b8f8-be098e7ec6ba">
 Compiler kwa Windows</label><div class="tabbed-content docutils">
 <p>Katika Windows, ni rahisi kusakinisha compiler ya Visual C++ kutoka <a class="reference external" href="https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017">Build Tools for Visual Studio 2017</a>. Badala yake unaweza kusakinisha Visual Studio toleo la 2015 au 2017, ukihakikisha kuchagua chaguo la kusakinisha compiler ya C++.</p>
 </div>
@@ -786,8 +785,8 @@ Compiler kwa Windows</label><div class="tabbed-content docutils">
 </ol>
 <p>Baada ya haya, hatua za kusakinisha Aer hutegemea mfumo endeshi wa tarakilishi unayotumia. Kwa kuwa Aer ni programu iliyokusanywa ya C++ yenye kiolesura cha Python, kuna utegemezi usio wa Python wa kujenga jozi ya Aer ambayo haiwezi kusakinishwa ulimwenguni kulingana na mfumo endeshi wa tarakilishi.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="05820322-31ea-45d7-9d00-cb24a62b8666" name="c2ac0d50-10a8-45a5-beb5-3412aa98f371" type="radio">
-</input><label class="tabbed-label" for="05820322-31ea-45d7-9d00-cb24a62b8666">
+<input checked="checked" id="cf78cdf5-9f17-49b7-9a42-b296ed53863b" name="18436f3c-7f83-4ef9-9572-205cc10f928b" type="radio">
+</input><label class="tabbed-label" for="cf78cdf5-9f17-49b7-9a42-b296ed53863b">
 Linux</label><div class="tabbed-content docutils">
 <ol class="arabic" start="3">
 <li><p>Sakinisha mahitaji ya compiler.</p>
@@ -813,8 +812,8 @@ Linux</label><div class="tabbed-content docutils">
 </li>
 </ol>
 </div>
-<input id="3077f7ca-c95c-4433-858d-2945e8e4d7dc" name="c2ac0d50-10a8-45a5-beb5-3412aa98f371" type="radio">
-</input><label class="tabbed-label" for="3077f7ca-c95c-4433-858d-2945e8e4d7dc">
+<input id="e5e3290d-c207-4a34-a09d-bd035205cfa8" name="18436f3c-7f83-4ef9-9572-205cc10f928b" type="radio">
+</input><label class="tabbed-label" for="e5e3290d-c207-4a34-a09d-bd035205cfa8">
 macOS</label><div class="tabbed-content docutils">
 <ol class="arabic" start="3">
 <li><p>Sakinisha vitegemezi.</p>
@@ -834,8 +833,8 @@ macOS</label><div class="tabbed-content docutils">
 </li>
 </ol>
 </div>
-<input id="f647e425-692a-4459-8b7e-7e6b43488577" name="c2ac0d50-10a8-45a5-beb5-3412aa98f371" type="radio">
-</input><label class="tabbed-label" for="f647e425-692a-4459-8b7e-7e6b43488577">
+<input id="12915001-c9f9-4b44-9932-ed6f6c94b1de" name="18436f3c-7f83-4ef9-9572-205cc10f928b" type="radio">
+</input><label class="tabbed-label" for="12915001-c9f9-4b44-9932-ed6f6c94b1de">
 Windows</label><div class="tabbed-content docutils">
 <p>Katika Windows utahitaji kutumia <a class="reference external" href="https://www.anaconda.com/distribution/#windows">Anaconda3</a> au <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda3</a> ili kusakinisha vitegemezi vyote.</p>
 <ol class="arabic" start="3">

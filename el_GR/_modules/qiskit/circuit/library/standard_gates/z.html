@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.circuit.library.standard_gates.z &mdash; Τεκμηρίωση του Qiskit - 0.29.0</title>
+  <title>qiskit.circuit.library.standard_gates.z &mdash; Τεκμηρίωση του Qiskit - 0.29.1</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/css/theme-override.css" type="text/css" />
@@ -384,9 +383,9 @@
 <span class="sd">        |1\rangle \rightarrow -|1\rangle</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="ZGate.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.ZGate.html#qiskit.circuit.library.ZGate.__init__">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Create new Z gate.&quot;&quot;&quot;</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s2">&quot;z&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[],</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span></div>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s2">&quot;z&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[],</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_define</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># pylint: disable=cyclic-import</span>
@@ -401,7 +400,7 @@
 
         <span class="bp">self</span><span class="o">.</span><span class="n">definition</span> <span class="o">=</span> <span class="n">qc</span>
 
-<div class="viewcode-block" id="ZGate.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.ZGate.html#qiskit.circuit.library.ZGate.control">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="ZGate.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.ZGate.control.html#qiskit.circuit.library.ZGate.control">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return a (multi-)controlled-Z gate.</span>
 
 <span class="sd">        One control returns a CZ gate.</span>
@@ -421,7 +420,7 @@
             <span class="k">return</span> <span class="n">gate</span>
         <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">control</span><span class="p">(</span><span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="n">num_ctrl_qubits</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="n">ctrl_state</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ZGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.ZGate.html#qiskit.circuit.library.ZGate.inverse">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ZGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.ZGate.inverse.html#qiskit.circuit.library.ZGate.inverse">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return inverted Z gate (itself).&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">ZGate</span><span class="p">()</span>  <span class="c1"># self-inverse</span></div>
 
@@ -460,11 +459,11 @@
 <span class="sd">    the target qubit if the control qubit is in the :math:`|1\rangle` state.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="CZGate.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CZGate.html#qiskit.circuit.library.CZGate.__init__">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Create new CZ gate.&quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
             <span class="s2">&quot;cz&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">[],</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="n">ctrl_state</span><span class="p">,</span> <span class="n">base_gate</span><span class="o">=</span><span class="n">ZGate</span><span class="p">()</span>
-        <span class="p">)</span></div>
+        <span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_define</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -483,7 +482,7 @@
 
         <span class="bp">self</span><span class="o">.</span><span class="n">definition</span> <span class="o">=</span> <span class="n">qc</span>
 
-<div class="viewcode-block" id="CZGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CZGate.html#qiskit.circuit.library.CZGate.inverse">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="CZGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CZGate.inverse.html#qiskit.circuit.library.CZGate.inverse">[τεκμηρίωση]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return inverted CZ gate (itself).&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">CZGate</span><span class="p">(</span><span class="n">ctrl_state</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ctrl_state</span><span class="p">)</span>  <span class="c1"># self-inverse</span></div>
 

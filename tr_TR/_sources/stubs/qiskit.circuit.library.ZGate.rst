@@ -7,28 +7,14 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~ZGate.add_decomposition
-      ~ZGate.assemble
-      ~ZGate.broadcast_arguments
-      ~ZGate.c_if
       ~ZGate.control
-      ~ZGate.copy
       ~ZGate.inverse
-      ~ZGate.is_parameterized
-      ~ZGate.mirror
-      ~ZGate.power
-      ~ZGate.qasm
-      ~ZGate.repeat
-      ~ZGate.reverse_ops
-      ~ZGate.soft_compare
-      ~ZGate.to_matrix
-      ~ZGate.validate_parameter
 
 
 

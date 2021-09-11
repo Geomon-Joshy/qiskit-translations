@@ -7,7 +7,7 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
@@ -15,8 +15,6 @@
 
       ~Hessian.convert
       ~Hessian.get_hessian
-      ~Hessian.gradient_wrapper
-      ~Hessian.parameter_expression_grad
 
 
 

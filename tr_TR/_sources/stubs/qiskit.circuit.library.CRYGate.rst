@@ -7,28 +7,13 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~CRYGate.add_decomposition
-      ~CRYGate.assemble
-      ~CRYGate.broadcast_arguments
-      ~CRYGate.c_if
-      ~CRYGate.control
-      ~CRYGate.copy
       ~CRYGate.inverse
-      ~CRYGate.is_parameterized
-      ~CRYGate.mirror
-      ~CRYGate.power
-      ~CRYGate.qasm
-      ~CRYGate.repeat
-      ~CRYGate.reverse_ops
-      ~CRYGate.soft_compare
-      ~CRYGate.to_matrix
-      ~CRYGate.validate_parameter
 
 
 

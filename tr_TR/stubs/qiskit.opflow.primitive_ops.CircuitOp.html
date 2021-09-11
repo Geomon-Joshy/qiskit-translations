@@ -41,7 +41,7 @@
     <link rel="index" title="Dizin" href="../genindex.html" />
     <link rel="search" title="Ara" href="../search.html" />
     <link rel="next" title="qiskit.opflow.primitive_ops.CircuitOp.add" href="qiskit.opflow.primitive_ops.CircuitOp.add.html" />
-    <link rel="prev" title="qiskit.opflow.primitive_ops.PrimitiveOp.to_spmatrix" href="qiskit.opflow.primitive_ops.PrimitiveOp.to_spmatrix.html" /> 
+    <link rel="prev" title="qiskit.opflow.primitive_ops.PrimitiveOp.to_pauli_op" href="qiskit.opflow.primitive_ops.PrimitiveOp.to_pauli_op.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -297,7 +297,7 @@
         
           <li><a href="../apidoc/opflow.html">Operators (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.opflow</span></code>)</a> &gt;</li>
         
-          <li><a href="../apidoc/qiskit.opflow.primitive_ops.html">Primitive Operators (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.opflow.primitive_ops</span></code>)</a> &gt;</li>
+          <li><a href="qiskit.opflow.primitive_ops.html">qiskit.opflow.primitive_ops</a> &gt;</li>
         
       <li>CircuitOp</li>
     
@@ -348,7 +348,7 @@
 <dd class="field-even"><p><strong>TypeError</strong> – Unsupported primitive, or primitive has ClassicalRegisters.</p>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
+<p class="rubric">Methods Defined Here</p>
 <table class="longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -364,14 +364,8 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.assign_parameters.html#qiskit.opflow.primitive_ops.CircuitOp.assign_parameters" title="qiskit.opflow.primitive_ops.CircuitOp.assign_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assign_parameters</span></code></a></p></td>
 <td><p>Binds scalar values to any Terra <code class="docutils literal notranslate"><span class="pre">Parameters</span></code> in the coefficients or primitives of the Operator, or substitutes one <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> for another.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.bind_parameters.html#qiskit.opflow.primitive_ops.CircuitOp.bind_parameters" title="qiskit.opflow.primitive_ops.CircuitOp.bind_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bind_parameters</span></code></a></p></td>
-<td><p>Same as assign_parameters, but maintained for consistency with QuantumCircuit in Terra (which has both assign_parameters and bind_parameters).</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.compose.html#qiskit.opflow.primitive_ops.CircuitOp.compose" title="qiskit.opflow.primitive_ops.CircuitOp.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.compose.html#qiskit.opflow.primitive_ops.CircuitOp.compose" title="qiskit.opflow.primitive_ops.CircuitOp.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a></p></td>
 <td><p>Return Operator Composition between self and other (linear algebra-style: A&#64;B(x) = A(B(x))), overloaded by <code class="docutils literal notranslate"><span class="pre">&#64;</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.copy.html#qiskit.opflow.primitive_ops.CircuitOp.copy" title="qiskit.opflow.primitive_ops.CircuitOp.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a></p></td>
-<td><p>Return a deep copy of the Operator.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.equals.html#qiskit.opflow.primitive_ops.CircuitOp.equals" title="qiskit.opflow.primitive_ops.CircuitOp.equals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">equals</span></code></a></p></td>
 <td><p>Evaluate Equality between Operators, overloaded by <code class="docutils literal notranslate"><span class="pre">==</span></code>.</p></td>
@@ -379,35 +373,17 @@
 <tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.eval.html#qiskit.opflow.primitive_ops.CircuitOp.eval" title="qiskit.opflow.primitive_ops.CircuitOp.eval"><code class="xref py py-obj docutils literal notranslate"><span class="pre">eval</span></code></a></p></td>
 <td><p>Evaluate the Operator’s underlying function, either on a binary string or another Operator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.exp_i.html#qiskit.opflow.primitive_ops.CircuitOp.exp_i" title="qiskit.opflow.primitive_ops.CircuitOp.exp_i"><code class="xref py py-obj docutils literal notranslate"><span class="pre">exp_i</span></code></a></p></td>
-<td><p>Return Operator exponentiation, equaling e^(-i * op)</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.log_i.html#qiskit.opflow.primitive_ops.CircuitOp.log_i" title="qiskit.opflow.primitive_ops.CircuitOp.log_i"><code class="xref py py-obj docutils literal notranslate"><span class="pre">log_i</span></code></a></p></td>
-<td><p>Return a <code class="docutils literal notranslate"><span class="pre">MatrixOp</span></code> equivalent to log(H)/-i for this operator H.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.mul.html#qiskit.opflow.primitive_ops.CircuitOp.mul" title="qiskit.opflow.primitive_ops.CircuitOp.mul"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mul</span></code></a></p></td>
-<td><p>Returns the scalar multiplication of the Operator, overloaded by <code class="docutils literal notranslate"><span class="pre">*</span></code>, including support for Terra’s <code class="docutils literal notranslate"><span class="pre">Parameters</span></code>, which can be bound to values later (via <code class="docutils literal notranslate"><span class="pre">bind_parameters</span></code>).</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.neg.html#qiskit.opflow.primitive_ops.CircuitOp.neg" title="qiskit.opflow.primitive_ops.CircuitOp.neg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">neg</span></code></a></p></td>
-<td><p>Return the Operator’s negation, effectively just multiplying by -1.0, overloaded by <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p></td>
-</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.permute.html#qiskit.opflow.primitive_ops.CircuitOp.permute" title="qiskit.opflow.primitive_ops.CircuitOp.permute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">permute</span></code></a></p></td>
 <td><p>Permute the qubits of the circuit.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.power.html#qiskit.opflow.primitive_ops.CircuitOp.power" title="qiskit.opflow.primitive_ops.CircuitOp.power"><code class="xref py py-obj docutils literal notranslate"><span class="pre">power</span></code></a></p></td>
-<td><p>Return Operator composed with self multiple times, overloaded by <code class="docutils literal notranslate"><span class="pre">**</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.primitive_strings.html#qiskit.opflow.primitive_ops.CircuitOp.primitive_strings" title="qiskit.opflow.primitive_ops.CircuitOp.primitive_strings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">primitive_strings</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.primitive_strings.html#qiskit.opflow.primitive_ops.CircuitOp.primitive_strings" title="qiskit.opflow.primitive_ops.CircuitOp.primitive_strings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">primitive_strings</span></code></a></p></td>
 <td><p>Return a set of strings describing the primitives contained in the Operator.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.reduce.html#qiskit.opflow.primitive_ops.CircuitOp.reduce" title="qiskit.opflow.primitive_ops.CircuitOp.reduce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reduce</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.reduce.html#qiskit.opflow.primitive_ops.CircuitOp.reduce" title="qiskit.opflow.primitive_ops.CircuitOp.reduce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reduce</span></code></a></p></td>
 <td><p>Try collapsing the Operator structure, usually after some type of conversion, e.g.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.tensor.html#qiskit.opflow.primitive_ops.CircuitOp.tensor" title="qiskit.opflow.primitive_ops.CircuitOp.tensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensor</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.tensor.html#qiskit.opflow.primitive_ops.CircuitOp.tensor" title="qiskit.opflow.primitive_ops.CircuitOp.tensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensor</span></code></a></p></td>
 <td><p>Return tensor product between self and other, overloaded by <code class="docutils literal notranslate"><span class="pre">^</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.tensorpower.html#qiskit.opflow.primitive_ops.CircuitOp.tensorpower" title="qiskit.opflow.primitive_ops.CircuitOp.tensorpower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorpower</span></code></a></p></td>
-<td><p>Return tensor product with self multiple times, overloaded by <code class="docutils literal notranslate"><span class="pre">^</span></code>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.to_circuit.html#qiskit.opflow.primitive_ops.CircuitOp.to_circuit" title="qiskit.opflow.primitive_ops.CircuitOp.to_circuit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_circuit</span></code></a></p></td>
 <td><p>Returns a <code class="docutils literal notranslate"><span class="pre">QuantumCircuit</span></code> equivalent to this Operator.</p></td>
@@ -420,15 +396,6 @@
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.to_matrix.html#qiskit.opflow.primitive_ops.CircuitOp.to_matrix" title="qiskit.opflow.primitive_ops.CircuitOp.to_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix</span></code></a></p></td>
 <td><p>Return NumPy representation of the Operator.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.to_matrix_op.html#qiskit.opflow.primitive_ops.CircuitOp.to_matrix_op" title="qiskit.opflow.primitive_ops.CircuitOp.to_matrix_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_matrix_op</span></code></a></p></td>
-<td><p>Returns a <code class="docutils literal notranslate"><span class="pre">MatrixOp</span></code> equivalent to this Operator.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.to_pauli_op.html#qiskit.opflow.primitive_ops.CircuitOp.to_pauli_op" title="qiskit.opflow.primitive_ops.CircuitOp.to_pauli_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_pauli_op</span></code></a></p></td>
-<td><p>Returns a sum of <code class="docutils literal notranslate"><span class="pre">PauliOp</span></code> s equivalent to this Operator.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.CircuitOp.to_spmatrix.html#qiskit.opflow.primitive_ops.CircuitOp.to_spmatrix" title="qiskit.opflow.primitive_ops.CircuitOp.to_spmatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_spmatrix</span></code></a></p></td>
-<td><p>Return SciPy sparse matrix representation of the Operator.</p></td>
 </tr>
 </tbody>
 </table>
@@ -518,7 +485,7 @@
         <a href="qiskit.opflow.primitive_ops.CircuitOp.add.html" class="btn btn-neutral float-right" title="qiskit.opflow.primitive_ops.CircuitOp.add" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
-        <a href="qiskit.opflow.primitive_ops.PrimitiveOp.to_spmatrix.html" class="btn btn-neutral" title="qiskit.opflow.primitive_ops.PrimitiveOp.to_spmatrix" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+        <a href="qiskit.opflow.primitive_ops.PrimitiveOp.to_pauli_op.html" class="btn btn-neutral" title="qiskit.opflow.primitive_ops.PrimitiveOp.to_pauli_op" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
       
     </div>
   

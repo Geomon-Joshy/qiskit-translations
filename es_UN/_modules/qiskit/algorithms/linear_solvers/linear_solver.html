@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.algorithms.linear_solvers.linear_solver &mdash; documentación de Qiskit - 0.29.0</title>
+  <title>qiskit.algorithms.linear_solvers.linear_solver &mdash; documentación de Qiskit - 0.29.1</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/css/theme-override.css" type="text/css" />
@@ -353,14 +352,14 @@
 <span class="sd">    with the information about the solution obtained.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="LinearSolverResult.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.LinearSolverResult.html#qiskit.algorithms.LinearSolverResult.__init__">[documentos]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
 
         <span class="c1"># Set the default to None, if the algorithm knows how to calculate it can override it.</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_state</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_observable</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_euclidean_norm</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_circuit_results</span> <span class="o">=</span> <span class="kc">None</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_circuit_results</span> <span class="o">=</span> <span class="kc">None</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">observable</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]]:</span>
@@ -417,7 +416,7 @@
 <div class="viewcode-block" id="LinearSolver"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.LinearSolver.html#qiskit.algorithms.LinearSolver">[documentos]</a><span class="k">class</span> <span class="nc">LinearSolver</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;An abstract class for linear system solvers in Qiskit.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="LinearSolver.solve"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.LinearSolver.html#qiskit.algorithms.LinearSolver.solve">[documentos]</a>    <span class="nd">@abstractmethod</span>
+<div class="viewcode-block" id="LinearSolver.solve"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.LinearSolver.solve.html#qiskit.algorithms.LinearSolver.solve">[documentos]</a>    <span class="nd">@abstractmethod</span>
     <span class="k">def</span> <span class="nf">solve</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">matrix</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">QuantumCircuit</span><span class="p">],</span>

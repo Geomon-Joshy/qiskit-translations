@@ -7,29 +7,14 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~MCXRecursive.add_decomposition
-      ~MCXRecursive.assemble
-      ~MCXRecursive.broadcast_arguments
-      ~MCXRecursive.c_if
-      ~MCXRecursive.control
-      ~MCXRecursive.copy
       ~MCXRecursive.get_num_ancilla_qubits
       ~MCXRecursive.inverse
-      ~MCXRecursive.is_parameterized
-      ~MCXRecursive.mirror
-      ~MCXRecursive.power
-      ~MCXRecursive.qasm
-      ~MCXRecursive.repeat
-      ~MCXRecursive.reverse_ops
-      ~MCXRecursive.soft_compare
-      ~MCXRecursive.to_matrix
-      ~MCXRecursive.validate_parameter
 
 
 

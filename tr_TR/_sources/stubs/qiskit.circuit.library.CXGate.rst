@@ -7,28 +7,14 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~CXGate.add_decomposition
-      ~CXGate.assemble
-      ~CXGate.broadcast_arguments
-      ~CXGate.c_if
       ~CXGate.control
-      ~CXGate.copy
       ~CXGate.inverse
-      ~CXGate.is_parameterized
-      ~CXGate.mirror
-      ~CXGate.power
-      ~CXGate.qasm
-      ~CXGate.repeat
-      ~CXGate.reverse_ops
-      ~CXGate.soft_compare
-      ~CXGate.to_matrix
-      ~CXGate.validate_parameter
 
 
 

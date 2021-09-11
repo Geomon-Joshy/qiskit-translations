@@ -7,7 +7,7 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
@@ -15,28 +15,15 @@
 
       ~SparseVectorStateFn.add
       ~SparseVectorStateFn.adjoint
-      ~SparseVectorStateFn.assign_parameters
-      ~SparseVectorStateFn.bind_parameters
-      ~SparseVectorStateFn.compose
-      ~SparseVectorStateFn.copy
       ~SparseVectorStateFn.equals
       ~SparseVectorStateFn.eval
-      ~SparseVectorStateFn.mul
-      ~SparseVectorStateFn.neg
-      ~SparseVectorStateFn.permute
-      ~SparseVectorStateFn.power
       ~SparseVectorStateFn.primitive_strings
-      ~SparseVectorStateFn.reduce
       ~SparseVectorStateFn.sample
-      ~SparseVectorStateFn.tensor
-      ~SparseVectorStateFn.tensorpower
       ~SparseVectorStateFn.to_circuit_op
-      ~SparseVectorStateFn.to_density_matrix
       ~SparseVectorStateFn.to_dict_fn
       ~SparseVectorStateFn.to_matrix
       ~SparseVectorStateFn.to_matrix_op
       ~SparseVectorStateFn.to_spmatrix
-      ~SparseVectorStateFn.traverse
 
 
 

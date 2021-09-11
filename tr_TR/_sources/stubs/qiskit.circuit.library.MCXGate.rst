@@ -7,29 +7,15 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~MCXGate.add_decomposition
-      ~MCXGate.assemble
-      ~MCXGate.broadcast_arguments
-      ~MCXGate.c_if
       ~MCXGate.control
-      ~MCXGate.copy
       ~MCXGate.get_num_ancilla_qubits
       ~MCXGate.inverse
-      ~MCXGate.is_parameterized
-      ~MCXGate.mirror
-      ~MCXGate.power
-      ~MCXGate.qasm
-      ~MCXGate.repeat
-      ~MCXGate.reverse_ops
-      ~MCXGate.soft_compare
-      ~MCXGate.to_matrix
-      ~MCXGate.validate_parameter
 
 
 

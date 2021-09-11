@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.algorithms.amplitude_estimators.amplitude_estimator &mdash; Qiskit 0.29.0 ドキュメント</title>
+  <title>qiskit.algorithms.amplitude_estimators.amplitude_estimator &mdash; Qiskit 0.29.1 ドキュメント</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/css/theme-override.css" type="text/css" />
@@ -345,7 +344,7 @@
 <div class="viewcode-block" id="AmplitudeEstimator"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.AmplitudeEstimator.html#qiskit.algorithms.AmplitudeEstimator">[ドキュメント]</a><span class="k">class</span> <span class="nc">AmplitudeEstimator</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;The Amplitude Estimation interface.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="AmplitudeEstimator.estimate"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.AmplitudeEstimator.html#qiskit.algorithms.AmplitudeEstimator.estimate">[ドキュメント]</a>    <span class="nd">@abstractmethod</span>
+<div class="viewcode-block" id="AmplitudeEstimator.estimate"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.AmplitudeEstimator.estimate.html#qiskit.algorithms.AmplitudeEstimator.estimate">[ドキュメント]</a>    <span class="nd">@abstractmethod</span>
     <span class="k">def</span> <span class="nf">estimate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">estimation_problem</span><span class="p">:</span> <span class="n">EstimationProblem</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;AmplitudeEstimatorResult&quot;</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;Run the amplitude estimation algorithm.</span>
 
@@ -359,7 +358,7 @@
 <div class="viewcode-block" id="AmplitudeEstimatorResult"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.AmplitudeEstimatorResult.html#qiskit.algorithms.AmplitudeEstimatorResult">[ドキュメント]</a><span class="k">class</span> <span class="nc">AmplitudeEstimatorResult</span><span class="p">(</span><span class="n">AlgorithmResult</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;The results object for amplitude estimation algorithms.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="AmplitudeEstimatorResult.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.AmplitudeEstimatorResult.html#qiskit.algorithms.AmplitudeEstimatorResult.__init__">[ドキュメント]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_circuit_results</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_shots</span> <span class="o">=</span> <span class="kc">None</span>
@@ -368,7 +367,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_num_oracle_queries</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_post_processing</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_confidence_interval</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_confidence_interval_processed</span> <span class="o">=</span> <span class="kc">None</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_confidence_interval_processed</span> <span class="o">=</span> <span class="kc">None</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">circuit_results</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]]]:</span>

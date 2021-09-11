@@ -41,7 +41,7 @@
     <link rel="index" title="Dizin" href="../genindex.html" />
     <link rel="search" title="Ara" href="../search.html" />
     <link rel="next" title="qiskit.opflow.primitive_ops.PrimitiveOp.add" href="qiskit.opflow.primitive_ops.PrimitiveOp.add.html" />
-    <link rel="prev" title="Primitive Operators (qiskit.opflow.primitive_ops)" href="../apidoc/qiskit.opflow.primitive_ops.html" /> 
+    <link rel="prev" title="qiskit.opflow.primitive_ops" href="qiskit.opflow.primitive_ops.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -297,7 +297,7 @@
         
           <li><a href="../apidoc/opflow.html">Operators (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.opflow</span></code>)</a> &gt;</li>
         
-          <li><a href="../apidoc/qiskit.opflow.primitive_ops.html">Primitive Operators (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.opflow.primitive_ops</span></code>)</a> &gt;</li>
+          <li><a href="qiskit.opflow.primitive_ops.html">qiskit.opflow.primitive_ops</a> &gt;</li>
         
       <li>PrimitiveOp</li>
     
@@ -353,7 +353,7 @@ new object, but the underlying primitives are not copied.</p>
 </ul>
 </dd>
 </dl>
-<p class="rubric">Methods</p>
+<p class="rubric">Methods Defined Here</p>
 <table class="longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -369,14 +369,8 @@ new object, but the underlying primitives are not copied.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.assign_parameters.html#qiskit.opflow.primitive_ops.PrimitiveOp.assign_parameters" title="qiskit.opflow.primitive_ops.PrimitiveOp.assign_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assign_parameters</span></code></a></p></td>
 <td><p>Binds scalar values to any Terra <code class="docutils literal notranslate"><span class="pre">Parameters</span></code> in the coefficients or primitives of the Operator, or substitutes one <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> for another.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.bind_parameters.html#qiskit.opflow.primitive_ops.PrimitiveOp.bind_parameters" title="qiskit.opflow.primitive_ops.PrimitiveOp.bind_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bind_parameters</span></code></a></p></td>
-<td><p>Same as assign_parameters, but maintained for consistency with QuantumCircuit in Terra (which has both assign_parameters and bind_parameters).</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.compose.html#qiskit.opflow.primitive_ops.PrimitiveOp.compose" title="qiskit.opflow.primitive_ops.PrimitiveOp.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.compose.html#qiskit.opflow.primitive_ops.PrimitiveOp.compose" title="qiskit.opflow.primitive_ops.PrimitiveOp.compose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compose</span></code></a></p></td>
 <td><p>Return Operator Composition between self and other (linear algebra-style: A&#64;B(x) = A(B(x))), overloaded by <code class="docutils literal notranslate"><span class="pre">&#64;</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.copy.html#qiskit.opflow.primitive_ops.PrimitiveOp.copy" title="qiskit.opflow.primitive_ops.PrimitiveOp.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a></p></td>
-<td><p>Return a deep copy of the Operator.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.equals.html#qiskit.opflow.primitive_ops.PrimitiveOp.equals" title="qiskit.opflow.primitive_ops.PrimitiveOp.equals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">equals</span></code></a></p></td>
 <td><p>Evaluate Equality between Operators, overloaded by <code class="docutils literal notranslate"><span class="pre">==</span></code>.</p></td>
@@ -393,14 +387,8 @@ new object, but the underlying primitives are not copied.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.mul.html#qiskit.opflow.primitive_ops.PrimitiveOp.mul" title="qiskit.opflow.primitive_ops.PrimitiveOp.mul"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mul</span></code></a></p></td>
 <td><p>Returns the scalar multiplication of the Operator, overloaded by <code class="docutils literal notranslate"><span class="pre">*</span></code>, including support for Terra’s <code class="docutils literal notranslate"><span class="pre">Parameters</span></code>, which can be bound to values later (via <code class="docutils literal notranslate"><span class="pre">bind_parameters</span></code>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.neg.html#qiskit.opflow.primitive_ops.PrimitiveOp.neg" title="qiskit.opflow.primitive_ops.PrimitiveOp.neg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">neg</span></code></a></p></td>
-<td><p>Return the Operator’s negation, effectively just multiplying by -1.0, overloaded by <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.permute.html#qiskit.opflow.primitive_ops.PrimitiveOp.permute" title="qiskit.opflow.primitive_ops.PrimitiveOp.permute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">permute</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.permute.html#qiskit.opflow.primitive_ops.PrimitiveOp.permute" title="qiskit.opflow.primitive_ops.PrimitiveOp.permute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">permute</span></code></a></p></td>
 <td><p>Permutes the qubits of the operator.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.power.html#qiskit.opflow.primitive_ops.PrimitiveOp.power" title="qiskit.opflow.primitive_ops.PrimitiveOp.power"><code class="xref py py-obj docutils literal notranslate"><span class="pre">power</span></code></a></p></td>
-<td><p>Return Operator composed with self multiple times, overloaded by <code class="docutils literal notranslate"><span class="pre">**</span></code>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.primitive_strings.html#qiskit.opflow.primitive_ops.PrimitiveOp.primitive_strings" title="qiskit.opflow.primitive_ops.PrimitiveOp.primitive_strings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">primitive_strings</span></code></a></p></td>
 <td><p>Return a set of strings describing the primitives contained in the Operator.</p></td>
@@ -431,9 +419,6 @@ new object, but the underlying primitives are not copied.</p>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.to_pauli_op.html#qiskit.opflow.primitive_ops.PrimitiveOp.to_pauli_op" title="qiskit.opflow.primitive_ops.PrimitiveOp.to_pauli_op"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_pauli_op</span></code></a></p></td>
 <td><p>Returns a sum of <code class="docutils literal notranslate"><span class="pre">PauliOp</span></code> s equivalent to this Operator.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.opflow.primitive_ops.PrimitiveOp.to_spmatrix.html#qiskit.opflow.primitive_ops.PrimitiveOp.to_spmatrix" title="qiskit.opflow.primitive_ops.PrimitiveOp.to_spmatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_spmatrix</span></code></a></p></td>
-<td><p>Return SciPy sparse matrix representation of the Operator.</p></td>
 </tr>
 </tbody>
 </table>
@@ -523,7 +508,7 @@ new object, but the underlying primitives are not copied.</p>
         <a href="qiskit.opflow.primitive_ops.PrimitiveOp.add.html" class="btn btn-neutral float-right" title="qiskit.opflow.primitive_ops.PrimitiveOp.add" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
-        <a href="../apidoc/qiskit.opflow.primitive_ops.html" class="btn btn-neutral" title="Primitive Operators (qiskit.opflow.primitive_ops)" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+        <a href="qiskit.opflow.primitive_ops.html" class="btn btn-neutral" title="qiskit.opflow.primitive_ops" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
       
     </div>
   

@@ -7,7 +7,7 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
@@ -15,28 +15,16 @@
 
       ~VectorStateFn.add
       ~VectorStateFn.adjoint
-      ~VectorStateFn.assign_parameters
-      ~VectorStateFn.bind_parameters
-      ~VectorStateFn.compose
-      ~VectorStateFn.copy
-      ~VectorStateFn.equals
       ~VectorStateFn.eval
-      ~VectorStateFn.mul
-      ~VectorStateFn.neg
       ~VectorStateFn.permute
-      ~VectorStateFn.power
       ~VectorStateFn.primitive_strings
-      ~VectorStateFn.reduce
       ~VectorStateFn.sample
       ~VectorStateFn.tensor
-      ~VectorStateFn.tensorpower
       ~VectorStateFn.to_circuit_op
       ~VectorStateFn.to_density_matrix
       ~VectorStateFn.to_dict_fn
       ~VectorStateFn.to_matrix
       ~VectorStateFn.to_matrix_op
-      ~VectorStateFn.to_spmatrix
-      ~VectorStateFn.traverse
 
 
 

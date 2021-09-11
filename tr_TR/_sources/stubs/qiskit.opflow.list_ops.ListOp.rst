@@ -7,7 +7,7 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
@@ -16,16 +16,13 @@
       ~ListOp.add
       ~ListOp.adjoint
       ~ListOp.assign_parameters
-      ~ListOp.bind_parameters
       ~ListOp.compose
-      ~ListOp.copy
       ~ListOp.default_combo_fn
       ~ListOp.equals
       ~ListOp.eval
       ~ListOp.exp_i
       ~ListOp.log_i
       ~ListOp.mul
-      ~ListOp.neg
       ~ListOp.permute
       ~ListOp.power
       ~ListOp.primitive_strings

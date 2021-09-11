@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.circuit.library.standard_gates.p &mdash; Documentação Qiskit 0.29.0</title>
+  <title>qiskit.circuit.library.standard_gates.p &mdash; Documentação Qiskit 0.29.1</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../../_static/css/theme-override.css" type="text/css" />
@@ -391,9 +390,9 @@
 <span class="sd">        `1612.00858 &lt;https://arxiv.org/abs/1612.00858&gt;`_</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="PhaseGate.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.PhaseGate.html#qiskit.circuit.library.PhaseGate.__init__">[documentos]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Create new Phase gate.&quot;&quot;&quot;</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="n">theta</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span></div>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="n">theta</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_define</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># pylint: disable=cyclic-import</span>
@@ -405,7 +404,7 @@
         <span class="n">qc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">UGate</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="p">[</span><span class="mi">0</span><span class="p">])</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">definition</span> <span class="o">=</span> <span class="n">qc</span>
 
-<div class="viewcode-block" id="PhaseGate.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.PhaseGate.html#qiskit.circuit.library.PhaseGate.control">[documentos]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="PhaseGate.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.PhaseGate.control.html#qiskit.circuit.library.PhaseGate.control">[documentos]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return a (multi-)controlled-Phase gate.</span>
 
 <span class="sd">        Args:</span>
@@ -428,7 +427,7 @@
         <span class="n">gate</span><span class="o">.</span><span class="n">base_gate</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">label</span>
         <span class="k">return</span> <span class="n">gate</span></div>
 
-<div class="viewcode-block" id="PhaseGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.PhaseGate.html#qiskit.circuit.library.PhaseGate.inverse">[documentos]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="PhaseGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.PhaseGate.inverse.html#qiskit.circuit.library.PhaseGate.inverse">[documentos]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Return inverted Phase gate (:math:`Phase(\lambda){\dagger} = Phase(-\lambda)`)&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">PhaseGate</span><span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span></div>
 
@@ -475,7 +474,7 @@
 <span class="sd">        phase difference.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="CPhaseGate.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CPhaseGate.html#qiskit.circuit.library.CPhaseGate.__init__">[documentos]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Create new CPhase gate.&quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
             <span class="s2">&quot;cp&quot;</span><span class="p">,</span>
@@ -485,7 +484,7 @@
             <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span>
             <span class="n">ctrl_state</span><span class="o">=</span><span class="n">ctrl_state</span><span class="p">,</span>
             <span class="n">base_gate</span><span class="o">=</span><span class="n">PhaseGate</span><span class="p">(</span><span class="n">theta</span><span class="p">),</span>
-        <span class="p">)</span></div>
+        <span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_define</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -507,7 +506,7 @@
         <span class="n">qc</span><span class="o">.</span><span class="n">p</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">definition</span> <span class="o">=</span> <span class="n">qc</span>
 
-<div class="viewcode-block" id="CPhaseGate.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CPhaseGate.html#qiskit.circuit.library.CPhaseGate.control">[documentos]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="CPhaseGate.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CPhaseGate.control.html#qiskit.circuit.library.CPhaseGate.control">[documentos]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Controlled version of this gate.</span>
 
 <span class="sd">        Args:</span>
@@ -525,7 +524,7 @@
             <span class="k">return</span> <span class="n">gate</span>
         <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">control</span><span class="p">(</span><span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="n">num_ctrl_qubits</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="n">ctrl_state</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="CPhaseGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CPhaseGate.html#qiskit.circuit.library.CPhaseGate.inverse">[documentos]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="CPhaseGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.CPhaseGate.inverse.html#qiskit.circuit.library.CPhaseGate.inverse">[documentos]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Return inverted CPhase gate (:math:`CPhase(\lambda){\dagger} = CPhase(-\lambda)`)&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">CPhaseGate</span><span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ctrl_state</span><span class="p">)</span></div>
 
@@ -564,7 +563,7 @@
 <span class="sd">        The singly-controlled-version of this gate.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="MCPhaseGate.__init__"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCPhaseGate.html#qiskit.circuit.library.MCPhaseGate.__init__">[documentos]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lam</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lam</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Create new MCPhase gate.&quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
             <span class="s2">&quot;mcphase&quot;</span><span class="p">,</span>
@@ -573,7 +572,7 @@
             <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="n">num_ctrl_qubits</span><span class="p">,</span>
             <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span>
             <span class="n">base_gate</span><span class="o">=</span><span class="n">PhaseGate</span><span class="p">(</span><span class="n">lam</span><span class="p">),</span>
-        <span class="p">)</span></div>
+        <span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_define</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># pylint: disable=cyclic-import</span>
@@ -595,7 +594,7 @@
             <span class="n">qc</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">definition</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">definition</span> <span class="o">=</span> <span class="n">qc</span>
 
-<div class="viewcode-block" id="MCPhaseGate.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCPhaseGate.html#qiskit.circuit.library.MCPhaseGate.control">[documentos]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="MCPhaseGate.control"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCPhaseGate.control.html#qiskit.circuit.library.MCPhaseGate.control">[documentos]</a>    <span class="k">def</span> <span class="nf">control</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Controlled version of this gate.</span>
 
 <span class="sd">        Args:</span>
@@ -615,7 +614,7 @@
             <span class="k">return</span> <span class="n">gate</span>
         <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">control</span><span class="p">(</span><span class="n">num_ctrl_qubits</span><span class="o">=</span><span class="n">num_ctrl_qubits</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">ctrl_state</span><span class="o">=</span><span class="n">ctrl_state</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="MCPhaseGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCPhaseGate.html#qiskit.circuit.library.MCPhaseGate.inverse">[documentos]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="MCPhaseGate.inverse"><a class="viewcode-back" href="../../../../../stubs/qiskit.circuit.library.MCPhaseGate.inverse.html#qiskit.circuit.library.MCPhaseGate.inverse">[documentos]</a>    <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Return inverted MCU1 gate (:math:`MCU1(\lambda){\dagger} = MCU1(-\lambda)`)&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">MCPhaseGate</span><span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_ctrl_qubits</span><span class="p">)</span></div></div>
 </pre></div>

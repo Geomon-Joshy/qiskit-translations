@@ -1,19 +1,18 @@
-﻿qiskit.providers.aer.PulseSimulator
-===================================
+﻿PulseSimulator
+==============
 
 .. currentmodule:: qiskit.providers.aer
 
 .. autoclass:: PulseSimulator
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PulseSimulator.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PulseSimulator.available_methods
       ~PulseSimulator.clear_options
       ~PulseSimulator.configuration
@@ -26,16 +25,10 @@
       ~PulseSimulator.set_option
       ~PulseSimulator.set_options
       ~PulseSimulator.status
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PulseSimulator.options
-      ~PulseSimulator.version
-   
-   
+   .. autoattribute:: options
+   .. autoattribute:: version

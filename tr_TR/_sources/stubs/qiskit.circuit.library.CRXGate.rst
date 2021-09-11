@@ -7,28 +7,13 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~CRXGate.add_decomposition
-      ~CRXGate.assemble
-      ~CRXGate.broadcast_arguments
-      ~CRXGate.c_if
-      ~CRXGate.control
-      ~CRXGate.copy
       ~CRXGate.inverse
-      ~CRXGate.is_parameterized
-      ~CRXGate.mirror
-      ~CRXGate.power
-      ~CRXGate.qasm
-      ~CRXGate.repeat
-      ~CRXGate.reverse_ops
-      ~CRXGate.soft_compare
-      ~CRXGate.to_matrix
-      ~CRXGate.validate_parameter
 
 
 

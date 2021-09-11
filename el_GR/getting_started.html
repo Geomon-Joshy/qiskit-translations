@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Ξεκινώντας &mdash; Τεκμηρίωση του Qiskit - 0.29.0</title>
+  <title>Ξεκινώντας &mdash; Τεκμηρίωση του Qiskit - 0.29.1</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme-override.css" type="text/css" />
@@ -327,8 +326,8 @@
 <section id="installation">
 <h2>Εγκατάσταση<a class="headerlink" href="#installation" title="Μόνιμος σύνδεσμος σε αυτήν την κεφαλίδα">¶</a></h2>
 <div class="tabbed-set docutils">
-<input checked="checked" id="1a2b7bcf-00d3-4bba-a7d4-d520963b5864" name="cb1b8b88-2964-49c9-884b-0755743130a4" type="radio">
-</input><label class="tabbed-label" for="1a2b7bcf-00d3-4bba-a7d4-d520963b5864">
+<input checked="checked" id="20867c84-82ae-4edb-a7e9-72e6c6afa403" name="35b1e7b2-9076-4aed-a200-c5b4508d9275" type="radio">
+</input><label class="tabbed-label" for="20867c84-82ae-4edb-a7e9-72e6c6afa403">
 Εκκίνηση τοπικά</label><div class="tabbed-content docutils">
 <p>Το Qiskit υποστηρίζει Python 3.6 ή νεότερη έκδοση. Ωστόσο, τόσο η Python όσο και το Qiskit είναι εξελισσόμενα οικοσυστήματα, και μερικές φορές με τις νέες εκδόσεις στο ένα ή στο άλλο, μπορεί να υπάρχουν προβλήματα με τη συμβατότητα.</p>
 <p>Συστήνουμε την εγκατάσταση του ` Anaconda &lt;<a class="reference external" href="https://www.anaconda.com/download/">https://www.anaconda.com/download/</a>&gt;` __, μια πολλαπλή πλατφόρμα διανομής Python για την επιστημονική πληροφορική. Το Jupyter, που περιλαμβάνεται στο Anaconda, συνιστάται για την αλληλεπίδραση με το Qiskit.</p>
@@ -363,8 +362,8 @@
 </pre></div>
 </div>
 </div>
-<input id="19b217b5-8be3-4629-a5a4-2baf8984e0ae" name="cb1b8b88-2964-49c9-884b-0755743130a4" type="radio">
-</input><label class="tabbed-label" for="19b217b5-8be3-4629-a5a4-2baf8984e0ae">
+<input id="649a47da-d8c1-45b0-8b49-ac77323f5b10" name="35b1e7b2-9076-4aed-a200-c5b4508d9275" type="radio">
+</input><label class="tabbed-label" for="649a47da-d8c1-45b0-8b49-ac77323f5b10">
 Εκκίνηση στο cloud</label><div class="tabbed-content docutils">
 <blockquote>
 <div><p>Οι ακόλουθοι προμηθευτές cloud έχουν εγκατεστημένο το Qiskit στο περιβάλλον τους:</p>
@@ -420,8 +419,8 @@
 </div>
 </div>
 </div></div>
-<input id="bc6ef02f-85ee-4353-bb10-eefe1bf6a0b7" name="cb1b8b88-2964-49c9-884b-0755743130a4" type="radio">
-</input><label class="tabbed-label" for="bc6ef02f-85ee-4353-bb10-eefe1bf6a0b7">
+<input id="58255b54-708c-475c-8a30-a46934623880" name="35b1e7b2-9076-4aed-a200-c5b4508d9275" type="radio">
+</input><label class="tabbed-label" for="58255b54-708c-475c-8a30-a46934623880">
 Εγκατάσταση από την πηγή</label><div class="tabbed-content docutils">
 <p>Η εγκατάσταση των στοιχείων από την πηγή, σας επιτρέπει να αποκτήσετε πρόσβαση στην πιο πρόσφατη έκδοση του Qiskit αντί να χρησιμοποιήσετε την έκδοση στο αποθετήριο Python Package Index (PyPI). Αυτό θα σας δώσει τη δυνατότητα να επιθεωρήσετε και να επεκτείνετε την τελευταία έκδοση του κώδικα Qiskit πιο αποτελεσματικά.</p>
 <p>Κατά την εγκατάσταση των στοιχείων και των συστατικών στοιχείων από την πηγή, από προεπιλογή θα χρησιμοποιηθεί η έκδοση <code class="docutils literal notranslate"><span class="pre">development</span></code> (η οποία αντιστοιχεί στο <code class="docutils literal notranslate"><span class="pre">master</span></code> git branch), σε αντίθεση με την έκδοση <cite>stable`</cite> (η οποία περιέχει την ίδια βάση κώδικα με τα δημοσιευμένα πακέτα <code class="docutils literal notranslate"><span class="pre">pip</span></code>). Από τις εκδόσεις <code class="docutils literal notranslate"><span class="pre">development</span></code> ενός στοιχείου ή συστατικού στοιχείου συνήθως περιλαμβάνουν νέα χαρακτηριστικά και αλλαγές, απαιτούν γενικά τη χρήση της έκδοσης <code class="docutils literal notranslate"><span class="pre">development</span></code> και των υπόλοιπων αντικειμένων.</p>
@@ -445,13 +444,13 @@ conda activate QiskitDevenv
 </div>
 <h2>Installing Terra from Source</h2><p>Η εγκατάσταση από την πηγή απαιτεί να έχετε ένα μεταγλωττιστή C++ στο σύστημά σας που υποστηρίζει C++11.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="20e4f935-1be1-412c-bc13-13198e62df3d" name="6a7a00e0-7e5f-40bb-8b3e-134a09f5f8b8" type="radio">
-</input><label class="tabbed-label" for="20e4f935-1be1-412c-bc13-13198e62df3d">
+<input checked="checked" id="af283236-fe8a-4d03-a689-f5cd49225a00" name="1023ce0d-b3bc-4eae-9fbe-a474a48eba92" type="radio">
+</input><label class="tabbed-label" for="af283236-fe8a-4d03-a689-f5cd49225a00">
 Μεταγλωττιστής για Linux</label><div class="tabbed-content docutils">
 <p>Στις περισσότερες πλατφόρμες Linux, είναι ήδη εγκατεστημένος ο απαραίτητος μεταγλωττιστής GCC.</p>
 </div>
-<input id="13c49976-c268-4833-862d-38b4b13904bf" name="6a7a00e0-7e5f-40bb-8b3e-134a09f5f8b8" type="radio">
-</input><label class="tabbed-label" for="13c49976-c268-4833-862d-38b4b13904bf">
+<input id="1b5307e3-67f8-4b26-90cc-e31c442a0f2b" name="1023ce0d-b3bc-4eae-9fbe-a474a48eba92" type="radio">
+</input><label class="tabbed-label" for="1b5307e3-67f8-4b26-90cc-e31c442a0f2b">
 Μεταγλωττιστής για macOS</label><div class="tabbed-content docutils">
 <p>Εάν χρησιμοποιείτε macOS, μπορείτε να εγκαταστήσετε το μεταγλωττιστή Clang εγκαθιστώντας το XCode. Ελέγξτε αν έχετε εγκαταστήσει το XCode και Clang ανοίγοντας ένα παράθυρο τερματικού και εισάγοντας τα παρακάτω.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>clang --version
@@ -462,8 +461,8 @@ conda activate QiskitDevenv
 </pre></div>
 </div>
 </div>
-<input id="2843ff56-d872-405c-802c-c4f8cd7b69b0" name="6a7a00e0-7e5f-40bb-8b3e-134a09f5f8b8" type="radio">
-</input><label class="tabbed-label" for="2843ff56-d872-405c-802c-c4f8cd7b69b0">
+<input id="330ad8cf-22a9-4b04-a786-e3dd7db9777b" name="1023ce0d-b3bc-4eae-9fbe-a474a48eba92" type="radio">
+</input><label class="tabbed-label" for="330ad8cf-22a9-4b04-a786-e3dd7db9777b">
 Μεταγλωττιστής για Windows</label><div class="tabbed-content docutils">
 <p>Στα Windows, είναι ευκολότερο να εγκαταστήσετε τον μεταγλωττιστή Visual C++ από τα <a class="reference external" href="https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017">Εργαλεία Κατασκευής για το Visual Studio 2017</a>. Αντ “αυτού μπορείτε να εγκαταστήσετε το Visual Studio έκδοση 2015 ή 2017, φροντίζοντας να επιλέξετε τις επιλογές για την εγκατάσταση του μεταγλωττιστή C++.</p>
 </div>

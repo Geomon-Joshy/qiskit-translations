@@ -7,28 +7,13 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~CHGate.add_decomposition
-      ~CHGate.assemble
-      ~CHGate.broadcast_arguments
-      ~CHGate.c_if
-      ~CHGate.control
-      ~CHGate.copy
       ~CHGate.inverse
-      ~CHGate.is_parameterized
-      ~CHGate.mirror
-      ~CHGate.power
-      ~CHGate.qasm
-      ~CHGate.repeat
-      ~CHGate.reverse_ops
-      ~CHGate.soft_compare
-      ~CHGate.to_matrix
-      ~CHGate.validate_parameter
 
 
 

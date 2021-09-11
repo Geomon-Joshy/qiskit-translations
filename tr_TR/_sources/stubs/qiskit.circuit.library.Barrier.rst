@@ -7,25 +7,15 @@
    :no-members:
    :show-inheritance:
 
-   .. rubric:: Methods
+   .. rubric:: Methods Defined Here
 
    .. autosummary::
       :nosignatures:
       :toctree: ../stubs/
 
-      ~Barrier.add_decomposition
-      ~Barrier.assemble
       ~Barrier.broadcast_arguments
       ~Barrier.c_if
-      ~Barrier.copy
       ~Barrier.inverse
-      ~Barrier.is_parameterized
-      ~Barrier.mirror
-      ~Barrier.qasm
-      ~Barrier.repeat
-      ~Barrier.reverse_ops
-      ~Barrier.soft_compare
-      ~Barrier.validate_parameter
 
 
 
