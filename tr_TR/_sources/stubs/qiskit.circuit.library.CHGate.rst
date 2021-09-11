@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.CHGate
-=============================
+﻿CHGate
+======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: CHGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CHGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CHGate.add_decomposition
       ~CHGate.assemble
       ~CHGate.broadcast_arguments
@@ -30,23 +29,17 @@
       ~CHGate.soft_compare
       ~CHGate.to_matrix
       ~CHGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CHGate.ctrl_state
-      ~CHGate.decompositions
-      ~CHGate.definition
-      ~CHGate.duration
-      ~CHGate.label
-      ~CHGate.name
-      ~CHGate.num_ctrl_qubits
-      ~CHGate.params
-      ~CHGate.unit
-   
-   
+   .. autoattribute:: ctrl_state
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: name
+   .. autoattribute:: num_ctrl_qubits
+   .. autoattribute:: params
+   .. autoattribute:: unit

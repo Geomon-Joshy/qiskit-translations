@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.GraphState
-=================================
+﻿GraphState
+==========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: GraphState
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~GraphState.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~GraphState.add_bits
       ~GraphState.add_calibration
       ~GraphState.add_register
@@ -158,30 +157,24 @@
       ~GraphState.x
       ~GraphState.y
       ~GraphState.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~GraphState.ancillas
-      ~GraphState.calibrations
-      ~GraphState.clbits
-      ~GraphState.data
-      ~GraphState.extension_lib
-      ~GraphState.global_phase
-      ~GraphState.header
-      ~GraphState.instances
-      ~GraphState.metadata
-      ~GraphState.num_ancillas
-      ~GraphState.num_clbits
-      ~GraphState.num_parameters
-      ~GraphState.num_qubits
-      ~GraphState.parameters
-      ~GraphState.prefix
-      ~GraphState.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

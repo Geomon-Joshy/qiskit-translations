@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.FunctionalPauliRotations
-===============================================
+﻿FunctionalPauliRotations
+========================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: FunctionalPauliRotations
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~FunctionalPauliRotations.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~FunctionalPauliRotations.add_bits
       ~FunctionalPauliRotations.add_calibration
       ~FunctionalPauliRotations.add_register
@@ -158,34 +157,28 @@
       ~FunctionalPauliRotations.x
       ~FunctionalPauliRotations.y
       ~FunctionalPauliRotations.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~FunctionalPauliRotations.ancillas
-      ~FunctionalPauliRotations.basis
-      ~FunctionalPauliRotations.calibrations
-      ~FunctionalPauliRotations.clbits
-      ~FunctionalPauliRotations.data
-      ~FunctionalPauliRotations.extension_lib
-      ~FunctionalPauliRotations.global_phase
-      ~FunctionalPauliRotations.header
-      ~FunctionalPauliRotations.instances
-      ~FunctionalPauliRotations.metadata
-      ~FunctionalPauliRotations.num_ancilla_qubits
-      ~FunctionalPauliRotations.num_ancillas
-      ~FunctionalPauliRotations.num_clbits
-      ~FunctionalPauliRotations.num_parameters
-      ~FunctionalPauliRotations.num_qubits
-      ~FunctionalPauliRotations.num_state_qubits
-      ~FunctionalPauliRotations.parameters
-      ~FunctionalPauliRotations.prefix
-      ~FunctionalPauliRotations.qregs
-      ~FunctionalPauliRotations.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: basis
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits

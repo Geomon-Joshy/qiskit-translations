@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.SXdgGate
-===============================
+﻿SXdgGate
+========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: SXdgGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~SXdgGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~SXdgGate.add_decomposition
       ~SXdgGate.assemble
       ~SXdgGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~SXdgGate.soft_compare
       ~SXdgGate.to_matrix
       ~SXdgGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~SXdgGate.decompositions
-      ~SXdgGate.definition
-      ~SXdgGate.duration
-      ~SXdgGate.label
-      ~SXdgGate.params
-      ~SXdgGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

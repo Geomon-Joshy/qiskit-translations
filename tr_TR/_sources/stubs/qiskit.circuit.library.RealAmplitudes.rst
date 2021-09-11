@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.RealAmplitudes
-=====================================
+﻿RealAmplitudes
+==============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: RealAmplitudes
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~RealAmplitudes.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~RealAmplitudes.add_bits
       ~RealAmplitudes.add_calibration
       ~RealAmplitudes.add_layer
@@ -162,42 +161,36 @@
       ~RealAmplitudes.x
       ~RealAmplitudes.y
       ~RealAmplitudes.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~RealAmplitudes.ancillas
-      ~RealAmplitudes.calibrations
-      ~RealAmplitudes.clbits
-      ~RealAmplitudes.data
-      ~RealAmplitudes.entanglement
-      ~RealAmplitudes.entanglement_blocks
-      ~RealAmplitudes.extension_lib
-      ~RealAmplitudes.global_phase
-      ~RealAmplitudes.header
-      ~RealAmplitudes.initial_state
-      ~RealAmplitudes.insert_barriers
-      ~RealAmplitudes.instances
-      ~RealAmplitudes.metadata
-      ~RealAmplitudes.num_ancillas
-      ~RealAmplitudes.num_clbits
-      ~RealAmplitudes.num_layers
-      ~RealAmplitudes.num_parameters
-      ~RealAmplitudes.num_parameters_settable
-      ~RealAmplitudes.num_qubits
-      ~RealAmplitudes.ordered_parameters
-      ~RealAmplitudes.parameter_bounds
-      ~RealAmplitudes.parameters
-      ~RealAmplitudes.preferred_init_points
-      ~RealAmplitudes.prefix
-      ~RealAmplitudes.qregs
-      ~RealAmplitudes.qubits
-      ~RealAmplitudes.reps
-      ~RealAmplitudes.rotation_blocks
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: entanglement
+   .. autoattribute:: entanglement_blocks
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: initial_state
+   .. autoattribute:: insert_barriers
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_layers
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_parameters_settable
+   .. autoattribute:: num_qubits
+   .. autoattribute:: ordered_parameters
+   .. autoattribute:: parameter_bounds
+   .. autoattribute:: parameters
+   .. autoattribute:: preferred_init_points
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: reps
+   .. autoattribute:: rotation_blocks

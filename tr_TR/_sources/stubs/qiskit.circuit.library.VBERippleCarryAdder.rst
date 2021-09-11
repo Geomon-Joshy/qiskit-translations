@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.VBERippleCarryAdder
-==========================================
+﻿VBERippleCarryAdder
+===================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: VBERippleCarryAdder
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~VBERippleCarryAdder.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~VBERippleCarryAdder.add_bits
       ~VBERippleCarryAdder.add_calibration
       ~VBERippleCarryAdder.add_register
@@ -158,31 +157,25 @@
       ~VBERippleCarryAdder.x
       ~VBERippleCarryAdder.y
       ~VBERippleCarryAdder.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~VBERippleCarryAdder.ancillas
-      ~VBERippleCarryAdder.calibrations
-      ~VBERippleCarryAdder.clbits
-      ~VBERippleCarryAdder.data
-      ~VBERippleCarryAdder.extension_lib
-      ~VBERippleCarryAdder.global_phase
-      ~VBERippleCarryAdder.header
-      ~VBERippleCarryAdder.instances
-      ~VBERippleCarryAdder.metadata
-      ~VBERippleCarryAdder.num_ancillas
-      ~VBERippleCarryAdder.num_clbits
-      ~VBERippleCarryAdder.num_parameters
-      ~VBERippleCarryAdder.num_qubits
-      ~VBERippleCarryAdder.num_state_qubits
-      ~VBERippleCarryAdder.parameters
-      ~VBERippleCarryAdder.prefix
-      ~VBERippleCarryAdder.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

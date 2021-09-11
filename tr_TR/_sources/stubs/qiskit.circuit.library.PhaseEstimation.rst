@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.PhaseEstimation
-======================================
+﻿PhaseEstimation
+===============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: PhaseEstimation
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PhaseEstimation.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PhaseEstimation.add_bits
       ~PhaseEstimation.add_calibration
       ~PhaseEstimation.add_register
@@ -158,30 +157,24 @@
       ~PhaseEstimation.x
       ~PhaseEstimation.y
       ~PhaseEstimation.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PhaseEstimation.ancillas
-      ~PhaseEstimation.calibrations
-      ~PhaseEstimation.clbits
-      ~PhaseEstimation.data
-      ~PhaseEstimation.extension_lib
-      ~PhaseEstimation.global_phase
-      ~PhaseEstimation.header
-      ~PhaseEstimation.instances
-      ~PhaseEstimation.metadata
-      ~PhaseEstimation.num_ancillas
-      ~PhaseEstimation.num_clbits
-      ~PhaseEstimation.num_parameters
-      ~PhaseEstimation.num_qubits
-      ~PhaseEstimation.parameters
-      ~PhaseEstimation.prefix
-      ~PhaseEstimation.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

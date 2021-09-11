@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.GroverOperator
-=====================================
+﻿GroverOperator
+==============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: GroverOperator
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~GroverOperator.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~GroverOperator.add_bits
       ~GroverOperator.add_calibration
       ~GroverOperator.add_register
@@ -158,34 +157,28 @@
       ~GroverOperator.x
       ~GroverOperator.y
       ~GroverOperator.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~GroverOperator.ancillas
-      ~GroverOperator.calibrations
-      ~GroverOperator.clbits
-      ~GroverOperator.data
-      ~GroverOperator.extension_lib
-      ~GroverOperator.global_phase
-      ~GroverOperator.header
-      ~GroverOperator.instances
-      ~GroverOperator.metadata
-      ~GroverOperator.num_ancillas
-      ~GroverOperator.num_clbits
-      ~GroverOperator.num_parameters
-      ~GroverOperator.num_qubits
-      ~GroverOperator.oracle
-      ~GroverOperator.parameters
-      ~GroverOperator.prefix
-      ~GroverOperator.qubits
-      ~GroverOperator.reflection_qubits
-      ~GroverOperator.state_preparation
-      ~GroverOperator.zero_reflection
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: oracle
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits
+   .. autoattribute:: reflection_qubits
+   .. autoattribute:: state_preparation
+   .. autoattribute:: zero_reflection

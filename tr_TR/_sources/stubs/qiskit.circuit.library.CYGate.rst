@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.CYGate
-=============================
+﻿CYGate
+======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: CYGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CYGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CYGate.add_decomposition
       ~CYGate.assemble
       ~CYGate.broadcast_arguments
@@ -30,23 +29,17 @@
       ~CYGate.soft_compare
       ~CYGate.to_matrix
       ~CYGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CYGate.ctrl_state
-      ~CYGate.decompositions
-      ~CYGate.definition
-      ~CYGate.duration
-      ~CYGate.label
-      ~CYGate.name
-      ~CYGate.num_ctrl_qubits
-      ~CYGate.params
-      ~CYGate.unit
-   
-   
+   .. autoattribute:: ctrl_state
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: name
+   .. autoattribute:: num_ctrl_qubits
+   .. autoattribute:: params
+   .. autoattribute:: unit

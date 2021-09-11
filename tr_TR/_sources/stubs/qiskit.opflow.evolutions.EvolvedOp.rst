@@ -1,19 +1,18 @@
-﻿qiskit.opflow.evolutions.EvolvedOp
-==================================
+﻿EvolvedOp
+=========
 
 .. currentmodule:: qiskit.opflow.evolutions
 
 .. autoclass:: EvolvedOp
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~EvolvedOp.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~EvolvedOp.add
       ~EvolvedOp.adjoint
       ~EvolvedOp.assign_parameters
@@ -39,21 +38,15 @@
       ~EvolvedOp.to_matrix_op
       ~EvolvedOp.to_pauli_op
       ~EvolvedOp.to_spmatrix
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~EvolvedOp.INDENTATION
-      ~EvolvedOp.coeff
-      ~EvolvedOp.instance_id
-      ~EvolvedOp.num_qubits
-      ~EvolvedOp.parameters
-      ~EvolvedOp.primitive
-      ~EvolvedOp.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: coeff
+   .. autoattribute:: instance_id
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings

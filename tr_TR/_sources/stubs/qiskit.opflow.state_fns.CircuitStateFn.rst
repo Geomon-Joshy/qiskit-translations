@@ -1,19 +1,18 @@
-﻿qiskit.opflow.state\_fns.CircuitStateFn
-=======================================
+﻿CircuitStateFn
+==============
 
 .. currentmodule:: qiskit.opflow.state_fns
 
 .. autoclass:: CircuitStateFn
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CircuitStateFn.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CircuitStateFn.add
       ~CircuitStateFn.adjoint
       ~CircuitStateFn.assign_parameters
@@ -41,22 +40,16 @@
       ~CircuitStateFn.to_matrix_op
       ~CircuitStateFn.to_spmatrix
       ~CircuitStateFn.traverse
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CircuitStateFn.INDENTATION
-      ~CircuitStateFn.coeff
-      ~CircuitStateFn.instance_id
-      ~CircuitStateFn.is_measurement
-      ~CircuitStateFn.num_qubits
-      ~CircuitStateFn.parameters
-      ~CircuitStateFn.primitive
-      ~CircuitStateFn.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: coeff
+   .. autoattribute:: instance_id
+   .. autoattribute:: is_measurement
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings

@@ -1,19 +1,18 @@
-﻿qiskit.opflow.primitive\_ops.CircuitOp
-======================================
+﻿CircuitOp
+=========
 
 .. currentmodule:: qiskit.opflow.primitive_ops
 
 .. autoclass:: CircuitOp
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CircuitOp.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CircuitOp.add
       ~CircuitOp.adjoint
       ~CircuitOp.assign_parameters
@@ -39,21 +38,15 @@
       ~CircuitOp.to_matrix_op
       ~CircuitOp.to_pauli_op
       ~CircuitOp.to_spmatrix
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CircuitOp.INDENTATION
-      ~CircuitOp.coeff
-      ~CircuitOp.instance_id
-      ~CircuitOp.num_qubits
-      ~CircuitOp.parameters
-      ~CircuitOp.primitive
-      ~CircuitOp.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: coeff
+   .. autoattribute:: instance_id
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings

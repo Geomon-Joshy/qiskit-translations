@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.RC3XGate
-===============================
+﻿RC3XGate
+========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: RC3XGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~RC3XGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~RC3XGate.add_decomposition
       ~RC3XGate.assemble
       ~RC3XGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~RC3XGate.soft_compare
       ~RC3XGate.to_matrix
       ~RC3XGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~RC3XGate.decompositions
-      ~RC3XGate.definition
-      ~RC3XGate.duration
-      ~RC3XGate.label
-      ~RC3XGate.params
-      ~RC3XGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

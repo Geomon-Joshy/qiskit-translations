@@ -1,19 +1,18 @@
-﻿qiskit.providers.aer.StatevectorSimulator
-=========================================
+﻿StatevectorSimulator
+====================
 
 .. currentmodule:: qiskit.providers.aer
 
 .. autoclass:: StatevectorSimulator
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~StatevectorSimulator.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~StatevectorSimulator.available_methods
       ~StatevectorSimulator.clear_options
       ~StatevectorSimulator.configuration
@@ -25,16 +24,10 @@
       ~StatevectorSimulator.set_option
       ~StatevectorSimulator.set_options
       ~StatevectorSimulator.status
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~StatevectorSimulator.options
-      ~StatevectorSimulator.version
-   
-   
+   .. autoattribute:: options
+   .. autoattribute:: version

@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.InnerProduct
-===================================
+﻿InnerProduct
+============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: InnerProduct
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~InnerProduct.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~InnerProduct.add_bits
       ~InnerProduct.add_calibration
       ~InnerProduct.add_register
@@ -158,30 +157,24 @@
       ~InnerProduct.x
       ~InnerProduct.y
       ~InnerProduct.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~InnerProduct.ancillas
-      ~InnerProduct.calibrations
-      ~InnerProduct.clbits
-      ~InnerProduct.data
-      ~InnerProduct.extension_lib
-      ~InnerProduct.global_phase
-      ~InnerProduct.header
-      ~InnerProduct.instances
-      ~InnerProduct.metadata
-      ~InnerProduct.num_ancillas
-      ~InnerProduct.num_clbits
-      ~InnerProduct.num_parameters
-      ~InnerProduct.num_qubits
-      ~InnerProduct.parameters
-      ~InnerProduct.prefix
-      ~InnerProduct.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

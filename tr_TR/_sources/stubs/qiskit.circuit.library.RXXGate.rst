@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.RXXGate
-==============================
+﻿RXXGate
+=======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: RXXGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~RXXGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~RXXGate.add_decomposition
       ~RXXGate.assemble
       ~RXXGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~RXXGate.soft_compare
       ~RXXGate.to_matrix
       ~RXXGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~RXXGate.decompositions
-      ~RXXGate.definition
-      ~RXXGate.duration
-      ~RXXGate.label
-      ~RXXGate.params
-      ~RXXGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

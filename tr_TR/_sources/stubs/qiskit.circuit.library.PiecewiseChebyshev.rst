@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.PiecewiseChebyshev
-=========================================
+﻿PiecewiseChebyshev
+==================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: PiecewiseChebyshev
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PiecewiseChebyshev.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PiecewiseChebyshev.add_bits
       ~PiecewiseChebyshev.add_calibration
       ~PiecewiseChebyshev.add_register
@@ -158,36 +157,30 @@
       ~PiecewiseChebyshev.x
       ~PiecewiseChebyshev.y
       ~PiecewiseChebyshev.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PiecewiseChebyshev.ancillas
-      ~PiecewiseChebyshev.breakpoints
-      ~PiecewiseChebyshev.calibrations
-      ~PiecewiseChebyshev.clbits
-      ~PiecewiseChebyshev.data
-      ~PiecewiseChebyshev.degree
-      ~PiecewiseChebyshev.extension_lib
-      ~PiecewiseChebyshev.f_x
-      ~PiecewiseChebyshev.global_phase
-      ~PiecewiseChebyshev.header
-      ~PiecewiseChebyshev.instances
-      ~PiecewiseChebyshev.metadata
-      ~PiecewiseChebyshev.num_ancillas
-      ~PiecewiseChebyshev.num_clbits
-      ~PiecewiseChebyshev.num_parameters
-      ~PiecewiseChebyshev.num_qubits
-      ~PiecewiseChebyshev.num_state_qubits
-      ~PiecewiseChebyshev.parameters
-      ~PiecewiseChebyshev.polynomials
-      ~PiecewiseChebyshev.prefix
-      ~PiecewiseChebyshev.qregs
-      ~PiecewiseChebyshev.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: breakpoints
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: degree
+   .. autoattribute:: extension_lib
+   .. autoattribute:: f_x
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: polynomials
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits

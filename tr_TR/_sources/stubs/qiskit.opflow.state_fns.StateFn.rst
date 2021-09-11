@@ -1,19 +1,18 @@
-﻿qiskit.opflow.state\_fns.StateFn
-================================
+﻿StateFn
+=======
 
 .. currentmodule:: qiskit.opflow.state_fns
 
 .. autoclass:: StateFn
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~StateFn.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~StateFn.add
       ~StateFn.adjoint
       ~StateFn.assign_parameters
@@ -37,22 +36,16 @@
       ~StateFn.to_matrix_op
       ~StateFn.to_spmatrix
       ~StateFn.traverse
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~StateFn.INDENTATION
-      ~StateFn.coeff
-      ~StateFn.instance_id
-      ~StateFn.is_measurement
-      ~StateFn.num_qubits
-      ~StateFn.parameters
-      ~StateFn.primitive
-      ~StateFn.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: coeff
+   .. autoattribute:: instance_id
+   .. autoattribute:: is_measurement
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings

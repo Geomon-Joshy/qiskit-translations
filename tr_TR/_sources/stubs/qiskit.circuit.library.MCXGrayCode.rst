@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.MCXGrayCode
-==================================
+﻿MCXGrayCode
+===========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: MCXGrayCode
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~MCXGrayCode.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~MCXGrayCode.add_decomposition
       ~MCXGrayCode.assemble
       ~MCXGrayCode.broadcast_arguments
@@ -31,24 +30,18 @@
       ~MCXGrayCode.soft_compare
       ~MCXGrayCode.to_matrix
       ~MCXGrayCode.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~MCXGrayCode.ctrl_state
-      ~MCXGrayCode.decompositions
-      ~MCXGrayCode.definition
-      ~MCXGrayCode.duration
-      ~MCXGrayCode.label
-      ~MCXGrayCode.name
-      ~MCXGrayCode.num_ancilla_qubits
-      ~MCXGrayCode.num_ctrl_qubits
-      ~MCXGrayCode.params
-      ~MCXGrayCode.unit
-   
-   
+   .. autoattribute:: ctrl_state
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: name
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ctrl_qubits
+   .. autoattribute:: params
+   .. autoattribute:: unit

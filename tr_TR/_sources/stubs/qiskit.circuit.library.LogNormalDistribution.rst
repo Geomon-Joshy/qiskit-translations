@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.LogNormalDistribution
-============================================
+﻿LogNormalDistribution
+=====================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: LogNormalDistribution
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~LogNormalDistribution.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~LogNormalDistribution.add_bits
       ~LogNormalDistribution.add_calibration
       ~LogNormalDistribution.add_register
@@ -158,33 +157,27 @@
       ~LogNormalDistribution.x
       ~LogNormalDistribution.y
       ~LogNormalDistribution.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~LogNormalDistribution.ancillas
-      ~LogNormalDistribution.bounds
-      ~LogNormalDistribution.calibrations
-      ~LogNormalDistribution.clbits
-      ~LogNormalDistribution.data
-      ~LogNormalDistribution.extension_lib
-      ~LogNormalDistribution.global_phase
-      ~LogNormalDistribution.header
-      ~LogNormalDistribution.instances
-      ~LogNormalDistribution.metadata
-      ~LogNormalDistribution.num_ancillas
-      ~LogNormalDistribution.num_clbits
-      ~LogNormalDistribution.num_parameters
-      ~LogNormalDistribution.num_qubits
-      ~LogNormalDistribution.parameters
-      ~LogNormalDistribution.prefix
-      ~LogNormalDistribution.probabilities
-      ~LogNormalDistribution.qubits
-      ~LogNormalDistribution.values
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: bounds
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: probabilities
+   .. autoattribute:: qubits
+   .. autoattribute:: values

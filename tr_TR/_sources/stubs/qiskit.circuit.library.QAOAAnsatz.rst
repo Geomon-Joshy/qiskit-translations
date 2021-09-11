@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.QAOAAnsatz
-=================================
+﻿QAOAAnsatz
+==========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: QAOAAnsatz
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~QAOAAnsatz.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~QAOAAnsatz.add_bits
       ~QAOAAnsatz.add_calibration
       ~QAOAAnsatz.add_register
@@ -158,39 +157,33 @@
       ~QAOAAnsatz.x
       ~QAOAAnsatz.y
       ~QAOAAnsatz.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~QAOAAnsatz.ancillas
-      ~QAOAAnsatz.calibrations
-      ~QAOAAnsatz.clbits
-      ~QAOAAnsatz.cost_operator
-      ~QAOAAnsatz.data
-      ~QAOAAnsatz.evolution
-      ~QAOAAnsatz.extension_lib
-      ~QAOAAnsatz.global_phase
-      ~QAOAAnsatz.header
-      ~QAOAAnsatz.initial_state
-      ~QAOAAnsatz.instances
-      ~QAOAAnsatz.metadata
-      ~QAOAAnsatz.mixer_operator
-      ~QAOAAnsatz.num_ancillas
-      ~QAOAAnsatz.num_clbits
-      ~QAOAAnsatz.num_parameters
-      ~QAOAAnsatz.num_qubits
-      ~QAOAAnsatz.operators
-      ~QAOAAnsatz.parameter_bounds
-      ~QAOAAnsatz.parameters
-      ~QAOAAnsatz.preferred_init_points
-      ~QAOAAnsatz.prefix
-      ~QAOAAnsatz.qregs
-      ~QAOAAnsatz.qubits
-      ~QAOAAnsatz.reps
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: cost_operator
+   .. autoattribute:: data
+   .. autoattribute:: evolution
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: initial_state
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: mixer_operator
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: operators
+   .. autoattribute:: parameter_bounds
+   .. autoattribute:: parameters
+   .. autoattribute:: preferred_init_points
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: reps

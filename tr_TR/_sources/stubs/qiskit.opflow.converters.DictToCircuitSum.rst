@@ -1,23 +1,18 @@
-﻿qiskit.opflow.converters.DictToCircuitSum
-=========================================
+﻿DictToCircuitSum
+================
 
 .. currentmodule:: qiskit.opflow.converters
 
 .. autoclass:: DictToCircuitSum
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~DictToCircuitSum.__init__
-      ~DictToCircuitSum.convert
-   
-   
+      :nosignatures:
+      :toctree: ../stubs/
 
-   
-   
-   
+      ~DictToCircuitSum.convert
+
+

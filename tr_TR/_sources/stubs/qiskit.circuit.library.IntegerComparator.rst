@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.IntegerComparator
-========================================
+﻿IntegerComparator
+=================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: IntegerComparator
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~IntegerComparator.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~IntegerComparator.add_bits
       ~IntegerComparator.add_calibration
       ~IntegerComparator.add_register
@@ -158,35 +157,29 @@
       ~IntegerComparator.x
       ~IntegerComparator.y
       ~IntegerComparator.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~IntegerComparator.ancillas
-      ~IntegerComparator.calibrations
-      ~IntegerComparator.clbits
-      ~IntegerComparator.data
-      ~IntegerComparator.extension_lib
-      ~IntegerComparator.geq
-      ~IntegerComparator.global_phase
-      ~IntegerComparator.header
-      ~IntegerComparator.instances
-      ~IntegerComparator.metadata
-      ~IntegerComparator.num_ancilla_qubits
-      ~IntegerComparator.num_ancillas
-      ~IntegerComparator.num_clbits
-      ~IntegerComparator.num_parameters
-      ~IntegerComparator.num_qubits
-      ~IntegerComparator.num_state_qubits
-      ~IntegerComparator.parameters
-      ~IntegerComparator.prefix
-      ~IntegerComparator.qregs
-      ~IntegerComparator.qubits
-      ~IntegerComparator.value
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: geq
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: value

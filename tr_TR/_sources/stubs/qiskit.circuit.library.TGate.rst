@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.TGate
-============================
+﻿TGate
+=====
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: TGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~TGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~TGate.add_decomposition
       ~TGate.assemble
       ~TGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~TGate.soft_compare
       ~TGate.to_matrix
       ~TGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~TGate.decompositions
-      ~TGate.definition
-      ~TGate.duration
-      ~TGate.label
-      ~TGate.params
-      ~TGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

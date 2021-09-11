@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.NLocal
-=============================
+﻿NLocal
+======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: NLocal
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~NLocal.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~NLocal.add_bits
       ~NLocal.add_calibration
       ~NLocal.add_layer
@@ -162,42 +161,36 @@
       ~NLocal.x
       ~NLocal.y
       ~NLocal.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~NLocal.ancillas
-      ~NLocal.calibrations
-      ~NLocal.clbits
-      ~NLocal.data
-      ~NLocal.entanglement
-      ~NLocal.entanglement_blocks
-      ~NLocal.extension_lib
-      ~NLocal.global_phase
-      ~NLocal.header
-      ~NLocal.initial_state
-      ~NLocal.insert_barriers
-      ~NLocal.instances
-      ~NLocal.metadata
-      ~NLocal.num_ancillas
-      ~NLocal.num_clbits
-      ~NLocal.num_layers
-      ~NLocal.num_parameters
-      ~NLocal.num_parameters_settable
-      ~NLocal.num_qubits
-      ~NLocal.ordered_parameters
-      ~NLocal.parameter_bounds
-      ~NLocal.parameters
-      ~NLocal.preferred_init_points
-      ~NLocal.prefix
-      ~NLocal.qregs
-      ~NLocal.qubits
-      ~NLocal.reps
-      ~NLocal.rotation_blocks
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: entanglement
+   .. autoattribute:: entanglement_blocks
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: initial_state
+   .. autoattribute:: insert_barriers
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_layers
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_parameters_settable
+   .. autoattribute:: num_qubits
+   .. autoattribute:: ordered_parameters
+   .. autoattribute:: parameter_bounds
+   .. autoattribute:: parameters
+   .. autoattribute:: preferred_init_points
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: reps
+   .. autoattribute:: rotation_blocks

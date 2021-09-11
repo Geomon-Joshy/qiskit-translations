@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.HGate
-============================
+﻿HGate
+=====
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: HGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~HGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~HGate.add_decomposition
       ~HGate.assemble
       ~HGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~HGate.soft_compare
       ~HGate.to_matrix
       ~HGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~HGate.decompositions
-      ~HGate.definition
-      ~HGate.duration
-      ~HGate.label
-      ~HGate.params
-      ~HGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

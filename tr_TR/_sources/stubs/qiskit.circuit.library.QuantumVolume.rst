@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.QuantumVolume
-====================================
+﻿QuantumVolume
+=============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: QuantumVolume
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~QuantumVolume.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~QuantumVolume.add_bits
       ~QuantumVolume.add_calibration
       ~QuantumVolume.add_register
@@ -158,30 +157,24 @@
       ~QuantumVolume.x
       ~QuantumVolume.y
       ~QuantumVolume.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~QuantumVolume.ancillas
-      ~QuantumVolume.calibrations
-      ~QuantumVolume.clbits
-      ~QuantumVolume.data
-      ~QuantumVolume.extension_lib
-      ~QuantumVolume.global_phase
-      ~QuantumVolume.header
-      ~QuantumVolume.instances
-      ~QuantumVolume.metadata
-      ~QuantumVolume.num_ancillas
-      ~QuantumVolume.num_clbits
-      ~QuantumVolume.num_parameters
-      ~QuantumVolume.num_qubits
-      ~QuantumVolume.parameters
-      ~QuantumVolume.prefix
-      ~QuantumVolume.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

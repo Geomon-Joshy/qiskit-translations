@@ -1,19 +1,18 @@
-﻿qiskit.opflow.state\_fns.CVaRMeasurement
-========================================
+﻿CVaRMeasurement
+===============
 
 .. currentmodule:: qiskit.opflow.state_fns
 
 .. autoclass:: CVaRMeasurement
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CVaRMeasurement.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CVaRMeasurement.add
       ~CVaRMeasurement.adjoint
       ~CVaRMeasurement.assign_parameters
@@ -40,23 +39,17 @@
       ~CVaRMeasurement.to_matrix_op
       ~CVaRMeasurement.to_spmatrix
       ~CVaRMeasurement.traverse
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CVaRMeasurement.INDENTATION
-      ~CVaRMeasurement.alpha
-      ~CVaRMeasurement.coeff
-      ~CVaRMeasurement.instance_id
-      ~CVaRMeasurement.is_measurement
-      ~CVaRMeasurement.num_qubits
-      ~CVaRMeasurement.parameters
-      ~CVaRMeasurement.primitive
-      ~CVaRMeasurement.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: alpha
+   .. autoattribute:: coeff
+   .. autoattribute:: instance_id
+   .. autoattribute:: is_measurement
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings

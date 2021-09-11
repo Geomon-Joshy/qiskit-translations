@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.MCMTVChain
-=================================
+﻿MCMTVChain
+==========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: MCMTVChain
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~MCMTVChain.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~MCMTVChain.add_bits
       ~MCMTVChain.add_calibration
       ~MCMTVChain.add_register
@@ -158,31 +157,25 @@
       ~MCMTVChain.x
       ~MCMTVChain.y
       ~MCMTVChain.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~MCMTVChain.ancillas
-      ~MCMTVChain.calibrations
-      ~MCMTVChain.clbits
-      ~MCMTVChain.data
-      ~MCMTVChain.extension_lib
-      ~MCMTVChain.global_phase
-      ~MCMTVChain.header
-      ~MCMTVChain.instances
-      ~MCMTVChain.metadata
-      ~MCMTVChain.num_ancilla_qubits
-      ~MCMTVChain.num_ancillas
-      ~MCMTVChain.num_clbits
-      ~MCMTVChain.num_parameters
-      ~MCMTVChain.num_qubits
-      ~MCMTVChain.parameters
-      ~MCMTVChain.prefix
-      ~MCMTVChain.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

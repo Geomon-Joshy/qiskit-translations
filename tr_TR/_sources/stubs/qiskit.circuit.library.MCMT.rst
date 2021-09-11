@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.MCMT
-===========================
+﻿MCMT
+====
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: MCMT
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~MCMT.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~MCMT.add_bits
       ~MCMT.add_calibration
       ~MCMT.add_register
@@ -158,31 +157,25 @@
       ~MCMT.x
       ~MCMT.y
       ~MCMT.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~MCMT.ancillas
-      ~MCMT.calibrations
-      ~MCMT.clbits
-      ~MCMT.data
-      ~MCMT.extension_lib
-      ~MCMT.global_phase
-      ~MCMT.header
-      ~MCMT.instances
-      ~MCMT.metadata
-      ~MCMT.num_ancilla_qubits
-      ~MCMT.num_ancillas
-      ~MCMT.num_clbits
-      ~MCMT.num_parameters
-      ~MCMT.num_qubits
-      ~MCMT.parameters
-      ~MCMT.prefix
-      ~MCMT.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

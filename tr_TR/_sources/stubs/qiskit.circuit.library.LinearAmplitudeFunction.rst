@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.LinearAmplitudeFunction
-==============================================
+﻿LinearAmplitudeFunction
+=======================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: LinearAmplitudeFunction
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~LinearAmplitudeFunction.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~LinearAmplitudeFunction.add_bits
       ~LinearAmplitudeFunction.add_calibration
       ~LinearAmplitudeFunction.add_register
@@ -159,30 +158,24 @@
       ~LinearAmplitudeFunction.x
       ~LinearAmplitudeFunction.y
       ~LinearAmplitudeFunction.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~LinearAmplitudeFunction.ancillas
-      ~LinearAmplitudeFunction.calibrations
-      ~LinearAmplitudeFunction.clbits
-      ~LinearAmplitudeFunction.data
-      ~LinearAmplitudeFunction.extension_lib
-      ~LinearAmplitudeFunction.global_phase
-      ~LinearAmplitudeFunction.header
-      ~LinearAmplitudeFunction.instances
-      ~LinearAmplitudeFunction.metadata
-      ~LinearAmplitudeFunction.num_ancillas
-      ~LinearAmplitudeFunction.num_clbits
-      ~LinearAmplitudeFunction.num_parameters
-      ~LinearAmplitudeFunction.num_qubits
-      ~LinearAmplitudeFunction.parameters
-      ~LinearAmplitudeFunction.prefix
-      ~LinearAmplitudeFunction.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

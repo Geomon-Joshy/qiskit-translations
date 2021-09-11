@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.CZGate
-=============================
+﻿CZGate
+======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: CZGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CZGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CZGate.add_decomposition
       ~CZGate.assemble
       ~CZGate.broadcast_arguments
@@ -30,23 +29,17 @@
       ~CZGate.soft_compare
       ~CZGate.to_matrix
       ~CZGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CZGate.ctrl_state
-      ~CZGate.decompositions
-      ~CZGate.definition
-      ~CZGate.duration
-      ~CZGate.label
-      ~CZGate.name
-      ~CZGate.num_ctrl_qubits
-      ~CZGate.params
-      ~CZGate.unit
-   
-   
+   .. autoattribute:: ctrl_state
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: name
+   .. autoattribute:: num_ctrl_qubits
+   .. autoattribute:: params
+   .. autoattribute:: unit

@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.EfficientSU2
-===================================
+﻿EfficientSU2
+============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: EfficientSU2
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~EfficientSU2.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~EfficientSU2.add_bits
       ~EfficientSU2.add_calibration
       ~EfficientSU2.add_layer
@@ -162,42 +161,36 @@
       ~EfficientSU2.x
       ~EfficientSU2.y
       ~EfficientSU2.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~EfficientSU2.ancillas
-      ~EfficientSU2.calibrations
-      ~EfficientSU2.clbits
-      ~EfficientSU2.data
-      ~EfficientSU2.entanglement
-      ~EfficientSU2.entanglement_blocks
-      ~EfficientSU2.extension_lib
-      ~EfficientSU2.global_phase
-      ~EfficientSU2.header
-      ~EfficientSU2.initial_state
-      ~EfficientSU2.insert_barriers
-      ~EfficientSU2.instances
-      ~EfficientSU2.metadata
-      ~EfficientSU2.num_ancillas
-      ~EfficientSU2.num_clbits
-      ~EfficientSU2.num_layers
-      ~EfficientSU2.num_parameters
-      ~EfficientSU2.num_parameters_settable
-      ~EfficientSU2.num_qubits
-      ~EfficientSU2.ordered_parameters
-      ~EfficientSU2.parameter_bounds
-      ~EfficientSU2.parameters
-      ~EfficientSU2.preferred_init_points
-      ~EfficientSU2.prefix
-      ~EfficientSU2.qregs
-      ~EfficientSU2.qubits
-      ~EfficientSU2.reps
-      ~EfficientSU2.rotation_blocks
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: entanglement
+   .. autoattribute:: entanglement_blocks
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: initial_state
+   .. autoattribute:: insert_barriers
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_layers
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_parameters_settable
+   .. autoattribute:: num_qubits
+   .. autoattribute:: ordered_parameters
+   .. autoattribute:: parameter_bounds
+   .. autoattribute:: parameters
+   .. autoattribute:: preferred_init_points
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: reps
+   .. autoattribute:: rotation_blocks

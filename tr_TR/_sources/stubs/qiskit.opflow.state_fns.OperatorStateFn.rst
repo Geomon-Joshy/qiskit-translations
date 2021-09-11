@@ -1,19 +1,18 @@
-﻿qiskit.opflow.state\_fns.OperatorStateFn
-========================================
+﻿OperatorStateFn
+===============
 
 .. currentmodule:: qiskit.opflow.state_fns
 
 .. autoclass:: OperatorStateFn
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~OperatorStateFn.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~OperatorStateFn.add
       ~OperatorStateFn.adjoint
       ~OperatorStateFn.assign_parameters
@@ -37,22 +36,16 @@
       ~OperatorStateFn.to_matrix_op
       ~OperatorStateFn.to_spmatrix
       ~OperatorStateFn.traverse
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~OperatorStateFn.INDENTATION
-      ~OperatorStateFn.coeff
-      ~OperatorStateFn.instance_id
-      ~OperatorStateFn.is_measurement
-      ~OperatorStateFn.num_qubits
-      ~OperatorStateFn.parameters
-      ~OperatorStateFn.primitive
-      ~OperatorStateFn.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: coeff
+   .. autoattribute:: instance_id
+   .. autoattribute:: is_measurement
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings

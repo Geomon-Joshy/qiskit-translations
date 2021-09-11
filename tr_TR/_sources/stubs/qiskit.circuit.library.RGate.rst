@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.RGate
-============================
+﻿RGate
+=====
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: RGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~RGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~RGate.add_decomposition
       ~RGate.assemble
       ~RGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~RGate.soft_compare
       ~RGate.to_matrix
       ~RGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~RGate.decompositions
-      ~RGate.definition
-      ~RGate.duration
-      ~RGate.label
-      ~RGate.params
-      ~RGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

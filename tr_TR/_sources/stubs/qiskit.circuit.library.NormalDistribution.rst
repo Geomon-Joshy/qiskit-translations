@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.NormalDistribution
-=========================================
+﻿NormalDistribution
+==================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: NormalDistribution
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~NormalDistribution.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~NormalDistribution.add_bits
       ~NormalDistribution.add_calibration
       ~NormalDistribution.add_register
@@ -158,33 +157,27 @@
       ~NormalDistribution.x
       ~NormalDistribution.y
       ~NormalDistribution.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~NormalDistribution.ancillas
-      ~NormalDistribution.bounds
-      ~NormalDistribution.calibrations
-      ~NormalDistribution.clbits
-      ~NormalDistribution.data
-      ~NormalDistribution.extension_lib
-      ~NormalDistribution.global_phase
-      ~NormalDistribution.header
-      ~NormalDistribution.instances
-      ~NormalDistribution.metadata
-      ~NormalDistribution.num_ancillas
-      ~NormalDistribution.num_clbits
-      ~NormalDistribution.num_parameters
-      ~NormalDistribution.num_qubits
-      ~NormalDistribution.parameters
-      ~NormalDistribution.prefix
-      ~NormalDistribution.probabilities
-      ~NormalDistribution.qubits
-      ~NormalDistribution.values
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: bounds
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: probabilities
+   .. autoattribute:: qubits
+   .. autoattribute:: values

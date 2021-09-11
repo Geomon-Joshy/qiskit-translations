@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.PhaseOracle
-==================================
+﻿PhaseOracle
+===========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: PhaseOracle
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PhaseOracle.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PhaseOracle.add_bits
       ~PhaseOracle.add_calibration
       ~PhaseOracle.add_register
@@ -160,30 +159,24 @@
       ~PhaseOracle.x
       ~PhaseOracle.y
       ~PhaseOracle.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PhaseOracle.ancillas
-      ~PhaseOracle.calibrations
-      ~PhaseOracle.clbits
-      ~PhaseOracle.data
-      ~PhaseOracle.extension_lib
-      ~PhaseOracle.global_phase
-      ~PhaseOracle.header
-      ~PhaseOracle.instances
-      ~PhaseOracle.metadata
-      ~PhaseOracle.num_ancillas
-      ~PhaseOracle.num_clbits
-      ~PhaseOracle.num_parameters
-      ~PhaseOracle.num_qubits
-      ~PhaseOracle.parameters
-      ~PhaseOracle.prefix
-      ~PhaseOracle.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

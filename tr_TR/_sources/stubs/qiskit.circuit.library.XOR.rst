@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.XOR
-==========================
+﻿XOR
+===
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: XOR
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~XOR.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~XOR.add_bits
       ~XOR.add_calibration
       ~XOR.add_register
@@ -158,30 +157,24 @@
       ~XOR.x
       ~XOR.y
       ~XOR.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~XOR.ancillas
-      ~XOR.calibrations
-      ~XOR.clbits
-      ~XOR.data
-      ~XOR.extension_lib
-      ~XOR.global_phase
-      ~XOR.header
-      ~XOR.instances
-      ~XOR.metadata
-      ~XOR.num_ancillas
-      ~XOR.num_clbits
-      ~XOR.num_parameters
-      ~XOR.num_qubits
-      ~XOR.parameters
-      ~XOR.prefix
-      ~XOR.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

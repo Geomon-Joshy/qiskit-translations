@@ -1,19 +1,18 @@
-﻿qiskit.opflow.OperatorBase
-==========================
+﻿OperatorBase
+============
 
 .. currentmodule:: qiskit.opflow
 
 .. autoclass:: OperatorBase
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~OperatorBase.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~OperatorBase.add
       ~OperatorBase.adjoint
       ~OperatorBase.assign_parameters
@@ -34,19 +33,13 @@
       ~OperatorBase.to_matrix
       ~OperatorBase.to_matrix_op
       ~OperatorBase.to_spmatrix
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~OperatorBase.INDENTATION
-      ~OperatorBase.instance_id
-      ~OperatorBase.num_qubits
-      ~OperatorBase.parameters
-      ~OperatorBase.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: instance_id
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: settings

@@ -1,19 +1,18 @@
-﻿qiskit.opflow.primitive\_ops.PrimitiveOp
-========================================
+﻿PrimitiveOp
+===========
 
 .. currentmodule:: qiskit.opflow.primitive_ops
 
 .. autoclass:: PrimitiveOp
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PrimitiveOp.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PrimitiveOp.add
       ~PrimitiveOp.adjoint
       ~PrimitiveOp.assign_parameters
@@ -39,21 +38,15 @@
       ~PrimitiveOp.to_matrix_op
       ~PrimitiveOp.to_pauli_op
       ~PrimitiveOp.to_spmatrix
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PrimitiveOp.INDENTATION
-      ~PrimitiveOp.coeff
-      ~PrimitiveOp.instance_id
-      ~PrimitiveOp.num_qubits
-      ~PrimitiveOp.parameters
-      ~PrimitiveOp.primitive
-      ~PrimitiveOp.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: coeff
+   .. autoattribute:: instance_id
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings

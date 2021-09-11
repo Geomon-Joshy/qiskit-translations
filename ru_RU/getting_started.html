@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Начало работы &mdash; документация Qiskit 0.29.0</title>
+  <title>Начало работы &mdash; документация Qiskit 0.29.1</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme-override.css" type="text/css" />
@@ -327,8 +326,8 @@
 <section id="installation">
 <h2>Инструкция по установке<a class="headerlink" href="#installation" title="Ссылка на этот заголовок">¶</a></h2>
 <div class="tabbed-set docutils">
-<input checked="checked" id="ad821422-9b7b-405a-abc2-9381fe99e11e" name="9a5482e5-117a-437e-beea-a5b03f9631e4" type="radio">
-</input><label class="tabbed-label" for="ad821422-9b7b-405a-abc2-9381fe99e11e">
+<input checked="checked" id="50285389-e010-4433-853c-9f0ebfe96639" name="f1bb5eb2-ac07-42c8-86c8-b8b8f734548c" type="radio">
+</input><label class="tabbed-label" for="50285389-e010-4433-853c-9f0ebfe96639">
 Запустить локально</label><div class="tabbed-content docutils">
 <p>Qiskit поддерживает Python 3.6 или новее. Тем не менее,  Python и Qiskit развиваются независимо друг от друга, что может привести к проблемам с совместимостью при обновлении одной из данных экосистем.</p>
 <p>Мы рекомендуем установить <cite>Anaconda &lt;https://www.anaconda.com/download/&gt;</cite> __ - межплатформенный дистрибутив Python, включающий набор популярных библиотек для научных вычислений. Программа Jupyter, включённая в Anaconda, рекомендуется для взаимодействия с Qiskit.</p>
@@ -363,8 +362,8 @@
 </pre></div>
 </div>
 </div>
-<input id="7bc7919e-02bb-4433-b12d-f698bd3a00ff" name="9a5482e5-117a-437e-beea-a5b03f9631e4" type="radio">
-</input><label class="tabbed-label" for="7bc7919e-02bb-4433-b12d-f698bd3a00ff">
+<input id="7f29877c-ef3f-4a4e-80b5-0907d3c0ba90" name="f1bb5eb2-ac07-42c8-86c8-b8b8f734548c" type="radio">
+</input><label class="tabbed-label" for="7f29877c-ef3f-4a4e-80b5-0907d3c0ba90">
 Запустить в облаке</label><div class="tabbed-content docutils">
 <blockquote>
 <div><p>Следующие облачные вендоры (поставщики) имеют в своей среде предварительно установленный Qiskit:</p>
@@ -420,8 +419,8 @@
 </div>
 </div>
 </div></div>
-<input id="9832b4a5-2867-4317-879b-d1e3a4d2c558" name="9a5482e5-117a-437e-beea-a5b03f9631e4" type="radio">
-</input><label class="tabbed-label" for="9832b4a5-2867-4317-879b-d1e3a4d2c558">
+<input id="c445b4b0-51ad-4b5f-a725-f969ecfd9918" name="f1bb5eb2-ac07-42c8-86c8-b8b8f734548c" type="radio">
+</input><label class="tabbed-label" for="c445b4b0-51ad-4b5f-a725-f969ecfd9918">
 Установить из исходного кода</label><div class="tabbed-content docutils">
 <p>Установка элементов из исходного кода позволит Вам получить доступ к последней обновленной версии Qiskit вместо использования версии из репозитория Python Package Index (PyPI). Это даст Вам возможность более эффективно изучить и улучшить последнюю версию Qiskit кода.</p>
 <p>При установке компонентов из исходного кода, по умолчанию будет использоваться их <code class="docutils literal notranslate"><span class="pre">development</span></code> версия (которая соответствует <code class="docutils literal notranslate"><span class="pre">master</span></code> ветке в git), а не <code class="docutils literal notranslate"><span class="pre">stable</span></code> версия (которая содержит тот же код, что и опубликованные пакеты <code class="docutils literal notranslate"><span class="pre">pip</span></code>). Поскольку <code class="docutils literal notranslate"><span class="pre">development</span></code> версии элемента или компонента обычно включают в себя новые функции и последние изменения, они обычно требуют использования <code class="docutils literal notranslate"><span class="pre">development</span></code> версии и остальных компонентов.</p>
@@ -445,13 +444,13 @@ conda activate QiskitDevenv
 </div>
 <h2>Installing Terra from Source</h2><p>Установка из исходного кода требует наличия компилятора C++ в системе, поддерживающей C++11.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="040384bc-895e-49af-b9dc-b698e3678ebc" name="65a56e83-a35e-492d-9d92-9321d13a1146" type="radio">
-</input><label class="tabbed-label" for="040384bc-895e-49af-b9dc-b698e3678ebc">
+<input checked="checked" id="8331b4a8-2705-4521-bc1e-ca4de9935db6" name="82964b6c-2828-412b-a738-fea91b7ee8ed" type="radio">
+</input><label class="tabbed-label" for="8331b4a8-2705-4521-bc1e-ca4de9935db6">
 Компилятор для Linux</label><div class="tabbed-content docutils">
 <p>На большинстве платформ Linux уже установлен необходимый компилятор GCC.</p>
 </div>
-<input id="9dafd658-eac3-43e2-9b85-c2fbd507f40f" name="65a56e83-a35e-492d-9d92-9321d13a1146" type="radio">
-</input><label class="tabbed-label" for="9dafd658-eac3-43e2-9b85-c2fbd507f40f">
+<input id="0161317a-6834-45e0-af91-b048480fa81f" name="82964b6c-2828-412b-a738-fea91b7ee8ed" type="radio">
+</input><label class="tabbed-label" for="0161317a-6834-45e0-af91-b048480fa81f">
 Компилятор для macOS</label><div class="tabbed-content docutils">
 <p>Если Вы используете macOS, то можно установить компилятор Clang, предварительно установив XCode. Проверьте, установлены ли XCode и Clang на Вашей системе, открыв окно терминала и введя следующее.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>clang --version
@@ -462,8 +461,8 @@ conda activate QiskitDevenv
 </pre></div>
 </div>
 </div>
-<input id="ec5e8517-88cd-4abf-8c6b-eacdf32fb331" name="65a56e83-a35e-492d-9d92-9321d13a1146" type="radio">
-</input><label class="tabbed-label" for="ec5e8517-88cd-4abf-8c6b-eacdf32fb331">
+<input id="8348b936-f9be-4e1a-9e3e-e4c0179e020a" name="82964b6c-2828-412b-a738-fea91b7ee8ed" type="radio">
+</input><label class="tabbed-label" for="8348b936-f9be-4e1a-9e3e-e4c0179e020a">
 Компилятор для Windows</label><div class="tabbed-content docutils">
 <p>В Windows проще всего установить компилятор Visual C++ из <a class="reference external" href="https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019">Build Tools for Visual Studio 2019</a>. Также вы можете установить Visual Studio версий 2015 или 2017, выбрав в параметрах установки компилятор С++.</p>
 </div>

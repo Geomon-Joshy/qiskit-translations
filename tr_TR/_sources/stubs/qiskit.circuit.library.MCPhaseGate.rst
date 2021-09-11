@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.MCPhaseGate
-==================================
+﻿MCPhaseGate
+===========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: MCPhaseGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~MCPhaseGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~MCPhaseGate.add_decomposition
       ~MCPhaseGate.assemble
       ~MCPhaseGate.broadcast_arguments
@@ -30,23 +29,17 @@
       ~MCPhaseGate.soft_compare
       ~MCPhaseGate.to_matrix
       ~MCPhaseGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~MCPhaseGate.ctrl_state
-      ~MCPhaseGate.decompositions
-      ~MCPhaseGate.definition
-      ~MCPhaseGate.duration
-      ~MCPhaseGate.label
-      ~MCPhaseGate.name
-      ~MCPhaseGate.num_ctrl_qubits
-      ~MCPhaseGate.params
-      ~MCPhaseGate.unit
-   
-   
+   .. autoattribute:: ctrl_state
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: name
+   .. autoattribute:: num_ctrl_qubits
+   .. autoattribute:: params
+   .. autoattribute:: unit

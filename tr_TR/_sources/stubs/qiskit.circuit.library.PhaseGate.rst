@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.PhaseGate
-================================
+﻿PhaseGate
+=========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: PhaseGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PhaseGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PhaseGate.add_decomposition
       ~PhaseGate.assemble
       ~PhaseGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~PhaseGate.soft_compare
       ~PhaseGate.to_matrix
       ~PhaseGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PhaseGate.decompositions
-      ~PhaseGate.definition
-      ~PhaseGate.duration
-      ~PhaseGate.label
-      ~PhaseGate.params
-      ~PhaseGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Contributing to Qiskit &mdash; Qiskit 0.29.0 documentation</title>
+  <title>Contributing to Qiskit &mdash; Qiskit 0.29.1 documentation</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme-override.css" type="text/css" />
@@ -944,13 +943,13 @@ conda activate QiskitDevenv
 <p>Installing from source requires that you have a C++ compiler on your system that supports
 C++11.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="25cd2303-7682-4441-ac79-5dade22c7130" name="6d64983f-bbb4-4b2d-96f1-ee42fe9cc157" type="radio">
-</input><label class="tabbed-label" for="25cd2303-7682-4441-ac79-5dade22c7130">
+<input checked="checked" id="04bab54c-2cb3-4de9-9ffb-bab57e1a238e" name="f1ef006a-edd8-459c-8ac2-36e780bb3e0f" type="radio">
+</input><label class="tabbed-label" for="04bab54c-2cb3-4de9-9ffb-bab57e1a238e">
 Compiler for Linux</label><div class="tabbed-content docutils">
 <p>On most Linux platforms, the necessary GCC compiler is already installed.</p>
 </div>
-<input id="edbd64dc-4590-4a1b-b35e-49e1555d664b" name="6d64983f-bbb4-4b2d-96f1-ee42fe9cc157" type="radio">
-</input><label class="tabbed-label" for="edbd64dc-4590-4a1b-b35e-49e1555d664b">
+<input id="232686e1-bf27-4cae-8874-bbf3506bfceb" name="f1ef006a-edd8-459c-8ac2-36e780bb3e0f" type="radio">
+</input><label class="tabbed-label" for="232686e1-bf27-4cae-8874-bbf3506bfceb">
 Compiler for macOS</label><div class="tabbed-content docutils">
 <p>If you use macOS, you can install the Clang compiler by installing XCode.
 Check if you have XCode and Clang installed by opening a terminal window and entering the
@@ -963,8 +962,8 @@ following.</p>
 </pre></div>
 </div>
 </div>
-<input id="018acea8-e75d-44d2-ae56-d50872a0c1b5" name="6d64983f-bbb4-4b2d-96f1-ee42fe9cc157" type="radio">
-</input><label class="tabbed-label" for="018acea8-e75d-44d2-ae56-d50872a0c1b5">
+<input id="1c7ce480-21f8-427c-82cc-4fc9577c1e7b" name="f1ef006a-edd8-459c-8ac2-36e780bb3e0f" type="radio">
+</input><label class="tabbed-label" for="1c7ce480-21f8-427c-82cc-4fc9577c1e7b">
 Compiler for Windows</label><div class="tabbed-content docutils">
 <p>On Windows, it is easiest to install the Visual C++ compiler from the
 <a class="reference external" href="https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017">Build Tools for Visual Studio 2017</a>.
@@ -1048,8 +1047,8 @@ using. Since Aer is a compiled C++ program with a Python interface, there are
 non-Python dependencies for building the Aer binary which can't be installed
 universally depending on operating system.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="5784ea04-0ecf-4eda-a312-7ecb90369934" name="d551a363-2ffa-4431-a1c5-c4d24c0f85e5" type="radio">
-</input><label class="tabbed-label" for="5784ea04-0ecf-4eda-a312-7ecb90369934">
+<input checked="checked" id="b9f9c432-ad1f-430e-bb63-77f1b7d33682" name="51e4b673-ace3-4380-9242-0479b6202c4d" type="radio">
+</input><label class="tabbed-label" for="b9f9c432-ad1f-430e-bb63-77f1b7d33682">
 Linux</label><div class="tabbed-content docutils">
 <ol class="arabic" start="3">
 <li><p>Install compiler requirements.</p>
@@ -1077,8 +1076,8 @@ install using:</p>
 </li>
 </ol>
 </div>
-<input id="b6cc2ee9-bb13-4c8c-9455-62a28a224f0e" name="d551a363-2ffa-4431-a1c5-c4d24c0f85e5" type="radio">
-</input><label class="tabbed-label" for="b6cc2ee9-bb13-4c8c-9455-62a28a224f0e">
+<input id="8cf95c87-cfa8-48dc-ad33-8ce57ef9191d" name="51e4b673-ace3-4380-9242-0479b6202c4d" type="radio">
+</input><label class="tabbed-label" for="8cf95c87-cfa8-48dc-ad33-8ce57ef9191d">
 macOS</label><div class="tabbed-content docutils">
 <ol class="arabic" start="3">
 <li><p>Install dependencies.</p>
@@ -1101,8 +1100,8 @@ is the default choice.</p>
 </li>
 </ol>
 </div>
-<input id="584b5a80-f101-46f7-b91d-f5729aab22be" name="d551a363-2ffa-4431-a1c5-c4d24c0f85e5" type="radio">
-</input><label class="tabbed-label" for="584b5a80-f101-46f7-b91d-f5729aab22be">
+<input id="d7b09a3a-8a29-4b5e-9528-8ced7d053392" name="51e4b673-ace3-4380-9242-0479b6202c4d" type="radio">
+</input><label class="tabbed-label" for="d7b09a3a-8a29-4b5e-9528-8ced7d053392">
 Windows</label><div class="tabbed-content docutils">
 <p>On Windows you need to use <a class="reference external" href="https://www.anaconda.com/distribution/#windows">Anaconda3</a>
 or <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda3</a> to install all the

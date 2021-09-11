@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.SwapGate
-===============================
+﻿SwapGate
+========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: SwapGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~SwapGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~SwapGate.add_decomposition
       ~SwapGate.assemble
       ~SwapGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~SwapGate.soft_compare
       ~SwapGate.to_matrix
       ~SwapGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~SwapGate.decompositions
-      ~SwapGate.definition
-      ~SwapGate.duration
-      ~SwapGate.label
-      ~SwapGate.params
-      ~SwapGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

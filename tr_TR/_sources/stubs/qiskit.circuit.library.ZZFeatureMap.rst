@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.ZZFeatureMap
-===================================
+﻿ZZFeatureMap
+============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: ZZFeatureMap
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~ZZFeatureMap.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~ZZFeatureMap.add_bits
       ~ZZFeatureMap.add_calibration
       ~ZZFeatureMap.add_layer
@@ -164,45 +163,39 @@
       ~ZZFeatureMap.x
       ~ZZFeatureMap.y
       ~ZZFeatureMap.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~ZZFeatureMap.alpha
-      ~ZZFeatureMap.ancillas
-      ~ZZFeatureMap.calibrations
-      ~ZZFeatureMap.clbits
-      ~ZZFeatureMap.data
-      ~ZZFeatureMap.entanglement
-      ~ZZFeatureMap.entanglement_blocks
-      ~ZZFeatureMap.extension_lib
-      ~ZZFeatureMap.feature_dimension
-      ~ZZFeatureMap.global_phase
-      ~ZZFeatureMap.header
-      ~ZZFeatureMap.initial_state
-      ~ZZFeatureMap.insert_barriers
-      ~ZZFeatureMap.instances
-      ~ZZFeatureMap.metadata
-      ~ZZFeatureMap.num_ancillas
-      ~ZZFeatureMap.num_clbits
-      ~ZZFeatureMap.num_layers
-      ~ZZFeatureMap.num_parameters
-      ~ZZFeatureMap.num_parameters_settable
-      ~ZZFeatureMap.num_qubits
-      ~ZZFeatureMap.ordered_parameters
-      ~ZZFeatureMap.parameter_bounds
-      ~ZZFeatureMap.parameters
-      ~ZZFeatureMap.paulis
-      ~ZZFeatureMap.preferred_init_points
-      ~ZZFeatureMap.prefix
-      ~ZZFeatureMap.qregs
-      ~ZZFeatureMap.qubits
-      ~ZZFeatureMap.reps
-      ~ZZFeatureMap.rotation_blocks
-   
-   
+   .. autoattribute:: alpha
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: entanglement
+   .. autoattribute:: entanglement_blocks
+   .. autoattribute:: extension_lib
+   .. autoattribute:: feature_dimension
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: initial_state
+   .. autoattribute:: insert_barriers
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_layers
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_parameters_settable
+   .. autoattribute:: num_qubits
+   .. autoattribute:: ordered_parameters
+   .. autoattribute:: parameter_bounds
+   .. autoattribute:: parameters
+   .. autoattribute:: paulis
+   .. autoattribute:: preferred_init_points
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: reps
+   .. autoattribute:: rotation_blocks

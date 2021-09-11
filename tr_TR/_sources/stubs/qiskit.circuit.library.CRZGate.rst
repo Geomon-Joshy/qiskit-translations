@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.CRZGate
-==============================
+﻿CRZGate
+=======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: CRZGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CRZGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CRZGate.add_decomposition
       ~CRZGate.assemble
       ~CRZGate.broadcast_arguments
@@ -30,23 +29,17 @@
       ~CRZGate.soft_compare
       ~CRZGate.to_matrix
       ~CRZGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CRZGate.ctrl_state
-      ~CRZGate.decompositions
-      ~CRZGate.definition
-      ~CRZGate.duration
-      ~CRZGate.label
-      ~CRZGate.name
-      ~CRZGate.num_ctrl_qubits
-      ~CRZGate.params
-      ~CRZGate.unit
-   
-   
+   .. autoattribute:: ctrl_state
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: name
+   .. autoattribute:: num_ctrl_qubits
+   .. autoattribute:: params
+   .. autoattribute:: unit

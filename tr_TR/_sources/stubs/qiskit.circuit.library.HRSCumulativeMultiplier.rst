@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.HRSCumulativeMultiplier
-==============================================
+﻿HRSCumulativeMultiplier
+=======================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: HRSCumulativeMultiplier
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~HRSCumulativeMultiplier.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~HRSCumulativeMultiplier.add_bits
       ~HRSCumulativeMultiplier.add_calibration
       ~HRSCumulativeMultiplier.add_register
@@ -158,32 +157,26 @@
       ~HRSCumulativeMultiplier.x
       ~HRSCumulativeMultiplier.y
       ~HRSCumulativeMultiplier.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~HRSCumulativeMultiplier.ancillas
-      ~HRSCumulativeMultiplier.calibrations
-      ~HRSCumulativeMultiplier.clbits
-      ~HRSCumulativeMultiplier.data
-      ~HRSCumulativeMultiplier.extension_lib
-      ~HRSCumulativeMultiplier.global_phase
-      ~HRSCumulativeMultiplier.header
-      ~HRSCumulativeMultiplier.instances
-      ~HRSCumulativeMultiplier.metadata
-      ~HRSCumulativeMultiplier.num_ancillas
-      ~HRSCumulativeMultiplier.num_clbits
-      ~HRSCumulativeMultiplier.num_parameters
-      ~HRSCumulativeMultiplier.num_qubits
-      ~HRSCumulativeMultiplier.num_result_qubits
-      ~HRSCumulativeMultiplier.num_state_qubits
-      ~HRSCumulativeMultiplier.parameters
-      ~HRSCumulativeMultiplier.prefix
-      ~HRSCumulativeMultiplier.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_result_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

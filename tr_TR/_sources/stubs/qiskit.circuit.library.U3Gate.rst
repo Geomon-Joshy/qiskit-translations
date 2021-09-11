@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.U3Gate
-=============================
+﻿U3Gate
+======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: U3Gate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~U3Gate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~U3Gate.add_decomposition
       ~U3Gate.assemble
       ~U3Gate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~U3Gate.soft_compare
       ~U3Gate.to_matrix
       ~U3Gate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~U3Gate.decompositions
-      ~U3Gate.definition
-      ~U3Gate.duration
-      ~U3Gate.label
-      ~U3Gate.params
-      ~U3Gate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.ExcitationPreserving
-===========================================
+﻿ExcitationPreserving
+====================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: ExcitationPreserving
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~ExcitationPreserving.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~ExcitationPreserving.add_bits
       ~ExcitationPreserving.add_calibration
       ~ExcitationPreserving.add_layer
@@ -162,42 +161,36 @@
       ~ExcitationPreserving.x
       ~ExcitationPreserving.y
       ~ExcitationPreserving.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~ExcitationPreserving.ancillas
-      ~ExcitationPreserving.calibrations
-      ~ExcitationPreserving.clbits
-      ~ExcitationPreserving.data
-      ~ExcitationPreserving.entanglement
-      ~ExcitationPreserving.entanglement_blocks
-      ~ExcitationPreserving.extension_lib
-      ~ExcitationPreserving.global_phase
-      ~ExcitationPreserving.header
-      ~ExcitationPreserving.initial_state
-      ~ExcitationPreserving.insert_barriers
-      ~ExcitationPreserving.instances
-      ~ExcitationPreserving.metadata
-      ~ExcitationPreserving.num_ancillas
-      ~ExcitationPreserving.num_clbits
-      ~ExcitationPreserving.num_layers
-      ~ExcitationPreserving.num_parameters
-      ~ExcitationPreserving.num_parameters_settable
-      ~ExcitationPreserving.num_qubits
-      ~ExcitationPreserving.ordered_parameters
-      ~ExcitationPreserving.parameter_bounds
-      ~ExcitationPreserving.parameters
-      ~ExcitationPreserving.preferred_init_points
-      ~ExcitationPreserving.prefix
-      ~ExcitationPreserving.qregs
-      ~ExcitationPreserving.qubits
-      ~ExcitationPreserving.reps
-      ~ExcitationPreserving.rotation_blocks
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: entanglement
+   .. autoattribute:: entanglement_blocks
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: initial_state
+   .. autoattribute:: insert_barriers
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_layers
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_parameters_settable
+   .. autoattribute:: num_qubits
+   .. autoattribute:: ordered_parameters
+   .. autoattribute:: parameter_bounds
+   .. autoattribute:: parameters
+   .. autoattribute:: preferred_init_points
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: reps
+   .. autoattribute:: rotation_blocks

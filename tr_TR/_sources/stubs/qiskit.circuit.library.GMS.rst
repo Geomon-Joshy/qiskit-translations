@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.GMS
-==========================
+﻿GMS
+===
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: GMS
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~GMS.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~GMS.add_bits
       ~GMS.add_calibration
       ~GMS.add_register
@@ -158,30 +157,24 @@
       ~GMS.x
       ~GMS.y
       ~GMS.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~GMS.ancillas
-      ~GMS.calibrations
-      ~GMS.clbits
-      ~GMS.data
-      ~GMS.extension_lib
-      ~GMS.global_phase
-      ~GMS.header
-      ~GMS.instances
-      ~GMS.metadata
-      ~GMS.num_ancillas
-      ~GMS.num_clbits
-      ~GMS.num_parameters
-      ~GMS.num_qubits
-      ~GMS.parameters
-      ~GMS.prefix
-      ~GMS.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

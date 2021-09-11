@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.IQP
-==========================
+﻿IQP
+===
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: IQP
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~IQP.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~IQP.add_bits
       ~IQP.add_calibration
       ~IQP.add_register
@@ -158,30 +157,24 @@
       ~IQP.x
       ~IQP.y
       ~IQP.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~IQP.ancillas
-      ~IQP.calibrations
-      ~IQP.clbits
-      ~IQP.data
-      ~IQP.extension_lib
-      ~IQP.global_phase
-      ~IQP.header
-      ~IQP.instances
-      ~IQP.metadata
-      ~IQP.num_ancillas
-      ~IQP.num_clbits
-      ~IQP.num_parameters
-      ~IQP.num_qubits
-      ~IQP.parameters
-      ~IQP.prefix
-      ~IQP.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

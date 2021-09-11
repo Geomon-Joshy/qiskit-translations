@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.CPhaseGate
-=================================
+﻿CPhaseGate
+==========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: CPhaseGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CPhaseGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CPhaseGate.add_decomposition
       ~CPhaseGate.assemble
       ~CPhaseGate.broadcast_arguments
@@ -30,23 +29,17 @@
       ~CPhaseGate.soft_compare
       ~CPhaseGate.to_matrix
       ~CPhaseGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CPhaseGate.ctrl_state
-      ~CPhaseGate.decompositions
-      ~CPhaseGate.definition
-      ~CPhaseGate.duration
-      ~CPhaseGate.label
-      ~CPhaseGate.name
-      ~CPhaseGate.num_ctrl_qubits
-      ~CPhaseGate.params
-      ~CPhaseGate.unit
-   
-   
+   .. autoattribute:: ctrl_state
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: name
+   .. autoattribute:: num_ctrl_qubits
+   .. autoattribute:: params
+   .. autoattribute:: unit

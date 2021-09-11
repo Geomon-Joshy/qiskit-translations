@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.EvolvedOperatorAnsatz
-============================================
+﻿EvolvedOperatorAnsatz
+=====================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: EvolvedOperatorAnsatz
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~EvolvedOperatorAnsatz.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~EvolvedOperatorAnsatz.add_bits
       ~EvolvedOperatorAnsatz.add_calibration
       ~EvolvedOperatorAnsatz.add_register
@@ -158,36 +157,30 @@
       ~EvolvedOperatorAnsatz.x
       ~EvolvedOperatorAnsatz.y
       ~EvolvedOperatorAnsatz.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~EvolvedOperatorAnsatz.ancillas
-      ~EvolvedOperatorAnsatz.calibrations
-      ~EvolvedOperatorAnsatz.clbits
-      ~EvolvedOperatorAnsatz.data
-      ~EvolvedOperatorAnsatz.evolution
-      ~EvolvedOperatorAnsatz.extension_lib
-      ~EvolvedOperatorAnsatz.global_phase
-      ~EvolvedOperatorAnsatz.header
-      ~EvolvedOperatorAnsatz.initial_state
-      ~EvolvedOperatorAnsatz.instances
-      ~EvolvedOperatorAnsatz.metadata
-      ~EvolvedOperatorAnsatz.num_ancillas
-      ~EvolvedOperatorAnsatz.num_clbits
-      ~EvolvedOperatorAnsatz.num_parameters
-      ~EvolvedOperatorAnsatz.num_qubits
-      ~EvolvedOperatorAnsatz.operators
-      ~EvolvedOperatorAnsatz.parameters
-      ~EvolvedOperatorAnsatz.preferred_init_points
-      ~EvolvedOperatorAnsatz.prefix
-      ~EvolvedOperatorAnsatz.qregs
-      ~EvolvedOperatorAnsatz.qubits
-      ~EvolvedOperatorAnsatz.reps
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: evolution
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: initial_state
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: operators
+   .. autoattribute:: parameters
+   .. autoattribute:: preferred_init_points
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: reps

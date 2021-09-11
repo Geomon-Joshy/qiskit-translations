@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.Permutation
-==================================
+﻿Permutation
+===========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: Permutation
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~Permutation.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~Permutation.add_bits
       ~Permutation.add_calibration
       ~Permutation.add_register
@@ -158,30 +157,24 @@
       ~Permutation.x
       ~Permutation.y
       ~Permutation.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~Permutation.ancillas
-      ~Permutation.calibrations
-      ~Permutation.clbits
-      ~Permutation.data
-      ~Permutation.extension_lib
-      ~Permutation.global_phase
-      ~Permutation.header
-      ~Permutation.instances
-      ~Permutation.metadata
-      ~Permutation.num_ancillas
-      ~Permutation.num_clbits
-      ~Permutation.num_parameters
-      ~Permutation.num_qubits
-      ~Permutation.parameters
-      ~Permutation.prefix
-      ~Permutation.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

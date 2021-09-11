@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.GR
-=========================
+﻿GR
+==
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: GR
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~GR.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~GR.add_bits
       ~GR.add_calibration
       ~GR.add_register
@@ -158,30 +157,24 @@
       ~GR.x
       ~GR.y
       ~GR.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~GR.ancillas
-      ~GR.calibrations
-      ~GR.clbits
-      ~GR.data
-      ~GR.extension_lib
-      ~GR.global_phase
-      ~GR.header
-      ~GR.instances
-      ~GR.metadata
-      ~GR.num_ancillas
-      ~GR.num_clbits
-      ~GR.num_parameters
-      ~GR.num_qubits
-      ~GR.parameters
-      ~GR.prefix
-      ~GR.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

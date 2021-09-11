@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.PiecewiseLinearPauliRotations
-====================================================
+﻿PiecewiseLinearPauliRotations
+=============================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: PiecewiseLinearPauliRotations
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PiecewiseLinearPauliRotations.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PiecewiseLinearPauliRotations.add_bits
       ~PiecewiseLinearPauliRotations.add_calibration
       ~PiecewiseLinearPauliRotations.add_register
@@ -159,40 +158,34 @@
       ~PiecewiseLinearPauliRotations.x
       ~PiecewiseLinearPauliRotations.y
       ~PiecewiseLinearPauliRotations.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PiecewiseLinearPauliRotations.ancillas
-      ~PiecewiseLinearPauliRotations.basis
-      ~PiecewiseLinearPauliRotations.breakpoints
-      ~PiecewiseLinearPauliRotations.calibrations
-      ~PiecewiseLinearPauliRotations.clbits
-      ~PiecewiseLinearPauliRotations.contains_zero_breakpoint
-      ~PiecewiseLinearPauliRotations.data
-      ~PiecewiseLinearPauliRotations.extension_lib
-      ~PiecewiseLinearPauliRotations.global_phase
-      ~PiecewiseLinearPauliRotations.header
-      ~PiecewiseLinearPauliRotations.instances
-      ~PiecewiseLinearPauliRotations.mapped_offsets
-      ~PiecewiseLinearPauliRotations.mapped_slopes
-      ~PiecewiseLinearPauliRotations.metadata
-      ~PiecewiseLinearPauliRotations.num_ancilla_qubits
-      ~PiecewiseLinearPauliRotations.num_ancillas
-      ~PiecewiseLinearPauliRotations.num_clbits
-      ~PiecewiseLinearPauliRotations.num_parameters
-      ~PiecewiseLinearPauliRotations.num_qubits
-      ~PiecewiseLinearPauliRotations.num_state_qubits
-      ~PiecewiseLinearPauliRotations.offsets
-      ~PiecewiseLinearPauliRotations.parameters
-      ~PiecewiseLinearPauliRotations.prefix
-      ~PiecewiseLinearPauliRotations.qregs
-      ~PiecewiseLinearPauliRotations.qubits
-      ~PiecewiseLinearPauliRotations.slopes
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: basis
+   .. autoattribute:: breakpoints
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: contains_zero_breakpoint
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: mapped_offsets
+   .. autoattribute:: mapped_slopes
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: offsets
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: slopes

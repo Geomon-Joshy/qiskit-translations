@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.RVGate
-=============================
+﻿RVGate
+======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: RVGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~RVGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~RVGate.add_decomposition
       ~RVGate.assemble
       ~RVGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~RVGate.soft_compare
       ~RVGate.to_matrix
       ~RVGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~RVGate.decompositions
-      ~RVGate.definition
-      ~RVGate.duration
-      ~RVGate.label
-      ~RVGate.params
-      ~RVGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.PolynomialPauliRotations
-===============================================
+﻿PolynomialPauliRotations
+========================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: PolynomialPauliRotations
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PolynomialPauliRotations.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PolynomialPauliRotations.add_bits
       ~PolynomialPauliRotations.add_calibration
       ~PolynomialPauliRotations.add_register
@@ -158,37 +157,31 @@
       ~PolynomialPauliRotations.x
       ~PolynomialPauliRotations.y
       ~PolynomialPauliRotations.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PolynomialPauliRotations.ancillas
-      ~PolynomialPauliRotations.basis
-      ~PolynomialPauliRotations.calibrations
-      ~PolynomialPauliRotations.clbits
-      ~PolynomialPauliRotations.coeffs
-      ~PolynomialPauliRotations.data
-      ~PolynomialPauliRotations.degree
-      ~PolynomialPauliRotations.extension_lib
-      ~PolynomialPauliRotations.global_phase
-      ~PolynomialPauliRotations.header
-      ~PolynomialPauliRotations.instances
-      ~PolynomialPauliRotations.metadata
-      ~PolynomialPauliRotations.num_ancilla_qubits
-      ~PolynomialPauliRotations.num_ancillas
-      ~PolynomialPauliRotations.num_clbits
-      ~PolynomialPauliRotations.num_parameters
-      ~PolynomialPauliRotations.num_qubits
-      ~PolynomialPauliRotations.num_state_qubits
-      ~PolynomialPauliRotations.parameters
-      ~PolynomialPauliRotations.prefix
-      ~PolynomialPauliRotations.qregs
-      ~PolynomialPauliRotations.qubits
-      ~PolynomialPauliRotations.reverse
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: basis
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: coeffs
+   .. autoattribute:: data
+   .. autoattribute:: degree
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: reverse

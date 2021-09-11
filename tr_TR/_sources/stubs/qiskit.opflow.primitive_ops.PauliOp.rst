@@ -1,19 +1,18 @@
-﻿qiskit.opflow.primitive\_ops.PauliOp
-====================================
+﻿PauliOp
+=======
 
 .. currentmodule:: qiskit.opflow.primitive_ops
 
 .. autoclass:: PauliOp
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PauliOp.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PauliOp.add
       ~PauliOp.adjoint
       ~PauliOp.assign_parameters
@@ -39,21 +38,15 @@
       ~PauliOp.to_matrix_op
       ~PauliOp.to_pauli_op
       ~PauliOp.to_spmatrix
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PauliOp.INDENTATION
-      ~PauliOp.coeff
-      ~PauliOp.instance_id
-      ~PauliOp.num_qubits
-      ~PauliOp.parameters
-      ~PauliOp.primitive
-      ~PauliOp.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: coeff
+   .. autoattribute:: instance_id
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings

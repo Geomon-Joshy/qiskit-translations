@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.FourierChecking
-======================================
+﻿FourierChecking
+===============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: FourierChecking
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~FourierChecking.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~FourierChecking.add_bits
       ~FourierChecking.add_calibration
       ~FourierChecking.add_register
@@ -158,30 +157,24 @@
       ~FourierChecking.x
       ~FourierChecking.y
       ~FourierChecking.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~FourierChecking.ancillas
-      ~FourierChecking.calibrations
-      ~FourierChecking.clbits
-      ~FourierChecking.data
-      ~FourierChecking.extension_lib
-      ~FourierChecking.global_phase
-      ~FourierChecking.header
-      ~FourierChecking.instances
-      ~FourierChecking.metadata
-      ~FourierChecking.num_ancillas
-      ~FourierChecking.num_clbits
-      ~FourierChecking.num_parameters
-      ~FourierChecking.num_qubits
-      ~FourierChecking.parameters
-      ~FourierChecking.prefix
-      ~FourierChecking.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

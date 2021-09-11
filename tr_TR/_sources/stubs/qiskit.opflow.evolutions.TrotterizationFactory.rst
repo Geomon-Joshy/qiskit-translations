@@ -1,23 +1,18 @@
-﻿qiskit.opflow.evolutions.TrotterizationFactory
-==============================================
+﻿TrotterizationFactory
+=====================
 
 .. currentmodule:: qiskit.opflow.evolutions
 
 .. autoclass:: TrotterizationFactory
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~TrotterizationFactory.__init__
-      ~TrotterizationFactory.build
-   
-   
+      :nosignatures:
+      :toctree: ../stubs/
 
-   
-   
-   
+      ~TrotterizationFactory.build
+
+

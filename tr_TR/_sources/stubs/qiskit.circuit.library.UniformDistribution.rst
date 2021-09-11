@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.UniformDistribution
-==========================================
+﻿UniformDistribution
+===================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: UniformDistribution
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~UniformDistribution.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~UniformDistribution.add_bits
       ~UniformDistribution.add_calibration
       ~UniformDistribution.add_register
@@ -158,30 +157,24 @@
       ~UniformDistribution.x
       ~UniformDistribution.y
       ~UniformDistribution.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~UniformDistribution.ancillas
-      ~UniformDistribution.calibrations
-      ~UniformDistribution.clbits
-      ~UniformDistribution.data
-      ~UniformDistribution.extension_lib
-      ~UniformDistribution.global_phase
-      ~UniformDistribution.header
-      ~UniformDistribution.instances
-      ~UniformDistribution.metadata
-      ~UniformDistribution.num_ancillas
-      ~UniformDistribution.num_clbits
-      ~UniformDistribution.num_parameters
-      ~UniformDistribution.num_qubits
-      ~UniformDistribution.parameters
-      ~UniformDistribution.prefix
-      ~UniformDistribution.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

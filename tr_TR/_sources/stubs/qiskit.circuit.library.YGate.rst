@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.YGate
-============================
+﻿YGate
+=====
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: YGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~YGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~YGate.add_decomposition
       ~YGate.assemble
       ~YGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~YGate.soft_compare
       ~YGate.to_matrix
       ~YGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~YGate.decompositions
-      ~YGate.definition
-      ~YGate.duration
-      ~YGate.label
-      ~YGate.params
-      ~YGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

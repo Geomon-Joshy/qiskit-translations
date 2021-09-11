@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.MCXVChain
-================================
+﻿MCXVChain
+=========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: MCXVChain
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~MCXVChain.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~MCXVChain.add_decomposition
       ~MCXVChain.assemble
       ~MCXVChain.broadcast_arguments
@@ -31,24 +30,18 @@
       ~MCXVChain.soft_compare
       ~MCXVChain.to_matrix
       ~MCXVChain.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~MCXVChain.ctrl_state
-      ~MCXVChain.decompositions
-      ~MCXVChain.definition
-      ~MCXVChain.duration
-      ~MCXVChain.label
-      ~MCXVChain.name
-      ~MCXVChain.num_ancilla_qubits
-      ~MCXVChain.num_ctrl_qubits
-      ~MCXVChain.params
-      ~MCXVChain.unit
-   
-   
+   .. autoattribute:: ctrl_state
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: name
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ctrl_qubits
+   .. autoattribute:: params
+   .. autoattribute:: unit

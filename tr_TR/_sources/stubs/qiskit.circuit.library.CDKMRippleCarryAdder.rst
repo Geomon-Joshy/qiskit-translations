@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.CDKMRippleCarryAdder
-===========================================
+﻿CDKMRippleCarryAdder
+====================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: CDKMRippleCarryAdder
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CDKMRippleCarryAdder.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CDKMRippleCarryAdder.add_bits
       ~CDKMRippleCarryAdder.add_calibration
       ~CDKMRippleCarryAdder.add_register
@@ -158,31 +157,25 @@
       ~CDKMRippleCarryAdder.x
       ~CDKMRippleCarryAdder.y
       ~CDKMRippleCarryAdder.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CDKMRippleCarryAdder.ancillas
-      ~CDKMRippleCarryAdder.calibrations
-      ~CDKMRippleCarryAdder.clbits
-      ~CDKMRippleCarryAdder.data
-      ~CDKMRippleCarryAdder.extension_lib
-      ~CDKMRippleCarryAdder.global_phase
-      ~CDKMRippleCarryAdder.header
-      ~CDKMRippleCarryAdder.instances
-      ~CDKMRippleCarryAdder.metadata
-      ~CDKMRippleCarryAdder.num_ancillas
-      ~CDKMRippleCarryAdder.num_clbits
-      ~CDKMRippleCarryAdder.num_parameters
-      ~CDKMRippleCarryAdder.num_qubits
-      ~CDKMRippleCarryAdder.num_state_qubits
-      ~CDKMRippleCarryAdder.parameters
-      ~CDKMRippleCarryAdder.prefix
-      ~CDKMRippleCarryAdder.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

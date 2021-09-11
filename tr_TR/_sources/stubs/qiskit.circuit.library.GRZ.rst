@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.GRZ
-==========================
+﻿GRZ
+===
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: GRZ
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~GRZ.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~GRZ.add_bits
       ~GRZ.add_calibration
       ~GRZ.add_register
@@ -158,30 +157,24 @@
       ~GRZ.x
       ~GRZ.y
       ~GRZ.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~GRZ.ancillas
-      ~GRZ.calibrations
-      ~GRZ.clbits
-      ~GRZ.data
-      ~GRZ.extension_lib
-      ~GRZ.global_phase
-      ~GRZ.header
-      ~GRZ.instances
-      ~GRZ.metadata
-      ~GRZ.num_ancillas
-      ~GRZ.num_clbits
-      ~GRZ.num_parameters
-      ~GRZ.num_qubits
-      ~GRZ.parameters
-      ~GRZ.prefix
-      ~GRZ.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.GRY
-==========================
+﻿GRY
+===
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: GRY
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~GRY.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~GRY.add_bits
       ~GRY.add_calibration
       ~GRY.add_register
@@ -158,30 +157,24 @@
       ~GRY.x
       ~GRY.y
       ~GRY.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~GRY.ancillas
-      ~GRY.calibrations
-      ~GRY.clbits
-      ~GRY.data
-      ~GRY.extension_lib
-      ~GRY.global_phase
-      ~GRY.header
-      ~GRY.instances
-      ~GRY.metadata
-      ~GRY.num_ancillas
-      ~GRY.num_clbits
-      ~GRY.num_parameters
-      ~GRY.num_qubits
-      ~GRY.parameters
-      ~GRY.prefix
-      ~GRY.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

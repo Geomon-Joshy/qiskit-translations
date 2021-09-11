@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.LinearPauliRotations
-===========================================
+﻿LinearPauliRotations
+====================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: LinearPauliRotations
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~LinearPauliRotations.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~LinearPauliRotations.add_bits
       ~LinearPauliRotations.add_calibration
       ~LinearPauliRotations.add_register
@@ -158,36 +157,30 @@
       ~LinearPauliRotations.x
       ~LinearPauliRotations.y
       ~LinearPauliRotations.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~LinearPauliRotations.ancillas
-      ~LinearPauliRotations.basis
-      ~LinearPauliRotations.calibrations
-      ~LinearPauliRotations.clbits
-      ~LinearPauliRotations.data
-      ~LinearPauliRotations.extension_lib
-      ~LinearPauliRotations.global_phase
-      ~LinearPauliRotations.header
-      ~LinearPauliRotations.instances
-      ~LinearPauliRotations.metadata
-      ~LinearPauliRotations.num_ancilla_qubits
-      ~LinearPauliRotations.num_ancillas
-      ~LinearPauliRotations.num_clbits
-      ~LinearPauliRotations.num_parameters
-      ~LinearPauliRotations.num_qubits
-      ~LinearPauliRotations.num_state_qubits
-      ~LinearPauliRotations.offset
-      ~LinearPauliRotations.parameters
-      ~LinearPauliRotations.prefix
-      ~LinearPauliRotations.qregs
-      ~LinearPauliRotations.qubits
-      ~LinearPauliRotations.slope
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: basis
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: offset
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: slope

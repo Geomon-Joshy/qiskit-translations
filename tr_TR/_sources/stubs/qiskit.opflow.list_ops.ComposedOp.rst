@@ -1,19 +1,18 @@
-﻿qiskit.opflow.list\_ops.ComposedOp
-==================================
+﻿ComposedOp
+==========
 
 .. currentmodule:: qiskit.opflow.list_ops
 
 .. autoclass:: ComposedOp
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~ComposedOp.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~ComposedOp.add
       ~ComposedOp.adjoint
       ~ComposedOp.assign_parameters
@@ -41,25 +40,19 @@
       ~ComposedOp.to_pauli_op
       ~ComposedOp.to_spmatrix
       ~ComposedOp.traverse
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~ComposedOp.INDENTATION
-      ~ComposedOp.abelian
-      ~ComposedOp.coeff
-      ~ComposedOp.combo_fn
-      ~ComposedOp.distributive
-      ~ComposedOp.grad_combo_fn
-      ~ComposedOp.instance_id
-      ~ComposedOp.num_qubits
-      ~ComposedOp.oplist
-      ~ComposedOp.parameters
-      ~ComposedOp.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: abelian
+   .. autoattribute:: coeff
+   .. autoattribute:: combo_fn
+   .. autoattribute:: distributive
+   .. autoattribute:: grad_combo_fn
+   .. autoattribute:: instance_id
+   .. autoattribute:: num_qubits
+   .. autoattribute:: oplist
+   .. autoattribute:: parameters
+   .. autoattribute:: settings

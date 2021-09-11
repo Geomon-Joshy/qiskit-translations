@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.CCXGate
-==============================
+﻿CCXGate
+=======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: CCXGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CCXGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CCXGate.add_decomposition
       ~CCXGate.assemble
       ~CCXGate.broadcast_arguments
@@ -30,23 +29,17 @@
       ~CCXGate.soft_compare
       ~CCXGate.to_matrix
       ~CCXGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CCXGate.ctrl_state
-      ~CCXGate.decompositions
-      ~CCXGate.definition
-      ~CCXGate.duration
-      ~CCXGate.label
-      ~CCXGate.name
-      ~CCXGate.num_ctrl_qubits
-      ~CCXGate.params
-      ~CCXGate.unit
-   
-   
+   .. autoattribute:: ctrl_state
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: name
+   .. autoattribute:: num_ctrl_qubits
+   .. autoattribute:: params
+   .. autoattribute:: unit

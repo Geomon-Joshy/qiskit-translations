@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.WeightedAdder
-====================================
+﻿WeightedAdder
+=============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: WeightedAdder
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~WeightedAdder.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~WeightedAdder.add_bits
       ~WeightedAdder.add_calibration
       ~WeightedAdder.add_register
@@ -158,37 +157,31 @@
       ~WeightedAdder.x
       ~WeightedAdder.y
       ~WeightedAdder.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~WeightedAdder.ancillas
-      ~WeightedAdder.calibrations
-      ~WeightedAdder.clbits
-      ~WeightedAdder.data
-      ~WeightedAdder.extension_lib
-      ~WeightedAdder.global_phase
-      ~WeightedAdder.header
-      ~WeightedAdder.instances
-      ~WeightedAdder.metadata
-      ~WeightedAdder.num_ancilla_qubits
-      ~WeightedAdder.num_ancillas
-      ~WeightedAdder.num_carry_qubits
-      ~WeightedAdder.num_clbits
-      ~WeightedAdder.num_control_qubits
-      ~WeightedAdder.num_parameters
-      ~WeightedAdder.num_qubits
-      ~WeightedAdder.num_state_qubits
-      ~WeightedAdder.num_sum_qubits
-      ~WeightedAdder.parameters
-      ~WeightedAdder.prefix
-      ~WeightedAdder.qregs
-      ~WeightedAdder.qubits
-      ~WeightedAdder.weights
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_carry_qubits
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_control_qubits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: num_sum_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: weights

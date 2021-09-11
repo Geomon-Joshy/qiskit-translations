@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.RYGate
-=============================
+﻿RYGate
+======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: RYGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~RYGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~RYGate.add_decomposition
       ~RYGate.assemble
       ~RYGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~RYGate.soft_compare
       ~RYGate.to_matrix
       ~RYGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~RYGate.decompositions
-      ~RYGate.definition
-      ~RYGate.duration
-      ~RYGate.label
-      ~RYGate.params
-      ~RYGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

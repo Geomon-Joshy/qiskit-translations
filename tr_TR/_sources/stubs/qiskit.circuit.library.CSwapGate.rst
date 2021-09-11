@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.CSwapGate
-================================
+﻿CSwapGate
+=========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: CSwapGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~CSwapGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~CSwapGate.add_decomposition
       ~CSwapGate.assemble
       ~CSwapGate.broadcast_arguments
@@ -30,23 +29,17 @@
       ~CSwapGate.soft_compare
       ~CSwapGate.to_matrix
       ~CSwapGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~CSwapGate.ctrl_state
-      ~CSwapGate.decompositions
-      ~CSwapGate.definition
-      ~CSwapGate.duration
-      ~CSwapGate.label
-      ~CSwapGate.name
-      ~CSwapGate.num_ctrl_qubits
-      ~CSwapGate.params
-      ~CSwapGate.unit
-   
-   
+   .. autoattribute:: ctrl_state
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: name
+   .. autoattribute:: num_ctrl_qubits
+   .. autoattribute:: params
+   .. autoattribute:: unit

@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.Diagonal
-===============================
+﻿Diagonal
+========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: Diagonal
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~Diagonal.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~Diagonal.add_bits
       ~Diagonal.add_calibration
       ~Diagonal.add_register
@@ -158,30 +157,24 @@
       ~Diagonal.x
       ~Diagonal.y
       ~Diagonal.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~Diagonal.ancillas
-      ~Diagonal.calibrations
-      ~Diagonal.clbits
-      ~Diagonal.data
-      ~Diagonal.extension_lib
-      ~Diagonal.global_phase
-      ~Diagonal.header
-      ~Diagonal.instances
-      ~Diagonal.metadata
-      ~Diagonal.num_ancillas
-      ~Diagonal.num_clbits
-      ~Diagonal.num_parameters
-      ~Diagonal.num_qubits
-      ~Diagonal.parameters
-      ~Diagonal.prefix
-      ~Diagonal.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

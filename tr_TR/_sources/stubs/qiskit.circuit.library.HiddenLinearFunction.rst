@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.HiddenLinearFunction
-===========================================
+﻿HiddenLinearFunction
+====================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: HiddenLinearFunction
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~HiddenLinearFunction.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~HiddenLinearFunction.add_bits
       ~HiddenLinearFunction.add_calibration
       ~HiddenLinearFunction.add_register
@@ -158,30 +157,24 @@
       ~HiddenLinearFunction.x
       ~HiddenLinearFunction.y
       ~HiddenLinearFunction.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~HiddenLinearFunction.ancillas
-      ~HiddenLinearFunction.calibrations
-      ~HiddenLinearFunction.clbits
-      ~HiddenLinearFunction.data
-      ~HiddenLinearFunction.extension_lib
-      ~HiddenLinearFunction.global_phase
-      ~HiddenLinearFunction.header
-      ~HiddenLinearFunction.instances
-      ~HiddenLinearFunction.metadata
-      ~HiddenLinearFunction.num_ancillas
-      ~HiddenLinearFunction.num_clbits
-      ~HiddenLinearFunction.num_parameters
-      ~HiddenLinearFunction.num_qubits
-      ~HiddenLinearFunction.parameters
-      ~HiddenLinearFunction.prefix
-      ~HiddenLinearFunction.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

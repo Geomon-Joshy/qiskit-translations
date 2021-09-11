@@ -1,19 +1,18 @@
-﻿qiskit.opflow.list\_ops.ListOp
-==============================
+﻿ListOp
+======
 
 .. currentmodule:: qiskit.opflow.list_ops
 
 .. autoclass:: ListOp
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~ListOp.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~ListOp.add
       ~ListOp.adjoint
       ~ListOp.assign_parameters
@@ -39,25 +38,19 @@
       ~ListOp.to_pauli_op
       ~ListOp.to_spmatrix
       ~ListOp.traverse
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~ListOp.INDENTATION
-      ~ListOp.abelian
-      ~ListOp.coeff
-      ~ListOp.combo_fn
-      ~ListOp.distributive
-      ~ListOp.grad_combo_fn
-      ~ListOp.instance_id
-      ~ListOp.num_qubits
-      ~ListOp.oplist
-      ~ListOp.parameters
-      ~ListOp.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: abelian
+   .. autoattribute:: coeff
+   .. autoattribute:: combo_fn
+   .. autoattribute:: distributive
+   .. autoattribute:: grad_combo_fn
+   .. autoattribute:: instance_id
+   .. autoattribute:: num_qubits
+   .. autoattribute:: oplist
+   .. autoattribute:: parameters
+   .. autoattribute:: settings

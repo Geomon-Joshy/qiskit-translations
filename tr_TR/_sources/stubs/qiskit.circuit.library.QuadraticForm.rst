@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.QuadraticForm
-====================================
+﻿QuadraticForm
+=============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: QuadraticForm
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~QuadraticForm.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~QuadraticForm.add_bits
       ~QuadraticForm.add_calibration
       ~QuadraticForm.add_register
@@ -159,30 +158,24 @@
       ~QuadraticForm.x
       ~QuadraticForm.y
       ~QuadraticForm.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~QuadraticForm.ancillas
-      ~QuadraticForm.calibrations
-      ~QuadraticForm.clbits
-      ~QuadraticForm.data
-      ~QuadraticForm.extension_lib
-      ~QuadraticForm.global_phase
-      ~QuadraticForm.header
-      ~QuadraticForm.instances
-      ~QuadraticForm.metadata
-      ~QuadraticForm.num_ancillas
-      ~QuadraticForm.num_clbits
-      ~QuadraticForm.num_parameters
-      ~QuadraticForm.num_qubits
-      ~QuadraticForm.parameters
-      ~QuadraticForm.prefix
-      ~QuadraticForm.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

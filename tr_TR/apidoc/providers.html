@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Providers Interface (qiskit.providers) &mdash; Qiskit 0.29.0 belgelendirmesi</title>
+  <title>Providers Interface (qiskit.providers) &mdash; Qiskit 0.29.1 belgelendirmesi</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme-override.css" type="text/css" />
@@ -41,7 +40,7 @@
   <link rel="stylesheet" href="../_static/panels-variables.ade9f9d55df9d2893fc676ecd59723a1.css" type="text/css" />
     <link rel="index" title="Dizin" href="../genindex.html" />
     <link rel="search" title="Ara" href="../search.html" />
-    <link rel="next" title="qiskit.providers.Provider" href="../stubs/qiskit.providers.Provider.html" />
+    <link rel="next" title="Provider" href="../stubs/qiskit.providers.Provider.html" />
     <link rel="prev" title="qiskit.providers.basicaer.BasicAerError" href="../stubs/qiskit.providers.basicaer.BasicAerError.html" /> 
 
   
@@ -454,7 +453,7 @@ method to get available <code class="xref py py-class docutils literal notransla
 <code class="xref py py-class docutils literal notranslate"><span class="pre">BackendV1</span></code> object provides both information describing
 a backend and its operation for the <a class="reference internal" href="transpiler.html#module-qiskit.transpiler" title="qiskit.transpiler"><code class="xref py py-mod docutils literal notranslate"><span class="pre">transpiler</span></code></a> so that circuits
 can be compiled to something that is optimized and can execute on the
-backend. It also provides the <a class="reference internal" href="../stubs/qiskit.providers.BackendV1.html#qiskit.providers.BackendV1.run" title="qiskit.providers.BackendV1.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method which can
+backend. It also provides the <a class="reference internal" href="../stubs/qiskit.providers.BackendV1.run.html#qiskit.providers.BackendV1.run" title="qiskit.providers.BackendV1.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method which can
 run the <a class="reference internal" href="../stubs/qiskit.circuit.QuantumCircuit.html#qiskit.circuit.QuantumCircuit" title="qiskit.circuit.QuantumCircuit"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantumCircuit</span></code></a> objects and/or
 <a class="reference internal" href="../stubs/qiskit.pulse.Schedule.html#qiskit.pulse.Schedule" title="qiskit.pulse.Schedule"><code class="xref py py-class docutils literal notranslate"><span class="pre">Schedule</span></code></a> objects. This enables users and other Qiskit
 APIs, such as <code class="xref py py-func docutils literal notranslate"><span class="pre">execute()</span></code> and higher level algorithms in
@@ -466,7 +465,7 @@ steps for writing a provider are:</p>
 <li><p>Implement a <a class="reference internal" href="../stubs/qiskit.providers.ProviderV1.html#qiskit.providers.ProviderV1" title="qiskit.providers.ProviderV1"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProviderV1</span></code></a> subclass that handles
 access to the backend(s).</p></li>
 <li><p>Implement a <a class="reference internal" href="../stubs/qiskit.providers.BackendV1.html#qiskit.providers.BackendV1" title="qiskit.providers.BackendV1"><code class="xref py py-class docutils literal notranslate"><span class="pre">BackendV1</span></code></a> subclass and its
-<a class="reference internal" href="../stubs/qiskit.providers.BackendV1.html#qiskit.providers.BackendV1.run" title="qiskit.providers.BackendV1.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method.</p>
+<a class="reference internal" href="../stubs/qiskit.providers.BackendV1.run.html#qiskit.providers.BackendV1.run" title="qiskit.providers.BackendV1.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method.</p>
 <ul>
 <li><p>Add any custom gates for the backend’s basis to the session
 <a class="reference internal" href="../stubs/qiskit.circuit.EquivalenceLibrary.html#qiskit.circuit.EquivalenceLibrary" title="qiskit.circuit.EquivalenceLibrary"><code class="xref py py-class docutils literal notranslate"><span class="pre">EquivalenceLibrary</span></code></a> instance.</p></li>
@@ -678,7 +677,7 @@ moving forward.</p>
 </section>
 <section id="run-method">
 <h3>Run Method<a class="headerlink" href="#run-method" title="Bu başlık için kalıcı bağlantı">¶</a></h3>
-<p>Of key importance is the <a class="reference internal" href="../stubs/qiskit.providers.BackendV1.html#qiskit.providers.BackendV1.run" title="qiskit.providers.BackendV1.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method, which
+<p>Of key importance is the <a class="reference internal" href="../stubs/qiskit.providers.BackendV1.run.html#qiskit.providers.BackendV1.run" title="qiskit.providers.BackendV1.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method, which
 is used to actually submit circuits to a device or simulator. The run method
 handles submitting the circuits to the backend to be executed and returning a
 <a class="reference internal" href="../stubs/qiskit.providers.Job.html#qiskit.providers.Job" title="qiskit.providers.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a> object. Depending on the type of backend this
@@ -734,7 +733,7 @@ considered async and the expectation is that it represents a handle to the
 async execution of the circuits submitted with <code class="docutils literal notranslate"><span class="pre">Backend.run()</span></code>. An async
 <code class="docutils literal notranslate"><span class="pre">Job</span></code> object provides users the ability to query the status of the execution,
 cancel a running job, and block until the execution is finished. The
-<a class="reference internal" href="../stubs/qiskit.providers.JobV1.html#qiskit.providers.JobV1.result" title="qiskit.providers.JobV1.result"><code class="xref py py-class docutils literal notranslate"><span class="pre">result</span></code></a> is the primary user facing method
+<a class="reference internal" href="../stubs/qiskit.providers.JobV1.result.html#qiskit.providers.JobV1.result" title="qiskit.providers.JobV1.result"><code class="xref py py-class docutils literal notranslate"><span class="pre">result</span></code></a> is the primary user facing method
 which will block until the execution is complete and then will return a
 <a class="reference internal" href="../stubs/qiskit.result.Result.html#qiskit.result.Result" title="qiskit.result.Result"><code class="xref py py-class docutils literal notranslate"><span class="pre">Result</span></code></a> object with results of the job.</p>
 <p>For some backends (mainly local simulators) the execution of circuits is a
@@ -892,7 +891,7 @@ be using the versioned interface.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../stubs/qiskit.providers.Provider.html" class="btn btn-neutral float-right" title="qiskit.providers.Provider" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
+        <a href="../stubs/qiskit.providers.Provider.html" class="btn btn-neutral float-right" title="Provider" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
         <a href="../stubs/qiskit.providers.basicaer.BasicAerError.html" class="btn btn-neutral" title="qiskit.providers.basicaer.BasicAerError" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>

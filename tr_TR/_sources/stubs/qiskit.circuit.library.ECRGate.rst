@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.ECRGate
-==============================
+﻿ECRGate
+=======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: ECRGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~ECRGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~ECRGate.add_decomposition
       ~ECRGate.assemble
       ~ECRGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~ECRGate.soft_compare
       ~ECRGate.to_matrix
       ~ECRGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~ECRGate.decompositions
-      ~ECRGate.definition
-      ~ECRGate.duration
-      ~ECRGate.label
-      ~ECRGate.params
-      ~ECRGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

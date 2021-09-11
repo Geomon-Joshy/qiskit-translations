@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.PauliGate
-================================
+﻿PauliGate
+=========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: PauliGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PauliGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PauliGate.add_decomposition
       ~PauliGate.assemble
       ~PauliGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~PauliGate.soft_compare
       ~PauliGate.to_matrix
       ~PauliGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PauliGate.decompositions
-      ~PauliGate.definition
-      ~PauliGate.duration
-      ~PauliGate.label
-      ~PauliGate.params
-      ~PauliGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

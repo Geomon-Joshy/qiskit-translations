@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.PiecewisePolynomialPauliRotations
-========================================================
+﻿PiecewisePolynomialPauliRotations
+=================================
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: PiecewisePolynomialPauliRotations
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PiecewisePolynomialPauliRotations.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PiecewisePolynomialPauliRotations.add_bits
       ~PiecewisePolynomialPauliRotations.add_calibration
       ~PiecewisePolynomialPauliRotations.add_register
@@ -159,38 +158,32 @@
       ~PiecewisePolynomialPauliRotations.x
       ~PiecewisePolynomialPauliRotations.y
       ~PiecewisePolynomialPauliRotations.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PiecewisePolynomialPauliRotations.ancillas
-      ~PiecewisePolynomialPauliRotations.basis
-      ~PiecewisePolynomialPauliRotations.breakpoints
-      ~PiecewisePolynomialPauliRotations.calibrations
-      ~PiecewisePolynomialPauliRotations.clbits
-      ~PiecewisePolynomialPauliRotations.coeffs
-      ~PiecewisePolynomialPauliRotations.contains_zero_breakpoint
-      ~PiecewisePolynomialPauliRotations.data
-      ~PiecewisePolynomialPauliRotations.extension_lib
-      ~PiecewisePolynomialPauliRotations.global_phase
-      ~PiecewisePolynomialPauliRotations.header
-      ~PiecewisePolynomialPauliRotations.instances
-      ~PiecewisePolynomialPauliRotations.mapped_coeffs
-      ~PiecewisePolynomialPauliRotations.metadata
-      ~PiecewisePolynomialPauliRotations.num_ancilla_qubits
-      ~PiecewisePolynomialPauliRotations.num_ancillas
-      ~PiecewisePolynomialPauliRotations.num_clbits
-      ~PiecewisePolynomialPauliRotations.num_parameters
-      ~PiecewisePolynomialPauliRotations.num_qubits
-      ~PiecewisePolynomialPauliRotations.num_state_qubits
-      ~PiecewisePolynomialPauliRotations.parameters
-      ~PiecewisePolynomialPauliRotations.prefix
-      ~PiecewisePolynomialPauliRotations.qregs
-      ~PiecewisePolynomialPauliRotations.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: basis
+   .. autoattribute:: breakpoints
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: coeffs
+   .. autoattribute:: contains_zero_breakpoint
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: mapped_coeffs
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancilla_qubits
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits

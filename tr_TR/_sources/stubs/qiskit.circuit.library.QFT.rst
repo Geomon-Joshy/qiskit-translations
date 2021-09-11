@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.QFT
-==========================
+﻿QFT
+===
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: QFT
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~QFT.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~QFT.add_bits
       ~QFT.add_calibration
       ~QFT.add_register
@@ -159,34 +158,28 @@
       ~QFT.x
       ~QFT.y
       ~QFT.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~QFT.ancillas
-      ~QFT.approximation_degree
-      ~QFT.calibrations
-      ~QFT.clbits
-      ~QFT.data
-      ~QFT.do_swaps
-      ~QFT.extension_lib
-      ~QFT.global_phase
-      ~QFT.header
-      ~QFT.insert_barriers
-      ~QFT.instances
-      ~QFT.metadata
-      ~QFT.num_ancillas
-      ~QFT.num_clbits
-      ~QFT.num_parameters
-      ~QFT.num_qubits
-      ~QFT.parameters
-      ~QFT.prefix
-      ~QFT.qregs
-      ~QFT.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: approximation_degree
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: do_swaps
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: insert_barriers
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits

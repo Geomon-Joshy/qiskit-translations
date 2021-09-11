@@ -1,23 +1,18 @@
-﻿qiskit.opflow.evolutions.EvolutionFactory
-=========================================
+﻿EvolutionFactory
+================
 
 .. currentmodule:: qiskit.opflow.evolutions
 
 .. autoclass:: EvolutionFactory
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~EvolutionFactory.__init__
-      ~EvolutionFactory.build
-   
-   
+      :nosignatures:
+      :toctree: ../stubs/
 
-   
-   
-   
+      ~EvolutionFactory.build
+
+

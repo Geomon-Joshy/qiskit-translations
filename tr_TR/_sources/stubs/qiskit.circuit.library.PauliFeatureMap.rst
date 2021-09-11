@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.PauliFeatureMap
-======================================
+﻿PauliFeatureMap
+===============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: PauliFeatureMap
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~PauliFeatureMap.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~PauliFeatureMap.add_bits
       ~PauliFeatureMap.add_calibration
       ~PauliFeatureMap.add_layer
@@ -164,45 +163,39 @@
       ~PauliFeatureMap.x
       ~PauliFeatureMap.y
       ~PauliFeatureMap.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~PauliFeatureMap.alpha
-      ~PauliFeatureMap.ancillas
-      ~PauliFeatureMap.calibrations
-      ~PauliFeatureMap.clbits
-      ~PauliFeatureMap.data
-      ~PauliFeatureMap.entanglement
-      ~PauliFeatureMap.entanglement_blocks
-      ~PauliFeatureMap.extension_lib
-      ~PauliFeatureMap.feature_dimension
-      ~PauliFeatureMap.global_phase
-      ~PauliFeatureMap.header
-      ~PauliFeatureMap.initial_state
-      ~PauliFeatureMap.insert_barriers
-      ~PauliFeatureMap.instances
-      ~PauliFeatureMap.metadata
-      ~PauliFeatureMap.num_ancillas
-      ~PauliFeatureMap.num_clbits
-      ~PauliFeatureMap.num_layers
-      ~PauliFeatureMap.num_parameters
-      ~PauliFeatureMap.num_parameters_settable
-      ~PauliFeatureMap.num_qubits
-      ~PauliFeatureMap.ordered_parameters
-      ~PauliFeatureMap.parameter_bounds
-      ~PauliFeatureMap.parameters
-      ~PauliFeatureMap.paulis
-      ~PauliFeatureMap.preferred_init_points
-      ~PauliFeatureMap.prefix
-      ~PauliFeatureMap.qregs
-      ~PauliFeatureMap.qubits
-      ~PauliFeatureMap.reps
-      ~PauliFeatureMap.rotation_blocks
-   
-   
+   .. autoattribute:: alpha
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: entanglement
+   .. autoattribute:: entanglement_blocks
+   .. autoattribute:: extension_lib
+   .. autoattribute:: feature_dimension
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: initial_state
+   .. autoattribute:: insert_barriers
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_layers
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_parameters_settable
+   .. autoattribute:: num_qubits
+   .. autoattribute:: ordered_parameters
+   .. autoattribute:: parameter_bounds
+   .. autoattribute:: parameters
+   .. autoattribute:: paulis
+   .. autoattribute:: preferred_init_points
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: reps
+   .. autoattribute:: rotation_blocks

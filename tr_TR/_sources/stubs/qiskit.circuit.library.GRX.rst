@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.GRX
-==========================
+﻿GRX
+===
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: GRX
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~GRX.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~GRX.add_bits
       ~GRX.add_calibration
       ~GRX.add_register
@@ -158,30 +157,24 @@
       ~GRX.x
       ~GRX.y
       ~GRX.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~GRX.ancillas
-      ~GRX.calibrations
-      ~GRX.clbits
-      ~GRX.data
-      ~GRX.extension_lib
-      ~GRX.global_phase
-      ~GRX.header
-      ~GRX.instances
-      ~GRX.metadata
-      ~GRX.num_ancillas
-      ~GRX.num_clbits
-      ~GRX.num_parameters
-      ~GRX.num_qubits
-      ~GRX.parameters
-      ~GRX.prefix
-      ~GRX.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.TwoLocal
-===============================
+﻿TwoLocal
+========
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: TwoLocal
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~TwoLocal.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~TwoLocal.add_bits
       ~TwoLocal.add_calibration
       ~TwoLocal.add_layer
@@ -162,42 +161,36 @@
       ~TwoLocal.x
       ~TwoLocal.y
       ~TwoLocal.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~TwoLocal.ancillas
-      ~TwoLocal.calibrations
-      ~TwoLocal.clbits
-      ~TwoLocal.data
-      ~TwoLocal.entanglement
-      ~TwoLocal.entanglement_blocks
-      ~TwoLocal.extension_lib
-      ~TwoLocal.global_phase
-      ~TwoLocal.header
-      ~TwoLocal.initial_state
-      ~TwoLocal.insert_barriers
-      ~TwoLocal.instances
-      ~TwoLocal.metadata
-      ~TwoLocal.num_ancillas
-      ~TwoLocal.num_clbits
-      ~TwoLocal.num_layers
-      ~TwoLocal.num_parameters
-      ~TwoLocal.num_parameters_settable
-      ~TwoLocal.num_qubits
-      ~TwoLocal.ordered_parameters
-      ~TwoLocal.parameter_bounds
-      ~TwoLocal.parameters
-      ~TwoLocal.preferred_init_points
-      ~TwoLocal.prefix
-      ~TwoLocal.qregs
-      ~TwoLocal.qubits
-      ~TwoLocal.reps
-      ~TwoLocal.rotation_blocks
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: entanglement
+   .. autoattribute:: entanglement_blocks
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: initial_state
+   .. autoattribute:: insert_barriers
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_layers
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_parameters_settable
+   .. autoattribute:: num_qubits
+   .. autoattribute:: ordered_parameters
+   .. autoattribute:: parameter_bounds
+   .. autoattribute:: parameters
+   .. autoattribute:: preferred_init_points
+   .. autoattribute:: prefix
+   .. autoattribute:: qregs
+   .. autoattribute:: qubits
+   .. autoattribute:: reps
+   .. autoattribute:: rotation_blocks

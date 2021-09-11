@@ -1,19 +1,18 @@
-﻿qiskit.opflow.state\_fns.SparseVectorStateFn
-============================================
+﻿SparseVectorStateFn
+===================
 
 .. currentmodule:: qiskit.opflow.state_fns
 
 .. autoclass:: SparseVectorStateFn
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~SparseVectorStateFn.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~SparseVectorStateFn.add
       ~SparseVectorStateFn.adjoint
       ~SparseVectorStateFn.assign_parameters
@@ -38,22 +37,16 @@
       ~SparseVectorStateFn.to_matrix_op
       ~SparseVectorStateFn.to_spmatrix
       ~SparseVectorStateFn.traverse
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~SparseVectorStateFn.INDENTATION
-      ~SparseVectorStateFn.coeff
-      ~SparseVectorStateFn.instance_id
-      ~SparseVectorStateFn.is_measurement
-      ~SparseVectorStateFn.num_qubits
-      ~SparseVectorStateFn.parameters
-      ~SparseVectorStateFn.primitive
-      ~SparseVectorStateFn.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: coeff
+   .. autoattribute:: instance_id
+   .. autoattribute:: is_measurement
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings

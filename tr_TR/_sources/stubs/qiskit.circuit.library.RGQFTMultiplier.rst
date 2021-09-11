@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.RGQFTMultiplier
-======================================
+﻿RGQFTMultiplier
+===============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: RGQFTMultiplier
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~RGQFTMultiplier.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~RGQFTMultiplier.add_bits
       ~RGQFTMultiplier.add_calibration
       ~RGQFTMultiplier.add_register
@@ -158,32 +157,26 @@
       ~RGQFTMultiplier.x
       ~RGQFTMultiplier.y
       ~RGQFTMultiplier.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~RGQFTMultiplier.ancillas
-      ~RGQFTMultiplier.calibrations
-      ~RGQFTMultiplier.clbits
-      ~RGQFTMultiplier.data
-      ~RGQFTMultiplier.extension_lib
-      ~RGQFTMultiplier.global_phase
-      ~RGQFTMultiplier.header
-      ~RGQFTMultiplier.instances
-      ~RGQFTMultiplier.metadata
-      ~RGQFTMultiplier.num_ancillas
-      ~RGQFTMultiplier.num_clbits
-      ~RGQFTMultiplier.num_parameters
-      ~RGQFTMultiplier.num_qubits
-      ~RGQFTMultiplier.num_result_qubits
-      ~RGQFTMultiplier.num_state_qubits
-      ~RGQFTMultiplier.parameters
-      ~RGQFTMultiplier.prefix
-      ~RGQFTMultiplier.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_result_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

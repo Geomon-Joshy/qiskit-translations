@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.AND
-==========================
+﻿AND
+===
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: AND
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~AND.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~AND.add_bits
       ~AND.add_calibration
       ~AND.add_register
@@ -158,30 +157,24 @@
       ~AND.x
       ~AND.y
       ~AND.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~AND.ancillas
-      ~AND.calibrations
-      ~AND.clbits
-      ~AND.data
-      ~AND.extension_lib
-      ~AND.global_phase
-      ~AND.header
-      ~AND.instances
-      ~AND.metadata
-      ~AND.num_ancillas
-      ~AND.num_clbits
-      ~AND.num_parameters
-      ~AND.num_qubits
-      ~AND.parameters
-      ~AND.prefix
-      ~AND.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

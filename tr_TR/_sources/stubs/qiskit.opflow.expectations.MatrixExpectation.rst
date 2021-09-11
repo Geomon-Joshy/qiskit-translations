@@ -1,24 +1,19 @@
-﻿qiskit.opflow.expectations.MatrixExpectation
-============================================
+﻿MatrixExpectation
+=================
 
 .. currentmodule:: qiskit.opflow.expectations
 
 .. autoclass:: MatrixExpectation
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~MatrixExpectation.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~MatrixExpectation.compute_variance
       ~MatrixExpectation.convert
-   
-   
 
-   
-   
-   
+

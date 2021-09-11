@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.TdgGate
-==============================
+﻿TdgGate
+=======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: TdgGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~TdgGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~TdgGate.add_decomposition
       ~TdgGate.assemble
       ~TdgGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~TdgGate.soft_compare
       ~TdgGate.to_matrix
       ~TdgGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~TdgGate.decompositions
-      ~TdgGate.definition
-      ~TdgGate.duration
-      ~TdgGate.label
-      ~TdgGate.params
-      ~TdgGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit

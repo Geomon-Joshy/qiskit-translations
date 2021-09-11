@@ -1,19 +1,18 @@
-﻿qiskit.opflow.primitive\_ops.TaperedPauliSumOp
-==============================================
+﻿TaperedPauliSumOp
+=================
 
 .. currentmodule:: qiskit.opflow.primitive_ops
 
 .. autoclass:: TaperedPauliSumOp
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~TaperedPauliSumOp.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~TaperedPauliSumOp.add
       ~TaperedPauliSumOp.adjoint
       ~TaperedPauliSumOp.assign_parameters
@@ -42,24 +41,18 @@
       ~TaperedPauliSumOp.to_matrix_op
       ~TaperedPauliSumOp.to_pauli_op
       ~TaperedPauliSumOp.to_spmatrix
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~TaperedPauliSumOp.INDENTATION
-      ~TaperedPauliSumOp.coeff
-      ~TaperedPauliSumOp.coeffs
-      ~TaperedPauliSumOp.grouping_type
-      ~TaperedPauliSumOp.instance_id
-      ~TaperedPauliSumOp.num_qubits
-      ~TaperedPauliSumOp.parameters
-      ~TaperedPauliSumOp.primitive
-      ~TaperedPauliSumOp.settings
-      ~TaperedPauliSumOp.z2_symmetries
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: coeff
+   .. autoattribute:: coeffs
+   .. autoattribute:: grouping_type
+   .. autoattribute:: instance_id
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings
+   .. autoattribute:: z2_symmetries

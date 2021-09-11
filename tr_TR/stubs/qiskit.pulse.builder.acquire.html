@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.pulse.builder.acquire &mdash; Qiskit 0.29.0 belgelendirmesi</title>
+  <title>qiskit.pulse.builder.acquire &mdash; Qiskit 0.29.1 belgelendirmesi</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme-override.css" type="text/css" />
@@ -364,9 +363,9 @@ in a <code class="docutils literal notranslate"><span class="pre">register</span
 <dt class="field-odd">Parametreler</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>duration</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – Duration to acquire data for</p></li>
-<li><p><strong>qubit_or_channel</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="qiskit.pulse.channels.html#qiskit.pulse.channels.AcquireChannel" title="qiskit.pulse.channels.AcquireChannel"><code class="xref py py-class docutils literal notranslate"><span class="pre">AcquireChannel</span></code></a>]) – Either the qubit to acquire data for or the specific
-<a class="reference internal" href="qiskit.pulse.channels.html#qiskit.pulse.channels.AcquireChannel" title="qiskit.pulse.channels.AcquireChannel"><code class="xref py py-class docutils literal notranslate"><span class="pre">AcquireChannel</span></code></a> to acquire on.</p></li>
-<li><p><strong>register</strong> (<code class="xref py py-func docutils literal notranslate"><span class="pre">NewType()</span></code>(<code class="xref py py-data docutils literal notranslate"><span class="pre">StorageLocation</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="qiskit.pulse.channels.html#qiskit.pulse.channels.MemorySlot" title="qiskit.pulse.channels.MemorySlot"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemorySlot</span></code></a>, <a class="reference internal" href="qiskit.pulse.channels.html#qiskit.pulse.channels.RegisterSlot" title="qiskit.pulse.channels.RegisterSlot"><code class="xref py py-class docutils literal notranslate"><span class="pre">RegisterSlot</span></code></a>])) – Location to store measured result.</p></li>
+<li><p><strong>qubit_or_channel</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">AcquireChannel</span></code>]) – Either the qubit to acquire data for or the specific
+<code class="xref py py-class docutils literal notranslate"><span class="pre">AcquireChannel</span></code> to acquire on.</p></li>
+<li><p><strong>register</strong> (<code class="xref py py-func docutils literal notranslate"><span class="pre">NewType()</span></code>(<code class="xref py py-data docutils literal notranslate"><span class="pre">StorageLocation</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">MemorySlot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">RegisterSlot</span></code>])) – Location to store measured result.</p></li>
 <li><p><strong>metadata</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Kernel</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Discriminator</span></code>]) – Additional metadata for measurement. See
 <a class="reference internal" href="qiskit.pulse.instructions.Acquire.html#qiskit.pulse.instructions.Acquire" title="qiskit.pulse.instructions.Acquire"><code class="xref py py-class docutils literal notranslate"><span class="pre">Acquire</span></code></a> for more information.</p></li>
 </ul>

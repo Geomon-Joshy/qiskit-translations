@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.algorithms.phase_estimators.hamiltonian_phase_estimation_result &mdash; Qiskit 0.29.0 文档</title>
+  <title>qiskit.algorithms.phase_estimators.hamiltonian_phase_estimation_result &mdash; Qiskit 0.29.1 文档</title>
   
 
   
@@ -29,7 +29,6 @@
 
   <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../../../../_static/css/theme-override.css" type="text/css" />
@@ -354,7 +353,7 @@
 <span class="sd">    This class is meant to be instantiated via `HamiltonianPhaseEstimation.estimate`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="HamiltonianPhaseEstimationResult.__init__"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.HamiltonianPhaseEstimationResult.html#qiskit.algorithms.HamiltonianPhaseEstimationResult.__init__">[文档]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">phase_estimation_result</span><span class="p">:</span> <span class="n">PhaseEstimationResult</span><span class="p">,</span>
         <span class="n">phase_estimation_scale</span><span class="p">:</span> <span class="n">PhaseEstimationScale</span><span class="p">,</span>
@@ -372,10 +371,10 @@
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_phase_estimation_scale</span> <span class="o">=</span> <span class="n">phase_estimation_scale</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_id_coefficient</span> <span class="o">=</span> <span class="n">id_coefficient</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_phase_estimation_result</span> <span class="o">=</span> <span class="n">phase_estimation_result</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_phase_estimation_result</span> <span class="o">=</span> <span class="n">phase_estimation_result</span>
 
     <span class="c1"># pylint: disable=arguments-differ</span>
-<div class="viewcode-block" id="HamiltonianPhaseEstimationResult.filter_phases"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.HamiltonianPhaseEstimationResult.html#qiskit.algorithms.HamiltonianPhaseEstimationResult.filter_phases">[文档]</a>    <span class="k">def</span> <span class="nf">filter_phases</span><span class="p">(</span>
+<div class="viewcode-block" id="HamiltonianPhaseEstimationResult.filter_phases"><a class="viewcode-back" href="../../../../stubs/qiskit.algorithms.HamiltonianPhaseEstimationResult.filter_phases.html#qiskit.algorithms.HamiltonianPhaseEstimationResult.filter_phases">[文档]</a>    <span class="k">def</span> <span class="nf">filter_phases</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">cutoff</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">scaled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">as_float</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">float</span><span class="p">],</span> <span class="nb">float</span><span class="p">]:</span>
         <span class="sd">&quot;&quot;&quot;Filter phases as does `PhaseEstimatorResult.filter_phases`, with</span>

@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.OR
-=========================
+﻿OR
+==
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: OR
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~OR.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~OR.add_bits
       ~OR.add_calibration
       ~OR.add_register
@@ -158,30 +157,24 @@
       ~OR.x
       ~OR.y
       ~OR.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~OR.ancillas
-      ~OR.calibrations
-      ~OR.clbits
-      ~OR.data
-      ~OR.extension_lib
-      ~OR.global_phase
-      ~OR.header
-      ~OR.instances
-      ~OR.metadata
-      ~OR.num_ancillas
-      ~OR.num_clbits
-      ~OR.num_parameters
-      ~OR.num_qubits
-      ~OR.parameters
-      ~OR.prefix
-      ~OR.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

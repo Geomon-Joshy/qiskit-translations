@@ -1,23 +1,18 @@
-﻿qiskit.opflow.evolutions.MatrixEvolution
-========================================
+﻿MatrixEvolution
+===============
 
 .. currentmodule:: qiskit.opflow.evolutions
 
 .. autoclass:: MatrixEvolution
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~MatrixEvolution.__init__
-      ~MatrixEvolution.convert
-   
-   
+      :nosignatures:
+      :toctree: ../stubs/
 
-   
-   
-   
+      ~MatrixEvolution.convert
+
+

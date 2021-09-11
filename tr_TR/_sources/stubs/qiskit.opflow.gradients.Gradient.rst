@@ -1,32 +1,25 @@
-﻿qiskit.opflow.gradients.Gradient
-================================
+﻿Gradient
+========
 
 .. currentmodule:: qiskit.opflow.gradients
 
 .. autoclass:: Gradient
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~Gradient.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~Gradient.convert
       ~Gradient.get_gradient
       ~Gradient.gradient_wrapper
       ~Gradient.parameter_expression_grad
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~Gradient.grad_method
-   
-   
+   .. autoattribute:: grad_method

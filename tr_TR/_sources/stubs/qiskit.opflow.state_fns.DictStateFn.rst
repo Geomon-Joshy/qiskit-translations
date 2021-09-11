@@ -1,19 +1,18 @@
-﻿qiskit.opflow.state\_fns.DictStateFn
-====================================
+﻿DictStateFn
+===========
 
 .. currentmodule:: qiskit.opflow.state_fns
 
 .. autoclass:: DictStateFn
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~DictStateFn.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~DictStateFn.add
       ~DictStateFn.adjoint
       ~DictStateFn.assign_parameters
@@ -38,22 +37,16 @@
       ~DictStateFn.to_spmatrix
       ~DictStateFn.to_spmatrix_op
       ~DictStateFn.traverse
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~DictStateFn.INDENTATION
-      ~DictStateFn.coeff
-      ~DictStateFn.instance_id
-      ~DictStateFn.is_measurement
-      ~DictStateFn.num_qubits
-      ~DictStateFn.parameters
-      ~DictStateFn.primitive
-      ~DictStateFn.settings
-   
-   
+   .. autoattribute:: INDENTATION
+   .. autoattribute:: coeff
+   .. autoattribute:: instance_id
+   .. autoattribute:: is_measurement
+   .. autoattribute:: num_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: primitive
+   .. autoattribute:: settings

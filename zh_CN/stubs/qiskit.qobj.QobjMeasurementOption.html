@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>qiskit.qobj.QobjMeasurementOption &mdash; Qiskit 0.29.0 文档</title>
+  <title>QobjMeasurementOption &mdash; Qiskit 0.29.1 文档</title>
   
 
   
@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!-- <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> -->
-  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../_static/jupyter-sphinx.css" type="text/css" />
   <link rel="stylesheet" href="../_static/thebelab.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme-override.css" type="text/css" />
@@ -41,8 +40,8 @@
   <link rel="stylesheet" href="../_static/panels-variables.ade9f9d55df9d2893fc676ecd59723a1.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="qiskit.qobj.PulseLibraryItem" href="qiskit.qobj.PulseLibraryItem.html" />
-    <link rel="prev" title="qiskit.qobj.PulseQobjConfig" href="qiskit.qobj.PulseQobjConfig.html" /> 
+    <link rel="next" title="qiskit.qobj.QobjMeasurementOption.from_dict" href="qiskit.qobj.QobjMeasurementOption.from_dict.html" />
+    <link rel="prev" title="qiskit.qobj.PulseQobjConfig.to_dict" href="qiskit.qobj.PulseQobjConfig.to_dict.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -298,7 +297,7 @@
         
           <li><a href="../apidoc/qobj.html">Qobj (<code class="xref py py-mod docutils literal notranslate"><span class="pre">qiskit.qobj</span></code>)</a> &gt;</li>
         
-      <li>qiskit.qobj.QobjMeasurementOption</li>
+      <li>QobjMeasurementOption</li>
     
     
       <li class="pytorch-breadcrumbs-aside">
@@ -328,12 +327,13 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
-  <section id="qiskit-qobj-qobjmeasurementoption">
-<h1>qiskit.qobj.QobjMeasurementOption<a class="headerlink" href="#qiskit-qobj-qobjmeasurementoption" title="永久链接至标题">¶</a></h1>
+  <section id="qobjmeasurementoption">
+<h1>QobjMeasurementOption<a class="headerlink" href="#qobjmeasurementoption" title="永久链接至标题">¶</a></h1>
 <dl class="py class">
 <dt id="qiskit.qobj.QobjMeasurementOption">
 <em class="property">class </em><code class="sig-name descname">QobjMeasurementOption</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">params</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/qobj/pulse_qobj.html#QobjMeasurementOption"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#qiskit.qobj.QobjMeasurementOption" title="永久链接至目标">¶</a></dt>
-<dd><p>An individual measurement option.</p>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An individual measurement option.</p>
 <p>Instantiate a new QobjMeasurementOption object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">参数</dt>
@@ -343,20 +343,6 @@
 </ul>
 </dd>
 </dl>
-<dl class="py method">
-<dt id="qiskit.qobj.QobjMeasurementOption.__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">params</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/qobj/pulse_qobj.html#QobjMeasurementOption.__init__"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#qiskit.qobj.QobjMeasurementOption.__init__" title="永久链接至目标">¶</a></dt>
-<dd><p>Instantiate a new QobjMeasurementOption object.</p>
-<dl class="field-list simple">
-<dt class="field-odd">参数</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> (<em>str</em>) – The name of the measurement option</p></li>
-<li><p><strong>params</strong> (<em>list</em>) – The parameters of the measurement option.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
 <p class="rubric">Methods</p>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -364,48 +350,14 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#qiskit.qobj.QobjMeasurementOption.__init__" title="qiskit.qobj.QobjMeasurementOption.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name[, params])</p></td>
-<td><p>Instantiate a new QobjMeasurementOption object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#qiskit.qobj.QobjMeasurementOption.from_dict" title="qiskit.qobj.QobjMeasurementOption.from_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_dict</span></code></a>(data)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="qiskit.qobj.QobjMeasurementOption.from_dict.html#qiskit.qobj.QobjMeasurementOption.from_dict" title="qiskit.qobj.QobjMeasurementOption.from_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_dict</span></code></a></p></td>
 <td><p>Create a new QobjMeasurementOption object from a dictionary.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#qiskit.qobj.QobjMeasurementOption.to_dict" title="qiskit.qobj.QobjMeasurementOption.to_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_dict</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="qiskit.qobj.QobjMeasurementOption.to_dict.html#qiskit.qobj.QobjMeasurementOption.to_dict" title="qiskit.qobj.QobjMeasurementOption.to_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_dict</span></code></a></p></td>
 <td><p>Return a dict format representation of the QobjMeasurementOption.</p></td>
 </tr>
 </tbody>
 </table>
-<dl class="py method">
-<dt id="qiskit.qobj.QobjMeasurementOption.from_dict">
-<em class="property">classmethod </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/qobj/pulse_qobj.html#QobjMeasurementOption.from_dict"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#qiskit.qobj.QobjMeasurementOption.from_dict" title="永久链接至目标">¶</a></dt>
-<dd><p>Create a new QobjMeasurementOption object from a dictionary.</p>
-<dl class="field-list simple">
-<dt class="field-odd">参数</dt>
-<dd class="field-odd"><p><strong>data</strong> (<em>dict</em>) – A dictionary for the experiment config</p>
-</dd>
-<dt class="field-even">返回</dt>
-<dd class="field-even"><p>The object from the input dictionary.</p>
-</dd>
-<dt class="field-odd">返回类型</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#qiskit.qobj.QobjMeasurementOption" title="qiskit.qobj.QobjMeasurementOption">QobjMeasurementOption</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt id="qiskit.qobj.QobjMeasurementOption.to_dict">
-<code class="sig-name descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/qobj/pulse_qobj.html#QobjMeasurementOption.to_dict"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#qiskit.qobj.QobjMeasurementOption.to_dict" title="永久链接至目标">¶</a></dt>
-<dd><p>Return a dict format representation of the QobjMeasurementOption.</p>
-<dl class="field-list simple">
-<dt class="field-odd">返回</dt>
-<dd class="field-odd"><p>The dictionary form of the QasmMeasurementOption.</p>
-</dd>
-<dt class="field-even">返回类型</dt>
-<dd class="field-even"><p>dict</p>
-</dd>
-</dl>
-</dd></dl>
-
 </dd></dl>
 
 </section>
@@ -418,10 +370,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="qiskit.qobj.PulseLibraryItem.html" class="btn btn-neutral float-right" title="qiskit.qobj.PulseLibraryItem" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
+        <a href="qiskit.qobj.QobjMeasurementOption.from_dict.html" class="btn btn-neutral float-right" title="qiskit.qobj.QobjMeasurementOption.from_dict" accesskey="n" rel="next">Next <img src="../_static/images/chevron-right-orange.svg" class="next-page"></a>
       
       
-        <a href="qiskit.qobj.PulseQobjConfig.html" class="btn btn-neutral" title="qiskit.qobj.PulseQobjConfig" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+        <a href="qiskit.qobj.PulseQobjConfig.to_dict.html" class="btn btn-neutral" title="qiskit.qobj.PulseQobjConfig.to_dict" accesskey="p" rel="prev"><img src="../_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
       
     </div>
   
@@ -454,7 +406,7 @@
           <div class="pytorch-right-menu" id="pytorch-right-menu">
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">qiskit.qobj.QobjMeasurementOption</a></li>
+<li><a class="reference internal" href="#">QobjMeasurementOption</a></li>
 </ul>
 
             </div>

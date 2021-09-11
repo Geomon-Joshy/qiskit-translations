@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.DraperQFTAdder
-=====================================
+﻿DraperQFTAdder
+==============
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: DraperQFTAdder
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~DraperQFTAdder.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~DraperQFTAdder.add_bits
       ~DraperQFTAdder.add_calibration
       ~DraperQFTAdder.add_register
@@ -158,31 +157,25 @@
       ~DraperQFTAdder.x
       ~DraperQFTAdder.y
       ~DraperQFTAdder.z
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~DraperQFTAdder.ancillas
-      ~DraperQFTAdder.calibrations
-      ~DraperQFTAdder.clbits
-      ~DraperQFTAdder.data
-      ~DraperQFTAdder.extension_lib
-      ~DraperQFTAdder.global_phase
-      ~DraperQFTAdder.header
-      ~DraperQFTAdder.instances
-      ~DraperQFTAdder.metadata
-      ~DraperQFTAdder.num_ancillas
-      ~DraperQFTAdder.num_clbits
-      ~DraperQFTAdder.num_parameters
-      ~DraperQFTAdder.num_qubits
-      ~DraperQFTAdder.num_state_qubits
-      ~DraperQFTAdder.parameters
-      ~DraperQFTAdder.prefix
-      ~DraperQFTAdder.qubits
-   
-   
+   .. autoattribute:: ancillas
+   .. autoattribute:: calibrations
+   .. autoattribute:: clbits
+   .. autoattribute:: data
+   .. autoattribute:: extension_lib
+   .. autoattribute:: global_phase
+   .. autoattribute:: header
+   .. autoattribute:: instances
+   .. autoattribute:: metadata
+   .. autoattribute:: num_ancillas
+   .. autoattribute:: num_clbits
+   .. autoattribute:: num_parameters
+   .. autoattribute:: num_qubits
+   .. autoattribute:: num_state_qubits
+   .. autoattribute:: parameters
+   .. autoattribute:: prefix
+   .. autoattribute:: qubits

@@ -1,19 +1,18 @@
-﻿qiskit.circuit.library.MSGate
-=============================
+﻿MSGate
+======
 
 .. currentmodule:: qiskit.circuit.library
 
 .. autoclass:: MSGate
+   :no-members:
+   :show-inheritance:
 
-   
-   .. automethod:: __init__
-
-   
    .. rubric:: Methods
 
    .. autosummary::
-   
-      ~MSGate.__init__
+      :nosignatures:
+      :toctree: ../stubs/
+
       ~MSGate.add_decomposition
       ~MSGate.assemble
       ~MSGate.broadcast_arguments
@@ -30,20 +29,14 @@
       ~MSGate.soft_compare
       ~MSGate.to_matrix
       ~MSGate.validate_parameter
-   
-   
 
-   
-   
+
+
    .. rubric:: Attributes
 
-   .. autosummary::
-   
-      ~MSGate.decompositions
-      ~MSGate.definition
-      ~MSGate.duration
-      ~MSGate.label
-      ~MSGate.params
-      ~MSGate.unit
-   
-   
+   .. autoattribute:: decompositions
+   .. autoattribute:: definition
+   .. autoattribute:: duration
+   .. autoattribute:: label
+   .. autoattribute:: params
+   .. autoattribute:: unit
