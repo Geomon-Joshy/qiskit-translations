@@ -637,7 +637,7 @@ div.rendered_html tbody tr:hover {
 <td><p>an n-qubit coherent unitary error given as a single unitary matrix <span class="math notranslate nohighlight">\(U\)</span>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pauli_error</span></code></p></td>
-<td><p>an n-qubit Pauli error channel (mixed unitary) given as a list of Pauli’s and probabilities <span class="math notranslate nohighlight">\([(P_0, p_0),...]\)</span></p></td>
+<td><p>n 量子位元的泡利誤差通道 (混和么正)，以一個泡利矩陣和機率 <span class="math notranslate nohighlight">\([(P_0, p_0),...]\)</span> 的清單呈現。</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">depolarizing_error</span></code></p></td>
 <td><p>an n-qubit depolarizing error channel parameterized by a depolarization probability <span class="math notranslate nohighlight">\(p\)</span>.</p></td>
@@ -649,7 +649,7 @@ div.rendered_html tbody tr:hover {
 <td><p>一個被弛緩時間常數 <span class="math notranslate nohighlight">\(T_1\)</span>、 <span class="math notranslate nohighlight">\(T_2\)</span> 、閘時間 <span class="math notranslate nohighlight">\(t\)</span>，以及激發態熱分佈數量 :math:<a href="#id1"><span class="problematic" id="id2">`</span></a>p_1 參數化的單量子位元的熱弛緩通道。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">phase_amplitude_damping_error</span></code></p></td>
-<td><p>A single-qubit generalized combined phase and amplitude damping error channel given by an amplitude damping parameter <span class="math notranslate nohighlight">\(\lambda\)</span>, a phase damping parameter <span class="math notranslate nohighlight">\(\gamma\)</span>, and an excited state thermal population <span class="math notranslate nohighlight">\(p_1\)</span>.</p></td>
+<td><p>一個以振幅阻尼參數 <span class="math notranslate nohighlight">\(\lambda\)</span>、相位阻尼參數 <span class="math notranslate nohighlight">\(\gamma\)</span>，和激發態熱分佈數量 <span class="math notranslate nohighlight">\(p_1\)</span> 表示的單量子位元廣義化的組合相位和振幅阻尼誤差通道。</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">amplitude_damping_error</span></code></p></td>
 <td><p>一個由振幅阻尼參數 <span class="math notranslate nohighlight">\(\lambda\)</span> 和激發態熱分佈數量 <span class="math notranslate nohighlight">\(p_1\)</span> 表示的單量子位元廣義化的振幅阻尼誤差通道。</p></td>
@@ -661,11 +661,11 @@ div.rendered_html tbody tr:hover {
 </table>
 <section id="結合量子誤差">
 <h3>結合量子誤差<a class="headerlink" href="#結合量子誤差" title="本標題的永久連結">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">QuantumError</span></code> instances can be combined by using composition, tensor product, and tensor expansion (reversed order tensor product) to produce new <code class="docutils literal notranslate"><span class="pre">QuantumErrors</span></code> as:</p>
+<p><code class="docutils literal notranslate"><span class="pre">QuantumError</span></code> 實例可使用組合、張量積和張量展開（反序張量積）組合產生新的 <code class="docutils literal notranslate"><span class="pre">QuantumErrors</span></code> ，如下所示：</p>
 <ul class="simple">
 <li><p>Composition: <span class="math notranslate nohighlight">\(\cal{E}(\rho)=\cal{E_2}(\cal{E_1}(\rho))\)</span> as <code class="docutils literal notranslate"><span class="pre">error</span> <span class="pre">=</span> <span class="pre">error1.compose(error2)</span></code></p></li>
-<li><p>Tensor product: <span class="math notranslate nohighlight">\(\cal{E}(\rho) =(\cal{E_1}\otimes\cal{E_2})(\rho)\)</span> as <code class="docutils literal notranslate"><span class="pre">error</span> <span class="pre">error1.tensor(error2)</span></code></p></li>
-<li><p>Expand product: <span class="math notranslate nohighlight">\(\cal{E}(\rho) =(\cal{E_2}\otimes\cal{E_1})(\rho)\)</span> as <code class="docutils literal notranslate"><span class="pre">error</span> <span class="pre">error1.expand(error2)</span></code></p></li>
+<li><p>張量積： <span class="math notranslate nohighlight">\(\cal{E}(\rho) =(\cal{E_1}\otimes\cal{E_2})(\rho)\)</span>，程式碼為 <code class="docutils literal notranslate"><span class="pre">error</span> <span class="pre">error1.tensor(error2)</span></code></p></li>
+<li><p>展開乘積： <span class="math notranslate nohighlight">\(\cal{E}(\rho) =(\cal{E_2}\otimes\cal{E_1})(\rho)\)</span> ，程式碼為 <code class="docutils literal notranslate"><span class="pre">error</span> <span class="pre">error1.expand(error2)</span></code></p></li>
 </ul>
 </section>
 <section id="範例">
@@ -831,10 +831,10 @@ True
 </section>
 <section id="讀取誤差">
 <h3>讀取誤差<a class="headerlink" href="#讀取誤差" title="本標題的永久連結">¶</a></h3>
-<p>Classical readout errors are specified by a list of assignment probabilities vectors <span class="math notranslate nohighlight">\(P(A|B)\)</span>:</p>
+<p>古典讀取誤差由一個指派機率向量 <span class="math notranslate nohighlight">\(P(A|B)\)</span> 的清單給出：</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(A\)</span> is the <em>recorded</em> classical bit value</p></li>
-<li><p><span class="math notranslate nohighlight">\(B\)</span> is the <em>true</em> bit value returned from the measurement</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span> 是其 <em>被記錄的</em> 古典位元值</p></li>
+<li><p><span class="math notranslate nohighlight">\(B\)</span> 是測量傳回的 <em>真實的</em> 位元值</p></li>
 </ul>
 <p>例如，對於 1 量子位元: $ P(A|B) = [P(A|0), P(A|1)]$。</p>
 <div class="nbinput docutils container">
@@ -860,7 +860,7 @@ ReadoutError([[0.95 0.05]
  [0.1  0.9 ]])
 </pre></div></div>
 </div>
-<p>Readout errors may also be combined using <code class="docutils literal notranslate"><span class="pre">compose</span></code>, <code class="docutils literal notranslate"><span class="pre">tensor</span></code> and <code class="docutils literal notranslate"><span class="pre">expand</span></code> like with quantum errors.</p>
+<p>如同處理量子誤差一樣，通過使用 <code class="docutils literal notranslate"><span class="pre">compose</span></code>、<code class="docutils literal notranslate"><span class="pre">tensor</span></code>，以及 <code class="docutils literal notranslate"><span class="pre">expand</span></code>，我們也可以組合讀取誤差。</p>
 </section>
 </section>
 <section id="新增誤差至雜訊模型">
@@ -869,7 +869,7 @@ ReadoutError([[0.95 0.05]
 <ol class="arabic simple">
 <li><p>全量子位元的量子誤差</p></li>
 <li><p>特定量子位元的量子誤差</p></li>
-<li><p>Non-local quantum error</p></li>
+<li><p>非侷域性量子誤差</p></li>
 </ol>
 <section id="全量子位元的量子誤差">
 <h3>全量子位元的量子誤差<a class="headerlink" href="#全量子位元的量子誤差" title="本標題的永久連結">¶</a></h3>
@@ -906,7 +906,7 @@ NoiseModel:
 </section>
 <section id="特定量子位元的量子誤差">
 <h3>特定量子位元的量子誤差<a class="headerlink" href="#特定量子位元的量子誤差" title="本標題的永久連結">¶</a></h3>
-<p>This applies the error to any occurrence of an instruction acting on a specified list of qubits. Note that the order of the qubit matters: For a 2-qubit gate an error applied to qubits [0, 1] is different to one applied to qubits [1, 0] for example.</p>
+<p>這會將誤差套用至每個在指定的量子位元清單上執行的指令發生的當下。 請注意， 量子位元的排序很重要：對於一個二量子位元閘 ，套用至量子位元 [0, 1] 的誤差，與套用至量子位元 [1, 0] 的誤差不同。</p>
 <p>可用 <a href="#id1"><span class="problematic" id="id2">``</span></a>noise_model.add_quantum_error(error, instructions, qubits)``將它加入程式:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
@@ -1042,7 +1042,7 @@ meas: 4/════════════════════════
 </section>
 <section id="雜訊範例-1：基本位元翻轉誤差雜訊模型">
 <h2>雜訊範例 1：基本位元翻轉誤差雜訊模型<a class="headerlink" href="#雜訊範例-1：基本位元翻轉誤差雜訊模型" title="本標題的永久連結">¶</a></h2>
-<p>Lets consider a simple toy noise model example common in quantum information theory research:</p>
+<p>讓我們考慮一個在量子信息理論研究中常見的簡單玩具雜訊模型示例：</p>
 <ul class="simple">
 <li><p>When applying a single qubit gate, flip the state of the qubit with probability <code class="docutils literal notranslate"><span class="pre">p_gate1</span></code>.</p></li>
 <li><p>當套用二量子位元閘時，將單一量子位元誤差套用至每一個量子位元。</p></li>
@@ -1268,7 +1268,7 @@ NoiseModel:
   <div role="contentinfo">
     <p>
         &copy; Copyright 2021, Qiskit Development Team.
-      最後更新於 2021/09/10。
+      最後更新於 2021/09/11。
 
     </p>
   </div>
