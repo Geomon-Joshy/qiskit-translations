@@ -594,10 +594,10 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Conditioned-gates:-the-c_if-method">
-<h1>Conditioned gates: the c_if method<a class="headerlink" href="#Conditioned-gates:-the-c_if-method" title="Link permanente para este título">¶</a></h1>
+<section id="Portões-condicionados:-o-método-c_if">
+<h1>Portões condicionados: o método c_if<a class="headerlink" href="#Portões-condicionados:-o-método-c_if" title="Link permanente para este título">¶</a></h1>
 <p>Antes de iniciar o algoritmo do IPE, daremos um breve tutorial sobre o método condicional Qiskit, c_if, conforme ele vai para a construção do circuito IPE.</p>
-<p><code class="docutils literal notranslate"><span class="pre">c_if</span></code> is a function (actually a method of the gate class) to perform conditioned operations based on the value stored previously in a classical register. With this feature you can apply gates after a measurement in the same circuit conditioned by the measurement outcome.</p>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a>c_if``é uma função (na verdade um método da classe Portão) para realizar operações condicionadas baseadas no valor anteriormente armazenado em um registrador clássico. Com esta funcionalidade você pode aplicar portões após uma medição no mesmo circuito, condicionado pelo resultado da medição.</p>
 <p>Por exemplo, o código a seguir executará a porta :math:` X ` se o valor do registro clássico for de :math:` 0 <a href="#id1"><span class="problematic" id="id2">`</span></a>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
@@ -652,7 +652,7 @@ div.rendered_html tbody tr:hover {
 <p>Queremos aplicar a porta :math:»X», apenas se ambos os resultados da medição de :math:` q_1 ` e de :math:` q_2 ` forem :math:` 1 <cite>. Podemos fazer isso usando o método c_if, condicionando a aplicação de :math:</cite> X ` dependendo do valor passado como argumento para c_if.</p>
 <p>Teremos que codificar o valor para passar para o método c_if tal que ele verificará os valores 011 e 111 (em representação binária), uma vez que não importa o que está na posição mais à direita.</p>
 <p>Os 2 valores inteiros em representação decimal:</p>
-<p><img alt="56dcb9094ef4429ea38603d1afde6bef" class="no-scaled-link" src="tutorials/algorithms/../../images/binary.png" style="width: 50%;" /></p>
+<p><img alt="36993a48cd5941d4852a39b823a55137" class="no-scaled-link" src="tutorials/algorithms/../../images/binary.png" style="width: 50%;" /></p>
 <p>Nós podemos verificar as soluções usando o método bin() em python (o prefixo ` ` 0b ` ` indica o formato binário).</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
@@ -722,7 +722,7 @@ div.rendered_html tbody tr:hover {
 <div class="math notranslate nohighlight">
 \[S|1\rangle = e^\frac{i\pi}{2}|1\rangle\]</div>
 <p>No seguinte, utilizaremos a notação e os termos utilizados em <cite>Seção 2 do laboratório 4 &lt;https://qiskit.org/textbook/ch-labs/Lab04_IterativePhaseEstimation.html#2-iterative-phase-estimation-ipe-algorithm&gt;</cite> __.</p>
-<p>Let’s consider to estimate the phase <span class="math notranslate nohighlight">\(\phi=\frac{\pi}{2}\)</span> for the eigenstate <span class="math notranslate nohighlight">\(|1\rangle\)</span>, we should find <span class="math notranslate nohighlight">\(\varphi=\frac{1}{4}\)</span> (where <span class="math notranslate nohighlight">\(\phi = 2 \pi \varphi\)</span>). Therefore to estimate the phase we need exactly 2 phase bits, i.e. <span class="math notranslate nohighlight">\(m=2\)</span>, since <span class="math notranslate nohighlight">\(1/2^2=1/4\)</span>. So <span class="math notranslate nohighlight">\(\varphi=0.\varphi_1\varphi_2\)</span>.</p>
+<p>Vamos considerar estimar a fase <span class="math notranslate nohighlight">\(\phi=\frac{\pi}{2}\)</span> para o autoestado <span class="math notranslate nohighlight">\(|1\rangle\)</span>, nós devemos encontrar <span class="math notranslate nohighlight">\(\varphi=\frac{1}{4}\)</span> (where <span class="math notranslate nohighlight">\(\phi = 2 \pi \varphi\)</span>). Desta forma para estimar a fase precisamos de exatamente 2 bits de fase, ou seja, <span class="math notranslate nohighlight">\(m=2\)</span>, uma vez que <span class="math notranslate nohighlight">\(1/2^2=1/4\)</span>. Então <span class="math notranslate nohighlight">\(\varphi=0.\varphi_1\varphi_2\)</span>.</p>
 <p>Lembre-se da teoria de que para o algoritmo do IPE, :math:` m ` é também o número de iterações, portanto, precisamos de apenas :math:` 2 ` iterações ou etapas.</p>
 <p>Primeiro, inicializamos o circuito. O IPE trabalha com apenas 1 qubit auxiliar, em vez de :math:` m ` contagem de qubits do algoritmo QPE. Por isso, precisamos de 2 qubits, 1 qubit auxiliar e 1 para o autoestado de :math:` U <cite>-gate, e um registrador clássico de 2 bits, para os bits de fase :math:</cite> varphi_1 <cite>, :math:</cite> varphi_2 <a href="#id1"><span class="problematic" id="id2">`</span></a>.</p>
 <div class="nbinput nblast docutils container">
@@ -742,9 +742,9 @@ div.rendered_html tbody tr:hover {
 <section id="Primeiro-passo">
 <h3>Primeiro passo<a class="headerlink" href="#Primeiro-passo" title="Link permanente para este título">¶</a></h3>
 <p>Agora construímos o circuito quântico para a primeira etapa, ou seja, a primeira iteração do algoritmo, para estimar a fase menos significativa bit :math:` varphi_m <cite>, neste caso :math:</cite> varphi_2 <cite>. Para o primeiro passo temos 3 sub-etapas:-inicialização-aplicação das portas Controlled-:math:</cite> U <a href="#id1"><span class="problematic" id="id2">`</span></a>-medida do qubit auxiliar na base X</p>
-<section id="Initialization">
-<h4>Initialization<a class="headerlink" href="#Initialization" title="Link permanente para este título">¶</a></h4>
-<p>The initialization consists of application the Hadamard gate to the auxiliary qubit and the preparation of the eigenstate <span class="math notranslate nohighlight">\(|1\rangle\)</span>.</p>
+<section id="Inicialização">
+<h4>Inicialização<a class="headerlink" href="#Inicialização" title="Link permanente para este título">¶</a></h4>
+<p>A inicialização consiste na aplicação do portão Hadamard no qubit auxiliar e da preparação do autoestado <span class="math notranslate nohighlight">\(|1\rangle\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
@@ -765,10 +765,10 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Application-of-the-Controlled-U-gates">
-<h4>Application of the Controlled-<span class="math notranslate nohighlight">\(U\)</span> gates<a class="headerlink" href="#Application-of-the-Controlled-U-gates" title="Link permanente para este título">¶</a></h4>
+<section id="Aplicação-dos-portões-Controlled-U">
+<h4>Aplicação dos portões Controlled-<span class="math notranslate nohighlight">\(U\)</span><a class="headerlink" href="#Aplicação-dos-portões-Controlled-U" title="Link permanente para este título">¶</a></h4>
 <p>Então, temos que aplicar <span class="math notranslate nohighlight">\(2^t\)</span> vezes os operadores controlados -<span class="math notranslate nohighlight">\(U\)</span> (veja também nas documentações <a class="reference external" href="https://qiskit.org/documentation/tutorials/circuits/3_summary_of_quantum_operations.html#Two-qubit-gates">Duas portas qubit</a>), que, neste exemplo, é a porta controlada-<span class="math notranslate nohighlight">\(S\)</span> abreviado).</p>
-<p>To implement <span class="math notranslate nohighlight">\(CS\)</span> in the circuit, since <span class="math notranslate nohighlight">\(S\)</span> is a phase gate, we can use the controlled phase gate <span class="math notranslate nohighlight">\(\text{CP}(\theta)\)</span>, with <span class="math notranslate nohighlight">\(\theta=\pi/2\)</span>.</p>
+<p>Para implementar <span class="math notranslate nohighlight">\(CS\)</span>, uma vez que <span class="math notranslate nohighlight">\(S\)</span> é um portão de fase, podemos usar o portão de fase controlada <span class="math notranslate nohighlight">\(\text{CP}(\theta)\)</span>, com <span class="math notranslate nohighlight">\(\theta=\pi/2\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
@@ -788,7 +788,7 @@ div.rendered_html tbody tr:hover {
 <img alt="../../_images/tutorials_algorithms_09_IQPE_18_0.png" src="../../_images/tutorials_algorithms_09_IQPE_18_0.png" />
 </div>
 </div>
-<p>Let’s apply <span class="math notranslate nohighlight">\(2^t\)</span> times <span class="math notranslate nohighlight">\(\text{CP}(\pi/2)\)</span>. Since for the first step <span class="math notranslate nohighlight">\(t=m-1\)</span>, and <span class="math notranslate nohighlight">\(m=2\)</span>, we have <span class="math notranslate nohighlight">\(2^t=2\)</span>.</p>
+<p>Vamos aplicar <span class="math notranslate nohighlight">\(2^t\)</span> vezes <span class="math notranslate nohighlight">\(\text{CP}(\pi/2)\)</span>. Dado que para o primeiro passo <span class="math notranslate nohighlight">\(t=m-1\)</span>, e <span class="math notranslate nohighlight">\(m=2\)</span>, temos que <span class="math notranslate nohighlight">\(2^t=2\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
@@ -809,9 +809,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Measure-in-x-basis">
-<h4>Measure in x-basis<a class="headerlink" href="#Measure-in-x-basis" title="Link permanente para este título">¶</a></h4>
-<p>Finally, we perform the measurement of the auxiliary qubit in x-basis. So we will define a function to perform the x_measure and then apply it.</p>
+<section id="Medida-na-base-x">
+<h4>Medida na base-x<a class="headerlink" href="#Medida-na-base-x" title="Link permanente para este título">¶</a></h4>
+<p>Finalmente, procedemos com a medição do qubit auxiliar na base-x. Então definiremos uma função para realizar a medida_x e então aplicá-la.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
@@ -824,7 +824,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>In this way we obtain the phase bit <span class="math notranslate nohighlight">\(\varphi_2\)</span> and store it in the classical bit <span class="math notranslate nohighlight">\(c_0\)</span>.</p>
+<p>Desta forma obtemos o bit de fase <span class="math notranslate nohighlight">\(\varphi_2\)</span> e armazená-lo na bit clássico <span class="math notranslate nohighlight">\(c_0\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
@@ -845,12 +845,12 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 </section>
-<section id="Subsequent-steps-(2nd-step)">
-<h3>Subsequent steps (2nd step)<a class="headerlink" href="#Subsequent-steps-(2nd-step)" title="Link permanente para este título">¶</a></h3>
-<p>Now we build the quantum circuit for the other remaining steps, in this example, only the second one. In these steps we have 4 sub-steps: the 3 sub-steps as in the first step and, in the middle, the additional step of the phase correction - initialization with reset - phase correction - application of the Control-<span class="math notranslate nohighlight">\(U\)</span> gates - measure of the auxiliary qubit in x-basis</p>
-<section id="Initialization-with-reset">
-<h4>Initialization with reset<a class="headerlink" href="#Initialization-with-reset" title="Link permanente para este título">¶</a></h4>
-<p>As we want to perform an iterative algorithm in the same circuit, we need to reset the auxiliary qubit <span class="math notranslate nohighlight">\(q0\)</span> after the measument gate and initialize it again as before to recycle the qubit.</p>
+<section id="Passos-subsequentes-(segundo-passo)">
+<h3>Passos subsequentes (segundo passo)<a class="headerlink" href="#Passos-subsequentes-(segundo-passo)" title="Link permanente para este título">¶</a></h3>
+<p>Agora construímos o circuito quântico para os outros passos remanescentes, neste exemplo, apenas o segundo passo. Nestes passos temos 4 sub-passos: os 3 sub-passos assim como no primeiro passo e, no meio, o passo adicional da correção de fase - inicialização com reset - correção de fase - aplicação dos portões Control-<span class="math notranslate nohighlight">\(U\)</span> - medida do qubit auxiliar na base-x</p>
+<section id="Inicialização-com-reset">
+<h4>Inicialização com reset<a class="headerlink" href="#Inicialização-com-reset" title="Link permanente para este título">¶</a></h4>
+<p>Como queremos realizar um algoritmo iterativo no mesmo circuito, precisamos reiniciar o qubit auxiliar :math: <cite>q0</cite> após o portão de medição e inicializá-lo novamente como antes para reciclar o qubit.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
@@ -871,10 +871,10 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Phase-correction-(for-step-2)">
-<h4>Phase correction (for step 2)<a class="headerlink" href="#Phase-correction-(for-step-2)" title="Link permanente para este título">¶</a></h4>
-<p>As seen in the theory, in order to extract the phase bit <span class="math notranslate nohighlight">\(\varphi_{1}\)</span>, we perform a phase correction of <span class="math notranslate nohighlight">\(-\pi\varphi_2/2\)</span>. Of course, we need to apply the phase correction in the circuit only if the phase bit <span class="math notranslate nohighlight">\(\varphi_2=1\)</span>, i.e. we have to apply the phase correction of <span class="math notranslate nohighlight">\(-\pi/2\)</span> only if the classical bit <span class="math notranslate nohighlight">\(c_0\)</span> is 1.</p>
-<p>So, after the reset we apply the phase gate <span class="math notranslate nohighlight">\(P(\theta)\)</span> with phase <span class="math notranslate nohighlight">\(\theta=-\pi/2\)</span> conditioned by the classical bit <span class="math notranslate nohighlight">\(c_0\)</span> (<span class="math notranslate nohighlight">\(=\varphi_2\)</span>) using the <code class="docutils literal notranslate"><span class="pre">c_if</span></code> method. So as we saw in the first part of this tutorial, we have to use the <code class="docutils literal notranslate"><span class="pre">c_if</span></code> method with a value of 1, as <span class="math notranslate nohighlight">\(1_{10} = 001_{2}\)</span> (the subscripts <span class="math notranslate nohighlight">\(_{10}\)</span> and <span class="math notranslate nohighlight">\(_2\)</span> indicate the decimal and binary representations).</p>
+<section id="Correção-de-fase-(para-o-passo-2)">
+<h4>Correção de fase (para o passo 2)<a class="headerlink" href="#Correção-de-fase-(para-o-passo-2)" title="Link permanente para este título">¶</a></h4>
+<p>Claro, precisamos aplicar a correção de fase no circuito apenas se o bit de fase <span class="math notranslate nohighlight">\(\ varphi_{1}\)</span>, ou seja, temos que aplicar a correção de fase de <span class="math notranslate nohighlight">\(-\pi\varphi_2/2\)</span>. apenas se o bit clássico <span class="math notranslate nohighlight">\(c_0\)</span> é 1.</p>
+<p>Então, após o reset aplicamos o portão de fase <span class="math notranslate nohighlight">\(P(\theta)\)</span> com fase <span class="math notranslate nohighlight">\(\theta=-\pi/2\)</span> condicionada pelo bit clássico <span class="math notranslate nohighlight">\(c_0\)</span> (<span class="math notranslate nohighlight">\(=\varphi_2\)</span>) usando o método <code class="docutils literal notranslate"><span class="pre">c_if</span></code>. Então, como vimos na primeira parte deste tutorial, temos que usar o método <code class="docutils literal notranslate"><span class="pre">c_if</span></code> com um valor de 1, como em <span class="math notranslate nohighlight">\(1_{10} = 001_{2}\)</span> (os subscritos <span class="math notranslate nohighlight">\(_{10}\)</span> e <span class="math notranslate nohighlight">\(_2\)</span> indicam representações decimais e binárias).</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
@@ -894,9 +894,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Application-of-the-Control-U-gates-and-x-measurement-(for-step-2)">
-<h4>Application of the Control-<span class="math notranslate nohighlight">\(U\)</span> gates and x-measurement (for step 2)<a class="headerlink" href="#Application-of-the-Control-U-gates-and-x-measurement-(for-step-2)" title="Link permanente para este título">¶</a></h4>
-<p>We apply the <span class="math notranslate nohighlight">\(CU\)</span> operations as we did in the first step. For the second step we have <span class="math notranslate nohighlight">\(t=m-2\)</span>, hence <span class="math notranslate nohighlight">\(2^t=1\)</span>. So we apply <span class="math notranslate nohighlight">\(\text{CP}(\pi/2)\)</span> once. And then we perform the x-measurment of the qubit <span class="math notranslate nohighlight">\(q_0\)</span>, storing the result, the phase bit <span class="math notranslate nohighlight">\(\varphi_1\)</span>, in the bit <span class="math notranslate nohighlight">\(c_1\)</span> of classical register.</p>
+<section id="Aplicação-dos-portões-Control-U-e-x-medições-(para-o-passo-2)">
+<h4>Aplicação dos portões Control-<span class="math notranslate nohighlight">\(U\)</span> e x-medições (para o passo 2)<a class="headerlink" href="#Aplicação-dos-portões-Control-U-e-x-medições-(para-o-passo-2)" title="Link permanente para este título">¶</a></h4>
+<p>Aplicamos as operações <span class="math notranslate nohighlight">\(CU\)</span> assim como fizemos no primeiro passo. Para o segundo passo temos <span class="math notranslate nohighlight">\(t=m-2\)</span>, daí <span class="math notranslate nohighlight">\(2^t=1\)</span>. Então aplicamos <span class="math notranslate nohighlight">\(\text{CP}(\pi/2)\)</span> uma vez. E então realizamos a x-medição do qubit <span class="math notranslate nohighlight">\(q_0\)</span>, armazenando o resultado, o bit de phase <span class="math notranslate nohighlight">\(\varphi_1\)</span>, no bit <span class="math notranslate nohighlight">\(c_1\)</span> do registrador clássico.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
@@ -910,7 +910,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Et voilà, we have our final circuit</p>
+<p>Et voilà, temos nosso circuito final</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
@@ -928,7 +928,7 @@ div.rendered_html tbody tr:hover {
 <img alt="../../_images/tutorials_algorithms_09_IQPE_32_0.png" src="../../_images/tutorials_algorithms_09_IQPE_32_0.png" />
 </div>
 </div>
-<p>Let’s execute the circuit with the <code class="docutils literal notranslate"><span class="pre">qasm_simulator</span></code>, the simulator without noise that run locally.</p>
+<p>Vamos executar o circuito com o <cite>qasm_simulator`</cite>, o simulador sem ruído que funciona localmente.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
@@ -954,14 +954,14 @@ div.rendered_html tbody tr:hover {
 <img alt="../../_images/tutorials_algorithms_09_IQPE_34_0.png" src="../../_images/tutorials_algorithms_09_IQPE_34_0.png" />
 </div>
 </div>
-<p>In the picture we have the same histograms but on the left we have on the x-axis the string with phase bits <span class="math notranslate nohighlight">\(\varphi_1\)</span>, <span class="math notranslate nohighlight">\(\varphi_2\)</span> and on the right the actual phase <span class="math notranslate nohighlight">\(\varphi\)</span> in decimal representation.</p>
-<p>As we expected we have found <span class="math notranslate nohighlight">\(\varphi=\frac{1}{4}=0.25\)</span> with a <span class="math notranslate nohighlight">\(100\%\)</span> probability.</p>
+<p>Na imagem temos os mesmos histogramas mas à esquerda temos no eixo x a string com bits de fase <span class="math notranslate nohighlight">\(\varphi_1\)</span>,:math:<cite>varphi_2</cite> e à direita a fase real <span class="math notranslate nohighlight">\(\varphi\)</span> em representação decimal.</p>
+<p>Como esperávamos encontramos <span class="math notranslate nohighlight">\(\varphi=\frac{1}{4}=0.25\)</span> com uma probabilidade de <span class="math notranslate nohighlight">\(100\%\)</span>.</p>
 </section>
 </section>
 </section>
-<section id="IPE-example-with-a-2-qubit-gate">
-<h2>IPE example with a 2-qubit gate<a class="headerlink" href="#IPE-example-with-a-2-qubit-gate" title="Link permanente para este título">¶</a></h2>
-<p>Now, we want to apply the IPE algorithm to estimate the phase for a 2-qubit gate <span class="math notranslate nohighlight">\(U\)</span>. For this example, let’s consider the controlled version of the <span class="math notranslate nohighlight">\(T\)</span> gate, i.e. the gate <span class="math notranslate nohighlight">\(U=\textrm{Controlled-}T\)</span> (that from now we will express more complactly with <span class="math notranslate nohighlight">\(CT\)</span>). Its matrix is</p>
+<section id="Exemplo-de-IPE-com-um-portão-de-2-qubit">
+<h2>Exemplo de IPE com um portão de 2-qubit<a class="headerlink" href="#Exemplo-de-IPE-com-um-portão-de-2-qubit" title="Link permanente para este título">¶</a></h2>
+<p>Agora, queremos aplicar o algoritmo IPE para estimar a fase de um portão de 2-qubit <span class="math notranslate nohighlight">\(U\)</span>. Para este exemplo, vamos considerar a versão controlada do portão <span class="math notranslate nohighlight">\(T\)</span>, ou seja o portão <span class="math notranslate nohighlight">\(U=\textrm{Controlled-}T\)</span>). Sua matriz é</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} CT =
 \begin{bmatrix}
@@ -970,7 +970,7 @@ div.rendered_html tbody tr:hover {
 0 &amp; 0 &amp; 1 &amp; 0\\
 0 &amp; 0 &amp; 0 &amp; e^\frac{i\pi}{4}\\
 \end{bmatrix}\end{split}\]</div>
-<p>That is, the <span class="math notranslate nohighlight">\(CT\)</span> gate adds a phase <span class="math notranslate nohighlight">\(\pi/4\)</span> to the state <span class="math notranslate nohighlight">\(|11\rangle\)</span>, leaving unchanged the phase of the other computational basis states <span class="math notranslate nohighlight">\(|00\rangle\)</span>, <span class="math notranslate nohighlight">\(|01\rangle\)</span>, <span class="math notranslate nohighlight">\(|10\rangle\)</span>.</p>
+<p>Isto é, o portão <span class="math notranslate nohighlight">\(CT\)</span> adiciona a fase <span class="math notranslate nohighlight">\(\pi/4\)</span> para o estado <span class="math notranslate nohighlight">\(|11\rangle\)</span>, deixando inalterada a fase dos outros estados de base computacional <span class="math notranslate nohighlight">\(|00\rangle\)</span>, <span class="math notranslate nohighlight">\(|01\rangle\)</span>, <span class="math notranslate nohighlight">\(|10\rangle\)</span>.</p>
 <p>Let’s consider to estimate the phase <span class="math notranslate nohighlight">\(\phi=\pi/4\)</span> for the eigenstate <span class="math notranslate nohighlight">\(|11\rangle\)</span>, we should find <span class="math notranslate nohighlight">\(\varphi=1/8\)</span>, since <span class="math notranslate nohighlight">\(\phi = 2 \pi \varphi\)</span>. Therefore to estimate the phase we need exactly 3 classical bits, i.e. <span class="math notranslate nohighlight">\(m=3\)</span>, since <span class="math notranslate nohighlight">\(1/2^3=1/8\)</span>. So <span class="math notranslate nohighlight">\(\varphi=0.\varphi_1\varphi_2\varphi_3\)</span>.</p>
 <p>As done with the example for the 1-qubit <span class="math notranslate nohighlight">\(U\)</span> operator we will go through the same steps but this time we will have <span class="math notranslate nohighlight">\(3\)</span> steps since <span class="math notranslate nohighlight">\(m=3\)</span>, and we will not repeat all the explanations. So for details see the above example for 1-qubit <span class="math notranslate nohighlight">\(U\)</span> gate.</p>
 <p>First, we initialize the circuit with 3 qubits, 1 for the auxiliary qubit and 2 for the 2-qubit gate, and 3 classical bits to store the phase bits <span class="math notranslate nohighlight">\(\varphi_1\)</span>, <span class="math notranslate nohighlight">\(\varphi_2\)</span>, <span class="math notranslate nohighlight">\(\varphi_3\)</span>.</p>
@@ -992,7 +992,7 @@ div.rendered_html tbody tr:hover {
 <h3>Primeiro passo<a class="headerlink" href="#id2" title="Link permanente para este título">¶</a></h3>
 <p>Now we build the quantum circuit for the first step, to estimate the least significant phase bit <span class="math notranslate nohighlight">\(\varphi_m=\varphi_3\)</span>.</p>
 <section id="id3">
-<h4>Initialization<a class="headerlink" href="#id3" title="Link permanente para este título">¶</a></h4>
+<h4>Inicialização<a class="headerlink" href="#id3" title="Link permanente para este título">¶</a></h4>
 <p>We initialize the auxiliary qubit and the other qubits with the eigenstate <span class="math notranslate nohighlight">\(|11\rangle\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
@@ -1015,7 +1015,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="id4">
-<h4>Application of the Controlled-<span class="math notranslate nohighlight">\(U\)</span> gates<a class="headerlink" href="#id4" title="Link permanente para este título">¶</a></h4>
+<h4>Aplicação dos portões Controlled-<span class="math notranslate nohighlight">\(U\)</span><a class="headerlink" href="#id4" title="Link permanente para este título">¶</a></h4>
 <p>Then we have to apply multiple times the <span class="math notranslate nohighlight">\(CU\)</span> operator, that, in this example, is the Controlled-<span class="math notranslate nohighlight">\(CT\)</span> gate (<span class="math notranslate nohighlight">\(CCT\)</span> for short).</p>
 <p>To implement <span class="math notranslate nohighlight">\(CCT\)</span> in the circuit, since <span class="math notranslate nohighlight">\(T\)</span> is a phase gate, we can use the multi-controlled phase gate <span class="math notranslate nohighlight">\(\text{MCP}(\theta)\)</span>, with <span class="math notranslate nohighlight">\(\theta=\pi/4\)</span>.</p>
 <div class="nbinput docutils container">
@@ -1059,7 +1059,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="id5">
-<h4>Measure in x-basis<a class="headerlink" href="#id5" title="Link permanente para este título">¶</a></h4>
+<h4>Medida na base-x<a class="headerlink" href="#id5" title="Link permanente para este título">¶</a></h4>
 <p>Finally, we perform the measurenment of the auxiliary qubit in x-basis. We can use the <code class="docutils literal notranslate"><span class="pre">x_measurement</span></code> function defined above in the example for 1-qubit gate. In this way we have obtained the phase bit <span class="math notranslate nohighlight">\(\varphi_3\)</span> and stored it in the classical bit <span class="math notranslate nohighlight">\(c_0\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
@@ -1085,7 +1085,7 @@ div.rendered_html tbody tr:hover {
 <h3>Subsequent steps (2nd, 3rd)<a class="headerlink" href="#Subsequent-steps-(2nd,-3rd)" title="Link permanente para este título">¶</a></h3>
 <p>Now we build the quantum circuit for the other remaining steps, the second and the third ones. As said in the first example, in these steps we have the additional sub-step of the phase correction.</p>
 <section id="id6">
-<h4>Initialization with reset<a class="headerlink" href="#id6" title="Link permanente para este título">¶</a></h4>
+<h4>Inicialização com reset<a class="headerlink" href="#id6" title="Link permanente para este título">¶</a></h4>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
@@ -1107,7 +1107,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="id7">
-<h4>Phase correction (for step 2)<a class="headerlink" href="#id7" title="Link permanente para este título">¶</a></h4>
+<h4>Correção de fase (para o passo 2)<a class="headerlink" href="#id7" title="Link permanente para este título">¶</a></h4>
 <p>In order to extract the phase bit <span class="math notranslate nohighlight">\(\varphi_{2}\)</span>, we perform a phase correction of <span class="math notranslate nohighlight">\(-\pi\varphi_3/2\)</span>.</p>
 <p>So, after the reset we apply the phase gate <span class="math notranslate nohighlight">\(P(\theta)\)</span> with phase <span class="math notranslate nohighlight">\(\theta=-\pi/2\)</span> conditioned by the classical bit <span class="math notranslate nohighlight">\(c_0\)</span> (<span class="math notranslate nohighlight">\(=\varphi_3\)</span>).</p>
 <div class="nbinput docutils container">
@@ -1130,7 +1130,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="id8">
-<h4>Application of the Control-<span class="math notranslate nohighlight">\(U\)</span> gates and x-measurement (for step 2)<a class="headerlink" href="#id8" title="Link permanente para este título">¶</a></h4>
+<h4>Aplicação dos portões Control-<span class="math notranslate nohighlight">\(U\)</span> e x-medições (para o passo 2)<a class="headerlink" href="#id8" title="Link permanente para este título">¶</a></h4>
 <p>We apply the <span class="math notranslate nohighlight">\(CU\)</span> operations as we did in the first step. For the second step we have <span class="math notranslate nohighlight">\(t=m-2\)</span>, hence <span class="math notranslate nohighlight">\(2^t=2\)</span>. So we apply <span class="math notranslate nohighlight">\(\text{MCP}(\pi/4)\)</span> <span class="math notranslate nohighlight">\(2\)</span> times. And then we perform the x-measurement of the qubit <span class="math notranslate nohighlight">\(q_0\)</span>, storing the phase bit <span class="math notranslate nohighlight">\(\varphi_2\)</span> in the bit <span class="math notranslate nohighlight">\(c_1\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
@@ -1285,34 +1285,34 @@ div.rendered_html tbody tr:hover {
             <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
               <ul>
 <li><a class="reference internal" href="#">Algoritmo De Estimação De Fase Quântica Iterativa</a></li>
-<li><a class="reference internal" href="#Conditioned-gates:-the-c_if-method">Conditioned gates: the c_if method</a></li>
+<li><a class="reference internal" href="#Portões-condicionados:-o-método-c_if">Portões condicionados: o método c_if</a></li>
 <li><a class="reference internal" href="#IPE">IPE</a><ul>
 <li><a class="reference internal" href="#Exemplo-do-IPE-com-uma-porta-de-1-bit-para-U">Exemplo do IPE com uma porta de 1 bit para <span class="math notranslate nohighlight">\(U\)</span></a><ul>
 <li><a class="reference internal" href="#Primeiro-passo">Primeiro passo</a><ul>
-<li><a class="reference internal" href="#Initialization">Initialization</a></li>
-<li><a class="reference internal" href="#Application-of-the-Controlled-U-gates">Application of the Controlled-<span class="math notranslate nohighlight">\(U\)</span> gates</a></li>
-<li><a class="reference internal" href="#Measure-in-x-basis">Measure in x-basis</a></li>
+<li><a class="reference internal" href="#Inicialização">Inicialização</a></li>
+<li><a class="reference internal" href="#Aplicação-dos-portões-Controlled-U">Aplicação dos portões Controlled-<span class="math notranslate nohighlight">\(U\)</span></a></li>
+<li><a class="reference internal" href="#Medida-na-base-x">Medida na base-x</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#Subsequent-steps-(2nd-step)">Subsequent steps (2nd step)</a><ul>
-<li><a class="reference internal" href="#Initialization-with-reset">Initialization with reset</a></li>
-<li><a class="reference internal" href="#Phase-correction-(for-step-2)">Phase correction (for step 2)</a></li>
-<li><a class="reference internal" href="#Application-of-the-Control-U-gates-and-x-measurement-(for-step-2)">Application of the Control-<span class="math notranslate nohighlight">\(U\)</span> gates and x-measurement (for step 2)</a></li>
+<li><a class="reference internal" href="#Passos-subsequentes-(segundo-passo)">Passos subsequentes (segundo passo)</a><ul>
+<li><a class="reference internal" href="#Inicialização-com-reset">Inicialização com reset</a></li>
+<li><a class="reference internal" href="#Correção-de-fase-(para-o-passo-2)">Correção de fase (para o passo 2)</a></li>
+<li><a class="reference internal" href="#Aplicação-dos-portões-Control-U-e-x-medições-(para-o-passo-2)">Aplicação dos portões Control-<span class="math notranslate nohighlight">\(U\)</span> e x-medições (para o passo 2)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#IPE-example-with-a-2-qubit-gate">IPE example with a 2-qubit gate</a><ul>
+<li><a class="reference internal" href="#Exemplo-de-IPE-com-um-portão-de-2-qubit">Exemplo de IPE com um portão de 2-qubit</a><ul>
 <li><a class="reference internal" href="#id2">Primeiro passo</a><ul>
-<li><a class="reference internal" href="#id3">Initialization</a></li>
-<li><a class="reference internal" href="#id4">Application of the Controlled-<span class="math notranslate nohighlight">\(U\)</span> gates</a></li>
-<li><a class="reference internal" href="#id5">Measure in x-basis</a></li>
+<li><a class="reference internal" href="#id3">Inicialização</a></li>
+<li><a class="reference internal" href="#id4">Aplicação dos portões Controlled-<span class="math notranslate nohighlight">\(U\)</span></a></li>
+<li><a class="reference internal" href="#id5">Medida na base-x</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#Subsequent-steps-(2nd,-3rd)">Subsequent steps (2nd, 3rd)</a><ul>
-<li><a class="reference internal" href="#id6">Initialization with reset</a></li>
-<li><a class="reference internal" href="#id7">Phase correction (for step 2)</a></li>
-<li><a class="reference internal" href="#id8">Application of the Control-<span class="math notranslate nohighlight">\(U\)</span> gates and x-measurement (for step 2)</a></li>
+<li><a class="reference internal" href="#id6">Inicialização com reset</a></li>
+<li><a class="reference internal" href="#id7">Correção de fase (para o passo 2)</a></li>
+<li><a class="reference internal" href="#id8">Aplicação dos portões Control-<span class="math notranslate nohighlight">\(U\)</span> e x-medições (para o passo 2)</a></li>
 <li><a class="reference internal" href="#All-substeps-of-the-3rd-step">All substeps of the 3rd step</a></li>
 </ul>
 </li>
