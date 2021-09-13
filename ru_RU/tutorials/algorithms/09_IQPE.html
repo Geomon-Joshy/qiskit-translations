@@ -652,7 +652,7 @@ div.rendered_html tbody tr:hover {
 <p>Другими словами мы применяем вентиль <span class="math notranslate nohighlight">\(X\)</span>, только если результаты измерения и <span class="math notranslate nohighlight">\(q_1\)</span>, и <span class="math notranslate nohighlight">\(q_2\)</span> равны <span class="math notranslate nohighlight">\(1\)</span>. Это можно сделать с помощью c_if, сделав запуск <span class="math notranslate nohighlight">\(X\)</span> зависимым от передаваемых методу аргументов.</p>
 <p>В данном случае ими выступят значения классического регистра 011 и 111 (в двоичном представлении), так как крайний правый бит не представляет интереса по условиям задачи.</p>
 <p>Переведем эти числа в десятичный вид:</p>
-<p><img alt="6b7e80ca617a4d4dbd220ac7ca29e929" class="no-scaled-link" src="tutorials/algorithms/../../images/binary.png" style="width: 50%;" /></p>
+<p><img alt="553b55cf580e4fff85b0e210ec048b70" class="no-scaled-link" src="tutorials/algorithms/../../images/binary.png" style="width: 50%;" /></p>
 <p>Проверим ответ с помощью метода bin(), входящего в python (префикс <code class="docutils literal notranslate"><span class="pre">0b</span></code> обозначает бинарный формат).</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
@@ -739,12 +739,12 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<section id="First-step">
-<h3>First step<a class="headerlink" href="#First-step" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Now we build the quantum circuit for the first step, that is, the first iteration of the algorithm, to estimate the least significant phase bit <span class="math notranslate nohighlight">\(\varphi_m\)</span>, in this case <span class="math notranslate nohighlight">\(\varphi_2\)</span>. For the first step we have 3 sub-steps: - initialization - application of the Controlled-<span class="math notranslate nohighlight">\(U\)</span> gates - measure of the auxiliary qubit in x-basis</p>
-<section id="Initialization">
-<h4>Initialization<a class="headerlink" href="#Initialization" title="Ссылка на этот заголовок">¶</a></h4>
-<p>The initialization consists of application the Hadamard gate to the auxiliary qubit and the preparation of the eigenstate <span class="math notranslate nohighlight">\(|1\rangle\)</span>.</p>
+<section id="Первая-итерация">
+<h3>Первая итерация<a class="headerlink" href="#Первая-итерация" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Теперь построим квантовую цепь для первой итерации алгоритма, которая в итоге даст младший бит фазы <span class="math notranslate nohighlight">\(\varphi_m\)</span>, в данном случае <span class="math notranslate nohighlight">\(\varphi_2\)</span>. Разделим эту задачу на три части: - инициализация - применение управляемого гейта <span class="math notranslate nohighlight">\(U\)</span> - измерение служебного кубита в x-базисе</p>
+<section id="Инициализация">
+<h4>Инициализация<a class="headerlink" href="#Инициализация" title="Ссылка на этот заголовок">¶</a></h4>
+<p>Инициализация заключается в применении вентиля Адамара к вспомогательному кубиту и приготовлении второго кубита в состоянии <span class="math notranslate nohighlight">\(|1\rangle\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
@@ -765,10 +765,10 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Application-of-the-Controlled-U-gates">
-<h4>Application of the Controlled-<span class="math notranslate nohighlight">\(U\)</span> gates<a class="headerlink" href="#Application-of-the-Controlled-U-gates" title="Ссылка на этот заголовок">¶</a></h4>
-<p>Then we have to apply <span class="math notranslate nohighlight">\(2^t\)</span> times the Controlled-<span class="math notranslate nohighlight">\(U\)</span> operators (see also in the docs <a class="reference external" href="https://qiskit.org/documentation/tutorials/circuits/3_summary_of_quantum_operations.html#Two-qubit-gates">Two qubit gates</a>), that, in this example, is the Controlled-<span class="math notranslate nohighlight">\(S\)</span> gate (<span class="math notranslate nohighlight">\(CS\)</span> for short).</p>
-<p>To implement <span class="math notranslate nohighlight">\(CS\)</span> in the circuit, since <span class="math notranslate nohighlight">\(S\)</span> is a phase gate, we can use the controlled phase gate <span class="math notranslate nohighlight">\(\text{CP}(\theta)\)</span>, with <span class="math notranslate nohighlight">\(\theta=\pi/2\)</span>.</p>
+<section id="Применение-управляемого-гейта-U">
+<h4>Применение управляемого гейта <span class="math notranslate nohighlight">\(U\)</span><a class="headerlink" href="#Применение-управляемого-гейта-U" title="Ссылка на этот заголовок">¶</a></h4>
+<p>Теперь применим <span class="math notranslate nohighlight">\(2^t\)</span> раз подряд условный оператор <span class="math notranslate nohighlight">\(U' (подробное описание можно найти в руководстве \)</span> __), который в данном примере представляет собой управляемый гейт :math:<cite>S</cite> (кратко :math:` CS <a href="#id1"><span class="problematic" id="id2">`</span></a>).</p>
+<p>Поскольку <span class="math notranslate nohighlight">\(S\)</span> влияет на фазу, для реализации <span class="math notranslate nohighlight">\(CS\)</span> в цепи используем контролируемый фазовый гейт <span class="math notranslate nohighlight">\(\text{CP}(\theta)\)</span> с <span class="math notranslate nohighlight">\(\theta=\pi/2\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
@@ -788,7 +788,7 @@ div.rendered_html tbody tr:hover {
 <img alt="../../_images/tutorials_algorithms_09_IQPE_18_0.png" src="../../_images/tutorials_algorithms_09_IQPE_18_0.png" />
 </div>
 </div>
-<p>Let’s apply <span class="math notranslate nohighlight">\(2^t\)</span> times <span class="math notranslate nohighlight">\(\text{CP}(\pi/2)\)</span>. Since for the first step <span class="math notranslate nohighlight">\(t=m-1\)</span>, and <span class="math notranslate nohighlight">\(m=2\)</span>, we have <span class="math notranslate nohighlight">\(2^t=2\)</span>.</p>
+<p>Теперь повторим <span class="math notranslate nohighlight">\(2^t\)</span> число раз <span class="math notranslate nohighlight">\(\text{CP}(\pi/2)\)</span>. Так как для первого шага <span class="math notranslate nohighlight">\(t=m-1\)</span> и <span class="math notranslate nohighlight">\(m=2\)</span>, то <span class="math notranslate nohighlight">\(2^t=2\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
@@ -809,9 +809,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Measure-in-x-basis">
-<h4>Measure in x-basis<a class="headerlink" href="#Measure-in-x-basis" title="Ссылка на этот заголовок">¶</a></h4>
-<p>Finally, we perform the measurement of the auxiliary qubit in x-basis. So we will define a function to perform the x_measure and then apply it.</p>
+<section id="Измерение-в-x-базисе">
+<h4>Измерение в x-базисе<a class="headerlink" href="#Измерение-в-x-базисе" title="Ссылка на этот заголовок">¶</a></h4>
+<p>Наконец, переходим к измерению служебного кубита в x-базисе. Определим отдельно функцию x_measure, а затем применим ее.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
@@ -824,7 +824,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>In this way we obtain the phase bit <span class="math notranslate nohighlight">\(\varphi_2\)</span> and store it in the classical bit <span class="math notranslate nohighlight">\(c_0\)</span>.</p>
+<p>Таким образом, мы получаем младший фазовый бит :math:` varphe_2 ` и сохраняем ее в младшем классическом бите <span class="math notranslate nohighlight">\(c_0\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
@@ -845,12 +845,12 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 </section>
-<section id="Subsequent-steps-(2nd-step)">
-<h3>Subsequent steps (2nd step)<a class="headerlink" href="#Subsequent-steps-(2nd-step)" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Now we build the quantum circuit for the other remaining steps, in this example, only the second one. In these steps we have 4 sub-steps: the 3 sub-steps as in the first step and, in the middle, the additional step of the phase correction - initialization with reset - phase correction - application of the Control-<span class="math notranslate nohighlight">\(U\)</span> gates - measure of the auxiliary qubit in x-basis</p>
-<section id="Initialization-with-reset">
-<h4>Initialization with reset<a class="headerlink" href="#Initialization-with-reset" title="Ссылка на этот заголовок">¶</a></h4>
-<p>As we want to perform an iterative algorithm in the same circuit, we need to reset the auxiliary qubit <span class="math notranslate nohighlight">\(q0\)</span> after the measument gate and initialize it again as before to recycle the qubit.</p>
+<section id="Дальнейшие-итерации-(вторая-итерация)">
+<h3>Дальнейшие итерации (вторая итерация)<a class="headerlink" href="#Дальнейшие-итерации-(вторая-итерация)" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Теперь мы построим квантовую цепь для последующих итераций. В данном примере, для оставшейся второй итерации. Теперь к рассмотренным ранее трем этапам добавляется еще один: - инициализация со сбросом - поправка фазы - применение условного гейта <span class="math notranslate nohighlight">\(U\)</span> - измерение служебного кубита в x-базисе</p>
+<section id="Инициализация-со-сбросом">
+<h4>Инициализация со сбросом<a class="headerlink" href="#Инициализация-со-сбросом" title="Ссылка на этот заголовок">¶</a></h4>
+<p>Поскольку мы продолжаем выполнение итеративного алгоритма в той же самой цепи, нам нужно сбросить состояние служебного кубита <span class="math notranslate nohighlight">\(q0\)</span> после измерения и инициализировать его заново для повторного использования.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
@@ -871,10 +871,10 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Phase-correction-(for-step-2)">
-<h4>Phase correction (for step 2)<a class="headerlink" href="#Phase-correction-(for-step-2)" title="Ссылка на этот заголовок">¶</a></h4>
-<p>As seen in the theory, in order to extract the phase bit <span class="math notranslate nohighlight">\(\varphi_{1}\)</span>, we perform a phase correction of <span class="math notranslate nohighlight">\(-\pi\varphi_2/2\)</span>. Of course, we need to apply the phase correction in the circuit only if the phase bit <span class="math notranslate nohighlight">\(\varphi_2=1\)</span>, i.e. we have to apply the phase correction of <span class="math notranslate nohighlight">\(-\pi/2\)</span> only if the classical bit <span class="math notranslate nohighlight">\(c_0\)</span> is 1.</p>
-<p>So, after the reset we apply the phase gate <span class="math notranslate nohighlight">\(P(\theta)\)</span> with phase <span class="math notranslate nohighlight">\(\theta=-\pi/2\)</span> conditioned by the classical bit <span class="math notranslate nohighlight">\(c_0\)</span> (<span class="math notranslate nohighlight">\(=\varphi_2\)</span>) using the <code class="docutils literal notranslate"><span class="pre">c_if</span></code> method. So as we saw in the first part of this tutorial, we have to use the <code class="docutils literal notranslate"><span class="pre">c_if</span></code> method with a value of 1, as <span class="math notranslate nohighlight">\(1_{10} = 001_{2}\)</span> (the subscripts <span class="math notranslate nohighlight">\(_{10}\)</span> and <span class="math notranslate nohighlight">\(_2\)</span> indicate the decimal and binary representations).</p>
+<section id="Поправка-фазы-(для-второй-итерации)">
+<h4>Поправка фазы (для второй итерации)<a class="headerlink" href="#Поправка-фазы-(для-второй-итерации)" title="Ссылка на этот заголовок">¶</a></h4>
+<p>Как следует из теории, вычисляя <span class="math notranslate nohighlight">\(\varphi_{1}\)</span>, нужно помнить о предварительной поправке фазы на <span class="math notranslate nohighlight">\(-\pi\varphi_2/2\)</span>. Разумеется, нам нужно применять фазовую коррекцию в цепи только в том случае, если фазовый бит <span class="math notranslate nohighlight">\(\varphi_2=1\)</span>, то есть мы должны применять фазовую коррекцию <span class="math notranslate nohighlight">\(-\pi/2\)</span> только в том случае, если классический бит <span class="math notranslate nohighlight">\(c_0\)</span> равен 1.</p>
+<p>Поэтому после сброса мы применяем фазовый вентиль <span class="math notranslate nohighlight">\(P(\theta)\)</span> с фазой <span class="math notranslate nohighlight">\(\theta=-\pi/2\)</span>, обусловленной классическим битом <span class="math notranslate nohighlight">\(c_0\)</span> (<span class="math notranslate nohighlight">\(=\varphi_2\)</span>), используя метод <cite>c_if`</cite>. Итак, как мы видели в первой части этого руководства, мы должны использовать метод <code class="docutils literal notranslate"><span class="pre">c_if</span></code> со значением 1, так как <span class="math notranslate nohighlight">\(1_{10} = 001_{2}\)</span> (подписи <span class="math notranslate nohighlight">\(_{10}\)</span> и <span class="math notranslate nohighlight">\(_2\)</span> указывают на десятичное и двоичное представления).</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
@@ -894,9 +894,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-<section id="Application-of-the-Control-U-gates-and-x-measurement-(for-step-2)">
-<h4>Application of the Control-<span class="math notranslate nohighlight">\(U\)</span> gates and x-measurement (for step 2)<a class="headerlink" href="#Application-of-the-Control-U-gates-and-x-measurement-(for-step-2)" title="Ссылка на этот заголовок">¶</a></h4>
-<p>We apply the <span class="math notranslate nohighlight">\(CU\)</span> operations as we did in the first step. For the second step we have <span class="math notranslate nohighlight">\(t=m-2\)</span>, hence <span class="math notranslate nohighlight">\(2^t=1\)</span>. So we apply <span class="math notranslate nohighlight">\(\text{CP}(\pi/2)\)</span> once. And then we perform the x-measurment of the qubit <span class="math notranslate nohighlight">\(q_0\)</span>, storing the result, the phase bit <span class="math notranslate nohighlight">\(\varphi_1\)</span>, in the bit <span class="math notranslate nohighlight">\(c_1\)</span> of classical register.</p>
+<section id="Применение-операции-Control-U-и-измерение-в-x-базисе-(для-2й-итерации)">
+<h4>Применение операции Control-<span class="math notranslate nohighlight">\(U\)</span> и измерение в x-базисе (для 2й итерации)<a class="headerlink" href="#Применение-операции-Control-U-и-измерение-в-x-базисе-(для-2й-итерации)" title="Ссылка на этот заголовок">¶</a></h4>
+<p>Применим оператор <span class="math notranslate nohighlight">\(CU\)</span> так же, как и в первой итерации. Однако теперь <span class="math notranslate nohighlight">\(t=m-2\)</span>, значит <span class="math notranslate nohighlight">\(2^t=1\)</span>. Поэтому <span class="math notranslate nohighlight">\(\text{CP}(\pi/2)\)</span> используется один раз. Далее, опять измеряем в x-базисе кубит <span class="math notranslate nohighlight">\(q_0\)</span>, записывая результат фазового бита <span class="math notranslate nohighlight">\(\varphi_1\)</span> в бит <span class="math notranslate nohighlight">\(c_1\)</span> классического регистра.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
@@ -910,7 +910,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Et voilà, we have our final circuit</p>
+<p>И вуаля, получаем итоговую цепь</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
@@ -928,7 +928,7 @@ div.rendered_html tbody tr:hover {
 <img alt="../../_images/tutorials_algorithms_09_IQPE_32_0.png" src="../../_images/tutorials_algorithms_09_IQPE_32_0.png" />
 </div>
 </div>
-<p>Let’s execute the circuit with the <code class="docutils literal notranslate"><span class="pre">qasm_simulator</span></code>, the simulator without noise that run locally.</p>
+<p>Запустим цепь на локальном симуляторе <code class="docutils literal notranslate"><span class="pre">qasm_simulator</span></code>, не содержащем шумовых помех.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
@@ -954,13 +954,13 @@ div.rendered_html tbody tr:hover {
 <img alt="../../_images/tutorials_algorithms_09_IQPE_34_0.png" src="../../_images/tutorials_algorithms_09_IQPE_34_0.png" />
 </div>
 </div>
-<p>In the picture we have the same histograms but on the left we have on the x-axis the string with phase bits <span class="math notranslate nohighlight">\(\varphi_1\)</span>, <span class="math notranslate nohighlight">\(\varphi_2\)</span> and on the right the actual phase <span class="math notranslate nohighlight">\(\varphi\)</span> in decimal representation.</p>
-<p>As we expected we have found <span class="math notranslate nohighlight">\(\varphi=\frac{1}{4}=0.25\)</span> with a <span class="math notranslate nohighlight">\(100\%\)</span> probability.</p>
+<p>На рисунке мы имеем одинаковые гистограммы, однако на левой абсцисса представлена строкой фазовых битов <span class="math notranslate nohighlight">\(\varphi_1\)</span>, <span class="math notranslate nohighlight">\(\varphi_2\)</span>, а справа – фактической фазой <span class="math notranslate nohighlight">\(\varphi\)</span> в десятичном представлении.</p>
+<p>Как и ожидалось, значение <span class="math notranslate nohighlight">\(\varphi=\frac{1}{4}=0.25\)</span> с вероятностью <span class="math notranslate nohighlight">\(100\%\)</span>.</p>
 </section>
 </section>
 </section>
-<section id="IPE-example-with-a-2-qubit-gate">
-<h2>IPE example with a 2-qubit gate<a class="headerlink" href="#IPE-example-with-a-2-qubit-gate" title="Ссылка на этот заголовок">¶</a></h2>
+<section id="Использование-IPE-для-двухкубитного-гейта">
+<h2>Использование IPE для двухкубитного гейта<a class="headerlink" href="#Использование-IPE-для-двухкубитного-гейта" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Now, we want to apply the IPE algorithm to estimate the phase for a 2-qubit gate <span class="math notranslate nohighlight">\(U\)</span>. For this example, let’s consider the controlled version of the <span class="math notranslate nohighlight">\(T\)</span> gate, i.e. the gate <span class="math notranslate nohighlight">\(U=\textrm{Controlled-}T\)</span> (that from now we will express more complactly with <span class="math notranslate nohighlight">\(CT\)</span>). Its matrix is</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} CT =
@@ -989,10 +989,10 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <section id="id2">
-<h3>First step<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
+<h3>Первая итерация<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Now we build the quantum circuit for the first step, to estimate the least significant phase bit <span class="math notranslate nohighlight">\(\varphi_m=\varphi_3\)</span>.</p>
 <section id="id3">
-<h4>Initialization<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h4>
+<h4>Инициализация<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h4>
 <p>We initialize the auxiliary qubit and the other qubits with the eigenstate <span class="math notranslate nohighlight">\(|11\rangle\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
@@ -1015,7 +1015,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="id4">
-<h4>Application of the Controlled-<span class="math notranslate nohighlight">\(U\)</span> gates<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h4>
+<h4>Применение управляемого гейта <span class="math notranslate nohighlight">\(U\)</span><a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h4>
 <p>Then we have to apply multiple times the <span class="math notranslate nohighlight">\(CU\)</span> operator, that, in this example, is the Controlled-<span class="math notranslate nohighlight">\(CT\)</span> gate (<span class="math notranslate nohighlight">\(CCT\)</span> for short).</p>
 <p>To implement <span class="math notranslate nohighlight">\(CCT\)</span> in the circuit, since <span class="math notranslate nohighlight">\(T\)</span> is a phase gate, we can use the multi-controlled phase gate <span class="math notranslate nohighlight">\(\text{MCP}(\theta)\)</span>, with <span class="math notranslate nohighlight">\(\theta=\pi/4\)</span>.</p>
 <div class="nbinput docutils container">
@@ -1059,7 +1059,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="id5">
-<h4>Measure in x-basis<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h4>
+<h4>Измерение в x-базисе<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h4>
 <p>Finally, we perform the measurenment of the auxiliary qubit in x-basis. We can use the <code class="docutils literal notranslate"><span class="pre">x_measurement</span></code> function defined above in the example for 1-qubit gate. In this way we have obtained the phase bit <span class="math notranslate nohighlight">\(\varphi_3\)</span> and stored it in the classical bit <span class="math notranslate nohighlight">\(c_0\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
@@ -1085,7 +1085,7 @@ div.rendered_html tbody tr:hover {
 <h3>Subsequent steps (2nd, 3rd)<a class="headerlink" href="#Subsequent-steps-(2nd,-3rd)" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Now we build the quantum circuit for the other remaining steps, the second and the third ones. As said in the first example, in these steps we have the additional sub-step of the phase correction.</p>
 <section id="id6">
-<h4>Initialization with reset<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h4>
+<h4>Инициализация со сбросом<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h4>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
@@ -1107,7 +1107,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="id7">
-<h4>Phase correction (for step 2)<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h4>
+<h4>Поправка фазы (для второй итерации)<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h4>
 <p>In order to extract the phase bit <span class="math notranslate nohighlight">\(\varphi_{2}\)</span>, we perform a phase correction of <span class="math notranslate nohighlight">\(-\pi\varphi_3/2\)</span>.</p>
 <p>So, after the reset we apply the phase gate <span class="math notranslate nohighlight">\(P(\theta)\)</span> with phase <span class="math notranslate nohighlight">\(\theta=-\pi/2\)</span> conditioned by the classical bit <span class="math notranslate nohighlight">\(c_0\)</span> (<span class="math notranslate nohighlight">\(=\varphi_3\)</span>).</p>
 <div class="nbinput docutils container">
@@ -1130,7 +1130,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="id8">
-<h4>Application of the Control-<span class="math notranslate nohighlight">\(U\)</span> gates and x-measurement (for step 2)<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h4>
+<h4>Применение операции Control-<span class="math notranslate nohighlight">\(U\)</span> и измерение в x-базисе (для 2й итерации)<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h4>
 <p>We apply the <span class="math notranslate nohighlight">\(CU\)</span> operations as we did in the first step. For the second step we have <span class="math notranslate nohighlight">\(t=m-2\)</span>, hence <span class="math notranslate nohighlight">\(2^t=2\)</span>. So we apply <span class="math notranslate nohighlight">\(\text{MCP}(\pi/4)\)</span> <span class="math notranslate nohighlight">\(2\)</span> times. And then we perform the x-measurement of the qubit <span class="math notranslate nohighlight">\(q_0\)</span>, storing the phase bit <span class="math notranslate nohighlight">\(\varphi_2\)</span> in the bit <span class="math notranslate nohighlight">\(c_1\)</span>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
@@ -1288,31 +1288,31 @@ div.rendered_html tbody tr:hover {
 <li><a class="reference internal" href="#Условные-вентили:-метод-c_if">Условные вентили: метод c_if</a></li>
 <li><a class="reference internal" href="#IPE">IPE</a><ul>
 <li><a class="reference internal" href="#Пример-работы-IPE-с-однокубитным-вентилем-U">Пример работы IPE с однокубитным вентилем <span class="math notranslate nohighlight">\(U\)</span></a><ul>
-<li><a class="reference internal" href="#First-step">First step</a><ul>
-<li><a class="reference internal" href="#Initialization">Initialization</a></li>
-<li><a class="reference internal" href="#Application-of-the-Controlled-U-gates">Application of the Controlled-<span class="math notranslate nohighlight">\(U\)</span> gates</a></li>
-<li><a class="reference internal" href="#Measure-in-x-basis">Measure in x-basis</a></li>
+<li><a class="reference internal" href="#Первая-итерация">Первая итерация</a><ul>
+<li><a class="reference internal" href="#Инициализация">Инициализация</a></li>
+<li><a class="reference internal" href="#Применение-управляемого-гейта-U">Применение управляемого гейта <span class="math notranslate nohighlight">\(U\)</span></a></li>
+<li><a class="reference internal" href="#Измерение-в-x-базисе">Измерение в x-базисе</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#Subsequent-steps-(2nd-step)">Subsequent steps (2nd step)</a><ul>
-<li><a class="reference internal" href="#Initialization-with-reset">Initialization with reset</a></li>
-<li><a class="reference internal" href="#Phase-correction-(for-step-2)">Phase correction (for step 2)</a></li>
-<li><a class="reference internal" href="#Application-of-the-Control-U-gates-and-x-measurement-(for-step-2)">Application of the Control-<span class="math notranslate nohighlight">\(U\)</span> gates and x-measurement (for step 2)</a></li>
+<li><a class="reference internal" href="#Дальнейшие-итерации-(вторая-итерация)">Дальнейшие итерации (вторая итерация)</a><ul>
+<li><a class="reference internal" href="#Инициализация-со-сбросом">Инициализация со сбросом</a></li>
+<li><a class="reference internal" href="#Поправка-фазы-(для-второй-итерации)">Поправка фазы (для второй итерации)</a></li>
+<li><a class="reference internal" href="#Применение-операции-Control-U-и-измерение-в-x-базисе-(для-2й-итерации)">Применение операции Control-<span class="math notranslate nohighlight">\(U\)</span> и измерение в x-базисе (для 2й итерации)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#IPE-example-with-a-2-qubit-gate">IPE example with a 2-qubit gate</a><ul>
-<li><a class="reference internal" href="#id2">First step</a><ul>
-<li><a class="reference internal" href="#id3">Initialization</a></li>
-<li><a class="reference internal" href="#id4">Application of the Controlled-<span class="math notranslate nohighlight">\(U\)</span> gates</a></li>
-<li><a class="reference internal" href="#id5">Measure in x-basis</a></li>
+<li><a class="reference internal" href="#Использование-IPE-для-двухкубитного-гейта">Использование IPE для двухкубитного гейта</a><ul>
+<li><a class="reference internal" href="#id2">Первая итерация</a><ul>
+<li><a class="reference internal" href="#id3">Инициализация</a></li>
+<li><a class="reference internal" href="#id4">Применение управляемого гейта <span class="math notranslate nohighlight">\(U\)</span></a></li>
+<li><a class="reference internal" href="#id5">Измерение в x-базисе</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#Subsequent-steps-(2nd,-3rd)">Subsequent steps (2nd, 3rd)</a><ul>
-<li><a class="reference internal" href="#id6">Initialization with reset</a></li>
-<li><a class="reference internal" href="#id7">Phase correction (for step 2)</a></li>
-<li><a class="reference internal" href="#id8">Application of the Control-<span class="math notranslate nohighlight">\(U\)</span> gates and x-measurement (for step 2)</a></li>
+<li><a class="reference internal" href="#id6">Инициализация со сбросом</a></li>
+<li><a class="reference internal" href="#id7">Поправка фазы (для второй итерации)</a></li>
+<li><a class="reference internal" href="#id8">Применение операции Control-<span class="math notranslate nohighlight">\(U\)</span> и измерение в x-базисе (для 2й итерации)</a></li>
 <li><a class="reference internal" href="#All-substeps-of-the-3rd-step">All substeps of the 3rd step</a></li>
 </ul>
 </li>
